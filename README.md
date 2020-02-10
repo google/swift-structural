@@ -1,3 +1,16 @@
-# GenericProgramming
+# Generic Programming for Swift
 
-A description of this package.
+## Protocols
+
+Standard library:
+
+* [v] `EquatableGeneric`
+* [ ] `ComparableGeneric`
+* [ ] `HashableGeneric`
+* [ ] `StringConvertibleGeneric`
+* [ ] `EncodeJSONGeneric`
+* [ ] `DecodeJSONGeneric`
+
+Swift for TensorFlow library:
+
+* [v] `AdditiveArithmeticGeneric`
