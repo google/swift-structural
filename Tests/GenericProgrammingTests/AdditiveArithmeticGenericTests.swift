@@ -3,40 +3,7 @@ import XCTest
 
 @testable import GenericProgramming
 
-enum Tree<T> {
-    case leaf(T)
-    indirect case branch(Tree, T, Tree)
-}
-extension Tree: Generic {
-    typealias Representation = Sum<Singleton<T>, Product<Singleton<Tree>, Product<Singleton<T>, Singleton<Tree>>>>
-
-    var representation: Representation {
-        switch self {
-        case let .leaf(x):
-            return .first(.init(x))
-        case let .branch(left, value, right):
-            return .second(.init(.init(left), .init(.init(value), .init(right))))
-        }
-    }
-
-    init(representation: Representation) {
-        switch representation {
-        case let .first(x):
-            self = .leaf(x.value)
-        case let .second(product):
-            let left = product.first.value
-            let value = product.second.first.value
-            let right = product.second.second.value
-            self = .branch(left, value, right)
-        }
-    }
-}
-extension Tree: EquatableGeneric where T: EquatableGeneric {
-    static func == (lhs: Self, rhs: Self) -> Bool {
-        return lhs.representation == rhs.representation
-    }
-}
-extension Tree: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneric {
+extension BinaryTree: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneric {
     static var zero: Self {
         return .init(representation: Representation.zero)
     }
@@ -67,14 +34,14 @@ func time(_ body: () -> Void) -> Double {
     return elapsed
 }
 
-final class GenericProgrammingTests: XCTestCase {
-    func testTree() {
-        let tree: Tree<Int> = .branch(.leaf(1), 2, .branch(.leaf(3), 4, .leaf(5)))
+final class AdditiveArithmeticGenericTests: XCTestCase {
+    func testBinaryTree() {
+        let tree: BinaryTree<Int> = .branch(.leaf(1), 2, .branch(.leaf(3), 4, .leaf(5)))
         print(tree)
         print(tree + tree)
 
         func benchmarkAdd(useGeneric: Bool) {
-            var tree: Tree<Double> = .branch(.leaf(1), 2, .branch(.leaf(3), 4, .leaf(5)))
+            var tree: BinaryTree<Double> = .branch(.leaf(1), 2, .branch(.leaf(3), 4, .leaf(5)))
             for _ in 0..<10000 {
                 if useGeneric {
                     tree = tree + tree
@@ -90,6 +57,6 @@ final class GenericProgrammingTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testTree", testTree),
+        ("testBinaryTree", testBinaryTree),
     ]
 }
