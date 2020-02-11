@@ -1,6 +1,26 @@
 @testable import GenericProgramming
 
-enum BinaryTree<T> {
+struct Point3: Equatable {
+    let x: Float
+    let y: Float
+    let z: Float
+}
+
+extension Point3: Generic {
+    typealias Representation = Product<Singleton<Float>, Product<Singleton<Float>, Singleton<Float>>>
+
+    var representation: Representation {
+        return .init(.init(x), .init(.init(y), .init(z)))
+    }
+
+    init(representation: Representation) {
+        self.x = representation.first.value
+        self.y = representation.second.first.value
+        self.z = representation.second.second.value
+    }
+}
+
+enum BinaryTree<T>: Equatable where T: Equatable {
     case leaf(T)
     indirect case branch(BinaryTree, T, BinaryTree)
 }

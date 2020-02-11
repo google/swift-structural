@@ -6,6 +6,7 @@ public func allTests() -> [XCTestCaseEntry] {
         testCase(AdditiveArithmeticGenericTests.allTests),
         testCase(EquatableGenericTests.allTests),
         testCase(HashableGenericTests.allTests),
+        testCase(RepresentationTests.allTests),
     ]
 }
 #endif
