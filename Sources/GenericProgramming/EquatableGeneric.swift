@@ -33,6 +33,6 @@ extension Product: EquatableGeneric where A: EquatableGeneric, B: EquatableGener
 
 // - MARK: Example conformances.
 
-extension Int: EquatableGeneric, AdditiveArithmeticGeneric {}
-extension Float: EquatableGeneric, AdditiveArithmeticGeneric {}
-extension Double: EquatableGeneric, AdditiveArithmeticGeneric {}
+extension Int: EquatableGeneric {}
+extension Float: EquatableGeneric {}
+extension Double: EquatableGeneric {}

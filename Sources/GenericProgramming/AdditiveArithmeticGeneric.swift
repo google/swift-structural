@@ -46,3 +46,9 @@ where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
         return .init(lhs.first + rhs.first, lhs.second + rhs.second)
     }
 }
+
+// Base cases.
+
+extension Int: AdditiveArithmeticGeneric {}
+extension Float: AdditiveArithmeticGeneric {}
+extension Double: AdditiveArithmeticGeneric {}
