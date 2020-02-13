@@ -2,23 +2,23 @@
 /// - Note: a duplicate protocol is used to avoid triggering existing `Equatable` derived
 ///   conformances.
 public protocol EquatableGeneric {
-    static func == (lhs: Self, rhs: Self) -> Bool
+    func genericEqual(_ other: Self) -> Bool
 
 }
 
 extension Singleton: EquatableGeneric where T: EquatableGeneric {
-    public static func == (lhs: Self, rhs: Self) -> Bool {
-        return lhs.value == rhs.value
+    public func genericEqual(_ other: Self) -> Bool {
+        return self.value.genericEqual(other.value)
     }
 }
 
 extension Sum: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric {
-    public static func == (lhs: Self, rhs: Self) -> Bool {
-        switch (lhs, rhs) {
+    public func genericEqual(_ other: Self) -> Bool {
+        switch (self, other) {
         case let (.first(x), .first(y)):
-            return x == y
+            return x.genericEqual(y)
         case let (.second(x), .second(y)):
-            return x == y
+            return x.genericEqual(y)
         default:
             return false
         }
@@ -26,13 +26,27 @@ extension Sum: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric {
 }
 
 extension Product: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric {
-    public static func == (lhs: Self, rhs: Self) -> Bool {
-        return lhs.first == rhs.first && lhs.second == rhs.second
+    public func genericEqual(_ other: Self) -> Bool {
+        return self.first.genericEqual(other.first) && self.second.genericEqual(other.second)
     }
 }
 
-// - MARK: Example conformances.
+// Base cases.
 
-extension Int: EquatableGeneric {}
-extension Float: EquatableGeneric {}
-extension Double: EquatableGeneric {}
+extension Int: EquatableGeneric {
+    public func genericEqual(_ other: Int) -> Bool {
+        return self == other
+    }
+}
+
+extension Float: EquatableGeneric {
+    public func genericEqual(_ other: Float) -> Bool {
+        return self == other
+    }
+}
+
+extension Double: EquatableGeneric {
+    public func genericEqual(_ other: Double) -> Bool {
+        return self == other
+    }
+}
