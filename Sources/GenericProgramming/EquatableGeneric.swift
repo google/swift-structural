@@ -11,7 +11,7 @@ public protocol EquatableGeneric {
 extension Case: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric {
     public func genericEqual(_ other: Self) -> Bool {
         switch (self, other) {
-        case let (.shape(x), .shape(y)):
+        case let (.of(_, x), .of(_, y)):
             return x.genericEqual(y)
         case let (.next(x), .next(y)):
             return x.genericEqual(y)

@@ -11,7 +11,8 @@ func genericHash<T>(_ value: T) -> Int where T: HashableGeneric {
 extension Case: HashableGeneric where A: HashableGeneric, B: HashableGeneric {
     public func genericHash(into hasher: inout Hasher) {
         switch self {
-        case let .shape(value):
+        case let .of(index, value):
+            index.hash(into: &hasher)
             value.genericHash(into: &hasher)
         case let .next(value):
             value.genericHash(into: &hasher)

@@ -16,8 +16,8 @@ where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
 
     public static func + (lhs: Self, rhs: Self) -> Self {
         switch (lhs, rhs) {
-        case let (.shape(x), .shape(y)):
-            return .shape(x + y)
+        case let (.of(index, x), .of(_, y)):
+            return .of(index, x + y)
         case let (.next(x), .next(y)):
             return .next(x + y)
         default:

@@ -37,18 +37,18 @@ extension BinaryTree: Generic {
     var representation: Representation {
         switch self {
         case let .leaf(x):
-            return Enum(.shape(Field(x, Empty())))
+            return Enum(.of(0, Field(x, Empty())))
         case let .branch(left, value, right):
-            return Enum(.next(.shape(Field(left, Field(value, Field(right, Empty()))))))
+            return Enum(.next(.of(1, Field(left, Field(value, Field(right, Empty()))))))
 
         }
     }
 
     init(representation: Representation) {
         switch representation.shape {
-        case let .shape(fields):
+        case let Case.of(_, fields):
             self = .leaf(fields.value)
-        case let .next(.shape(fields)):
+        case let Case.next(Case.of(_, fields)):
             let left = fields.value
             let value = fields.next.value
             let right = fields.next.next.value
