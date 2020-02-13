@@ -4,16 +4,20 @@ import XCTest
 @testable import GenericProgramming
 
 extension BinaryTree: HashableGeneric where T: HashableGeneric {
-    func hash(into hasher: inout Hasher)  {
-        self.representation.hash(into: &hasher)
+    func genericHash(into hasher: inout Hasher)  {
+        self.representation.genericHash(into: &hasher)
     }
 }
 
 final class HashableGenericTests: XCTestCase {
+    func testPoint3() {
+    }
+
     func testBinaryTree() {
     }
 
     static var allTests = [
+        ("testPoint3", testPoint3),
         ("testBinaryTree", testBinaryTree),
     ]
 }
