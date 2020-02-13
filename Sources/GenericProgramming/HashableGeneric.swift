@@ -8,12 +8,6 @@ func genericHash<T>(_ value: T) -> Int where T: HashableGeneric {
     return hasher.finalize()
 }
 
-extension Value: HashableGeneric where T: HashableGeneric {
-    public func genericHash(into hasher: inout Hasher) {
-        return value.genericHash(into: &hasher)
-    }
-}
-
 extension Case: HashableGeneric where A: HashableGeneric, B: HashableGeneric {
     public func genericHash(into hasher: inout Hasher) {
         switch self {
@@ -27,7 +21,7 @@ extension Case: HashableGeneric where A: HashableGeneric, B: HashableGeneric {
 
 extension Field: HashableGeneric where A: HashableGeneric, B: HashableGeneric {
     public func genericHash(into hasher: inout Hasher) {
-        shape.genericHash(into: &hasher)
+        value.genericHash(into: &hasher)
         next.genericHash(into: &hasher)
     }
 }

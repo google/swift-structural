@@ -1,25 +1,16 @@
 public protocol Shape {}
 
-// Note: the name `Unit<T>` conflicts with `Foundation.Unit`.
-public struct Value<T>: Shape {
-    var value: T
-
-    init(_ value: T) {
-        self.value = value
-    }
-}
-
 public enum Case<A: Shape, B: Shape>: Shape {
     case shape(A)
     case next(B)
 }
 
-public struct Field<A: Shape, B: Shape>: Shape {
-    var shape: A
+public struct Field<A, B: Shape>: Shape {
+    var value: A
     var next: B
 
-    init(_ shape: A, _ next: B) {
-        self.shape = shape
+    init(_ value: A, _ next: B) {
+        self.value = value
         self.next = next
     }
 }

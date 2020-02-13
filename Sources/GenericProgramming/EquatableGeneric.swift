@@ -8,12 +8,6 @@ public protocol EquatableGeneric {
 
 // Inductive cases.
 
-extension Value: EquatableGeneric where T: EquatableGeneric {
-    public func genericEqual(_ other: Self) -> Bool {
-        return value.genericEqual(other.value)
-    }
-}
-
 extension Case: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric {
     public func genericEqual(_ other: Self) -> Bool {
         switch (self, other) {
@@ -29,7 +23,7 @@ extension Case: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric 
 
 extension Field: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric {
     public func genericEqual(_ other: Self) -> Bool {
-        return shape.genericEqual(other.shape) && next.genericEqual(other.next)
+        return value.genericEqual(other.value) && next.genericEqual(other.next)
     }
 }
 

@@ -6,17 +6,7 @@ public protocol AdditiveArithmeticGeneric {
     static func + (lhs: Self, rhs: Self) -> Self
 }
 
-// - MARK: Generic combinator type conformances.
-
-extension Value: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneric {
-    public static var zero: Self {
-        return .init(T.zero)
-    }
-
-    public static func + (lhs: Self, rhs: Self) -> Self {
-        return .init(lhs.value + rhs.value)
-    }
-}
+// Inductive cases. 
 
 extension Case: AdditiveArithmeticGeneric
 where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
@@ -43,7 +33,7 @@ where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
     }
 
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Field(lhs.shape + rhs.shape, lhs.next + rhs.next)
+        return Field(lhs.value + rhs.value, lhs.next + rhs.next)
     }
 }
 

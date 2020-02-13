@@ -9,19 +9,16 @@ struct Point3: Equatable, Hashable {
 extension Point3: Generic {
     // swift-format-ignore
     typealias Representation =
-        Struct<Field<Value<Float>,
-               Field<Value<Float>,
-               Field<Value<Float>,
-               Empty>>>>
+        Struct<Field<Float, Field<Float, Field<Float, Empty>>>>
 
     var representation: Representation {
-        return Struct(Field(Value(x), Field(Value(y), Field(Value(z), Empty()))))
+        return Struct(Field(x, Field(y, Field(z, Empty()))))
     }
 
     init(representation: Representation) {
-        self.x = representation.shape.shape.value
-        self.y = representation.shape.next.shape.value
-        self.z = representation.shape.next.next.shape.value
+        self.x = representation.shape.value
+        self.y = representation.shape.next.value
+        self.z = representation.shape.next.next.value
     }
 }
 
@@ -33,23 +30,16 @@ enum BinaryTree<T>: Equatable, Hashable where T: Equatable & Hashable {
 extension BinaryTree: Generic {
     // swift-format-ignore
     typealias Representation =
-        Enum<Case<Field<Value<T>, Empty>,
-             Case<Field<Value<BinaryTree<T>>,
-                  Field<Value<T>,
-                  Field<Value<BinaryTree<T>>,
-                  Empty>>>,
+        Enum<Case<Field<T, Empty>,
+             Case<Field<BinaryTree<T>, Field<T, Field<BinaryTree<T>, Empty>>>,
              Empty>>>
 
     var representation: Representation {
         switch self {
         case let .leaf(x):
-            return Enum(.shape(Field(Value(x), 
-                               Empty())))
+            return Enum(.shape(Field(x, Empty())))
         case let .branch(left, value, right):
-            return Enum(.next(.shape(Field(Value(left), 
-                                     Field(Value(value), 
-                                     Field(Value(right), 
-                                     Empty()))))))
+            return Enum(.next(.shape(Field(left, Field(value, Field(right, Empty()))))))
 
         }
     }
@@ -57,11 +47,11 @@ extension BinaryTree: Generic {
     init(representation: Representation) {
         switch representation.shape {
         case let .shape(fields):
-            self = .leaf(fields.shape.value)
+            self = .leaf(fields.value)
         case let .next(.shape(fields)):
-            let left = fields.shape.value
-            let value = fields.next.shape.value
-            let right = fields.next.next.shape.value
+            let left = fields.value
+            let value = fields.next.value
+            let right = fields.next.next.value
             self = .branch(left, value, right)
         default:
             fatalError("unreachable")
