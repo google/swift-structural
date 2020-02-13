@@ -15,6 +15,18 @@ extension BinaryTree: HashableGeneric where T: HashableGeneric {
     }
 }
 
+extension Color: HashableGeneric {
+    func genericHash(into hasher: inout Hasher) {
+        self.representation.genericHash(into: &hasher)
+    }
+}
+
+extension ASCII: HashableGeneric {
+    func genericHash(into hasher: inout Hasher) {
+        self.representation.genericHash(into: &hasher)
+    }
+}
+
 func referenceHash<T>(_ value: T) -> Int where T: Hashable {
     var hasher = Hasher()
     value.hash(into: &hasher)
@@ -36,8 +48,22 @@ final class HashableGenericTests: XCTestCase {
         XCTAssertEqual(referenceHash(treeB), genericHash(treeB))
     }
 
+    func testColor() {
+        XCTAssertEqual(referenceHash(Color.red), genericHash(Color.red))
+        XCTAssertEqual(referenceHash(Color.green), genericHash(Color.green))
+        XCTAssertEqual(referenceHash(Color.blue), genericHash(Color.blue))
+    }
+
+    func testASCII() {
+        XCTAssertEqual(referenceHash(ASCII.tab), genericHash(ASCII.tab))
+        XCTAssertEqual(referenceHash(ASCII.lineFeed), genericHash(ASCII.lineFeed))
+        XCTAssertEqual(referenceHash(ASCII.carriageReturn), genericHash(ASCII.carriageReturn))
+    }
+
     static var allTests = [
         ("testPoint3", testPoint3),
         ("testBinaryTree", testBinaryTree),
+        ("testColor", testColor),
+        ("testASCII", testASCII),
     ]
 }

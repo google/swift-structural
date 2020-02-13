@@ -1,7 +1,7 @@
 public protocol Shape {}
 
-public enum Case<A: Shape, B: Shape>: Shape {
-    case of(Int, A)
+public enum Case<V, A: Shape, B: Shape>: Shape {
+    case of(V, A)
     case next(B)
 }
 

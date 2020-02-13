@@ -18,8 +18,18 @@ final class RepresentationTests: XCTestCase {
         XCTAssertEqual(tree, treeFromRepr)
     }
 
+    func testColor() {
+        let colors: [Color] = [.red, .green, .blue]
+        for color in colors {
+            let repr = color.representation
+            let colorFromRepr = Color(representation: repr)
+            XCTAssertEqual(color, colorFromRepr)
+        }
+    }
+
     static var allTests = [
         ("testPoint3", testPoint3),
         ("testBinaryTree", testBinaryTree),
+        ("testColor", testColor),
     ]
 }

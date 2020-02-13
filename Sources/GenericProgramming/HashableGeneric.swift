@@ -8,11 +8,11 @@ func genericHash<T>(_ value: T) -> Int where T: HashableGeneric {
     return hasher.finalize()
 }
 
-extension Case: HashableGeneric where A: HashableGeneric, B: HashableGeneric {
+extension Case: HashableGeneric where V: HashableGeneric, A: HashableGeneric, B: HashableGeneric {
     public func genericHash(into hasher: inout Hasher) {
         switch self {
         case let .of(index, value):
-            index.hash(into: &hasher)
+            index.genericHash(into: &hasher)
             value.genericHash(into: &hasher)
         case let .next(value):
             value.genericHash(into: &hasher)
@@ -58,6 +58,12 @@ extension Float: HashableGeneric {
 }
 
 extension Double: HashableGeneric {
+    public func genericHash(into hasher: inout Hasher) {
+        hash(into: &hasher)
+    }
+}
+
+extension String: HashableGeneric {
     public func genericHash(into hasher: inout Hasher) {
         hash(into: &hasher)
     }
