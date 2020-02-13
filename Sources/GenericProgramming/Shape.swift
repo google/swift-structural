@@ -1,7 +1,7 @@
 public protocol Shape {}
 
 // Note: the name `Unit<T>` conflicts with `Foundation.Unit`.
-public struct Singleton<T>: Shape {
+public struct Value<T>: Shape {
     var value: T
 
     init(_ value: T) {
@@ -9,17 +9,35 @@ public struct Singleton<T>: Shape {
     }
 }
 
-public enum Sum<A: Shape, B: Shape>: Shape {
-    case first(A)
-    case second(B)
+public enum Case<A: Shape, B: Shape>: Shape {
+    case shape(A)
+    case next(B)
 }
 
-public struct Product<A: Shape, B: Shape>: Shape {
-    var first: A
-    var second: B
+public struct Field<A: Shape, B: Shape>: Shape {
+    var shape: A
+    var next: B
 
-    init(_ first: A, _ second: B) {
-        self.first = first
-        self.second = second
+    init(_ shape: A, _ next: B) {
+        self.shape = shape
+        self.next = next
     }
 }
+
+public struct Enum<A: Shape>: Shape {
+    var shape: A
+
+    init(_ shape: A) {
+        self.shape = shape
+    }
+}
+
+public struct Struct<A: Shape>: Shape {
+    var shape: A
+
+    init(_ shape: A) {
+        self.shape = shape
+    }
+}
+
+public struct Empty: Shape {}

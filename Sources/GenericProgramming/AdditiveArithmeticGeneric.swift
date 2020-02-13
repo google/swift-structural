@@ -8,7 +8,7 @@ public protocol AdditiveArithmeticGeneric {
 
 // - MARK: Generic combinator type conformances.
 
-extension Singleton: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneric {
+extension Value: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneric {
     public static var zero: Self {
         return .init(T.zero)
     }
@@ -18,7 +18,7 @@ extension Singleton: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneri
     }
 }
 
-extension Sum: AdditiveArithmeticGeneric
+extension Case: AdditiveArithmeticGeneric
 where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
     public static var zero: Self {
         fatalError("'zero' cannot be synthesized for sum types")
@@ -26,29 +26,61 @@ where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
 
     public static func + (lhs: Self, rhs: Self) -> Self {
         switch (lhs, rhs) {
-        case let (.first(x), .first(y)):
-            return .first(x + y)
-        case let (.second(x), .second(y)):
-            return .second(x + y)
+        case let (.shape(x), .shape(y)):
+            return .shape(x + y)
+        case let (.next(x), .next(y)):
+            return .next(x + y)
         default:
             fatalError("Mismatch: \(lhs), \(rhs)")
         }
     }
 }
 
-extension Product: AdditiveArithmeticGeneric
+extension Field: AdditiveArithmeticGeneric
 where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
     public static var zero: Self {
-        return .init(A.zero, B.zero)
+        return Field(A.zero, B.zero)
     }
 
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return .init(lhs.first + rhs.first, lhs.second + rhs.second)
+        return Field(lhs.shape + rhs.shape, lhs.next + rhs.next)
+    }
+}
+
+extension Struct: AdditiveArithmeticGeneric where A: AdditiveArithmeticGeneric {
+    public static var zero: Self {
+        return Struct(A.zero)
+    }
+
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        return Struct(lhs.shape + rhs.shape)
+    }
+}
+
+extension Enum: AdditiveArithmeticGeneric where A: AdditiveArithmeticGeneric {
+    public static var zero: Self {
+        return Enum(A.zero)
+    }
+
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        return Enum(lhs.shape + rhs.shape)
     }
 }
 
 // Base cases.
 
+extension Empty: AdditiveArithmeticGeneric {
+    public static var zero: Self {
+        return Empty()
+    }
+
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        return Empty()
+    }
+}
+
 extension Int: AdditiveArithmeticGeneric {}
+
 extension Float: AdditiveArithmeticGeneric {}
+
 extension Double: AdditiveArithmeticGeneric {}
