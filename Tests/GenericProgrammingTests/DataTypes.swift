@@ -1,6 +1,6 @@
 @testable import GenericProgramming
 
-struct Point3: Equatable {
+struct Point3: Equatable, Hashable {
     let x: Float
     let y: Float
     let z: Float
@@ -20,12 +20,12 @@ extension Point3: Generic {
     }
 }
 
-enum BinaryTree<T>: Equatable where T: Equatable {
+enum BinaryTree<T>: Equatable where T: Equatable & Hashable {
     case leaf(T)
     indirect case branch(BinaryTree, T, BinaryTree)
 }
 
-extension BinaryTree: Generic {
+extension BinaryTree: Generic, Hashable {
     typealias Representation = Sum<Singleton<T>, Product<Singleton<BinaryTree>, Product<Singleton<T>, Singleton<BinaryTree>>>>
 
     var representation: Representation {

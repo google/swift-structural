@@ -2,6 +2,12 @@ public protocol HashableGeneric {
     func genericHash(into hasher: inout Hasher) 
 }
 
+func genericHash<T>(_ value: T) -> Int where T: HashableGeneric {
+    var hasher = Hasher()
+    value.genericHash(into: &hasher)
+    return hasher.finalize()
+}
+
 extension Singleton: HashableGeneric where T: HashableGeneric {
     public func genericHash(into hasher: inout Hasher)  {
         return self.value.genericHash(into: &hasher)
