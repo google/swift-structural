@@ -4,13 +4,13 @@
 
 Standard library:
 
-* [v] `EquatableGeneric`
-* [ ] `ComparableGeneric`
-* [ ] `HashableGeneric`
-* [ ] `StringConvertibleGeneric`
-* [ ] `EncodeJSONGeneric`
-* [ ] `DecodeJSONGeneric`
+- [x] `EquatableGeneric`
+- [ ] `ComparableGeneric`
+- [x] `HashableGeneric`
+- [ ] `StringConvertibleGeneric`
+- [ ] `EncodeJSONGeneric`
+- [ ] `DecodeJSONGeneric`
 
 Swift for TensorFlow library:
 
-* [v] `AdditiveArithmeticGeneric`
+- [x] `AdditiveArithmeticGeneric`
