@@ -1,4 +1,3 @@
-import Dispatch
 import XCTest
 
 @testable import GenericCore

@@ -26,7 +26,7 @@ let package = Package(
             dependencies: ["GenericCore"]),
         .target(
             name: "GenericBenchmarks",
-            dependencies: ["GenericCore", "GenericExamples"]),
+            dependencies: ["GenericCore"]),
         .testTarget(
             name: "GenericProgrammingTests",
             dependencies: ["GenericCore", "GenericExamples"]),

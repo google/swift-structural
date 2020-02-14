@@ -11,6 +11,7 @@ public protocol EquatableGeneric {
 // Inductive cases.
 
 extension Case: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Self) -> Bool {
         switch (self, other) {
         case let (.of(_, x), .of(_, y)):
@@ -24,18 +25,21 @@ extension Case: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric 
 }
 
 extension Field: EquatableGeneric where A: EquatableGeneric, B: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Self) -> Bool {
         return value.genericEqual(other.value) && next.genericEqual(other.next)
     }
 }
 
 extension Enum: EquatableGeneric where A: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Self) -> Bool {
         shape.genericEqual(other.shape)
     }
 }
 
 extension Struct: EquatableGeneric where A: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Self) -> Bool {
         shape.genericEqual(other.shape)
     }
@@ -44,24 +48,28 @@ extension Struct: EquatableGeneric where A: EquatableGeneric {
 // Base cases.
 
 extension Empty: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Empty) -> Bool {
         return true
     }
 }
 
 extension Int: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Int) -> Bool {
         return self == other
     }
 }
 
 extension Float: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Float) -> Bool {
         return self == other
     }
 }
 
 extension Double: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Double) -> Bool {
         return self == other
     }

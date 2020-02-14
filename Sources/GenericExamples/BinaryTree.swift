@@ -12,6 +12,7 @@ extension BinaryTree: Generic {
              Case<Int, Field<BinaryTree<T>, Field<T, Field<BinaryTree<T>, Empty>>>,
              Empty>>>
 
+    @inline(__always)
     public var representation: Representation {
         switch self {
         case let .leaf(x):
@@ -22,6 +23,7 @@ extension BinaryTree: Generic {
         }
     }
 
+    @inline(__always)
     public init(representation: Representation) {
         switch representation.shape {
         case let Case.of(_, fields):
@@ -38,22 +40,26 @@ extension BinaryTree: Generic {
 }
 
 extension BinaryTree: EquatableGeneric where T: EquatableGeneric {
+    @inline(__always)
     public func genericEqual(_ other: Self) -> Bool {
         return self.representation.genericEqual(other.representation)
     }
 }
 
 extension BinaryTree: HashableGeneric where T: HashableGeneric {
+    @inline(__always)
     public func genericHash(into hasher: inout Hasher) {
         self.representation.genericHash(into: &hasher)
     }
 }
 
 extension BinaryTree: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneric {
+    @inline(__always)
     public static var zero: Self {
         return .init(representation: Representation.zero)
     }
 
+    @inline(__always)
     public static func + (lhs: Self, rhs: Self) -> Self {
         return .init(representation: lhs.representation + rhs.representation)
     }
