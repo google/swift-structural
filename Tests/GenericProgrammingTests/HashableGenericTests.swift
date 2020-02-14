@@ -1,31 +1,8 @@
 import Dispatch
 import XCTest
 
-@testable import GenericProgramming
-
-extension Point3: HashableGeneric {
-    func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
-    }
-}
-
-extension BinaryTree: HashableGeneric where T: HashableGeneric {
-    func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
-    }
-}
-
-extension Color: HashableGeneric {
-    func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
-    }
-}
-
-extension ASCII: HashableGeneric {
-    func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
-    }
-}
+@testable import GenericCore
+@testable import GenericExamples
 
 func referenceHash<T>(_ value: T) -> Int where T: Hashable {
     var hasher = Hasher()

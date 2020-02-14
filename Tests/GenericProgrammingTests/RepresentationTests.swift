@@ -1,7 +1,8 @@
 import Dispatch
 import XCTest
 
-@testable import GenericProgramming
+@testable import GenericCore
+@testable import GenericExamples
 
 final class RepresentationTests: XCTestCase {
     func testPoint3() {

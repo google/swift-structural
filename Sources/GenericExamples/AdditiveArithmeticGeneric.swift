@@ -1,3 +1,5 @@
+import GenericCore
+
 /// A duplicate, simplified version of the `AdditiveArithmetic` protocol.
 /// - Note: a duplicate protocol is used to avoid triggering existing `AdditiveArithmetic` derived
 ///   conformances.

@@ -6,29 +6,31 @@ public enum Case<V, A: Shape, B: Shape>: Shape {
 }
 
 public struct Field<A, B: Shape>: Shape {
-    var value: A
-    var next: B
+    public var value: A
+    public var next: B
 
-    init(_ value: A, _ next: B) {
+    public init(_ value: A, _ next: B) {
         self.value = value
         self.next = next
     }
 }
 
 public struct Enum<A: Shape>: Shape {
-    var shape: A
+    public var shape: A
 
-    init(_ shape: A) {
+    public init(_ shape: A) {
         self.shape = shape
     }
 }
 
 public struct Struct<A: Shape>: Shape {
-    var shape: A
+    public var shape: A
 
-    init(_ shape: A) {
+    public init(_ shape: A) {
         self.shape = shape
     }
 }
 
-public struct Empty: Shape {}
+public struct Empty: Shape {
+    public init() {}
+}
