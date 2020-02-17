@@ -34,4 +34,14 @@ extension Point3: HashableGeneric {
     }
 }
 
+extension Point3: AdditiveArithmeticGeneric { 
+    @inline(__always)
+    public static var zero: Self {
+        return .init(representation: Representation.zero)
+    }
 
+    @inline(__always)
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        return .init(representation: lhs.representation + rhs.representation)
+    }
+}
