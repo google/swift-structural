@@ -2,12 +2,12 @@
 
 ## Protocols
 
-Standard library:
+Swift standard library:
 
 - [x] `EquatableGeneric`
 - [ ] `ComparableGeneric`
 - [x] `HashableGeneric`
-- [ ] `StringConvertibleGeneric`
+- [x] `DebugStringGeneric``
 - [ ] `EncodeJSONGeneric`
 - [ ] `DecodeJSONGeneric`
 
