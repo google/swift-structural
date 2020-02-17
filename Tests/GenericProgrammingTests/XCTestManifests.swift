@@ -7,6 +7,7 @@ import XCTest
             testCase(EquatableGenericTests.allTests),
             testCase(HashableGenericTests.allTests),
             testCase(RepresentationTests.allTests),
+            testCase(DebugStringGenericTests.allTests),
         ]
     }
 #endif

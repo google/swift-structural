@@ -1,9 +1,16 @@
 import GenericCore
 
-struct Point3: Equatable, Hashable {
-    let x: Float
-    let y: Float
-    let z: Float
+public struct Point3: Equatable, Hashable {
+    public let x: Float
+    public let y: Float
+    public let z: Float
+
+    public init(x: Float, y: Float, z: Float) {
+        self.x = x
+        self.y = y
+        self.z = z
+    }
+
 }
 
 extension Point3: Generic {
@@ -12,7 +19,7 @@ extension Point3: Generic {
         Struct<Field<Float, Field<Float, Field<Float, Empty>>>>
 
     public var representation: Representation {
-        return Struct(Field(x, Field(y, Field(z, Empty()))))
+        return Struct("Point3", Field("x", x, Field("y", y, Field("z", z, Empty()))))
     }
 
     public init(representation: Representation) {
@@ -34,14 +41,18 @@ extension Point3: HashableGeneric {
     }
 }
 
-extension Point3: AdditiveArithmeticGeneric { 
-    @inline(__always)
+extension Point3: AdditiveArithmeticGeneric {
     public static var zero: Self {
         return .init(representation: Representation.zero)
     }
 
-    @inline(__always)
     public static func + (lhs: Self, rhs: Self) -> Self {
         return .init(representation: lhs.representation + rhs.representation)
+    }
+}
+
+extension Point3: DebugStringGeneric {
+    public var debugDescriptionGeneric: String {
+        return self.representation.debugDescriptionGeneric
     }
 }

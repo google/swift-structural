@@ -13,7 +13,7 @@ public func genericHash<T>(_ value: T) -> Int where T: HashableGeneric {
 extension Case: HashableGeneric where V: HashableGeneric, A: HashableGeneric, B: HashableGeneric {
     public func genericHash(into hasher: inout Hasher) {
         switch self {
-        case let .of(index, value):
+        case let .of(_, index, value):
             index.genericHash(into: &hasher)
             value.genericHash(into: &hasher)
         case let .next(value):

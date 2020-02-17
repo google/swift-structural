@@ -16,9 +16,12 @@ extension BinaryTree: Generic {
     public var representation: Representation {
         switch self {
         case let .leaf(x):
-            return Enum(.of(0, Field(x, Empty())))
+            return Enum("BinaryTree", .of("leaf", 0, Field("", x, Empty())))
         case let .branch(left, value, right):
-            return Enum(.next(.of(1, Field(left, Field(value, Field(right, Empty()))))))
+            return Enum(
+                "BinaryTree",
+                .next(
+                    .of("branch", 1, Field("", left, Field("", value, Field("", right, Empty()))))))
 
         }
     }
@@ -26,9 +29,9 @@ extension BinaryTree: Generic {
     @inline(__always)
     public init(representation: Representation) {
         switch representation.shape {
-        case let Case.of(_, fields):
+        case let Case.of(_, _, fields):
             self = .leaf(fields.value)
-        case let Case.next(Case.of(_, fields)):
+        case let Case.next(Case.of(_, _, fields)):
             let left = fields.value
             let value = fields.next.value
             let right = fields.next.next.value
@@ -65,4 +68,8 @@ extension BinaryTree: AdditiveArithmeticGeneric where T: AdditiveArithmeticGener
     }
 }
 
-
+extension BinaryTree: DebugStringGeneric where T: DebugStringGeneric {
+    public var debugDescriptionGeneric: String {
+        return self.representation.debugDescriptionGeneric
+    }
+}

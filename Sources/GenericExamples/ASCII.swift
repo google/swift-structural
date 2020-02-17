@@ -13,11 +13,11 @@ extension ASCII: Generic {
 
     public var representation: Representation {
         if (self == ASCII.tab) {
-            return Enum(.of("\t", Empty()))
+            return Enum("ASCII", .of("tab", "\t", Empty()))
         } else if (self == ASCII.lineFeed) {
-            return Enum(.next(.of("\n", Empty())))
+            return Enum("ASCII", .next(.of("lineFeed", "\n", Empty())))
         } else if (self == ASCII.carriageReturn) {
-            return Enum(.next(.next(.of("\r", Empty()))))
+            return Enum("ASCII", .next(.next(.of("carriageReturn", "\r", Empty()))))
         } else {
             fatalError("unreachable")
         }
@@ -25,11 +25,11 @@ extension ASCII: Generic {
 
     public init(representation: Representation) {
         switch representation.shape {
-        case Case.of("\t", _):
+        case Case.of(_, "\t", _):
             self = .tab
-        case Case.next(Case.of("\n", _)):
+        case Case.next(Case.of(_, "\n", _)):
             self = .lineFeed
-        case Case.next(Case.next(Case.of("\r", _))):
+        case Case.next(Case.next(Case.of(_, "\r", _))):
             self = .carriageReturn
         default:
             fatalError("unreachable")
@@ -46,5 +46,11 @@ extension ASCII: EquatableGeneric {
 extension ASCII: HashableGeneric {
     public func genericHash(into hasher: inout Hasher) {
         self.representation.genericHash(into: &hasher)
+    }
+}
+
+extension ASCII: DebugStringGeneric {
+    public var debugDescriptionGeneric: String {
+        return self.representation.debugDescriptionGeneric
     }
 }
