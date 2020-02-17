@@ -28,9 +28,19 @@ final class RepresentationTests: XCTestCase {
         }
     }
 
+    func testASCII() {
+        let codes: [ASCII] = [.tab, .lineFeed, .carriageReturn]
+        for code in codes {
+            let repr = code.representation
+            let codeFromRepr = ASCII(representation: repr)
+            XCTAssertEqual(code, codeFromRepr)
+        }
+    }
+
     static var allTests = [
         ("testPoint3", testPoint3),
         ("testBinaryTree", testBinaryTree),
         ("testColor", testColor),
+        ("testASCII", testASCII),
     ]
 }

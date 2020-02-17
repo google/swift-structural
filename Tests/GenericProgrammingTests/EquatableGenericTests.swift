@@ -19,8 +19,28 @@ final class EquatableGenericTests: XCTestCase {
         XCTAssertFalse(treeA.genericEqual(treeB))
     }
 
+    func testColor() {
+        XCTAssertTrue(Color.red.genericEqual(Color.red))
+        XCTAssertTrue(Color.green.genericEqual(Color.green))
+        XCTAssertTrue(Color.blue.genericEqual(Color.blue))
+        XCTAssertFalse(Color.red.genericEqual(Color.green))
+        XCTAssertFalse(Color.green.genericEqual(Color.blue))
+        XCTAssertFalse(Color.blue.genericEqual(Color.red))
+    }
+
+    func testASCII() {
+        XCTAssertTrue(ASCII.tab.genericEqual(ASCII.tab))
+        XCTAssertTrue(ASCII.lineFeed.genericEqual(ASCII.lineFeed))
+        XCTAssertTrue(ASCII.carriageReturn.genericEqual(ASCII.carriageReturn))
+        XCTAssertFalse(ASCII.tab.genericEqual(ASCII.lineFeed))
+        XCTAssertFalse(ASCII.lineFeed.genericEqual(ASCII.carriageReturn))
+        XCTAssertFalse(ASCII.carriageReturn.genericEqual(ASCII.tab))
+    }
+
     static var allTests = [
         ("testPoint3", testPoint3),
         ("testBinaryTree", testBinaryTree),
+        ("testColor", testColor),
+        ("testASCII", testASCII),
     ]
 }
