@@ -9,6 +9,7 @@ import XCTest
             testCase(RepresentationTests.allTests),
             testCase(DebugStringGenericTests.allTests),
             testCase(ComparableGenericTests.allTests),
+            testCase(EncodeJSONGenericTests.allTests),
         ]
     }
 #endif

@@ -13,6 +13,8 @@ public func genericHash<T>(_ value: T) -> Int where T: HashableGeneric {
     return hasher.finalize()
 }
 
+// Inductive cases. 
+
 extension Case: HashableGeneric where V: HashableGeneric, A: HashableGeneric, B: HashableGeneric {
     public func genericHash(into hasher: inout Hasher) {
         switch self {

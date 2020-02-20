@@ -74,3 +74,10 @@ extension Point3: ComparableGeneric {
         return self.representation.genericLess(other.representation)
     }
 }
+
+
+extension Point3: EncodeJSONGeneric {
+    public func encodeJson(into builder: inout JSONBuilder) {
+        self.representation.encodeJson(into: &builder)
+    }
+}
