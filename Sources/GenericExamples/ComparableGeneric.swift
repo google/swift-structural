@@ -1,5 +1,6 @@
 import GenericCore
 
+/// A duplicate protocol identical to Comparable.
 public protocol ComparableGeneric {
     func genericLess(_ other: Self) -> Bool
     func genericLessOrEqual(_ other: Self) -> Bool

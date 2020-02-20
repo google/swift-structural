@@ -1,5 +1,8 @@
 import GenericCore
 
+/// A duplicate, simplified version of the `Hashable` protocol.
+/// - Note: a duplicate protocol is used to avoid triggering existing `Equatable` derived
+///   conformances.
 public protocol HashableGeneric {
     func genericHash(into hasher: inout Hasher)
 }

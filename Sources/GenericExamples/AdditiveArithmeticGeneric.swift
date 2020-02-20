@@ -1,7 +1,7 @@
 import GenericCore
 
 /// A duplicate, simplified version of the `AdditiveArithmetic` protocol.
-/// - Note: a duplicate protocol is used to avoid triggering existing `AdditiveArithmetic` derived
+/// - Note: a duplicate protocol is used to avoid triggering existing `Equatable` derived
 ///   conformances.
 public protocol AdditiveArithmeticGeneric {
     static var zero: Self { get }
@@ -11,8 +11,7 @@ public protocol AdditiveArithmeticGeneric {
 // Inductive cases. 
 
 extension Case: AdditiveArithmeticGeneric
-where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
-    public static var zero: Self {
+where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric { public static var zero: Self {
         fatalError("'zero' cannot be synthesized for sum types")
     }
 

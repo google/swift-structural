@@ -1,5 +1,6 @@
 import GenericCore
 
+/// A duplicate protocol, similar to CustomDebugStringConvertible
 public protocol DebugStringGeneric {
     var debugDescriptionGeneric: String { get }
 }
