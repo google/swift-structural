@@ -67,6 +67,10 @@ extension Field: EncodeJSONGeneric where A: EncodeJSONGeneric, B: EncodeJSONGene
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendProperty(name: self.name)
         self.value.encodeJson(into: &builder)
+        if !(self.next is Empty) {
+            builder.appendSeparator()
+            self.next.encodeJson(into: &builder)
+        }
     }
 }
 
