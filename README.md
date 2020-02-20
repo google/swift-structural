@@ -5,7 +5,7 @@
 Swift standard library:
 
 - [x] `EquatableGeneric`
-- [ ] `ComparableGeneric`
+- [X] `ComparableGeneric`
 - [x] `HashableGeneric`
 - [x] `DebugStringGeneric``
 - [ ] `EncodeJSONGeneric`

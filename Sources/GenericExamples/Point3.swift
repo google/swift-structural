@@ -56,3 +56,21 @@ extension Point3: DebugStringGeneric {
         return self.representation.debugDescriptionGeneric
     }
 }
+
+extension Point3: ComparableGeneric {
+    public func genericLess(_ other: Self) -> Bool {
+        return self.representation.genericLess(other.representation)
+    }
+
+    public func genericLessOrEqual(_ other: Self) -> Bool {
+        return self.representation.genericLess(other.representation)
+    }
+
+    public func genericGreater(_ other: Self) -> Bool {
+        return self.representation.genericLess(other.representation)
+    }
+
+    public func genericGreaterOrEqual(_ other: Self) -> Bool {
+        return self.representation.genericLess(other.representation)
+    }
+}
