@@ -8,12 +8,14 @@ public enum Case<V, A: Shape, B: Shape>: Shape {
 public struct Field<A, B: Shape>: Shape {
     public var name: String
     public var value: A
+    public var isMutable: Bool
     public var next: B
 
-    public init(_ name: String, _ value: A, _ next: B) {
+    public init(_ name: String, _ value: A, isMutable: Bool, _ next: B) {
         self.value = value
         self.next = next
         self.name = name
+        self.isMutable = isMutable
     }
 }
 

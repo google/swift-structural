@@ -12,23 +12,41 @@ extension BinaryTree: Generic {
              Case<Int, Field<BinaryTree<T>, Field<T, Field<BinaryTree<T>, Empty>>>,
              Empty>>>
 
-    @inline(__always)
     public var representation: Representation {
         switch self {
         case let .leaf(x):
-            return Enum("BinaryTree", .of("leaf", 0, Field("", x, Empty())))
+            return Enum("BinaryTree", .of("leaf", 0, Field("", x, isMutable: false, Empty())))
         case let .branch(left, value, right):
             return Enum(
                 "BinaryTree",
                 .next(
-                    .of("branch", 1, Field("", left, Field("", value, Field("", right, Empty()))))))
+                    .of(
+                        "branch", 1,
+                        Field(
+                            "", left, isMutable: false,
+                            Field(
+                                "", value, isMutable: false,
+                                Field("", right, isMutable: false, Empty()))))))
 
         }
     }
 
-    @inline(__always)
-    public init(representation: Representation) {
-        switch representation.shape {
+    public init(representation repr: Representation) {
+        switch repr.shape {
+        case let Case.of(_, _, fields):
+            self = .leaf(fields.value)
+        case let Case.next(Case.of(_, _, fields)):
+            let left = fields.value
+            let value = fields.next.value
+            let right = fields.next.next.value
+            self = .branch(left, value, right)
+        default:
+            fatalError("unreachable")
+        }
+    }
+
+    public mutating func copy(fromRepresentation repr: Representation) {
+        switch repr.shape {
         case let Case.of(_, _, fields):
             self = .leaf(fields.value)
         case let Case.next(Case.of(_, _, fields)):
@@ -43,26 +61,22 @@ extension BinaryTree: Generic {
 }
 
 extension BinaryTree: EquatableGeneric where T: EquatableGeneric {
-    @inline(__always)
     public func genericEqual(_ other: Self) -> Bool {
         return self.representation.genericEqual(other.representation)
     }
 }
 
 extension BinaryTree: HashableGeneric where T: HashableGeneric {
-    @inline(__always)
     public func genericHash(into hasher: inout Hasher) {
         self.representation.genericHash(into: &hasher)
     }
 }
 
 extension BinaryTree: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneric {
-    @inline(__always)
     public static var zero: Self {
         return .init(representation: Representation.zero)
     }
 
-    @inline(__always)
     public static func + (lhs: Self, rhs: Self) -> Self {
         return .init(representation: lhs.representation + rhs.representation)
     }

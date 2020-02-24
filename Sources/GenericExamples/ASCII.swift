@@ -23,8 +23,21 @@ extension ASCII: Generic {
         }
     }
 
-    public init(representation: Representation) {
-        switch representation.shape {
+    public init(representation repr: Representation) {
+        switch repr.shape {
+        case Case.of(_, "\t", _):
+            self = .tab
+        case Case.next(Case.of(_, "\n", _)):
+            self = .lineFeed
+        case Case.next(Case.next(Case.of(_, "\r", _))):
+            self = .carriageReturn
+        default:
+            fatalError("unreachable")
+        }
+    }
+
+    public mutating func copy(fromRepresentation repr: Representation) {
+        switch repr.shape {
         case Case.of(_, "\t", _):
             self = .tab
         case Case.next(Case.of(_, "\n", _)):

@@ -23,8 +23,21 @@ extension Color: Generic {
         }
     }
 
-    public init(representation: Representation) {
-        switch representation.shape {
+    public init(representation repr: Representation) {
+        switch repr.shape {
+        case Case.of(_, 0xFF0000, _):
+            self = .red
+        case Case.next(Case.of(_, 0x00FF00, _)):
+            self = .green
+        case Case.next(Case.next(Case.of(_, 0x0000FF, _))):
+            self = .blue
+        default:
+            fatalError("unreachable")
+        }
+    }
+
+    public mutating func copy(fromRepresentation repr: Representation) {
+        switch repr.shape {
         case Case.of(_, 0xFF0000, _):
             self = .red
         case Case.next(Case.of(_, 0x00FF00, _)):

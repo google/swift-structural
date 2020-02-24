@@ -31,11 +31,11 @@ where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
 extension Field: AdditiveArithmeticGeneric
 where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
     public static var zero: Self {
-        return Field("", A.zero, B.zero)
+        return Field("", A.zero, isMutable: false, B.zero)
     }
 
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Field("", lhs.value + rhs.value, lhs.next + rhs.next)
+        return Field("", lhs.value + rhs.value, isMutable: false, lhs.next + rhs.next)
     }
 }
 

@@ -1,9 +1,9 @@
 import GenericCore
 
 public struct Point3: Equatable, Hashable {
-    public let x: Float
-    public let y: Float
-    public let z: Float
+    public var x: Float
+    public var y: Float
+    public var z: Float
 
     public init(x: Float, y: Float, z: Float) {
         self.x = x
@@ -18,11 +18,21 @@ extension Point3: Generic {
     public typealias Representation =
         Struct<Field<Float, Field<Float, Field<Float, Empty>>>>
 
+    // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point3", Field("x", x, Field("y", y, Field("z", z, Empty()))))
+        return Struct("Point3", Field("x", x, isMutable: true,
+                                Field("y", y, isMutable: true,
+                                Field("z", z, isMutable: true,
+                                Empty()))))
     }
 
     public init(representation: Representation) {
+        self.x = representation.shape.value
+        self.y = representation.shape.next.value
+        self.z = representation.shape.next.next.value
+    }
+
+    public mutating func copy(fromRepresentation repr: Representation) {
         self.x = representation.shape.value
         self.y = representation.shape.next.value
         self.z = representation.shape.next.next.value
@@ -78,5 +88,11 @@ extension Point3: ComparableGeneric {
 extension Point3: EncodeJSONGeneric {
     public func encodeJson(into builder: inout JSONBuilder) {
         self.representation.encodeJson(into: &builder)
+    }
+}
+
+extension Point3: InplaceAddGeneric {
+    public mutating func inplaceAdd(_ other: Point3) {
+        copy(fromRepresentation: self.representation.inplaceAdd(other.representation))
     }
 }
