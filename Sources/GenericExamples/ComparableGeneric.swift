@@ -30,7 +30,7 @@ extension Struct: ComparableGeneric where A: ComparableGeneric {
 
 extension Field: ComparableGeneric where A: ComparableGeneric, B: ComparableGeneric {
     public func genericLess(_ other: Self) -> Bool {
-        if (self.value.genericLess(other.value)) {
+        if self.value.genericLess(other.value) {
             return true
         } else {
             return self.next.genericLess(other.next)
@@ -38,7 +38,7 @@ extension Field: ComparableGeneric where A: ComparableGeneric, B: ComparableGene
     }
 
     public func genericLessOrEqual(_ other: Self) -> Bool {
-        if (self.value.genericLessOrEqual(other.value)) {
+        if self.value.genericLessOrEqual(other.value) {
             return true
         } else {
             return self.next.genericLessOrEqual(other.next)
@@ -46,7 +46,7 @@ extension Field: ComparableGeneric where A: ComparableGeneric, B: ComparableGene
     }
 
     public func genericGreater(_ other: Self) -> Bool {
-        if (self.value.genericGreater(other.value)) {
+        if self.value.genericGreater(other.value) {
             return true
         } else {
             return self.next.genericGreater(other.next)
@@ -54,7 +54,7 @@ extension Field: ComparableGeneric where A: ComparableGeneric, B: ComparableGene
     }
 
     public func genericGreaterOrEqual(_ other: Self) -> Bool {
-        if (self.value.genericGreaterOrEqual(other.value)) {
+        if self.value.genericGreaterOrEqual(other.value) {
             return true
         } else {
             return self.next.genericGreaterOrEqual(other.next)
@@ -71,7 +71,7 @@ extension Empty: ComparableGeneric {
 
     public func genericLessOrEqual(_ other: Self) -> Bool {
         return true
-    } 
+    }
 
     public func genericGreater(_ other: Self) -> Bool {
         return true
@@ -89,7 +89,7 @@ extension Float: ComparableGeneric {
 
     public func genericLessOrEqual(_ other: Self) -> Bool {
         return self <= other
-    } 
+    }
 
     public func genericGreater(_ other: Self) -> Bool {
         return self > other

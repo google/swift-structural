@@ -5,7 +5,6 @@ import GenericCore
 ///   conformances.
 public protocol EquatableGeneric {
     func genericEqual(_ other: Self) -> Bool
-
 }
 
 // Inductive cases.

@@ -75,7 +75,6 @@ extension Point3: ComparableGeneric {
     }
 }
 
-
 extension Point3: EncodeJSONGeneric {
     public func encodeJson(into builder: inout JSONBuilder) {
         self.representation.encodeJson(into: &builder)

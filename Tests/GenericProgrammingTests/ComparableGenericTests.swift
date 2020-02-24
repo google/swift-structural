@@ -38,7 +38,7 @@ final class ComparableGenericTests: XCTestCase {
         XCTAssertTrue(point2.genericGreater(point1))
         XCTAssertTrue(point2.genericGreaterOrEqual(point1))
     }
- 
+
     static var allTests = [
         ("testPoint3", testPoint3),
     ]

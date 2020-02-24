@@ -21,7 +21,7 @@ public struct JSONBuilder {
 
     mutating func appendProperty(name: String) {
         appendString(name)
-        output += ":" 
+        output += ":"
     }
 
     mutating func appendValue(_ v: String) {
@@ -44,7 +44,7 @@ public struct JSONBuilder {
 }
 
 public protocol EncodeJSONGeneric {
-    func encodeJson(into builder: inout JSONBuilder) 
+    func encodeJson(into builder: inout JSONBuilder)
 }
 
 func toJSONString<T: EncodeJSONGeneric>(_ value: T) -> String {
@@ -104,7 +104,7 @@ extension Array: EncodeJSONGeneric where Element: EncodeJSONGeneric {
         let last = self.count - 1
         for (n, el) in self.enumerated() {
             el.encodeJson(into: &builder)
-            if (n != last) {
+            if n != last {
                 builder.appendSeparator()
             }
         }

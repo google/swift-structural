@@ -11,7 +11,8 @@ public protocol AdditiveArithmeticGeneric {
 // Inductive cases. 
 
 extension Case: AdditiveArithmeticGeneric
-where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric { public static var zero: Self {
+where A: AdditiveArithmeticGeneric, B: AdditiveArithmeticGeneric {
+    public static var zero: Self {
         fatalError("'zero' cannot be synthesized for sum types")
     }
 
