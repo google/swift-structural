@@ -7,8 +7,8 @@ Swift standard library:
 - [x] `EquatableGeneric`
 - [X] `ComparableGeneric`
 - [x] `HashableGeneric`
-- [x] `DebugStringGeneric``
-- [ ] `EncodeJSONGeneric`
+- [x] `DebugStringGeneric`
+- [x] `EncodeJSONGeneric`
 - [ ] `DecodeJSONGeneric`
 
 Swift for TensorFlow library:
