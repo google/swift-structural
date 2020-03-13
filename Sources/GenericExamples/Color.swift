@@ -35,19 +35,6 @@ extension Color: Generic {
             fatalError("unreachable")
         }
     }
-
-    public mutating func copy(fromRepresentation repr: Representation) {
-        switch repr.shape {
-        case Case.of(_, 0xFF0000, _):
-            self = .red
-        case Case.next(Case.of(_, 0x00FF00, _)):
-            self = .green
-        case Case.next(Case.next(Case.of(_, 0x0000FF, _))):
-            self = .blue
-        default:
-            fatalError("unreachable")
-        }
-    }
 }
 
 extension Color: EquatableGeneric {

@@ -31,12 +31,6 @@ extension Point3: Generic {
         self.y = representation.shape.next.value
         self.z = representation.shape.next.next.value
     }
-
-    public mutating func copy(fromRepresentation repr: Representation) {
-        self.x = representation.shape.value
-        self.y = representation.shape.next.value
-        self.z = representation.shape.next.next.value
-    }
 }
 
 extension Point3: EquatableGeneric {
@@ -93,6 +87,8 @@ extension Point3: EncodeJSONGeneric {
 
 extension Point3: InplaceAddGeneric {
     public mutating func inplaceAdd(_ other: Point3) {
-        copy(fromRepresentation: self.representation.inplaceAdd(other.representation))
+        let shape = self.representation
+        shape.inplaceAdd(other.representation)
+        self = .init(representation: shape)
     }
 }

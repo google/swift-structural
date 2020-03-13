@@ -53,7 +53,4 @@ public protocol Generic {
 
     /// A generic representation of `self`.
     var representation: Representation { get }
-
-    /// Update self with the values from the given shape.
-    mutating func copy(fromRepresentation: Representation)
 }

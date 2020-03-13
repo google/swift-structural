@@ -44,20 +44,6 @@ extension BinaryTree: Generic {
             fatalError("unreachable")
         }
     }
-
-    public mutating func copy(fromRepresentation repr: Representation) {
-        switch repr.shape {
-        case let Case.of(_, _, fields):
-            self = .leaf(fields.value)
-        case let Case.next(Case.of(_, _, fields)):
-            let left = fields.value
-            let value = fields.next.value
-            let right = fields.next.next.value
-            self = .branch(left, value, right)
-        default:
-            fatalError("unreachable")
-        }
-    }
 }
 
 extension BinaryTree: EquatableGeneric where T: EquatableGeneric {
