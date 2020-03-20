@@ -77,3 +77,9 @@ extension Float: DebugStringGeneric {
         return String(reflecting: self)
     }
 }
+
+extension Double: DebugStringGeneric {
+    public var debugDescriptionGeneric: String {
+        return String(reflecting: self)
+    }
+}
