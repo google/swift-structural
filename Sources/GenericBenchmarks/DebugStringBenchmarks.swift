@@ -20,18 +20,18 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     }
 
     suite.benchmark("Color (generic)") {
-        stringSink = Color.red.debugDescriptionGeneric
+        stringSink = color1.debugDescriptionGeneric
     }
 
     suite.benchmark("Color (reference)") {
-        stringSink = String(reflecting: Color.red)
+        stringSink = String(reflecting: color1)
     }
 
     suite.benchmark("ASCII (generic)") {
-        stringSink = ASCII.tab.debugDescriptionGeneric
+        stringSink = ascii1.debugDescriptionGeneric
     }
 
     suite.benchmark("ASCII (reference)") {
-        stringSink = String(reflecting: ASCII.tab)
+        stringSink = String(reflecting: ascii1)
     }
 }
