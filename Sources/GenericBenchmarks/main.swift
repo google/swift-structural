@@ -27,4 +27,5 @@ Benchmark.main([
     encodeJSONBenchmarks,
     equatableBenchmarks,
     hashableBenchmarks,
+    inplaceAddBenchmarks,
 ])
