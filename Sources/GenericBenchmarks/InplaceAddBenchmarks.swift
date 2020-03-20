@@ -1,7 +1,7 @@
 import Benchmark
+import Foundation
 import GenericCore
 import GenericExamples
-import Foundation
 
 func inplaceAddSpecialized(_ l: inout Point3, _ r: Point3) {
     l.x += r.x

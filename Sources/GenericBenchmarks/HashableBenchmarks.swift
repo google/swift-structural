@@ -1,7 +1,7 @@
 import Benchmark
+import Foundation
 import GenericCore
 import GenericExamples
-import Foundation
 
 let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     suite.benchmark("Point3 (generic)") {
