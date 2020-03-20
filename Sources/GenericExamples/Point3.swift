@@ -1,6 +1,6 @@
 import GenericCore
 
-public struct Point3: Equatable, Hashable {
+public struct Point3: Equatable, Hashable, Codable {
     public var x: Float
     public var y: Float
     public var z: Float

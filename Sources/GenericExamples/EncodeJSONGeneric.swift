@@ -47,7 +47,7 @@ public protocol EncodeJSONGeneric {
     func encodeJson(into builder: inout JSONBuilder)
 }
 
-func toJSONString<T: EncodeJSONGeneric>(_ value: T) -> String {
+public func toJSONString<T: EncodeJSONGeneric>(_ value: T) -> String {
     var builder = JSONBuilder()
     value.encodeJson(into: &builder)
     return builder.finalize()
