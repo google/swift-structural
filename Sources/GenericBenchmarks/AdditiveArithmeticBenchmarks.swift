@@ -27,19 +27,19 @@ var p1 = Point3(x: 10, y: 20, z: 30)
 var p2 = Point3(x: 10, y: 20, z: 30)
 
 let additiveArithmeticBenchmarks = BenchmarkSuite(name: "AdditiveArithmetic") { suite in
-    suite.benchmark("additive arithmetic - point3 - specialized") {
+    suite.benchmark("Point3 (specialized)") {
         p2 = specializedAdd(p1, p1)
     }
 
-    suite.benchmark("additive arithmetic - point3 - generic") {
+    suite.benchmark("Point3 (generic)") {
         p1 = p1 + p2
     }
 
-    suite.benchmark("additive arithmetic - binary tree - specialized") {
+    suite.benchmark("BinaryTree (specialized)") {
         tree2 = specializedAdd(tree2, tree2)
     }
 
-    suite.benchmark("additive arithmetic - binary tree - generic") {
+    suite.benchmark("BinaryTree (generic)") {
         tree1 = tree1 + tree1
     }
 }
