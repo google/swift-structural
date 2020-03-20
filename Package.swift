@@ -10,6 +10,7 @@ let package = Package(
             targets: ["GenericCore"]),
     ],
     dependencies: [
+        .package(url: "sso://user/shabalin/swift-benchmark", .branch("master")),
     ],
     targets: [
         .target(
@@ -20,7 +21,7 @@ let package = Package(
             dependencies: ["GenericCore"]),
         .target(
             name: "GenericBenchmarks",
-            dependencies: ["GenericCore", "GenericExamples"]),
+            dependencies: ["GenericCore", "GenericExamples", "Benchmark"]),
         .testTarget(
             name: "GenericProgrammingTests",
             dependencies: ["GenericCore", "GenericExamples"]),
