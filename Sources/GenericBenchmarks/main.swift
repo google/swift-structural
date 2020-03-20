@@ -20,4 +20,5 @@ var stringSink = ""
 
 Benchmark.main([
     additiveArithmeticBenchmarks,
+    comparableBenchmarks,
 ])
