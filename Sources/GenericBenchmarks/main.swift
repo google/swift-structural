@@ -20,4 +20,5 @@ Benchmark.main([
     comparableBenchmarks,
     debugStringBenchmarks,
     encodeJSONBenchmarks,
+    equatableBenchmarks
 ])
