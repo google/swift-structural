@@ -17,28 +17,20 @@ func specializedAdd(_ lhs: Point3, _ rhs: Point3) -> Point3 {
     return Point3(x: lhs.x + rhs.x, y: lhs.y + rhs.y, z: lhs.z + rhs.z)
 }
 
-var tree1: BinaryTree<Double> = .branch(.leaf(1), 2, .branch(.leaf(3), 4, .leaf(5)))
-
-var tree2: BinaryTree<Double> = .branch(.leaf(1), 2, .branch(.leaf(3), 4, .leaf(5)))
-
-var p1 = Point3(x: 10, y: 20, z: 30)
-
-var p2 = Point3(x: 10, y: 20, z: 30)
-
 let additiveArithmeticBenchmarks = BenchmarkSuite(name: "AdditiveArithmetic") { suite in
     suite.benchmark("Point3 (specialized)") {
-        p2 = specializedAdd(p1, p1)
+        pointSink = specializedAdd(p1, p1)
     }
 
     suite.benchmark("Point3 (generic)") {
-        p1 = p1 + p2
+        pointSink = p1 + p2
     }
 
     suite.benchmark("BinaryTree (specialized)") {
-        tree2 = specializedAdd(tree2, tree2)
+        treeSink = specializedAdd(tree2, tree2)
     }
 
     suite.benchmark("BinaryTree (generic)") {
-        tree1 = tree1 + tree1
+        treeSink = tree1 + tree1
     }
 }
