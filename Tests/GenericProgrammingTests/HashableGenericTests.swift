@@ -4,12 +4,6 @@ import XCTest
 @testable import GenericCore
 @testable import GenericExamples
 
-func referenceHash<T>(_ value: T) -> Int where T: Hashable {
-    var hasher = Hasher()
-    value.hash(into: &hasher)
-    return hasher.finalize()
-}
-
 final class HashableGenericTests: XCTestCase {
     func testPoint3() {
         let pointA = Point3(x: 10, y: 20, z: 30)

@@ -7,6 +7,12 @@ public protocol HashableGeneric {
     func genericHash(into hasher: inout Hasher)
 }
 
+public func referenceHash<T>(_ value: T) -> Int where T: Hashable {
+    var hasher = Hasher()
+    value.hash(into: &hasher)
+    return hasher.finalize()
+}
+
 public func genericHash<T>(_ value: T) -> Int where T: HashableGeneric {
     var hasher = Hasher()
     value.genericHash(into: &hasher)
