@@ -6,10 +6,10 @@ import XCTest
 
 final class DebugStringGenericTests: XCTestCase {
     func testPoint3() {
-        let pointA = Point3(x: 10, y: 20, z: 30)
-        let pointB = Point3(x: 30, y: 20, z: 10)
-        XCTAssertEqual(pointA.debugDescriptionGeneric, "Point3(x: 10.0, y: 20.0, z: 30.0)")
-        XCTAssertEqual(pointB.debugDescriptionGeneric, "Point3(x: 30.0, y: 20.0, z: 10.0)")
+        let pointA = Point3(_1: 10, _2: 20, _3: 30)
+        let pointB = Point3(_1: 30, _2: 20, _3: 10)
+        XCTAssertEqual(pointA.debugDescriptionGeneric, "Point3(_1: 10.0, _2: 20.0, _3: 30.0)")
+        XCTAssertEqual(pointB.debugDescriptionGeneric, "Point3(_1: 30.0, _2: 20.0, _3: 10.0)")
     }
 
     func testBinaryTree() {

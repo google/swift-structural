@@ -14,7 +14,7 @@ func specializedAdd(_ lhs: BinaryTree<Double>, _ rhs: BinaryTree<Double>) -> Bin
 }
 
 func specializedAdd(_ lhs: Point3, _ rhs: Point3) -> Point3 {
-    return Point3(x: lhs.x + rhs.x, y: lhs.y + rhs.y, z: lhs.z + rhs.z)
+    return Point3(_1: lhs._1 + rhs._1, _2: lhs._2 + rhs._2, _3: lhs._3 + rhs._3)
 }
 
 let additiveArithmeticBenchmarks = BenchmarkSuite(name: "AdditiveArithmetic") { suite in

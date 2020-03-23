@@ -3,11 +3,11 @@ import GenericCore
 import GenericExamples
 
 func specializedLess(_ l: Point3, _ r: Point3) -> Bool {
-    if l.x < r.x {
+    if l._1 < r._1 {
         return true
-    } else if (l.y < r.y) {
+    } else if (l._2 < r._2) {
         return true
-    } else if (l.z < r.z) {
+    } else if (l._3 < r._3) {
         return true
     } else {
         return false

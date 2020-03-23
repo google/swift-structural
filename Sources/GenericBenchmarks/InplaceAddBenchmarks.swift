@@ -4,9 +4,9 @@ import GenericCore
 import GenericExamples
 
 func inplaceAddSpecialized(_ l: inout Point3, _ r: Point3) {
-    l.x += r.x
-    l.y += r.y
-    l.z += r.z
+    l._1 += r._1
+    l._2 += r._2
+    l._3 += r._3
 }
 
 let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in

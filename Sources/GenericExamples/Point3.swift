@@ -1,14 +1,14 @@
 import GenericCore
 
 public struct Point3: Equatable, Hashable, Codable {
-    public var x: Float
-    public var y: Float
-    public var z: Float
+    public var _1: Float
+    public var _2: Float
+    public var _3: Float
 
-    public init(x: Float, y: Float, z: Float) {
-        self.x = x
-        self.y = y
-        self.z = z
+    public init(_1: Float, _2: Float, _3: Float) {
+        self._1 = _1
+        self._2 = _2
+        self._3 = _3
     }
 
 }
@@ -20,16 +20,25 @@ extension Point3: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point3", Field("x", x, isMutable: true,
-                                Field("y", y, isMutable: true,
-                                Field("z", z, isMutable: true,
+        return Struct("Point3", Field("_1", _1, isMutable: true,
+                                Field("_2", _2, isMutable: true,
+                                Field("_3", _3, isMutable: true,
                                 Empty()))))
     }
 
     public init(representation: Representation) {
-        self.x = representation.shape.value
-        self.y = representation.shape.next.value
-        self.z = representation.shape.next.next.value
+        self._1 =
+            representation.shape
+            .value
+        self._2 =
+            representation.shape
+            .next
+            .value
+        self._3 =
+            representation.shape
+            .next
+            .next
+            .value
     }
 }
 

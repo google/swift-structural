@@ -6,8 +6,8 @@ import XCTest
 
 final class HashableGenericTests: XCTestCase {
     func testPoint3() {
-        let pointA = Point3(x: 10, y: 20, z: 30)
-        let pointB = Point3(x: 30, y: 20, z: 10)
+        let pointA = Point3(_1: 10, _2: 20, _3: 30)
+        let pointB = Point3(_1: 30, _2: 20, _3: 10)
         XCTAssertEqual(referenceHash(pointA), genericHash(pointA))
         XCTAssertEqual(referenceHash(pointB), genericHash(pointB))
     }

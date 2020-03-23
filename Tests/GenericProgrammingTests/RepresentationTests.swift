@@ -6,7 +6,7 @@ import XCTest
 
 final class RepresentationTests: XCTestCase {
     func testPoint3() {
-        let point = Point3(x: 10, y: 20, z: 30)
+        let point = Point3(_1: 10, _2: 20, _3: 30)
         let repr = point.representation
         let pointFromRepr = Point3(representation: repr)
         XCTAssertEqual(point, pointFromRepr)

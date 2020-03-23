@@ -5,10 +5,10 @@ import XCTest
 
 final class ComparableGenericTests: XCTestCase {
     func testPoint3() {
-        let point1 = Point3(x: 10, y: 20, z: 30)
-        let point2 = Point3(x: 10, y: 20, z: 40)
-        let point3 = Point3(x: 10, y: 30, z: 40)
-        let point4 = Point3(x: 30, y: 40, z: 50)
+        let point1 = Point3(_1: 10, _2: 20, _3: 30)
+        let point2 = Point3(_1: 10, _2: 20, _3: 40)
+        let point3 = Point3(_1: 10, _2: 30, _3: 40)
+        let point4 = Point3(_1: 30, _2: 40, _3: 50)
 
         // Reflexivity of <=
         XCTAssertTrue(point1.genericLessOrEqual(point1))

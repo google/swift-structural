@@ -11,8 +11,8 @@ var color2 = Color.blue
 var ascii1 = ASCII.tab
 var ascii2 = ASCII.lineFeed
 
-var p1 = Point3(x: 10, y: 20, z: 30)
-var p2 = Point3(x: 10, y: 20, z: 30)
+var p1 = Point3(_1: 10, _2: 20, _3: 30)
+var p2 = Point3(_1: 10, _2: 20, _3: 30)
 
 var boolSink = false
 var pointSink = p1
