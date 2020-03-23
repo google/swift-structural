@@ -16,10 +16,10 @@ func specializedLess(_ l: Point3, _ r: Point3) -> Bool {
 
 let comparableBenchmarks = BenchmarkSuite(name: "Comparable") { suite in
     suite.benchmark("Point3 (specialized)") {
-        boolSink = specializedLess(p1, p2)
+        boolSink = specializedLess(p3_1, p3_2)
     }
 
     suite.benchmark("Point3 (generic)") {
-        boolSink = p1.genericLess(p2)
+        boolSink = p3_1.genericLess(p3_2)
     }
 }

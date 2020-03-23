@@ -5,11 +5,11 @@ import GenericExamples
 
 let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     suite.benchmark("Point3 (generic)") {
-        boolSink = p1.genericEqual(p2)
+        boolSink = p3_1.genericEqual(p3_2)
     }
 
     suite.benchmark("Point3 (reference)") {
-        boolSink = p1 == p2
+        boolSink = p3_1 == p3_2
     }
 
     suite.benchmark("BinaryTree (generic)") {

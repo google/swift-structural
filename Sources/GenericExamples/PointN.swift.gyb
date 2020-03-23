@@ -1,6 +1,6 @@
 import GenericCore
 
-% for N in range(1, 8):
+% for N in range(1, 17):
 
 public struct Point${N}: Equatable, Hashable, Codable {
     

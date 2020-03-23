@@ -5,11 +5,11 @@ import GenericExamples
 
 let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     suite.benchmark("Point3 (generic)") {
-        intSink = genericHash(p1)
+        intSink = genericHash(p3_1)
     }
 
     suite.benchmark("Point3 (reference)") {
-        intSink = referenceHash(p1)
+        intSink = referenceHash(p3_1)
     }
 
     suite.benchmark("BinaryTree (generic)") {

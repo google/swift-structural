@@ -4,11 +4,11 @@ import GenericExamples
 
 let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     suite.benchmark("Point3 (generic)") {
-        stringSink = p1.debugDescriptionGeneric
+        stringSink = p3_1.debugDescriptionGeneric
     }
 
     suite.benchmark("Point3 (reference)") {
-        stringSink = String(reflecting: p1)
+        stringSink = String(reflecting: p3_1)
     }
 
     suite.benchmark("BinaryTree (generic)") {
