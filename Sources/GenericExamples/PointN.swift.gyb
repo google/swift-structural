@@ -115,7 +115,7 @@ extension Point${i}: EncodeJSONGeneric {
 
 extension Point${i}: InplaceAddGeneric {
     public mutating func inplaceAdd(_ other: Point${i}) {
-        let shape = self.representation
+        var shape = self.representation
         shape.inplaceAdd(other.representation)
         self = .init(representation: shape)
     }

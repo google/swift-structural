@@ -8,52 +8,32 @@ protocol InplaceAddGeneric {
 
 // Inductive cases. 
 
-protocol InplaceAddGenericShape {
-    func inplaceAdd(_ other: Self) -> Self
-}
-
-extension Struct: InplaceAddGenericShape where A: InplaceAddGenericShape {
-    func inplaceAdd(_ other: Self) -> Self {
-        return Struct(name, self.shape.inplaceAdd(other.shape))
+extension Struct: InplaceAddGeneric where A: InplaceAddGeneric {
+    mutating func inplaceAdd(_ other: Self) {
+        self.shape.inplaceAdd(other.shape)
     }
 }
 
-extension Field: InplaceAddGenericShape where A: InplaceAddGeneric, B: InplaceAddGenericShape {
-    func inplaceAdd(_ other: Self) -> Self {
+extension Field: InplaceAddGeneric where A: InplaceAddGeneric, B: InplaceAddGeneric {
+    mutating func inplaceAdd(_ other: Self) {
         if isMutable {
-            var newValue = self.value
-            newValue.inplaceAdd(other.value)
-            return Field(name, newValue, isMutable: true, next.inplaceAdd(other.next))
+            self.value.inplaceAdd(other.value)
+            next.inplaceAdd(other.next)
         } else {
-            return Field(name, value, isMutable: false, next.inplaceAdd(other.next))
-        }
-    }
-}
-
-extension Enum: InplaceAddGenericShape where A: InplaceAddGenericShape {
-    func inplaceAdd(_ other: Self) -> Self {
-        return Enum(name, self.shape.inplaceAdd(other.shape))
-    }
-}
-
-extension Case: InplaceAddGenericShape where A: InplaceAddGenericShape, B: InplaceAddGenericShape {
-    func inplaceAdd(_ other: Self) -> Self {
-        switch (self, other) {
-        case let (.of(name, value, shape), .of(_, _, otherShape)):
-            return .of(name, value, shape.inplaceAdd(otherShape))
-        case let (.next(shape), .next(otherShape)):
-            return .next(shape.inplaceAdd(otherShape))
-        default:
-            fatalError("unreachable")
+            next.inplaceAdd(other.next)
         }
     }
 }
 
 // Base cases. 
 
-extension Empty: InplaceAddGenericShape {
-    func inplaceAdd(_ other: Self) -> Self {
-        return self
+extension Empty: InplaceAddGeneric {
+    mutating func inplaceAdd(_ other: Self) {}
+}
+
+extension Int: InplaceAddGeneric {
+    public mutating func inplaceAdd(_ other: Self) {
+        self += other
     }
 }
 
