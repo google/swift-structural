@@ -29,7 +29,7 @@ func specializedAdd(_ lhs: Point${N}, _ rhs: Point${N}) -> Point${N} {
 
 % end
 
-let additiveArithmeticBenchmarks = BenchmarkSuite(name: "AdditiveArithmetic") { suite in
+let additiveBenchmarks = BenchmarkSuite(name: "Additive") { suite in
 
     % for N in range(1, 17):
 

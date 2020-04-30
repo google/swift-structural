@@ -58,11 +58,7 @@ extension BinaryTree: HashableGeneric where T: HashableGeneric {
     }
 }
 
-extension BinaryTree: AdditiveArithmeticGeneric where T: AdditiveArithmeticGeneric {
-    public static var zero: Self {
-        return .init(representation: Representation.zero)
-    }
-
+extension BinaryTree: AdditiveGeneric where T: AdditiveGeneric {
     public static func + (lhs: Self, rhs: Self) -> Self {
         return .init(representation: lhs.representation + rhs.representation)
     }

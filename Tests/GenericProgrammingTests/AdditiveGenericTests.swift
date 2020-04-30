@@ -3,7 +3,13 @@ import XCTest
 @testable import GenericCore
 @testable import GenericExamples
 
-final class AdditiveArithmeticGenericTests: XCTestCase {
+final class AdditiveGenericTests: XCTestCase {
+    func testPoint3Zero() {
+        let point = Point3.zero
+        let zero = Point3(_1: 0, _2: 0, _3: 0)
+        XCTAssertEqual(point, zero)
+    }
+
     func testPoint3() {
         let point1 = Point3(_1: 10, _2: 20, _3: 30)
         let point2 = Point3(_1: 20, _2: 40, _3: 60)
@@ -17,6 +23,8 @@ final class AdditiveArithmeticGenericTests: XCTestCase {
     }
 
     static var allTests = [
+        ("testPoint3Zero", testPoint3Zero),
+        ("testPoint3", testPoint3),
         ("testBinaryTree", testBinaryTree)
     ]
 }

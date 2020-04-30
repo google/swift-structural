@@ -1,7 +1,7 @@
 import Benchmark
 
 Benchmark.main([
-    additiveArithmeticBenchmarks,
+    additiveBenchmarks,
     comparableBenchmarks,
     debugStringBenchmarks,
     decodeJSONBenchmarks,

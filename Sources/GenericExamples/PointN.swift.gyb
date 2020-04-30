@@ -73,11 +73,13 @@ extension Point${N}: HashableGeneric {
     }
 }
 
-extension Point${N}: AdditiveArithmeticGeneric {
+extension Point${N}: ZeroGeneric {
     public static var zero: Self {
         return .init(representation: Representation.zero)
     }
+}
 
+extension Point${N}: AdditiveGeneric {
     public static func + (lhs: Self, rhs: Self) -> Self {
         return .init(representation: lhs.representation + rhs.representation)
     }
