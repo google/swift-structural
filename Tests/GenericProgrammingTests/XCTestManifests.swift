@@ -6,6 +6,7 @@ import XCTest
             testCase(AdditiveArithmeticGenericTests.allTests),
             testCase(ComparableGenericTests.allTests),
             testCase(DebugStringGenericTests.allTests),
+            testCase(DecodeJSONGenericTests.allTests),
             testCase(EncodeJSONGenericTests.allTests),
             testCase(EquatableGenericTests.allTests),
             testCase(HashableGenericTests.allTests),

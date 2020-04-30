@@ -10,6 +10,6 @@ final class EncodeJSONGenericTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testPoint3", testPoint3),
+        ("testPoint3", testPoint3)
     ]
 }

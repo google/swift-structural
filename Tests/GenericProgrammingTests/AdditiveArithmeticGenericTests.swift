@@ -17,6 +17,6 @@ final class AdditiveArithmeticGenericTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testBinaryTree", testBinaryTree),
+        ("testBinaryTree", testBinaryTree)
     ]
 }
