@@ -9,8 +9,9 @@ Swift standard library:
 - [x] `HashableGeneric`
 - [x] `DebugStringGeneric`
 - [x] `EncodeJSONGeneric`
-- [ ] `DecodeJSONGeneric`
+- [x] `DecodeJSONGeneric`
 
 Swift for TensorFlow library:
 
 - [x] `AdditiveArithmeticGeneric`
+- [x] `InplaceAddGeneric`
