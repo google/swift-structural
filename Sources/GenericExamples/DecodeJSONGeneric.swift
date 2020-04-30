@@ -55,3 +55,16 @@ extension String: DecodeJSONGeneric {
         self = other as! String
     }
 }
+
+extension Array: DecodeJSONGeneric where Element: DecodeJSONGeneric, Element: ZeroGeneric {
+    public mutating func decodeJson(_ other: Any) {
+        let arr = other as! [Any]
+        self = []
+        self.reserveCapacity(arr.count)
+        for el in arr {
+            var decoded = zero(Element.self)
+            decoded.decodeJson(el)
+            self.append(decoded)
+        }
+    }
+}

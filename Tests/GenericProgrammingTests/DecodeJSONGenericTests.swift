@@ -50,6 +50,12 @@ final class DecodeJSONGenericTests: XCTestCase {
     //     XCTAssertEqual(shape.shape.next.next.value, 30.0) 
     // }
 
+    func testArrayInt() {
+        var arr: [Int] = []
+        decodeJSONString(from: "[1, 2, 3]", into: &arr)
+        XCTAssertEqual(arr, [1, 2, 3])
+    }
+
     func testPoint3() {
         var point3 = Point3(_1: 0, _2: 0, _3: 0)
         decodeJSONString(from: "{\"_1\": 10.0, \"_2\": 20.0, \"_3\": 30.0}", into: &point3)
@@ -58,7 +64,18 @@ final class DecodeJSONGenericTests: XCTestCase {
         XCTAssertEqual(point3._3, 30.0)
     }
 
+    func testArrayPoint3() {
+        var points: [Point3] = []
+        decodeJSONString(from: "[{\"_1\": 10.0, \"_2\": 20.0, \"_3\": 30.0}]", into: &points)
+        XCTAssertEqual(points.count, 1)
+        XCTAssertEqual(points[0]._1, 10.0)
+        XCTAssertEqual(points[0]._2, 20.0)
+        XCTAssertEqual(points[0]._3, 30.0)
+    }
+
     static var allTests = [
-        ("testPoint3", testPoint3)
+        ("testPoint3", testPoint3),
+        ("testArrayInt", testArrayInt),
+        ("testArrayPoint3", testArrayPoint3),
     ]
 }
