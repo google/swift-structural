@@ -1186,3 +1186,4 @@ var point16Sink = p16_1
 var treeSink = tree1
 var stringSink = ""
 var intSink: Int = 0
+var anySink: Any? = nil

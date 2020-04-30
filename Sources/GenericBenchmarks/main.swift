@@ -1,12 +1,12 @@
 import Benchmark
 
 Benchmark.main([
-    additiveBenchmarks,
-    comparableBenchmarks,
-    debugStringBenchmarks,
+    // additiveBenchmarks,
+    // comparableBenchmarks,
+    // debugStringBenchmarks,
     decodeJSONBenchmarks,
-    encodeJSONBenchmarks,
-    equatableBenchmarks,
-    hashableBenchmarks,
-    inplaceAddBenchmarks,
+    // encodeJSONBenchmarks,
+    // equatableBenchmarks,
+    // hashableBenchmarks,
+    // inplaceAddBenchmarks,
 ])

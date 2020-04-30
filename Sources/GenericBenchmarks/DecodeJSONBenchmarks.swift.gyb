@@ -7,17 +7,25 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
 
     % for N in range(1, 17):
 
-    let inputValue${N} = p${N}_1
+    let inputValue${N} = [Point${N}](repeating: p${N}_1, count: 32)
     let inputData${N} = try! JSONEncoder().encode(inputValue${N})
     let inputString${N} = String(data: inputData${N}, encoding: .utf8)!
 
-    suite.benchmark("Point${N} (generic)") {
-        decodeJSONString(from: inputString${N}, into: &point${N}Sink)
+    suite.benchmark("Point${N} (foundation parse)") {
+        let data = inputString${N}.data(using: .utf8)!
+        let parsed = try! JSONSerialization.jsonObject(with: data)
+        anySink = parsed
     }
 
-    suite.benchmark("Point${N} (reference)") {
+    suite.benchmark("Point${N} (foundation codable)") {
         let data = inputString${N}.data(using: .utf8)!
-        point${N}Sink = try! JSONDecoder().decode(Point${N}.self, from: data)
+        anySink = try! JSONDecoder().decode([Point${N}].self, from: data)
+    }
+
+    suite.benchmark("Point${N} (generic)") {
+        var decoded: [Point${N}] = []
+        decodeJSONString(from: inputString${N}, into: &decoded)
+        anySink = decoded
     }
 
     % end

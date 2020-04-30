@@ -2,34 +2,43 @@ import GenericCore
 
 // Protocol that mutates itself by
 // the value of the inplaceAdd function argument.
-public protocol InplaceAddGeneric2 {
-    mutating func inplaceAdd2(_ other: Any)
+protocol InplaceAddGeneric {
+    mutating func inplaceAdd(_ other: Self)
 }
 
 // Inductive cases. 
 
-extension Struct: InplaceAddGeneric2 where A: InplaceAddGeneric2 {
-    public mutating func inplaceAdd2(_ other: Any) {
+extension Struct: InplaceAddGeneric where A: InplaceAddGeneric {
+    mutating func inplaceAdd(_ other: Self) {
+        self.shape.inplaceAdd(other.shape)
     }
 }
 
-extension Field: InplaceAddGeneric2 where A: InplaceAddGeneric2, B: InplaceAddGeneric2 {
-    public mutating func inplaceAdd2(_ other: Any) {
+extension Field: InplaceAddGeneric where A: InplaceAddGeneric, B: InplaceAddGeneric {
+    mutating func inplaceAdd(_ other: Self) {
+        if isMutable {
+            self.value.inplaceAdd(other.value)
+            next.inplaceAdd(other.next)
+        } else {
+            next.inplaceAdd(other.next)
+        }
     }
 }
 
 // Base cases. 
 
-extension Empty: InplaceAddGeneric2 {
-    public mutating func inplaceAdd2(_ other: Any) {}
+extension Empty: InplaceAddGeneric {
+    mutating func inplaceAdd(_ other: Self) {}
 }
 
-extension Int: InplaceAddGeneric2 {
-    public mutating func inplaceAdd2(_ other: Any) {
+extension Int: InplaceAddGeneric {
+    public mutating func inplaceAdd(_ other: Self) {
+        self += other
     }
 }
 
-extension Float: InplaceAddGeneric2 {
-    public mutating func inplaceAdd2(_ other: Any) {
+extension Float: InplaceAddGeneric {
+    public mutating func inplaceAdd(_ other: Self) {
+        self += other
     }
 }

@@ -36,5 +36,4 @@ var point${N}Sink = p${N}_1
 var treeSink = tree1
 var stringSink = ""
 var intSink: Int = 0
-
-
+var anySink: Any? = nil
