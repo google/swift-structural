@@ -37,20 +37,6 @@ extension Color: Generic {
     }
 }
 
-extension Color: EquatableGeneric {
-    public func genericEqual(_ other: Self) -> Bool {
-        return self.representation.genericEqual(other.representation)
-    }
-}
-
-extension Color: HashableGeneric {
-    public func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
-    }
-}
-
-extension Color: DebugStringGeneric {
-    public var debugDescriptionGeneric: String {
-        return self.representation.debugDescriptionGeneric
-    }
-}
+extension Color: EquatableGeneric {}
+extension Color: HashableGeneric {}
+extension Color: DebugStringGeneric {}

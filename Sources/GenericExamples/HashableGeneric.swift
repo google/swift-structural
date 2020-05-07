@@ -81,3 +81,11 @@ extension String: HashableGeneric {
         hash(into: &hasher)
     }
 }
+
+// Syntactic sugar
+
+extension HashableGeneric where Self: Generic, Self.Representation: HashableGeneric {
+    public func genericHash(into hasher: inout Hasher) {
+        self.representation.genericHash(into: &hasher)
+    }
+}

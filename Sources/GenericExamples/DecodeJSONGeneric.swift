@@ -68,3 +68,13 @@ extension Array: DecodeJSONGeneric where Element: DecodeJSONGeneric, Element: Ze
         }
     }
 }
+
+// Sugar
+
+extension DecodeJSONGeneric where Self: Generic, Self.Representation: DecodeJSONGeneric {
+    public mutating func decodeJson(_ other: Any) {
+        var shape = self.representation
+        shape.decodeJson(other)
+        self = .init(representation: shape)
+    }
+}

@@ -99,3 +99,23 @@ extension Float: ComparableGeneric {
         return self >= other
     }
 }
+
+// Sugar
+
+extension ComparableGeneric where Self: Generic, Self.Representation: ComparableGeneric {
+    public func genericLess(_ other: Self) -> Bool {
+        return self.representation.genericLess(other.representation)
+    }
+
+    public func genericLessOrEqual(_ other: Self) -> Bool {
+        return self.representation.genericLessOrEqual(other.representation)
+    }
+
+    public func genericGreater(_ other: Self) -> Bool {
+        return self.representation.genericGreater(other.representation)
+    }
+
+    public func genericGreaterOrEqual(_ other: Self) -> Bool {
+        return self.representation.genericGreaterOrEqual(other.representation)
+    }
+}

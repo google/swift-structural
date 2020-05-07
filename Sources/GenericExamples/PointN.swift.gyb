@@ -61,74 +61,14 @@ extension Point${N}: Generic {
     }
 }
 
-extension Point${N}: EquatableGeneric {
-    public func genericEqual(_ other: Self) -> Bool {
-        return self.representation.genericEqual(other.representation)
-    }
-}
-
-extension Point${N}: HashableGeneric {
-    public func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
-    }
-}
-
-extension Point${N}: ZeroGeneric {
-    public static var zero: Self {
-        return .init(representation: Representation.zero)
-    }
-}
-
-extension Point${N}: AdditiveGeneric {
-    public static func + (lhs: Self, rhs: Self) -> Self {
-        return .init(representation: lhs.representation + rhs.representation)
-    }
-}
-
-extension Point${N}: DebugStringGeneric {
-    public var debugDescriptionGeneric: String {
-        return self.representation.debugDescriptionGeneric
-    }
-}
-
-extension Point${N}: ComparableGeneric {
-    public func genericLess(_ other: Self) -> Bool {
-        return self.representation.genericLess(other.representation)
-    }
-
-    public func genericLessOrEqual(_ other: Self) -> Bool {
-        return self.representation.genericLess(other.representation)
-    }
-
-    public func genericGreater(_ other: Self) -> Bool {
-        return self.representation.genericLess(other.representation)
-    }
-
-    public func genericGreaterOrEqual(_ other: Self) -> Bool {
-        return self.representation.genericLess(other.representation)
-    }
-}
-
-extension Point${N}: EncodeJSONGeneric {
-    public func encodeJson(into builder: inout JSONBuilder) {
-        self.representation.encodeJson(into: &builder)
-    }
-}
-
-extension Point${N}: InplaceAddGeneric {
-    public mutating func inplaceAdd(_ other: Point${N}) {
-        var shape = self.representation
-        shape.inplaceAdd(other.representation)
-        self = .init(representation: shape)
-    }
-}
-
-extension Point${N}: DecodeJSONGeneric {
-    public mutating func decodeJson(_ other: Any) {
-        var shape = self.representation
-        shape.decodeJson(other)
-        self = .init(representation: shape)
-    }
-}
+extension Point${N}: EquatableGeneric {}
+extension Point${N}: HashableGeneric {}
+extension Point${N}: ZeroGeneric {}
+extension Point${N}: AdditiveGeneric {}
+extension Point${N}: DebugStringGeneric {}
+extension Point${N}: ComparableGeneric {}
+extension Point${N}: InplaceAddGeneric {}
+extension Point${N}: EncodeJSONGeneric {}
+extension Point${N}: DecodeJSONGeneric {}
 
 % end

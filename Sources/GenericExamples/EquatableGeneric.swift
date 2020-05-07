@@ -65,3 +65,11 @@ extension Double: EquatableGeneric {
         return self == other
     }
 }
+
+// Syntactic Sugar
+
+extension EquatableGeneric where Self: Generic, Self.Representation: EquatableGeneric {
+    public func genericEqual(_ other: Self) -> Bool {
+        return self.representation.genericEqual(other.representation)
+    }
+}

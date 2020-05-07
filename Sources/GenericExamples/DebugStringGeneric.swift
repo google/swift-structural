@@ -83,3 +83,11 @@ extension Double: DebugStringGeneric {
         return String(reflecting: self)
     }
 }
+
+// Sugar
+
+extension DebugStringGeneric where Self: Generic, Self.Representation: DebugStringGeneric {
+    public var debugDescriptionGeneric: String {
+        return self.representation.debugDescriptionGeneric
+    }
+}

@@ -39,3 +39,11 @@ extension Int: ZeroGeneric {}
 extension Float: ZeroGeneric {}
 
 extension Double: ZeroGeneric {}
+
+// Sugar.
+
+extension ZeroGeneric where Self: Generic, Self.Representation: ZeroGeneric {
+    public static var zero: Self {
+        return .init(representation: Representation.zero)
+    }
+}

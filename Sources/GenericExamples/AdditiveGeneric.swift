@@ -55,3 +55,11 @@ extension Int: AdditiveGeneric {}
 extension Float: AdditiveGeneric {}
 
 extension Double: AdditiveGeneric {}
+
+// Sugar
+
+extension AdditiveGeneric where Self: Generic, Self.Representation: AdditiveGeneric {
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        return .init(representation: lhs.representation + rhs.representation)
+    }
+}

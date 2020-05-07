@@ -2,20 +2,20 @@ import GenericCore
 
 // Protocol that mutates itself by
 // the value of the inplaceAdd function argument.
-protocol InplaceAddGeneric {
+public protocol InplaceAddGeneric {
     mutating func inplaceAdd(_ other: Self)
 }
 
 // Inductive cases. 
 
 extension Struct: InplaceAddGeneric where A: InplaceAddGeneric {
-    mutating func inplaceAdd(_ other: Self) {
+    public mutating func inplaceAdd(_ other: Self) {
         self.shape.inplaceAdd(other.shape)
     }
 }
 
 extension Field: InplaceAddGeneric where A: InplaceAddGeneric, B: InplaceAddGeneric {
-    mutating func inplaceAdd(_ other: Self) {
+    public mutating func inplaceAdd(_ other: Self) {
         if isMutable {
             self.value.inplaceAdd(other.value)
             next.inplaceAdd(other.next)
@@ -28,7 +28,7 @@ extension Field: InplaceAddGeneric where A: InplaceAddGeneric, B: InplaceAddGene
 // Base cases. 
 
 extension Empty: InplaceAddGeneric {
-    mutating func inplaceAdd(_ other: Self) {}
+    public mutating func inplaceAdd(_ other: Self) {}
 }
 
 extension Int: InplaceAddGeneric {
@@ -40,5 +40,15 @@ extension Int: InplaceAddGeneric {
 extension Float: InplaceAddGeneric {
     public mutating func inplaceAdd(_ other: Self) {
         self += other
+    }
+}
+
+// Sugar
+
+extension InplaceAddGeneric where Self: Generic, Self.Representation: InplaceAddGeneric {
+    public mutating func inplaceAdd(_ other: Self) {
+        var shape = self.representation
+        shape.inplaceAdd(other.representation)
+        self = .init(representation: shape)
     }
 }

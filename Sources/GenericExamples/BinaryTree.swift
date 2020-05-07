@@ -46,26 +46,8 @@ extension BinaryTree: Generic {
     }
 }
 
-extension BinaryTree: EquatableGeneric where T: EquatableGeneric {
-    public func genericEqual(_ other: Self) -> Bool {
-        return self.representation.genericEqual(other.representation)
-    }
-}
+extension BinaryTree: EquatableGeneric where T: EquatableGeneric {}
+extension BinaryTree: HashableGeneric where T: HashableGeneric {}
+extension BinaryTree: DebugStringGeneric where T: DebugStringGeneric {}
+extension BinaryTree: AdditiveGeneric where T: AdditiveGeneric {}
 
-extension BinaryTree: HashableGeneric where T: HashableGeneric {
-    public func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
-    }
-}
-
-extension BinaryTree: AdditiveGeneric where T: AdditiveGeneric {
-    public static func + (lhs: Self, rhs: Self) -> Self {
-        return .init(representation: lhs.representation + rhs.representation)
-    }
-}
-
-extension BinaryTree: DebugStringGeneric where T: DebugStringGeneric {
-    public var debugDescriptionGeneric: String {
-        return self.representation.debugDescriptionGeneric
-    }
-}

@@ -111,3 +111,11 @@ extension Array: EncodeJSONGeneric where Element: EncodeJSONGeneric {
         builder.appendArrayEnd()
     }
 }
+
+// Sugar
+
+extension EncodeJSONGeneric where Self: Generic, Self.Representation: EncodeJSONGeneric {
+    public func encodeJson(into builder: inout JSONBuilder) {
+        self.representation.encodeJson(into: &builder)
+    }
+}

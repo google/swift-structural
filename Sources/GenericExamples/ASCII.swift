@@ -37,20 +37,6 @@ extension ASCII: Generic {
     }
 }
 
-extension ASCII: EquatableGeneric {
-    public func genericEqual(_ other: Self) -> Bool {
-        return self.representation.genericEqual(other.representation)
-    }
-}
-
-extension ASCII: HashableGeneric {
-    public func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
-    }
-}
-
-extension ASCII: DebugStringGeneric {
-    public var debugDescriptionGeneric: String {
-        return self.representation.debugDescriptionGeneric
-    }
-}
+extension ASCII: EquatableGeneric {}
+extension ASCII: HashableGeneric {}
+extension ASCII: DebugStringGeneric {}

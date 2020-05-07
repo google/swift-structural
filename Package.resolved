@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Benchmark",
+        "repositoryURL": "sso://user/shabalin/swift-benchmark",
+        "state": {
+          "branch": "master",
+          "revision": "54cd08ae601eb314cfd1d11cd59c8b2b32fe4f04",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
