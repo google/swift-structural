@@ -13,8 +13,8 @@ extension Case: AdditiveGeneric
 where A: AdditiveGeneric, B: AdditiveGeneric {
     public static func + (lhs: Self, rhs: Self) -> Self {
         switch (lhs, rhs) {
-        case let (.of(_, index, x), .of(_, _, y)):
-            return .of("", index, x + y)
+        case let (.of(name, index, x), .of(_, _, y)):
+            return .of(name, index, x + y)
         case let (.next(x), .next(y)):
             return .next(x + y)
         default:
@@ -26,19 +26,19 @@ where A: AdditiveGeneric, B: AdditiveGeneric {
 extension Field: AdditiveGeneric
 where A: AdditiveGeneric, B: AdditiveGeneric {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Field("", lhs.value + rhs.value, isMutable: false, lhs.next + rhs.next)
+        return Field(lhs.value + rhs.value, lhs.next + rhs.next)
     }
 }
 
 extension Struct: AdditiveGeneric where A: AdditiveGeneric {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Struct("", lhs.shape + rhs.shape)
+        return Struct(lhs.shape + rhs.shape)
     }
 }
 
 extension Enum: AdditiveGeneric where A: AdditiveGeneric {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Enum("", lhs.shape + rhs.shape)
+        return Enum(lhs.shape + rhs.shape)
     }
 }
 

@@ -25,6 +25,6 @@ final class AdditiveGenericTests: XCTestCase {
     static var allTests = [
         ("testPoint3Zero", testPoint3Zero),
         ("testPoint3", testPoint3),
-        ("testBinaryTree", testBinaryTree)
+        ("testBinaryTree", testBinaryTree),
     ]
 }

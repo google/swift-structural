@@ -10,7 +10,7 @@ let package = Package(
             targets: ["GenericCore"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/google/swift-benchmark", .branch("master")),
+        .package(url: "https://github.com/shabalind/swift-benchmark", .branch("topic/fix-adaptive-nontermination")),
     ],
     targets: [
         .target(

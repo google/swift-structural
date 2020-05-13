@@ -16,13 +16,13 @@ public protocol ZeroGeneric {
 extension Field: ZeroGeneric
 where A: ZeroGeneric, B: ZeroGeneric {
     public static var zero: Self {
-        return Field("", A.zero, isMutable: false, B.zero)
+        return Field(A.zero, B.zero)
     }
 }
 
 extension Struct: ZeroGeneric where A: ZeroGeneric {
     public static var zero: Self {
-        return Struct("", A.zero)
+        return Struct(A.zero)
     }
 }
 

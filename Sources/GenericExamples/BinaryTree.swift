@@ -15,7 +15,7 @@ extension BinaryTree: Generic {
     public var representation: Representation {
         switch self {
         case let .leaf(x):
-            return Enum("BinaryTree", .of("leaf", 0, Field("", x, isMutable: false, Empty())))
+            return Enum("BinaryTree", .of("leaf", 0, Field(x, Empty())))
         case let .branch(left, value, right):
             return Enum(
                 "BinaryTree",
@@ -23,10 +23,10 @@ extension BinaryTree: Generic {
                     .of(
                         "branch", 1,
                         Field(
-                            "", left, isMutable: false,
+                            left,
                             Field(
-                                "", value, isMutable: false,
-                                Field("", right, isMutable: false, Empty()))))))
+                                value,
+                                Field(right, Empty()))))))
 
         }
     }
@@ -50,4 +50,3 @@ extension BinaryTree: EquatableGeneric where T: EquatableGeneric {}
 extension BinaryTree: HashableGeneric where T: HashableGeneric {}
 extension BinaryTree: DebugStringGeneric where T: DebugStringGeneric {}
 extension BinaryTree: AdditiveGeneric where T: AdditiveGeneric {}
-

@@ -4,19 +4,19 @@ import GenericCore
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point1: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -26,7 +26,7 @@ extension Point1: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -36,7 +36,7 @@ extension Point1: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point1", 
+        return Struct("Point1",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 45)
@@ -48,12 +48,12 @@ extension Point1: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -70,27 +70,27 @@ extension Point1: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point2: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -100,9 +100,9 @@ extension Point2: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -114,7 +114,7 @@ extension Point2: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point2", 
+        return Struct("Point2",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -130,19 +130,19 @@ extension Point2: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -159,35 +159,35 @@ extension Point2: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point3: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -197,11 +197,11 @@ extension Point3: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -215,7 +215,7 @@ extension Point3: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point3", 
+        return Struct("Point3",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -235,28 +235,28 @@ extension Point3: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -273,43 +273,43 @@ extension Point3: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point4: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -319,13 +319,13 @@ extension Point4: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -341,7 +341,7 @@ extension Point4: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point4", 
+        return Struct("Point4",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -365,39 +365,39 @@ extension Point4: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -414,51 +414,51 @@ extension Point4: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point5: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -468,15 +468,15 @@ extension Point5: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -494,7 +494,7 @@ extension Point5: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point5", 
+        return Struct("Point5",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -522,52 +522,52 @@ extension Point5: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -584,59 +584,59 @@ extension Point5: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point6: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -646,17 +646,17 @@ extension Point6: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -676,7 +676,7 @@ extension Point6: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point6", 
+        return Struct("Point6",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -708,67 +708,67 @@ extension Point6: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -785,67 +785,67 @@ extension Point6: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point7: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -855,19 +855,19 @@ extension Point7: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -889,7 +889,7 @@ extension Point7: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point7", 
+        return Struct("Point7",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -925,84 +925,84 @@ extension Point7: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -1019,75 +1019,75 @@ extension Point7: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point8: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -1097,21 +1097,21 @@ extension Point8: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -1135,7 +1135,7 @@ extension Point8: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point8", 
+        return Struct("Point8",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -1175,103 +1175,103 @@ extension Point8: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -1288,83 +1288,83 @@ extension Point8: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point9: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _8:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._9 = _9
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -1374,23 +1374,23 @@ extension Point9: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -1416,7 +1416,7 @@ extension Point9: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point9", 
+        return Struct("Point9",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -1460,124 +1460,124 @@ extension Point9: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._9 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -1594,91 +1594,91 @@ extension Point9: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point10: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _8:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _9:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._9 = _9
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._10 = _10
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -1688,25 +1688,25 @@ extension Point10: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -1734,7 +1734,7 @@ extension Point10: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point10", 
+        return Struct("Point10",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -1782,147 +1782,147 @@ extension Point10: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._9 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._10 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -1939,99 +1939,99 @@ extension Point10: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point11: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _8:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _9:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _10:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._9 = _9
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._10 = _10
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._11 = _11
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -2041,27 +2041,27 @@ extension Point11: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -2091,7 +2091,7 @@ extension Point11: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point11", 
+        return Struct("Point11",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -2143,172 +2143,172 @@ extension Point11: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._9 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._10 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._11 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -2325,107 +2325,107 @@ extension Point11: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point12: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _8:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _9:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _10:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _11:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._9 = _9
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._10 = _10
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._11 = _11
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._12 = _12
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -2435,29 +2435,29 @@ extension Point12: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -2489,7 +2489,7 @@ extension Point12: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point12", 
+        return Struct("Point12",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -2545,199 +2545,199 @@ extension Point12: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._9 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._10 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._11 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._12 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -2754,115 +2754,115 @@ extension Point12: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point13: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _13: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _8:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _9:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _10:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _11:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _12:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _13: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._9 = _9
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._10 = _10
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._11 = _11
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._12 = _12
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._13 = _13
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -2872,31 +2872,31 @@ extension Point13: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -2930,7 +2930,7 @@ extension Point13: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point13", 
+        return Struct("Point13",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -2990,228 +2990,228 @@ extension Point13: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._9 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._10 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._11 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._12 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._13 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -3228,123 +3228,123 @@ extension Point13: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point14: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _13: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _14: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _13: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _8:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _9:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _10:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _11:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _12:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _13:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _14: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._9 = _9
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._10 = _10
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._11 = _11
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._12 = _12
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._13 = _13
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._14 = _14
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -3354,33 +3354,33 @@ extension Point14: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -3416,7 +3416,7 @@ extension Point14: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point14", 
+        return Struct("Point14",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -3480,259 +3480,259 @@ extension Point14: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._9 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._10 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._11 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._12 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._13 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._14 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -3749,131 +3749,131 @@ extension Point14: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point15: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _13: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _14: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _15: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _13: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _14: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _8:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _9:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _10:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _11:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _12:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _13:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _14:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _15: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._9 = _9
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._10 = _10
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._11 = _11
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._12 = _12
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._13 = _13
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._14 = _14
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._15 = _15
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -3883,35 +3883,35 @@ extension Point15: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -3949,7 +3949,7 @@ extension Point15: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point15", 
+        return Struct("Point15",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -4017,292 +4017,292 @@ extension Point15: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._9 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._10 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._11 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._12 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._13 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._14 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._15 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -4319,139 +4319,139 @@ extension Point15: DecodeJSONGeneric {}
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 4)
 
 public struct Point16: Equatable, Hashable, Codable {
-    
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _13: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _14: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _15: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 8)
     public var _16: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 10)
 
     public init(
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _1: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _2: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _3: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _4: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _5: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _6: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _7: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _8: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _9: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _10: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _11: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _12: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _13: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _14: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
-        _15: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
-        ,
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _1:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _2:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _3:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _4:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _5:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _6:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _7:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _8:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _9:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _10:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _11:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _12:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _13:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _14:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
+        _15:
+            Float// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 15)
+            ,
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 13)
         _16: Float
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 18)
     ) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._1 = _1
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._2 = _2
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._3 = _3
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._4 = _4
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._5 = _5
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._6 = _6
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._7 = _7
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._8 = _8
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._9 = _9
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._10 = _10
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._11 = _11
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._12 = _12
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._13 = _13
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._14 = _14
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._15 = _15
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 20)
         self._16 = _16
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 22)
     }
 
 }
@@ -4461,37 +4461,37 @@ extension Point16: Generic {
     public typealias Representation =
         Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 31)
-            Field<Float, 
+            Field<Float,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 33)
             Empty
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 35)
@@ -4531,7 +4531,7 @@ extension Point16: Generic {
 
     // swift-format-ignore
     public var representation: Representation {
-        return Struct("Point16", 
+        return Struct("Point16",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
             Field("_1", _1, isMutable: true,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 43)
@@ -4603,327 +4603,327 @@ extension Point16: Generic {
     }
 
     public init(representation: Representation) {
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._1 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._2 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._3 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._4 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._5 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._6 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._7 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._8 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._9 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._10 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._11 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._12 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._13 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._14 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._15 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 54)
         self._16 =
             representation.shape
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 57)
             .next
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
+            // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 59)
             .value
-// ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
+        // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/GenericExamples/PointN.swift.gyb", line: 61)
     }
 }
 
@@ -4936,4 +4936,3 @@ extension Point16: ComparableGeneric {}
 extension Point16: InplaceAddGeneric {}
 extension Point16: EncodeJSONGeneric {}
 extension Point16: DecodeJSONGeneric {}
-
