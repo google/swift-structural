@@ -12,10 +12,10 @@
       },
       {
         "package": "Benchmark",
-        "repositoryURL": "https://github.com/shabalind/swift-benchmark",
+        "repositoryURL": "https://github.com/google/swift-benchmark",
         "state": {
-          "branch": "topic/fix-adaptive-nontermination",
-          "revision": "7e878c3f143ad4cfc040c9ee22bb36dea646bde1",
+          "branch": "master",
+          "revision": "a952f1d7deed2368805ac29f09da6a676dde8015",
           "version": null
         }
       }

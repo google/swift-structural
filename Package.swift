@@ -10,7 +10,8 @@ let package = Package(
             targets: ["StructuralCore"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/shabalind/swift-benchmark", .branch("topic/fix-adaptive-nontermination")),
+        .package(url: "https://github.com/google/swift-benchmark", 
+                 .branch("master")),
     ],
     targets: [
         .target(
