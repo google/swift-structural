@@ -43,19 +43,26 @@ extension Enum: DebugStringStructural where Cases: DebugStringStructural {
     }
 }
 
-extension Case: DebugStringStructural
-where AssociatedValues: DebugStringStructural, Next: DebugStringStructural {
+extension Either: DebugStringStructural
+where Left: DebugStringStructural, Right: DebugStringStructural {
     public var debugDescriptionStructural: String {
         switch self {
-        case let .of(name, _, values):
-            let valuesString = values.debugDescriptionStructural
-            if (valuesString == "") {
-                return name
-            } else {
-                return "\(name)(\(valuesString))"
-            }
-        case let .next(next):
-            return next.debugDescriptionStructural
+        case .left(let left):
+            return left.debugDescriptionStructural
+        case .right(let right):
+            return right.debugDescriptionStructural
+        }
+    }
+}
+
+extension Case: DebugStringStructural
+where AssociatedValues: DebugStringStructural {
+    public var debugDescriptionStructural: String {
+        let valuesString = associatedValues.debugDescriptionStructural
+        if valuesString == "" {
+            return name
+        } else {
+            return "\(name)(\(valuesString))"
         }
     }
 }

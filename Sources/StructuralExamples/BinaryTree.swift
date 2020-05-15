@@ -9,12 +9,8 @@ extension BinaryTree: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
         Enum<
-            Case<
-                Int,
-                Cons<
-                    Property<T>,
-                    Empty
-                >,
+            Either<
+                Case<Int, Cons<Property<T>, Empty>>,
                 Case<
                     Int,
                     Cons<
@@ -26,8 +22,7 @@ extension BinaryTree: Structural {
                                 Empty
                             >
                         >
-                    >,
-                    Empty
+                    >
                 >
             >
         >
@@ -36,7 +31,7 @@ extension BinaryTree: Structural {
         switch self {
         case let .leaf(x):
             let properties = Cons(Property(x), Empty())
-            return Enum("BinaryTree", .of("leaf", 0, properties))
+            return Enum("BinaryTree", .left(Case("leaf", 0, properties)))
         case let .branch(left, value, right):
             let properties =
                 Cons(
@@ -46,22 +41,20 @@ extension BinaryTree: Structural {
                         Cons(
                             Property(right),
                             Empty())))
-            return Enum("BinaryTree", .next(.of("branch", 1, properties)))
+            return Enum("BinaryTree", .right(Case("branch", 1, properties)))
 
         }
     }
 
     public init(abstractValue repr: AbstractValue) {
         switch repr.cases {
-        case let Case.of(_, _, fields):
-            self = .leaf(fields.value.value)
-        case let Case.next(Case.of(_, _, fields)):
-            let left = fields.value.value
-            let value = fields.next.value.value
-            let right = fields.next.next.value.value
+        case let .left(leafCase):
+            self = .leaf(leafCase.associatedValues.value.value)
+        case let .right(branchCase):
+            let left = branchCase.associatedValues.value.value
+            let value = branchCase.associatedValues.next.value.value
+            let right = branchCase.associatedValues.next.next.value.value
             self = .branch(left, value, right)
-        default:
-            fatalError("unreachable")
         }
     }
 }

@@ -9,15 +9,23 @@ public enum ASCII: String {
 extension ASCII: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Enum<Case<String, Empty, Case<String, Empty, Case<String, Empty, Empty>>>>
+        Enum<
+            Either<
+                Case<String, Empty>,
+                Either<
+                    Case<String, Empty>,
+                    Case<String, Empty>
+                >
+            >
+        >
 
     public var abstractValue: AbstractValue {
         if (self == ASCII.tab) {
-            return Enum("ASCII", .of("tab", "\t", Empty()))
+            return Enum("ASCII", .left(Case("tab", "\t", Empty())))
         } else if (self == ASCII.lineFeed) {
-            return Enum("ASCII", .next(.of("lineFeed", "\n", Empty())))
+            return Enum("ASCII", .right(.left(Case("lineFeed", "\n", Empty()))))
         } else if (self == ASCII.carriageReturn) {
-            return Enum("ASCII", .next(.next(.of("carriageReturn", "\r", Empty()))))
+            return Enum("ASCII", .right(.right(Case("carriageReturn", "\r", Empty()))))
         } else {
             fatalError("unreachable")
         }
@@ -25,14 +33,12 @@ extension ASCII: Structural {
 
     public init(abstractValue repr: AbstractValue) {
         switch repr.cases {
-        case Case.of(_, "\t", _):
+        case .left(_):
             self = .tab
-        case Case.next(Case.of(_, "\n", _)):
+        case .right(.left(_)):
             self = .lineFeed
-        case Case.next(Case.next(Case.of(_, "\r", _))):
+        case .right(.right(_)):
             self = .carriageReturn
-        default:
-            fatalError("unreachable")
         }
     }
 }

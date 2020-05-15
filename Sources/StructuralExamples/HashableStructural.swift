@@ -29,16 +29,23 @@ where Value: HashableStructural, Next: HashableStructural {
     }
 }
 
-extension Case: HashableStructural
-where RawValue: HashableStructural, AssociatedValues: HashableStructural, Next: HashableStructural {
+extension Either: HashableStructural
+where Left: HashableStructural, Right: HashableStructural {
     public func genericHash(into hasher: inout Hasher) {
         switch self {
-        case let .of(_, index, value):
-            index.genericHash(into: &hasher)
-            value.genericHash(into: &hasher)
-        case let .next(value):
-            value.genericHash(into: &hasher)
+        case .left(let left):
+            left.genericHash(into: &hasher)
+        case .right(let right):
+            right.genericHash(into: &hasher)
         }
+    }
+}
+
+extension Case: HashableStructural
+where RawValue: HashableStructural, AssociatedValues: HashableStructural {
+    public func genericHash(into hasher: inout Hasher) {
+        rawValue.genericHash(into: &hasher)
+        associatedValues.genericHash(into: &hasher)
     }
 }
 

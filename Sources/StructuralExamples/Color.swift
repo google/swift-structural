@@ -9,15 +9,23 @@ public enum Color: Int, Equatable, Hashable {
 extension Color: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Enum<Case<Int, Empty, Case<Int, Empty, Case<Int, Empty, Empty>>>>
+        Enum<
+            Either<
+                Case<Int, Empty>,
+                Either<
+                    Case<Int, Empty>,
+                    Case<Int, Empty>
+                >
+            >
+        >
 
     public var abstractValue: AbstractValue {
         if (self == Color.red) {
-            return Enum("Color", .of("red", 0xFF0000, Empty()))
+            return Enum("Color", .left(Case("red", 0xFF0000, Empty())))
         } else if (self == Color.green) {
-            return Enum("Color", .next(.of("green", 0x00FF00, Empty())))
+            return Enum("Color", .right(.left(Case("green", 0x00FF00, Empty()))))
         } else if (self == Color.blue) {
-            return Enum("Color", .next(.next(.of("blue", 0x0000FF, Empty()))))
+            return Enum("Color", .right(.right(Case("blue", 0x0000FF, Empty()))))
         } else {
             fatalError("unreachable")
         }
@@ -25,14 +33,12 @@ extension Color: Structural {
 
     public init(abstractValue repr: AbstractValue) {
         switch repr.cases {
-        case Case.of(_, 0xFF0000, _):
+        case .left(_):
             self = .red
-        case Case.next(Case.of(_, 0x00FF00, _)):
+        case .right(.left(_)):
             self = .green
-        case Case.next(Case.next(Case.of(_, 0x0000FF, _))):
+        case .right(.right(_)):
             self = .blue
-        default:
-            fatalError("unreachable")
         }
     }
 }

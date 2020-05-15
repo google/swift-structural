@@ -47,9 +47,22 @@ public struct Enum<Cases> {
     }
 }
 
-public enum Case<RawValue, AssociatedValues, Next> {
-    case of(String, RawValue, AssociatedValues)
-    case next(Next)
+public struct Case<RawValue, AssociatedValues> {
+    public var name: String
+    public var rawValue: RawValue
+    public var associatedValues: AssociatedValues
+
+    public init(_ rawValue: RawValue, _ associatedValues: AssociatedValues) {
+        self.name = ""
+        self.rawValue = rawValue
+        self.associatedValues = associatedValues
+    }
+
+    public init(_ name: String, _ rawValue: RawValue, _ associatedValues: AssociatedValues) {
+        self.name = name
+        self.rawValue = rawValue
+        self.associatedValues = associatedValues
+    }
 }
 
 public struct Cons<Value, Next> {
@@ -60,6 +73,11 @@ public struct Cons<Value, Next> {
         self.value = value
         self.next = next
     }
+}
+
+public enum Either<Left, Right> {
+    case left(Left)
+    case right(Right)
 }
 
 public struct Empty {

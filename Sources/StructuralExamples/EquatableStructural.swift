@@ -16,17 +16,24 @@ where Value: EquatableStructural, Next: EquatableStructural {
     }
 }
 
-extension Case: EquatableStructural
-where AssociatedValues: EquatableStructural, Next: EquatableStructural {
+extension Either: EquatableStructural
+where Left: EquatableStructural, Right: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
         switch (self, other) {
-        case let (.of(_, _, x), .of(_, _, y)):
-            return x.genericEqual(y)
-        case let (.next(x), .next(y)):
-            return x.genericEqual(y)
+        case (.left(let lhs), .left(let rhs)):
+            return lhs.genericEqual(rhs)
+        case (.right(let lhs), .right(let rhs)):
+            return lhs.genericEqual(rhs)
         default:
             return false
         }
+    }
+}
+
+extension Case: EquatableStructural
+where AssociatedValues: EquatableStructural {
+    public func genericEqual(_ other: Self) -> Bool {
+        associatedValues.genericEqual(other.associatedValues)
     }
 }
 

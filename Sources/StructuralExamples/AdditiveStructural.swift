@@ -16,17 +16,24 @@ where Value: AdditiveStructural, Next: AdditiveStructural {
     }
 }
 
-extension Case: AdditiveStructural
-where AssociatedValues: AdditiveStructural, Next: AdditiveStructural {
+extension Either: AdditiveStructural
+where Left: AdditiveStructural, Right: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
         switch (lhs, rhs) {
-        case let (.of(name, index, x), .of(_, _, y)):
-            return .of(name, index, x + y)
-        case let (.next(x), .next(y)):
-            return .next(x + y)
+        case let (.left(lhsLeft), .left(rhsLeft)):
+            return .left(lhsLeft + rhsLeft)
+        case let (.right(lhsRight), .right(rhsRight)):
+            return .right(lhsRight + rhsRight)
         default:
             fatalError("Mismatch: \(lhs), \(rhs)")
         }
+    }
+}
+
+extension Case: AdditiveStructural
+where AssociatedValues: AdditiveStructural {
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        return Case(lhs.rawValue, lhs.associatedValues + rhs.associatedValues)
     }
 }
 
