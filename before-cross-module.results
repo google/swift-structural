@@ -1,0 +1,587 @@
+running Additive: Point1 (specialized)... done! (79.43 ms)
+running Additive: Point1 (generic)... done! (107.95 ms)
+running Additive: Point2 (specialized)... done! (79.26 ms)
+running Additive: Point2 (generic)... done! (117.17 ms)
+running Additive: Point3 (specialized)... done! (80.01 ms)
+running Additive: Point3 (generic)... done! (126.20 ms)
+running Additive: Point4 (specialized)... done! (79.92 ms)
+running Additive: Point4 (generic)... done! (139.04 ms)
+running Additive: Point5 (specialized)... done! (85.79 ms)
+running Additive: Point5 (generic)... done! (157.90 ms)
+running Additive: Point6 (specialized)... done! (84.28 ms)
+running Additive: Point6 (generic)... done! (172.56 ms)
+running Additive: Point7 (specialized)... done! (86.02 ms)
+running Additive: Point7 (generic)... done! (181.74 ms)
+running Additive: Point8 (specialized)... done! (86.30 ms)
+running Additive: Point8 (generic)... done! (193.78 ms)
+running Additive: Point9 (specialized)... done! (87.36 ms)
+running Additive: Point9 (generic)... done! (212.41 ms)
+running Additive: Point10 (specialized)... done! (88.87 ms)
+running Additive: Point10 (generic)... done! (220.34 ms)
+running Additive: Point11 (specialized)... done! (88.88 ms)
+running Additive: Point11 (generic)... done! (245.13 ms)
+running Additive: Point12 (specialized)... done! (91.27 ms)
+running Additive: Point12 (generic)... done! (251.63 ms)
+running Additive: Point13 (specialized)... done! (92.05 ms)
+running Additive: Point13 (generic)... done! (263.80 ms)
+running Additive: Point14 (specialized)... done! (94.31 ms)
+running Additive: Point14 (generic)... done! (280.77 ms)
+running Additive: Point15 (specialized)... done! (95.75 ms)
+running Additive: Point15 (generic)... done! (300.71 ms)
+running Additive: Point16 (specialized)... done! (95.25 ms)
+running Additive: Point16 (generic)... done! (306.73 ms)
+running Additive: BinaryTree (specialized)... done! (1319.54 ms)
+running Additive: BinaryTree (generic)... done! (1601.15 ms)
+running Comparable: Point1 (specialized)... done! (70.69 ms)
+running Comparable: Point1 (generic)... done! (92.34 ms)
+running Comparable: Point2 (specialized)... done! (83.50 ms)
+running Comparable: Point2 (generic)... done! (97.10 ms)
+running Comparable: Point3 (specialized)... done! (70.61 ms)
+running Comparable: Point3 (generic)... done! (108.55 ms)
+running Comparable: Point4 (specialized)... done! (72.11 ms)
+running Comparable: Point4 (generic)... done! (119.76 ms)
+running Comparable: Point5 (specialized)... done! (70.76 ms)
+running Comparable: Point5 (generic)... done! (131.75 ms)
+running Comparable: Point6 (specialized)... done! (72.20 ms)
+running Comparable: Point6 (generic)... done! (149.11 ms)
+running Comparable: Point7 (specialized)... done! (71.14 ms)
+running Comparable: Point7 (generic)... done! (150.77 ms)
+running Comparable: Point8 (specialized)... done! (71.58 ms)
+running Comparable: Point8 (generic)... done! (175.64 ms)
+running Comparable: Point9 (specialized)... done! (72.26 ms)
+running Comparable: Point9 (generic)... done! (193.15 ms)
+running Comparable: Point10 (specialized)... done! (71.47 ms)
+running Comparable: Point10 (generic)... done! (212.31 ms)
+running Comparable: Point11 (specialized)... done! (71.84 ms)
+running Comparable: Point11 (generic)... done! (238.85 ms)
+running Comparable: Point12 (specialized)... done! (71.79 ms)
+running Comparable: Point12 (generic)... done! (257.30 ms)
+running Comparable: Point13 (specialized)... done! (72.82 ms)
+running Comparable: Point13 (generic)... done! (280.64 ms)
+running Comparable: Point14 (specialized)... done! (73.97 ms)
+running Comparable: Point14 (generic)... done! (308.97 ms)
+running Comparable: Point15 (specialized)... done! (74.51 ms)
+running Comparable: Point15 (generic)... done! (328.17 ms)
+running Comparable: Point16 (specialized)... done! (72.80 ms)
+running Comparable: Point16 (generic)... done! (334.97 ms)
+running DebugString: Point1 (generic)... done! (405.83 ms)
+running DebugString: Point1 (reference)... done! (1659.01 ms)
+running DebugString: Point2 (generic)... done! (933.53 ms)
+running DebugString: Point2 (reference)... done! (1772.61 ms)
+running DebugString: Point3 (generic)... done! (1363.28 ms)
+running DebugString: Point3 (reference)... done! (1867.95 ms)
+running DebugString: Point4 (generic)... done! (1605.57 ms)
+running DebugString: Point4 (reference)... done! (1974.95 ms)
+running DebugString: Point5 (generic)... done! (1643.88 ms)
+running DebugString: Point5 (reference)... done! (2076.68 ms)
+running DebugString: Point6 (generic)... done! (1684.63 ms)
+running DebugString: Point6 (reference)... done! (2180.82 ms)
+running DebugString: Point7 (generic)... done! (1719.68 ms)
+running DebugString: Point7 (reference)... done! (2285.55 ms)
+running DebugString: Point8 (generic)... done! (1764.30 ms)
+running DebugString: Point8 (reference)... done! (2391.14 ms)
+running DebugString: Point9 (generic)... done! (1807.20 ms)
+running DebugString: Point9 (reference)... done! (2495.52 ms)
+running DebugString: Point10 (generic)... done! (1856.45 ms)
+running DebugString: Point10 (reference)... done! (1524.37 ms)
+running DebugString: Point11 (generic)... done! (1913.31 ms)
+running DebugString: Point11 (reference)... done! (1537.10 ms)
+running DebugString: Point12 (generic)... done! (1965.89 ms)
+running DebugString: Point12 (reference)... done! (1544.06 ms)
+running DebugString: Point13 (generic)... done! (2006.95 ms)
+running DebugString: Point13 (reference)... done! (1554.64 ms)
+running DebugString: Point14 (generic)... done! (2068.00 ms)
+running DebugString: Point14 (reference)... done! (1566.50 ms)
+running DebugString: Point15 (generic)... done! (2103.08 ms)
+running DebugString: Point15 (reference)... done! (1577.06 ms)
+running DebugString: Point16 (generic)... done! (2163.96 ms)
+running DebugString: Point16 (reference)... done! (1568.20 ms)
+running DebugString: BinaryTree (generic)... done! (1840.51 ms)
+running DebugString: BinaryTree (reference)... done! (1754.59 ms)
+running DebugString: Color (generic)... done! (161.44 ms)
+running DebugString: Color (reference)... done! (1120.48 ms)
+running DebugString: ASCII (generic)... done! (200.74 ms)
+running DebugString: ASCII (reference)... done! (1150.28 ms)
+running DecodeJSON: Point1 (foundation parse)... done! (2019.78 ms)
+running DecodeJSON: Point1 (foundation codable)... done! (1706.18 ms)
+running DecodeJSON: Point1 (generic)... done! (2266.58 ms)
+running DecodeJSON: Point2 (foundation parse)... done! (1514.49 ms)
+running DecodeJSON: Point2 (foundation codable)... done! (1887.07 ms)
+running DecodeJSON: Point2 (generic)... done! (1557.46 ms)
+running DecodeJSON: Point3 (foundation parse)... done! (1567.90 ms)
+running DecodeJSON: Point3 (foundation codable)... done! (2073.22 ms)
+running DecodeJSON: Point3 (generic)... done! (1629.82 ms)
+running DecodeJSON: Point4 (foundation parse)... done! (1616.50 ms)
+running DecodeJSON: Point4 (foundation codable)... done! (2259.27 ms)
+running DecodeJSON: Point4 (generic)... done! (1706.61 ms)
+running DecodeJSON: Point5 (foundation parse)... done! (1657.40 ms)
+running DecodeJSON: Point5 (foundation codable)... done! (2467.68 ms)
+running DecodeJSON: Point5 (generic)... done! (1768.91 ms)
+running DecodeJSON: Point6 (foundation parse)... done! (1710.10 ms)
+running DecodeJSON: Point6 (foundation codable)... done! (1524.82 ms)
+running DecodeJSON: Point6 (generic)... done! (1842.41 ms)
+running DecodeJSON: Point7 (foundation parse)... done! (1766.27 ms)
+running DecodeJSON: Point7 (foundation codable)... done! (1543.42 ms)
+running DecodeJSON: Point7 (generic)... done! (1923.46 ms)
+running DecodeJSON: Point8 (foundation parse)... done! (1808.72 ms)
+running DecodeJSON: Point8 (foundation codable)... done! (1560.97 ms)
+running DecodeJSON: Point8 (generic)... done! (1989.35 ms)
+running DecodeJSON: Point9 (foundation parse)... done! (1851.80 ms)
+running DecodeJSON: Point9 (foundation codable)... done! (1577.84 ms)
+running DecodeJSON: Point9 (generic)... done! (2054.31 ms)
+running DecodeJSON: Point10 (foundation parse)... done! (1896.17 ms)
+running DecodeJSON: Point10 (foundation codable)... done! (1604.08 ms)
+running DecodeJSON: Point10 (generic)... done! (2130.32 ms)
+running DecodeJSON: Point11 (foundation parse)... done! (1950.96 ms)
+running DecodeJSON: Point11 (foundation codable)... done! (1627.96 ms)
+running DecodeJSON: Point11 (generic)... done! (2203.65 ms)
+running DecodeJSON: Point12 (foundation parse)... done! (2001.48 ms)
+running DecodeJSON: Point12 (foundation codable)... done! (1662.04 ms)
+running DecodeJSON: Point12 (generic)... done! (2274.94 ms)
+running DecodeJSON: Point13 (foundation parse)... done! (2079.37 ms)
+running DecodeJSON: Point13 (foundation codable)... done! (1654.01 ms)
+running DecodeJSON: Point13 (generic)... done! (2375.63 ms)
+running DecodeJSON: Point14 (foundation parse)... done! (2130.82 ms)
+running DecodeJSON: Point14 (foundation codable)... done! (1679.96 ms)
+running DecodeJSON: Point14 (generic)... done! (2455.74 ms)
+running DecodeJSON: Point15 (foundation parse)... done! (2181.07 ms)
+running DecodeJSON: Point15 (foundation codable)... done! (1715.47 ms)
+running DecodeJSON: Point15 (generic)... done! (1519.45 ms)
+running DecodeJSON: Point16 (foundation parse)... done! (2232.95 ms)
+running DecodeJSON: Point16 (foundation codable)... done! (1726.54 ms)
+running DecodeJSON: Point16 (generic)... done! (1521.13 ms)
+running EncodeJSON: Point1 (generic)... done! (205.43 ms)
+running EncodeJSON: Point1 (reference)... done! (1541.09 ms)
+running EncodeJSON: Point2 (generic)... done! (446.97 ms)
+running EncodeJSON: Point2 (reference)... done! (1638.94 ms)
+running EncodeJSON: Point3 (generic)... done! (726.37 ms)
+running EncodeJSON: Point3 (reference)... done! (1711.26 ms)
+running EncodeJSON: Point4 (generic)... done! (1074.80 ms)
+running EncodeJSON: Point4 (reference)... done! (1811.72 ms)
+running EncodeJSON: Point5 (generic)... done! (1351.86 ms)
+running EncodeJSON: Point5 (reference)... done! (1904.02 ms)
+running EncodeJSON: Point6 (generic)... done! (1590.06 ms)
+running EncodeJSON: Point6 (reference)... done! (1993.48 ms)
+running EncodeJSON: Point7 (generic)... done! (1623.26 ms)
+running EncodeJSON: Point7 (reference)... done! (2092.80 ms)
+running EncodeJSON: Point8 (generic)... done! (1650.23 ms)
+running EncodeJSON: Point8 (reference)... done! (2165.08 ms)
+running EncodeJSON: Point9 (generic)... done! (1678.30 ms)
+running EncodeJSON: Point9 (reference)... done! (2232.81 ms)
+running EncodeJSON: Point10 (generic)... done! (1703.50 ms)
+running EncodeJSON: Point10 (reference)... done! (2301.41 ms)
+running EncodeJSON: Point11 (generic)... done! (1731.94 ms)
+running EncodeJSON: Point11 (reference)... done! (2409.51 ms)
+running EncodeJSON: Point12 (generic)... done! (1756.95 ms)
+running EncodeJSON: Point12 (reference)... done! (2495.32 ms)
+running EncodeJSON: Point13 (generic)... done! (1788.05 ms)
+running EncodeJSON: Point13 (reference)... done! (1485.75 ms)
+running EncodeJSON: Point14 (generic)... done! (1817.87 ms)
+running EncodeJSON: Point14 (reference)... done! (1528.52 ms)
+running EncodeJSON: Point15 (generic)... done! (1858.09 ms)
+running EncodeJSON: Point15 (reference)... done! (1536.23 ms)
+running EncodeJSON: Point16 (generic)... done! (1882.72 ms)
+running EncodeJSON: Point16 (reference)... done! (1544.75 ms)
+running Equatable: Point1 (generic)... done! (91.24 ms)
+running Equatable: Point1 (reference)... done! (72.24 ms)
+running Equatable: Point2 (generic)... done! (100.45 ms)
+running Equatable: Point2 (reference)... done! (71.28 ms)
+running Equatable: Point3 (generic)... done! (106.56 ms)
+running Equatable: Point3 (reference)... done! (72.36 ms)
+running Equatable: Point4 (generic)... done! (116.45 ms)
+running Equatable: Point4 (reference)... done! (72.54 ms)
+running Equatable: Point5 (generic)... done! (125.85 ms)
+running Equatable: Point5 (reference)... done! (71.14 ms)
+running Equatable: Point6 (generic)... done! (133.79 ms)
+running Equatable: Point6 (reference)... done! (71.93 ms)
+running Equatable: Point7 (generic)... done! (143.38 ms)
+running Equatable: Point7 (reference)... done! (71.96 ms)
+running Equatable: Point8 (generic)... done! (151.77 ms)
+running Equatable: Point8 (reference)... done! (72.90 ms)
+running Equatable: Point9 (generic)... done! (159.30 ms)
+running Equatable: Point9 (reference)... done! (72.43 ms)
+running Equatable: Point10 (generic)... done! (168.67 ms)
+running Equatable: Point10 (reference)... done! (72.24 ms)
+running Equatable: Point11 (generic)... done! (181.67 ms)
+running Equatable: Point11 (reference)... done! (73.31 ms)
+running Equatable: Point12 (generic)... done! (187.84 ms)
+running Equatable: Point12 (reference)... done! (72.29 ms)
+running Equatable: Point13 (generic)... done! (207.04 ms)
+running Equatable: Point13 (reference)... done! (81.18 ms)
+running Equatable: Point14 (generic)... done! (213.68 ms)
+running Equatable: Point14 (reference)... done! (72.30 ms)
+running Equatable: Point15 (generic)... done! (214.58 ms)
+running Equatable: Point15 (reference)... done! (73.41 ms)
+running Equatable: Point16 (generic)... done! (235.74 ms)
+running Equatable: Point16 (reference)... done! (72.42 ms)
+running Equatable: BinaryTree (generic)... done! (710.71 ms)
+running Equatable: BinaryTree (reference)... done! (176.29 ms)
+running Equatable: Color (generic)... done! (102.33 ms)
+running Equatable: Color (reference)... done! (70.33 ms)
+running Equatable: ASCII (generic)... done! (215.06 ms)
+running Equatable: ASCII (reference)... done! (76.50 ms)
+running Hashable: Point1 (generic)... done! (89.26 ms)
+running Hashable: Point1 (reference)... done! (81.77 ms)
+running Hashable: Point2 (generic)... done! (99.81 ms)
+running Hashable: Point2 (reference)... done! (89.48 ms)
+running Hashable: Point3 (generic)... done! (105.83 ms)
+running Hashable: Point3 (reference)... done! (91.34 ms)
+running Hashable: Point4 (generic)... done! (114.53 ms)
+running Hashable: Point4 (reference)... done! (98.77 ms)
+running Hashable: Point5 (generic)... done! (122.84 ms)
+running Hashable: Point5 (reference)... done! (97.81 ms)
+running Hashable: Point6 (generic)... done! (132.53 ms)
+running Hashable: Point6 (reference)... done! (105.92 ms)
+running Hashable: Point7 (generic)... done! (140.11 ms)
+running Hashable: Point7 (reference)... done! (105.78 ms)
+running Hashable: Point8 (generic)... done! (154.59 ms)
+running Hashable: Point8 (reference)... done! (111.71 ms)
+running Hashable: Point9 (generic)... done! (160.30 ms)
+running Hashable: Point9 (reference)... done! (115.04 ms)
+running Hashable: Point10 (generic)... done! (169.93 ms)
+running Hashable: Point10 (reference)... done! (119.39 ms)
+running Hashable: Point11 (generic)... done! (185.70 ms)
+running Hashable: Point11 (reference)... done! (123.44 ms)
+running Hashable: Point12 (generic)... done! (191.71 ms)
+running Hashable: Point12 (reference)... done! (129.74 ms)
+running Hashable: Point13 (generic)... done! (201.80 ms)
+running Hashable: Point13 (reference)... done! (129.30 ms)
+running Hashable: Point14 (generic)... done! (212.35 ms)
+running Hashable: Point14 (reference)... done! (136.11 ms)
+running Hashable: Point15 (generic)... done! (222.40 ms)
+running Hashable: Point15 (reference)... done! (136.85 ms)
+running Hashable: Point16 (generic)... done! (230.19 ms)
+running Hashable: Point16 (reference)... done! (144.58 ms)
+running Hashable: BinaryTree (generic)... done! (557.14 ms)
+running Hashable: BinaryTree (reference)... done! (191.94 ms)
+running Hashable: Color (generic)... done! (99.33 ms)
+running Hashable: Color (reference)... done! (82.85 ms)
+running Hashable: ASCII (generic)... done! (146.65 ms)
+running Hashable: ASCII (reference)... done! (90.23 ms)
+running InplaceAdd: Point1 (generic)... done! (94.20 ms)
+running InplaceAdd: Point1 (specialized)... done! (70.06 ms)
+running InplaceAdd: Point2 (generic)... done! (101.74 ms)
+running InplaceAdd: Point2 (specialized)... done! (72.66 ms)
+running InplaceAdd: Point3 (generic)... done! (116.41 ms)
+running InplaceAdd: Point3 (specialized)... done! (71.12 ms)
+running InplaceAdd: Point4 (generic)... done! (128.59 ms)
+running InplaceAdd: Point4 (specialized)... done! (70.85 ms)
+running InplaceAdd: Point5 (generic)... done! (152.00 ms)
+running InplaceAdd: Point5 (specialized)... done! (70.50 ms)
+running InplaceAdd: Point6 (generic)... done! (169.54 ms)
+running InplaceAdd: Point6 (specialized)... done! (70.60 ms)
+running InplaceAdd: Point7 (generic)... done! (184.90 ms)
+running InplaceAdd: Point7 (specialized)... done! (70.33 ms)
+running InplaceAdd: Point8 (generic)... done! (202.52 ms)
+running InplaceAdd: Point8 (specialized)... done! (70.03 ms)
+running InplaceAdd: Point9 (generic)... done! (221.70 ms)
+running InplaceAdd: Point9 (specialized)... done! (71.60 ms)
+running InplaceAdd: Point10 (generic)... done! (237.22 ms)
+running InplaceAdd: Point10 (specialized)... done! (72.50 ms)
+running InplaceAdd: Point11 (generic)... done! (259.92 ms)
+running InplaceAdd: Point11 (specialized)... done! (71.89 ms)
+running InplaceAdd: Point12 (generic)... done! (299.18 ms)
+running InplaceAdd: Point12 (specialized)... done! (70.96 ms)
+running InplaceAdd: Point13 (generic)... done! (295.28 ms)
+running InplaceAdd: Point13 (specialized)... done! (70.85 ms)
+running InplaceAdd: Point14 (generic)... done! (312.68 ms)
+running InplaceAdd: Point14 (specialized)... done! (71.70 ms)
+running InplaceAdd: Point15 (generic)... done! (335.79 ms)
+running InplaceAdd: Point15 (specialized)... done! (74.68 ms)
+running InplaceAdd: Point16 (generic)... done! (349.68 ms)
+running InplaceAdd: Point16 (specialized)... done! (70.86 ms)
+
+name                                      time          std          iterations  
+-------------------------------------------------------------------------------
+Additive: Point1 (specialized)            44.0 ns       ±  43.06 %   1000000     
+Additive: Point1 (generic)                70.0 ns       ±  39.03 %   1000000     
+Additive: Point2 (specialized)            44.0 ns       ±  44.29 %   1000000     
+Additive: Point2 (generic)                78.0 ns       ±  31.49 %   1000000     
+Additive: Point3 (specialized)            45.0 ns       ±  52.53 %   1000000     
+Additive: Point3 (generic)                86.0 ns       ±  36.70 %   1000000     
+Additive: Point4 (specialized)            45.0 ns       ±  26.06 %   1000000     
+Additive: Point4 (generic)                98.0 ns       ±  34.70 %   1000000     
+Additive: Point5 (specialized)            50.0 ns       ±  44.42 %   1000000     
+Additive: Point5 (generic)                115.0 ns      ±  22.97 %   1000000     
+Additive: Point6 (specialized)            49.0 ns       ±  65.24 %   1000000     
+Additive: Point6 (generic)                128.0 ns      ± 217.84 %   1000000     
+Additive: Point7 (specialized)            50.0 ns       ±  34.82 %   1000000     
+Additive: Point7 (generic)                135.0 ns      ±  25.73 %   1000000     
+Additive: Point8 (specialized)            51.0 ns       ±  65.88 %   1000000     
+Additive: Point8 (generic)                147.0 ns      ±  30.13 %   1000000     
+Additive: Point9 (specialized)            52.0 ns       ±  34.99 %   1000000     
+Additive: Point9 (generic)                164.0 ns      ±  31.99 %   1000000     
+Additive: Point10 (specialized)           53.0 ns       ±  30.80 %   1000000     
+Additive: Point10 (generic)               171.0 ns      ±  29.17 %   1000000     
+Additive: Point11 (specialized)           53.0 ns       ±  81.20 %   1000000     
+Additive: Point11 (generic)               193.0 ns      ±  29.20 %   1000000     
+Additive: Point12 (specialized)           55.0 ns       ±  47.19 %   1000000     
+Additive: Point12 (generic)               199.0 ns      ±  23.66 %   1000000     
+Additive: Point13 (specialized)           55.0 ns       ±  46.80 %   1000000     
+Additive: Point13 (generic)               210.0 ns      ±  19.65 %   1000000     
+Additive: Point14 (specialized)           57.0 ns       ±  25.08 %   1000000     
+Additive: Point14 (generic)               222.0 ns      ±  24.35 %   1000000     
+Additive: Point15 (specialized)           59.0 ns       ±  36.38 %   1000000     
+Additive: Point15 (generic)               243.0 ns      ±  18.94 %   1000000     
+Additive: Point16 (specialized)           58.0 ns       ± 147.26 %   1000000     
+Additive: Point16 (generic)               248.0 ns      ±  26.29 %   1000000     
+Additive: BinaryTree (specialized)        1152.0 ns     ±  56.29 %   1000000     
+Additive: BinaryTree (generic)            1711.0 ns     ±   7.37 %   805142      
+Comparable: Point1 (specialized)          37.0 ns       ±  53.03 %   1000000     
+Comparable: Point1 (generic)              56.0 ns       ±  32.92 %   1000000     
+Comparable: Point2 (specialized)          49.0 ns       ±  21.53 %   1000000     
+Comparable: Point2 (generic)              60.0 ns       ±  20.22 %   1000000     
+Comparable: Point3 (specialized)          37.0 ns       ±  26.03 %   1000000     
+Comparable: Point3 (generic)              71.0 ns       ±  35.42 %   1000000     
+Comparable: Point4 (specialized)          38.0 ns       ±  41.62 %   1000000     
+Comparable: Point4 (generic)              80.0 ns       ±  42.85 %   1000000     
+Comparable: Point5 (specialized)          37.0 ns       ±  52.71 %   1000000     
+Comparable: Point5 (generic)              91.0 ns       ±  46.76 %   1000000     
+Comparable: Point6 (specialized)          38.0 ns       ±  32.38 %   1000000     
+Comparable: Point6 (generic)              109.0 ns      ±  22.30 %   1000000     
+Comparable: Point7 (specialized)          37.0 ns       ±  39.40 %   1000000     
+Comparable: Point7 (generic)              108.0 ns      ±  34.55 %   1000000     
+Comparable: Point8 (specialized)          37.0 ns       ± 1571.79 %  1000000     
+Comparable: Point8 (generic)              131.0 ns      ±  26.93 %   1000000     
+Comparable: Point9 (specialized)          38.0 ns       ±  69.36 %   1000000     
+Comparable: Point9 (generic)              146.0 ns      ±  33.35 %   1000000     
+Comparable: Point10 (specialized)         37.0 ns       ±  30.60 %   1000000     
+Comparable: Point10 (generic)             163.0 ns      ±  33.04 %   1000000     
+Comparable: Point11 (specialized)         37.0 ns       ±  52.78 %   1000000     
+Comparable: Point11 (generic)             187.0 ns      ±  31.02 %   1000000     
+Comparable: Point12 (specialized)         38.0 ns       ±  38.23 %   1000000     
+Comparable: Point12 (generic)             204.0 ns      ±  20.23 %   1000000     
+Comparable: Point13 (specialized)         38.0 ns       ±  83.47 %   1000000     
+Comparable: Point13 (generic)             224.0 ns      ± 245.09 %   1000000     
+Comparable: Point14 (specialized)         40.0 ns       ±  78.53 %   1000000     
+Comparable: Point14 (generic)             250.0 ns      ±  21.02 %   1000000     
+Comparable: Point15 (specialized)         40.0 ns       ±  35.64 %   1000000     
+Comparable: Point15 (generic)             262.0 ns      ±  21.65 %   1000000     
+Comparable: Point16 (specialized)         38.0 ns       ±  23.26 %   1000000     
+Comparable: Point16 (generic)             273.0 ns      ±  25.93 %   1000000     
+DebugString: Point1 (generic)             336.0 ns      ±  20.76 %   1000000     
+DebugString: Point1 (reference)           2229.0 ns     ±  32.49 %   619484      
+DebugString: Point2 (generic)             807.0 ns      ±  12.00 %   1000000     
+DebugString: Point2 (reference)           3202.0 ns     ±  26.43 %   435589      
+DebugString: Point3 (generic)             1196.0 ns     ±   9.43 %   1000000     
+DebugString: Point3 (reference)           4141.0 ns     ±   6.14 %   334462      
+DebugString: Point4 (generic)             1592.0 ns     ±  39.16 %   876513      
+DebugString: Point4 (reference)           5039.0 ns     ±   6.47 %   277066      
+DebugString: Point5 (generic)             1974.0 ns     ±  42.39 %   708054      
+DebugString: Point5 (reference)           5977.0 ns     ±   5.19 %   233637      
+DebugString: Point6 (generic)             2359.0 ns     ±  33.01 %   592328      
+DebugString: Point6 (reference)           6915.0 ns     ±   6.31 %   201982      
+DebugString: Point7 (generic)             2754.0 ns     ±   6.75 %   505437      
+DebugString: Point7 (reference)           7883.0 ns     ±  19.09 %   176657      
+DebugString: Point8 (generic)             3179.0 ns     ±   6.28 %   437343      
+DebugString: Point8 (reference)           8818.0 ns     ±  21.57 %   158331      
+DebugString: Point9 (generic)             3585.0 ns     ±   5.30 %   387490      
+DebugString: Point9 (reference)           9788.0 ns     ±   3.46 %   142080      
+DebugString: Point10 (generic)            4000.0 ns     ±  32.31 %   348152      
+DebugString: Point10 (reference)          10753.0 ns    ±   3.63 %   129961      
+DebugString: Point11 (generic)            4541.0 ns     ±  57.18 %   305780      
+DebugString: Point11 (reference)          11727.0 ns    ±  24.06 %   119224      
+DebugString: Point12 (generic)            5010.0 ns     ±  55.68 %   277221      
+DebugString: Point12 (reference)          12641.0 ns    ±   3.50 %   110534      
+DebugString: Point13 (generic)            5355.0 ns     ±  54.12 %   259508      
+DebugString: Point13 (reference)          13631.0 ns    ±   2.97 %   102497      
+DebugString: Point14 (generic)            5882.0 ns     ±  52.04 %   237426      
+DebugString: Point14 (reference)          14727.0 ns    ±   4.68 %   94817       
+DebugString: Point15 (generic)            6240.0 ns     ±  51.02 %   222147      
+DebugString: Point15 (reference)          15624.0 ns    ±   2.87 %   89484       
+DebugString: Point16 (generic)            6771.0 ns     ±  49.64 %   205516      
+DebugString: Point16 (reference)          16459.0 ns    ±   2.75 %   83577       
+DebugString: BinaryTree (generic)         3873.0 ns     ±  66.35 %   358585      
+DebugString: BinaryTree (reference)       31545.0 ns    ±   1.93 %   44384       
+DebugString: Color (generic)              118.0 ns      ±  32.29 %   1000000     
+DebugString: Color (reference)            976.0 ns      ±  82.22 %   1000000     
+DebugString: ASCII (generic)              153.0 ns      ±  25.76 %   1000000     
+DebugString: ASCII (reference)            1003.0 ns     ±  12.02 %   1000000     
+DecodeJSON: Point1 (foundation parse)     55615.0 ns    ±   9.51 %   25093       
+DecodeJSON: Point1 (foundation codable)   273814.0 ns   ±   2.99 %   5105        
+DecodeJSON: Point1 (generic)              77839.0 ns    ±   8.00 %   17930       
+DecodeJSON: Point2 (foundation parse)     102717.0 ns   ±   2.07 %   13617       
+DecodeJSON: Point2 (foundation codable)   438868.5 ns   ±   3.60 %   3174        
+DecodeJSON: Point2 (generic)              143290.0 ns   ±   1.09 %   9729        
+DecodeJSON: Point3 (foundation parse)     142598.0 ns   ±  14.07 %   9796        
+DecodeJSON: Point3 (foundation codable)   601319.0 ns   ±   1.13 %   2322        
+DecodeJSON: Point3 (generic)              203430.0 ns   ±   9.80 %   6885        
+DecodeJSON: Point4 (foundation parse)     191565.0 ns   ±   1.12 %   7313        
+DecodeJSON: Point4 (foundation codable)   784510.5 ns   ±   2.01 %   1806        
+DecodeJSON: Point4 (generic)              273844.0 ns   ±   8.41 %   5106        
+DecodeJSON: Point5 (foundation parse)     230754.0 ns   ±   0.86 %   6059        
+DecodeJSON: Point5 (foundation codable)   981564.0 ns   ±   5.37 %   1456        
+DecodeJSON: Point5 (generic)              331332.0 ns   ±   0.79 %   4215        
+DecodeJSON: Point6 (foundation parse)     272976.5 ns   ±   8.37 %   5142        
+DecodeJSON: Point6 (foundation codable)   1157348.0 ns  ±   1.67 %   1221        
+DecodeJSON: Point6 (generic)              394409.0 ns   ±   7.02 %   3548        
+DecodeJSON: Point7 (foundation parse)     325907.5 ns   ±   0.74 %   4296        
+DecodeJSON: Point7 (foundation codable)   1286816.5 ns  ±   4.40 %   1094        
+DecodeJSON: Point7 (generic)              469056.0 ns   ±   2.35 %   2978        
+DecodeJSON: Point8 (foundation parse)     365997.0 ns   ±   7.32 %   3822        
+DecodeJSON: Point8 (foundation codable)   1447751.0 ns  ±   6.24 %   967         
+DecodeJSON: Point8 (generic)              526913.0 ns   ±   6.99 %   2651        
+DecodeJSON: Point9 (foundation parse)     406914.0 ns   ±   0.66 %   3435        
+DecodeJSON: Point9 (foundation codable)   1622341.0 ns  ±   3.55 %   859         
+DecodeJSON: Point9 (generic)              587516.5 ns   ±   0.68 %   2376        
+DecodeJSON: Point10 (foundation parse)    449589.5 ns   ±   0.80 %   3100        
+DecodeJSON: Point10 (foundation codable)  1816873.0 ns  ±   0.90 %   771         
+DecodeJSON: Point10 (generic)             657682.0 ns   ±   0.46 %   2123        
+DecodeJSON: Point11 (foundation parse)    494018.0 ns   ±   6.66 %   2829        
+DecodeJSON: Point11 (foundation codable)  2051639.0 ns  ±   1.67 %   682         
+DecodeJSON: Point11 (generic)             719880.5 ns   ±   5.23 %   1942        
+DecodeJSON: Point12 (foundation parse)    540278.0 ns   ±   0.67 %   2595        
+DecodeJSON: Point12 (foundation codable)  2333142.5 ns  ±   4.16 %   616         
+DecodeJSON: Point12 (generic)             784802.0 ns   ±   0.78 %   1780        
+DecodeJSON: Point13 (foundation parse)    608612.5 ns   ±   4.39 %   2292        
+DecodeJSON: Point13 (foundation codable)  2301418.0 ns  ±   0.45 %   607         
+DecodeJSON: Point13 (generic)             875238.0 ns   ±   0.63 %   1593        
+DecodeJSON: Point14 (foundation parse)    655708.0 ns   ±   5.49 %   2131        
+DecodeJSON: Point14 (foundation codable)  2512234.0 ns  ±   0.93 %   559         
+DecodeJSON: Point14 (generic)             949759.5 ns   ±   0.83 %   1472        
+DecodeJSON: Point15 (foundation parse)    702395.0 ns   ±   5.31 %   1987        
+DecodeJSON: Point15 (foundation codable)  2741088.0 ns  ±   7.88 %   515         
+DecodeJSON: Point15 (generic)             1016816.0 ns  ±   4.48 %   1379        
+DecodeJSON: Point16 (foundation parse)    748230.0 ns   ±   0.74 %   1863        
+DecodeJSON: Point16 (foundation codable)  2920945.0 ns  ±   2.98 %   483         
+DecodeJSON: Point16 (generic)             1081847.5 ns  ±   0.58 %   1292        
+EncodeJSON: Point1 (generic)              157.0 ns      ±  29.42 %   1000000     
+EncodeJSON: Point1 (reference)            12781.0 ns    ±  19.83 %   108761      
+EncodeJSON: Point2 (generic)              374.0 ns      ±  17.34 %   1000000     
+EncodeJSON: Point2 (reference)            21623.0 ns    ±   3.06 %   64558       
+EncodeJSON: Point3 (generic)              625.0 ns      ±  13.54 %   1000000     
+EncodeJSON: Point3 (reference)            27846.0 ns    ±   2.49 %   50212       
+EncodeJSON: Point4 (generic)              938.0 ns      ±  10.88 %   1000000     
+EncodeJSON: Point4 (reference)            36741.0 ns    ±  11.89 %   38030       
+EncodeJSON: Point5 (generic)              1187.0 ns     ±   8.37 %   1000000     
+EncodeJSON: Point5 (reference)            45115.0 ns    ±  11.78 %   30969       
+EncodeJSON: Point6 (generic)              1440.0 ns     ±   8.64 %   969998      
+EncodeJSON: Point6 (reference)            52941.0 ns    ±  10.19 %   26424       
+EncodeJSON: Point7 (generic)              1789.0 ns     ±   8.23 %   779986      
+EncodeJSON: Point7 (reference)            61864.0 ns    ±  14.62 %   22613       
+EncodeJSON: Point8 (generic)              2045.0 ns     ±   9.34 %   682541      
+EncodeJSON: Point8 (reference)            68697.5 ns    ±   1.65 %   20332       
+EncodeJSON: Point9 (generic)              2312.0 ns     ±   7.52 %   604125      
+EncodeJSON: Point9 (reference)            74593.0 ns    ±   1.49 %   18762       
+EncodeJSON: Point10 (generic)             2554.0 ns     ±  46.61 %   546614      
+EncodeJSON: Point10 (reference)           80827.0 ns    ±   3.06 %   17273       
+EncodeJSON: Point11 (generic)             2821.0 ns     ±  49.73 %   494743      
+EncodeJSON: Point11 (reference)           90540.0 ns    ±   2.51 %   15406       
+EncodeJSON: Point12 (generic)             3084.0 ns     ±   6.08 %   452182      
+EncodeJSON: Point12 (reference)           98360.0 ns    ±   1.42 %   14157       
+EncodeJSON: Point13 (generic)             3348.0 ns     ±   6.49 %   417178      
+EncodeJSON: Point13 (reference)           107994.0 ns   ±  10.05 %   12541       
+EncodeJSON: Point14 (generic)             3638.0 ns     ±   6.48 %   383541      
+EncodeJSON: Point14 (reference)           114645.0 ns   ±   1.25 %   12191       
+EncodeJSON: Point15 (generic)             4017.0 ns     ±   6.03 %   347057      
+EncodeJSON: Point15 (reference)           122983.0 ns   ±   1.41 %   11348       
+EncodeJSON: Point16 (generic)             4223.0 ns     ±  41.70 %   330370      
+EncodeJSON: Point16 (reference)           128504.0 ns   ±   1.23 %   10880       
+Equatable: Point1 (generic)               55.0 ns       ±  61.79 %   1000000     
+Equatable: Point1 (reference)             38.0 ns       ±  48.61 %   1000000     
+Equatable: Point2 (generic)               63.0 ns       ±  35.88 %   1000000     
+Equatable: Point2 (reference)             37.0 ns       ±  59.89 %   1000000     
+Equatable: Point3 (generic)               69.0 ns       ±  50.27 %   1000000     
+Equatable: Point3 (reference)             38.0 ns       ±  30.57 %   1000000     
+Equatable: Point4 (generic)               78.0 ns       ±  52.90 %   1000000     
+Equatable: Point4 (reference)             38.0 ns       ±  75.74 %   1000000     
+Equatable: Point5 (generic)               86.0 ns       ±  32.68 %   1000000     
+Equatable: Point5 (reference)             37.0 ns       ±  71.79 %   1000000     
+Equatable: Point6 (generic)               93.0 ns       ±  41.71 %   1000000     
+Equatable: Point6 (reference)             38.0 ns       ±  96.93 %   1000000     
+Equatable: Point7 (generic)               102.0 ns      ±  48.16 %   1000000     
+Equatable: Point7 (reference)             38.0 ns       ±  44.71 %   1000000     
+Equatable: Point8 (generic)               110.0 ns      ±  33.05 %   1000000     
+Equatable: Point8 (reference)             39.0 ns       ± 114.81 %   1000000     
+Equatable: Point9 (generic)               116.0 ns      ±  32.27 %   1000000     
+Equatable: Point9 (reference)             38.0 ns       ±  34.48 %   1000000     
+Equatable: Point10 (generic)              125.0 ns      ±  34.78 %   1000000     
+Equatable: Point10 (reference)            38.0 ns       ±  85.00 %   1000000     
+Equatable: Point11 (generic)              136.0 ns      ±  43.89 %   1000000     
+Equatable: Point11 (reference)            39.0 ns       ±  66.24 %   1000000     
+Equatable: Point12 (generic)              142.0 ns      ±  27.30 %   1000000     
+Equatable: Point12 (reference)            38.0 ns       ±  61.19 %   1000000     
+Equatable: Point13 (generic)              159.0 ns      ±  27.07 %   1000000     
+Equatable: Point13 (reference)            49.0 ns       ±  50.24 %   1000000     
+Equatable: Point14 (generic)              165.0 ns      ±  37.43 %   1000000     
+Equatable: Point14 (reference)            38.0 ns       ±  28.83 %   1000000     
+Equatable: Point15 (generic)              166.0 ns      ±  36.42 %   1000000     
+Equatable: Point15 (reference)            39.0 ns       ±  36.26 %   1000000     
+Equatable: Point16 (generic)              183.0 ns      ±  30.14 %   1000000     
+Equatable: Point16 (reference)            38.0 ns       ±  52.57 %   1000000     
+Equatable: BinaryTree (generic)           613.0 ns      ±  15.39 %   1000000     
+Equatable: BinaryTree (reference)         131.0 ns      ±  33.28 %   1000000     
+Equatable: Color (generic)                65.0 ns       ±  55.94 %   1000000     
+Equatable: Color (reference)              37.0 ns       ±  75.79 %   1000000     
+Equatable: ASCII (generic)                165.0 ns      ±  35.54 %   1000000     
+Equatable: ASCII (reference)              42.0 ns       ±  70.37 %   1000000     
+Hashable: Point1 (generic)                53.0 ns       ±  50.19 %   1000000     
+Hashable: Point1 (reference)              46.0 ns       ±  62.08 %   1000000     
+Hashable: Point2 (generic)                63.0 ns       ±  50.52 %   1000000     
+Hashable: Point2 (reference)              53.0 ns       ±  52.30 %   1000000     
+Hashable: Point3 (generic)                68.0 ns       ±  24.29 %   1000000     
+Hashable: Point3 (reference)              55.0 ns       ±  76.39 %   1000000     
+Hashable: Point4 (generic)                76.0 ns       ±  42.66 %   1000000     
+Hashable: Point4 (reference)              62.0 ns       ±  46.25 %   1000000     
+Hashable: Point5 (generic)                83.0 ns       ±  45.00 %   1000000     
+Hashable: Point5 (reference)              61.0 ns       ±  47.26 %   1000000     
+Hashable: Point6 (generic)                91.0 ns       ±  48.14 %   1000000     
+Hashable: Point6 (reference)              68.0 ns       ±  41.21 %   1000000     
+Hashable: Point7 (generic)                99.0 ns       ±  29.51 %   1000000     
+Hashable: Point7 (reference)              68.0 ns       ±  48.06 %   1000000     
+Hashable: Point8 (generic)                110.0 ns      ± 1426.54 %  1000000     
+Hashable: Point8 (reference)              73.0 ns       ±  30.54 %   1000000     
+Hashable: Point9 (generic)                117.0 ns      ±  30.87 %   1000000     
+Hashable: Point9 (reference)              77.0 ns       ±  42.82 %   1000000     
+Hashable: Point10 (generic)               126.0 ns      ±  20.71 %   1000000     
+Hashable: Point10 (reference)             80.0 ns       ±  38.43 %   1000000     
+Hashable: Point11 (generic)               139.0 ns      ±  29.82 %   1000000     
+Hashable: Point11 (reference)             84.0 ns       ±  58.64 %   1000000     
+Hashable: Point12 (generic)               145.0 ns      ±  23.82 %   1000000     
+Hashable: Point12 (reference)             90.0 ns       ±  42.92 %   1000000     
+Hashable: Point13 (generic)               154.0 ns      ±  26.28 %   1000000     
+Hashable: Point13 (reference)             89.0 ns       ±  39.93 %   1000000     
+Hashable: Point14 (generic)               163.0 ns      ±  21.99 %   1000000     
+Hashable: Point14 (reference)             95.0 ns       ±  31.84 %   1000000     
+Hashable: Point15 (generic)               172.0 ns      ±  24.57 %   1000000     
+Hashable: Point15 (reference)             96.0 ns       ±  38.52 %   1000000     
+Hashable: Point16 (generic)               180.0 ns      ±  25.61 %   1000000     
+Hashable: Point16 (reference)             103.0 ns      ±  26.66 %   1000000     
+Hashable: BinaryTree (generic)            472.0 ns      ±  18.19 %   1000000     
+Hashable: BinaryTree (reference)          146.0 ns      ±  19.92 %   1000000     
+Hashable: Color (generic)                 62.0 ns       ±  38.50 %   1000000     
+Hashable: Color (reference)               48.0 ns       ±  38.89 %   1000000     
+Hashable: ASCII (generic)                 105.0 ns      ±  27.81 %   1000000     
+Hashable: ASCII (reference)               54.0 ns       ±  66.43 %   1000000     
+InplaceAdd: Point1 (generic)              58.0 ns       ±  84.32 %   1000000     
+InplaceAdd: Point1 (specialized)          36.0 ns       ±  61.83 %   1000000     
+InplaceAdd: Point2 (generic)              65.0 ns       ±  34.36 %   1000000     
+InplaceAdd: Point2 (specialized)          39.0 ns       ±  75.04 %   1000000     
+InplaceAdd: Point3 (generic)              78.0 ns       ±  33.78 %   1000000     
+InplaceAdd: Point3 (specialized)          37.0 ns       ±  79.47 %   1000000     
+InplaceAdd: Point4 (generic)              88.0 ns       ± 714.29 %   1000000     
+InplaceAdd: Point4 (specialized)          37.0 ns       ±  99.54 %   1000000     
+InplaceAdd: Point5 (generic)              110.0 ns      ±  31.00 %   1000000     
+InplaceAdd: Point5 (specialized)          37.0 ns       ±  50.58 %   1000000     
+InplaceAdd: Point6 (generic)              125.0 ns      ±  34.17 %   1000000     
+InplaceAdd: Point6 (specialized)          37.0 ns       ±  79.67 %   1000000     
+InplaceAdd: Point7 (generic)              139.0 ns      ±  38.43 %   1000000     
+InplaceAdd: Point7 (specialized)          36.0 ns       ±  52.51 %   1000000     
+InplaceAdd: Point8 (generic)              155.0 ns      ±  31.58 %   1000000     
+InplaceAdd: Point8 (specialized)          36.0 ns       ±  75.83 %   1000000     
+InplaceAdd: Point9 (generic)              172.0 ns      ±  27.59 %   1000000     
+InplaceAdd: Point9 (specialized)          38.0 ns       ±  73.61 %   1000000     
+InplaceAdd: Point10 (generic)             186.0 ns      ±  29.85 %   1000000     
+InplaceAdd: Point10 (specialized)         38.0 ns       ±  69.71 %   1000000     
+InplaceAdd: Point11 (generic)             207.0 ns      ±  21.00 %   1000000     
+InplaceAdd: Point11 (specialized)         37.0 ns       ± 100.50 %   1000000     
+InplaceAdd: Point12 (generic)             241.0 ns      ±  26.93 %   1000000     
+InplaceAdd: Point12 (specialized)         37.0 ns       ± 115.70 %   1000000     
+InplaceAdd: Point13 (generic)             238.0 ns      ±  17.63 %   1000000     
+InplaceAdd: Point13 (specialized)         37.0 ns       ±  63.36 %   1000000     
+InplaceAdd: Point14 (generic)             254.0 ns      ±  18.24 %   1000000     
+InplaceAdd: Point14 (specialized)         37.0 ns       ±  42.85 %   1000000     
+InplaceAdd: Point15 (generic)             274.0 ns      ±  18.87 %   1000000     
+InplaceAdd: Point15 (specialized)         41.0 ns       ±  62.44 %   1000000     
+InplaceAdd: Point16 (generic)             287.0 ns      ±  24.65 %   1000000     
+InplaceAdd: Point16 (specialized)         37.0 ns       ±  81.22 %   1000000     
