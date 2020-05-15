@@ -55,15 +55,16 @@ public func toJSONString<T: EncodeJSONStructural>(_ value: T) -> String {
 
 // Inductive cases.
 
-extension Struct: EncodeJSONStructural where A: EncodeJSONStructural {
+extension Struct: EncodeJSONStructural where Properties: EncodeJSONStructural {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendObjectStart()
-        self.shape.encodeJson(into: &builder)
+        self.properties.encodeJson(into: &builder)
         builder.appendObjectEnd()
     }
 }
 
-extension Field: EncodeJSONStructural where A: EncodeJSONStructural, B: EncodeJSONStructural {
+extension Property: EncodeJSONStructural
+where Value: EncodeJSONStructural, Next: EncodeJSONStructural {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendProperty(name: self.name)
         self.value.encodeJson(into: &builder)

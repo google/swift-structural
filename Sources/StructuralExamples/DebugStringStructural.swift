@@ -7,13 +7,14 @@ public protocol DebugStringStructural {
 
 // Inductive cases. 
 
-extension Struct: DebugStringStructural where A: DebugStringStructural {
+extension Struct: DebugStringStructural where Properties: DebugStringStructural {
     public var debugDescriptionStructural: String {
-        return "\(self.name)(\(self.shape.debugDescriptionStructural))"
+        return "\(self.name)(\(properties.debugDescriptionStructural))"
     }
 }
 
-extension Field: DebugStringStructural where A: DebugStringStructural, B: DebugStringStructural {
+extension Property: DebugStringStructural
+where Value: DebugStringStructural, Next: DebugStringStructural {
     public var debugDescriptionStructural: String {
         var fld: String
         if self.name == "" {

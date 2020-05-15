@@ -8,13 +8,14 @@ public protocol InplaceAddStructural {
 
 // Inductive cases. 
 
-extension Struct: InplaceAddStructural where A: InplaceAddStructural {
+extension Struct: InplaceAddStructural where Properties: InplaceAddStructural {
     public mutating func inplaceAdd(_ other: Self) {
-        self.shape.inplaceAdd(other.shape)
+        self.properties.inplaceAdd(other.properties)
     }
 }
 
-extension Field: InplaceAddStructural where A: InplaceAddStructural, B: InplaceAddStructural {
+extension Property: InplaceAddStructural
+where Value: InplaceAddStructural, Next: InplaceAddStructural {
     public mutating func inplaceAdd(_ other: Self) {
         if isMutable {
             self.value.inplaceAdd(other.value)

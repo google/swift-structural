@@ -34,7 +34,7 @@ where V: HashableStructural, A: HashableStructural, B: HashableStructural {
     }
 }
 
-extension Field: HashableStructural where A: HashableStructural, B: HashableStructural {
+extension Property: HashableStructural where Value: HashableStructural, Next: HashableStructural {
     public func genericHash(into hasher: inout Hasher) {
         value.genericHash(into: &hasher)
         next.genericHash(into: &hasher)
@@ -47,9 +47,9 @@ extension Enum: HashableStructural where A: HashableStructural {
     }
 }
 
-extension Struct: HashableStructural where A: HashableStructural {
+extension Struct: HashableStructural where Properties: HashableStructural {
     public func genericHash(into hasher: inout Hasher) {
-        shape.genericHash(into: &hasher)
+        properties.genericHash(into: &hasher)
     }
 }
 

@@ -22,7 +22,8 @@ extension Case: EquatableStructural where A: EquatableStructural, B: EquatableSt
     }
 }
 
-extension Field: EquatableStructural where A: EquatableStructural, B: EquatableStructural {
+extension Property: EquatableStructural
+where Value: EquatableStructural, Next: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
         return value.genericEqual(other.value) && next.genericEqual(other.next)
     }
@@ -34,9 +35,9 @@ extension Enum: EquatableStructural where A: EquatableStructural {
     }
 }
 
-extension Struct: EquatableStructural where A: EquatableStructural {
+extension Struct: EquatableStructural where Properties: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
-        shape.genericEqual(other.shape)
+        properties.genericEqual(other.properties)
     }
 }
 

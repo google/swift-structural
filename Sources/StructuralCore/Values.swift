@@ -1,25 +1,25 @@
-public struct Struct<A> {
+public struct Struct<Properties> {
     public var name: String
-    public var shape: A
+    public var properties: Properties
 
-    public init(_ shape: A) {
+    public init(_ properties: Properties) {
         self.name = ""
-        self.shape = shape
+        self.properties = properties
     }
 
-    public init(_ name: String, _ shape: A) {
+    public init(_ name: String, _ properties: Properties) {
         self.name = name
-        self.shape = shape
+        self.properties = properties
     }
 }
 
-public struct Field<A, B> {
+public struct Property<Value, Next> {
     public var name: String
-    public var value: A
+    public var value: Value
     public var isMutable: Bool
-    public var next: B
+    public var next: Next
 
-    public init(_ value: A, _ next: B) {
+    public init(_ value: Value, _ next: Next) {
         self.name = ""
         self.isMutable = false
         self.value = value
@@ -27,7 +27,7 @@ public struct Field<A, B> {
 
     }
 
-    public init(_ name: String, _ value: A, isMutable: Bool, _ next: B) {
+    public init(_ name: String, _ value: Value, isMutable: Bool, _ next: Next) {
         self.value = value
         self.next = next
         self.name = name

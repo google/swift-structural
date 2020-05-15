@@ -10,25 +10,26 @@ public protocol ComparableStructural {
 
 // Inductive cases. 
 
-extension Struct: ComparableStructural where A: ComparableStructural {
+extension Struct: ComparableStructural where Properties: ComparableStructural {
     public func genericLess(_ other: Self) -> Bool {
-        return self.shape.genericLess(other.shape)
+        return properties.genericLess(other.properties)
     }
 
     public func genericLessOrEqual(_ other: Self) -> Bool {
-        return self.shape.genericLess(other.shape)
+        return properties.genericLess(other.properties)
     }
 
     public func genericGreater(_ other: Self) -> Bool {
-        return self.shape.genericLess(other.shape)
+        return properties.genericLess(other.properties)
     }
 
     public func genericGreaterOrEqual(_ other: Self) -> Bool {
-        return self.shape.genericLess(other.shape)
+        return properties.genericLess(other.properties)
     }
 }
 
-extension Field: ComparableStructural where A: ComparableStructural, B: ComparableStructural {
+extension Property: ComparableStructural
+where Value: ComparableStructural, Next: ComparableStructural {
     public func genericLess(_ other: Self) -> Bool {
         if self.value.genericLess(other.value) {
             return true

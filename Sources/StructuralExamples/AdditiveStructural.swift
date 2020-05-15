@@ -23,16 +23,16 @@ where A: AdditiveStructural, B: AdditiveStructural {
     }
 }
 
-extension Field: AdditiveStructural
-where A: AdditiveStructural, B: AdditiveStructural {
+extension Property: AdditiveStructural
+where Value: AdditiveStructural, Next: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Field(lhs.value + rhs.value, lhs.next + rhs.next)
+        return Property(lhs.value + rhs.value, lhs.next + rhs.next)
     }
 }
 
-extension Struct: AdditiveStructural where A: AdditiveStructural {
+extension Struct: AdditiveStructural where Properties: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Struct(lhs.shape + rhs.shape)
+        return Struct(lhs.properties + rhs.properties)
     }
 }
 
