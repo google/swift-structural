@@ -66,7 +66,7 @@ where Value: EncodeJSONStructural, Next: EncodeJSONStructural {
     }
 }
 
-extension Struct: EncodeJSONStructural where Properties: EncodeJSONStructural {
+extension Structure: EncodeJSONStructural where Properties: EncodeJSONStructural {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendObjectStart()
         self.properties.encodeJson(into: &builder)

@@ -50,7 +50,7 @@ extension Enum: EquatableStructural where Cases: EquatableStructural {
     }
 }
 
-extension Struct: EquatableStructural where Properties: EquatableStructural {
+extension Structure: EquatableStructural where Properties: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
         properties.genericEqual(other.properties)
     }

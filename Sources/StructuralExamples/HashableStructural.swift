@@ -61,7 +61,7 @@ extension Enum: HashableStructural where Cases: HashableStructural {
     }
 }
 
-extension Struct: HashableStructural where Properties: HashableStructural {
+extension Structure: HashableStructural where Properties: HashableStructural {
     public func genericHash(into hasher: inout Hasher) {
         properties.genericHash(into: &hasher)
     }

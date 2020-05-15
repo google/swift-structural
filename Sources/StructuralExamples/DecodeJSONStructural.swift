@@ -26,7 +26,7 @@ where Value: DecodeJSONStructural, Next: DecodeJSONStructural {
     }
 }
 
-extension Struct: DecodeJSONStructural where Properties: DecodeJSONStructural {
+extension Structure: DecodeJSONStructural where Properties: DecodeJSONStructural {
     public mutating func decodeJson(_ other: Any) {
         properties.decodeJson(other)
     }

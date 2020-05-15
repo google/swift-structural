@@ -7,7 +7,7 @@ public protocol DebugStringStructural {
 
 // Inductive cases. 
 
-extension Struct: DebugStringStructural where Properties: DebugStringStructural {
+extension Structure: DebugStringStructural where Properties: DebugStringStructural {
     public var debugDescriptionStructural: String {
         return "\(self.name)(\(properties.debugDescriptionStructural))"
     }

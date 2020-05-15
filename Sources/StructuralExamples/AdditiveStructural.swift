@@ -44,9 +44,9 @@ where Value: AdditiveStructural {
     }
 }
 
-extension Struct: AdditiveStructural where Properties: AdditiveStructural {
+extension Structure: AdditiveStructural where Properties: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Struct(lhs.properties + rhs.properties)
+        return Structure(lhs.properties + rhs.properties)
     }
 }
 

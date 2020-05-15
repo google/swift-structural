@@ -16,7 +16,7 @@ where Value: InplaceAddStructural, Next: InplaceAddStructural {
     }
 }
 
-extension Struct: InplaceAddStructural where Properties: InplaceAddStructural {
+extension Structure: InplaceAddStructural where Properties: InplaceAddStructural {
     public mutating func inplaceAdd(_ other: Self) {
         self.properties.inplaceAdd(other.properties)
     }

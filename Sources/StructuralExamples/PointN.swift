@@ -24,7 +24,7 @@ public struct Point1: Equatable, Hashable, Codable {
 extension Point1: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 33)
@@ -36,7 +36,7 @@ extension Point1: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point1",
+        return Structure("Point1",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 45)
@@ -81,7 +81,7 @@ public struct Point2: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2: Float
@@ -99,7 +99,7 @@ public struct Point2: Equatable, Hashable, Codable {
 extension Point2: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -115,7 +115,7 @@ extension Point2: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point2",
+        return Structure("Point2",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -174,11 +174,11 @@ public struct Point3: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3: Float
@@ -198,7 +198,7 @@ public struct Point3: Equatable, Hashable, Codable {
 extension Point3: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -218,7 +218,7 @@ extension Point3: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point3",
+        return Structure("Point3",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -293,15 +293,15 @@ public struct Point4: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4: Float
@@ -323,7 +323,7 @@ public struct Point4: Equatable, Hashable, Codable {
 extension Point4: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -347,7 +347,7 @@ extension Point4: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point4",
+        return Structure("Point4",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -440,19 +440,19 @@ public struct Point5: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5: Float
@@ -476,7 +476,7 @@ public struct Point5: Equatable, Hashable, Codable {
 extension Point5: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -504,7 +504,7 @@ extension Point5: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point5",
+        return Structure("Point5",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -617,23 +617,23 @@ public struct Point6: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6: Float
@@ -659,7 +659,7 @@ public struct Point6: Equatable, Hashable, Codable {
 extension Point6: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -691,7 +691,7 @@ extension Point6: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point6",
+        return Structure("Point6",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -826,27 +826,27 @@ public struct Point7: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7: Float
@@ -874,7 +874,7 @@ public struct Point7: Equatable, Hashable, Codable {
 extension Point7: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -910,7 +910,7 @@ extension Point7: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point7",
+        return Structure("Point7",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -1069,31 +1069,31 @@ public struct Point8: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8: Float
@@ -1123,7 +1123,7 @@ public struct Point8: Equatable, Hashable, Codable {
 extension Point8: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -1163,7 +1163,7 @@ extension Point8: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point8",
+        return Structure("Point8",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -1348,35 +1348,35 @@ public struct Point9: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _9: Float
@@ -1408,7 +1408,7 @@ public struct Point9: Equatable, Hashable, Codable {
 extension Point9: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -1452,7 +1452,7 @@ extension Point9: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point9",
+        return Structure("Point9",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -1665,39 +1665,39 @@ public struct Point10: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _9:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _10: Float
@@ -1731,7 +1731,7 @@ public struct Point10: Equatable, Hashable, Codable {
 extension Point10: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -1779,7 +1779,7 @@ extension Point10: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point10",
+        return Structure("Point10",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -2022,43 +2022,43 @@ public struct Point11: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _9:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _10:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _11: Float
@@ -2094,7 +2094,7 @@ public struct Point11: Equatable, Hashable, Codable {
 extension Point11: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -2146,7 +2146,7 @@ extension Point11: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point11",
+        return Structure("Point11",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -2421,47 +2421,47 @@ public struct Point12: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _9:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _10:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _11:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _12: Float
@@ -2499,7 +2499,7 @@ public struct Point12: Equatable, Hashable, Codable {
 extension Point12: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -2555,7 +2555,7 @@ extension Point12: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point12",
+        return Structure("Point12",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -2864,51 +2864,51 @@ public struct Point13: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _9:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _10:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _11:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _12:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _13: Float
@@ -2948,7 +2948,7 @@ public struct Point13: Equatable, Hashable, Codable {
 extension Point13: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -3008,7 +3008,7 @@ extension Point13: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point13",
+        return Structure("Point13",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -3353,55 +3353,55 @@ public struct Point14: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _9:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _10:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _11:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _12:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _13:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _14: Float
@@ -3443,7 +3443,7 @@ public struct Point14: Equatable, Hashable, Codable {
 extension Point14: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -3507,7 +3507,7 @@ extension Point14: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point14",
+        return Structure("Point14",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -3890,59 +3890,59 @@ public struct Point15: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _9:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _10:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _11:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _12:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _13:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _14:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _15: Float
@@ -3986,7 +3986,7 @@ public struct Point15: Equatable, Hashable, Codable {
 extension Point15: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -4054,7 +4054,7 @@ extension Point15: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point15",
+        return Structure("Point15",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
@@ -4477,63 +4477,63 @@ public struct Point16: Equatable, Hashable, Codable {
     public init(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _1:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _2:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _3:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _4:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _5:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _6:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _7:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _8:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _9:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _10:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _11:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _12:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _13:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _14:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _15:
-            Float  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
+            Float// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 15)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 13)
         _16: Float
@@ -4579,7 +4579,7 @@ public struct Point16: Equatable, Hashable, Codable {
 extension Point16: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Struct<
+        Structure<
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -4651,7 +4651,7 @@ extension Point16: Structural {
 
     // swift-format-ignore
     public var abstractValue: AbstractValue {
-        return Struct("Point16",
+        return Structure("Point16",
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)
             Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 43)

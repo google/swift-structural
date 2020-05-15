@@ -29,7 +29,7 @@ where Value: ComparableStructural, Next: ComparableStructural {
     }
 }
 
-extension Struct: ComparableStructural where Properties: ComparableStructural {
+extension Structure: ComparableStructural where Properties: ComparableStructural {
     public func genericLess(_ other: Self) -> Bool {
         return properties.genericLess(other.properties)
     }

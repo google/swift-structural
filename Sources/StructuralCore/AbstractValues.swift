@@ -1,4 +1,4 @@
-public struct Struct<Properties> {
+public struct Structure<Properties> {
     public var name: String
     public var properties: Properties
 

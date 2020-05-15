@@ -20,9 +20,9 @@ where Value: ZeroStructural, Next: ZeroStructural {
     }
 }
 
-extension Struct: ZeroStructural where Properties: ZeroStructural {
+extension Structure: ZeroStructural where Properties: ZeroStructural {
     public static var zero: Self {
-        return Struct(Properties.zero)
+        return Structure(Properties.zero)
     }
 }
 
