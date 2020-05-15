@@ -3,27 +3,27 @@
 import PackageDescription
 
 let package = Package(
-    name: "GenericProgramming",
+    name: "StructuralProgramming",
     products: [
         .library(
-            name: "GenericCore",
-            targets: ["GenericCore"]),
+            name: "StructuralCore",
+            targets: ["StructuralCore"]),
     ],
     dependencies: [
         .package(url: "https://github.com/shabalind/swift-benchmark", .branch("topic/fix-adaptive-nontermination")),
     ],
     targets: [
         .target(
-            name: "GenericCore",
+            name: "StructuralCore",
             dependencies: []),
         .target(
-            name: "GenericExamples",
-            dependencies: ["GenericCore"]),
+            name: "StructuralExamples",
+            dependencies: ["StructuralCore"]),
         .target(
-            name: "GenericBenchmarks",
-            dependencies: ["GenericCore", "GenericExamples", "Benchmark"]),
+            name: "StructuralBenchmarks",
+            dependencies: ["StructuralCore", "StructuralExamples", "Benchmark"]),
         .testTarget(
-            name: "GenericProgrammingTests",
-            dependencies: ["GenericCore", "GenericExamples"]),
+            name: "StructuralTests",
+            dependencies: ["StructuralCore", "StructuralExamples"]),
     ]
 )

@@ -1,6 +1,6 @@
-import GenericProgrammingTests
+import StructuralTests
 import XCTest
 
 var tests = [XCTestCaseEntry]()
-tests += GenericProgrammingTests.allTests()
+tests += StructuralTests.allTests()
 XCTMain(tests)

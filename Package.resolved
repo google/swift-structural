@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/apple/swift-argument-parser",
         "state": {
           "branch": null,
-          "revision": "9f04d1ff1afbccd02279338a2c91e5f27c45e93a",
-          "version": "0.0.5"
+          "revision": "223d62adc52d51669ae2ee19bdb8b7d9fd6fcd9c",
+          "version": "0.0.6"
         }
       },
       {
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/shabalind/swift-benchmark",
         "state": {
           "branch": "topic/fix-adaptive-nontermination",
-          "revision": "fa50730db4fea292de30100814188af94767eb19",
+          "revision": "7e878c3f143ad4cfc040c9ee22bb36dea646bde1",
           "version": null
         }
       }

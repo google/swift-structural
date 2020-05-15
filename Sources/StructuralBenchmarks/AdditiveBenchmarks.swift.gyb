@@ -1,0 +1,53 @@
+import Benchmark
+import StructuralCore
+import StructuralExamples
+
+func specializedAdd(_ lhs: BinaryTree<Double>, _ rhs: BinaryTree<Double>) -> BinaryTree<Double> {
+    switch (lhs, rhs) {
+    case let (.leaf(x), .leaf(y)):
+        return .leaf(x + y)
+    case let (.branch(l1, v1, r1), .branch(l2, v2, r2)):
+        return .branch(l1 + l2, v1 + v2, r1 + r2)
+    default:
+        fatalError("Mismatch: \(lhs), \(rhs)")
+    }
+}
+
+
+% for N in range(1, 17):
+
+func specializedAdd(_ lhs: Point${N}, _ rhs: Point${N}) -> Point${N} {
+    return Point${N}(
+        % for i in range(1, N + 1):
+        _${i}: lhs._${i} + rhs._${i}
+        % if i != N:
+        ,
+        % end
+        % end
+    )
+}
+
+% end
+
+let additiveBenchmarks = BenchmarkSuite(name: "Additive") { suite in
+
+    % for N in range(1, 17):
+
+    suite.benchmark("Point${N} (specialized)") {
+        point${N}Sink = specializedAdd(p${N}_1, p${N}_2)
+    }
+
+    suite.benchmark("Point${N} (generic)") {
+        point${N}Sink = p${N}_1 + p${N}_2
+    }
+
+    % end
+
+    suite.benchmark("BinaryTree (specialized)") {
+        treeSink = specializedAdd(tree2, tree2)
+    }
+
+    suite.benchmark("BinaryTree (generic)") {
+        treeSink = tree1 + tree1
+    }
+}

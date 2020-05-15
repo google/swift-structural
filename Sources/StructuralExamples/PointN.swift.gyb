@@ -1,0 +1,74 @@
+import StructuralCore
+
+% for N in range(1, 17):
+
+public struct Point${N}: Equatable, Hashable, Codable {
+    
+    % for i in range(1, N + 1):
+    public var _${i}: Float
+    % end 
+
+    public init(
+    % for i in range(1, N + 1):
+        _${i}: Float
+    % if i != N:
+        ,
+    % end
+    % end
+    ) {
+        % for i in range(1, N + 1):
+        self._${i} = _${i}
+        % end
+    }
+
+}
+
+extension Point${N}: Structural {
+    // swift-format-ignore
+    public typealias Representation =
+        Struct<
+            % for i in range(1, N + 1):
+            Field<Float, 
+            % end
+            Empty
+            % for i in range(1, N + 1):
+            >
+            % end
+        >
+
+    // swift-format-ignore
+    public var representation: Representation {
+        return Struct("Point${N}", 
+            % for i in range(1, N + 1):
+            Field("_${i}", _${i}, isMutable: true,
+            % end 
+            Empty()
+            % for i in range(1, N + 1):
+            )
+            % end
+        )
+    }
+
+    public init(representation: Representation) {
+        % for i in range(1, N + 1):
+        self._${i} =
+            representation.shape
+            % for j in range(i - 1):
+            .next
+            % end
+            .value
+        % end
+    }
+}
+
+extension Point${N}: EquatableStructural {}
+extension Point${N}: HashableStructural {}
+extension Point${N}: ZeroStructural {}
+extension Point${N}: AdditiveStructural {}
+extension Point${N}: DebugStringStructural {}
+extension Point${N}: ComparableStructural {}
+extension Point${N}: InplaceAddStructural {}
+extension Point${N}: EncodeJSONStructural {}
+extension Point${N}: DecodeJSONStructural {}
+
+% end
