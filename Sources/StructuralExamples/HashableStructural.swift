@@ -85,8 +85,8 @@ extension String: HashableStructural {
 
 // Syntactic sugar
 
-extension HashableStructural where Self: Structural, Self.Representation: HashableStructural {
+extension HashableStructural where Self: Structural, Self.AbstractValue: HashableStructural {
     public func genericHash(into hasher: inout Hasher) {
-        self.representation.genericHash(into: &hasher)
+        self.abstractValue.genericHash(into: &hasher)
     }
 }

@@ -8,10 +8,10 @@ public enum Color: Int, Equatable, Hashable {
 
 extension Color: Structural {
     // swift-format-ignore
-    public typealias Representation =
+    public typealias AbstractValue =
         Enum<Case<Int, Empty, Case<Int, Empty, Case<Int, Empty, Empty>>>>
 
-    public var representation: Representation {
+    public var abstractValue: AbstractValue {
         if (self == Color.red) {
             return Enum("Color", .of("red", 0xFF0000, Empty()))
         } else if (self == Color.green) {
@@ -23,7 +23,7 @@ extension Color: Structural {
         }
     }
 
-    public init(representation repr: Representation) {
+    public init(abstractValue repr: AbstractValue) {
         switch repr.shape {
         case Case.of(_, 0xFF0000, _):
             self = .red

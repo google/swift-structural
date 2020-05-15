@@ -86,8 +86,8 @@ extension Double: DebugStringStructural {
 
 // Sugar
 
-extension DebugStringStructural where Self: Structural, Self.Representation: DebugStringStructural {
+extension DebugStringStructural where Self: Structural, Self.AbstractValue: DebugStringStructural {
     public var debugDescriptionStructural: String {
-        return self.representation.debugDescriptionStructural
+        return self.abstractValue.debugDescriptionStructural
     }
 }

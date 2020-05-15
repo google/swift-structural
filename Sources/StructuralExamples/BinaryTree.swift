@@ -7,12 +7,12 @@ public enum BinaryTree<T>: Equatable, Hashable where T: Equatable & Hashable {
 
 extension BinaryTree: Structural {
     // swift-format-ignore
-    public typealias Representation =
+    public typealias AbstractValue =
         Enum<Case<Int, Field<T, Empty>,
              Case<Int, Field<BinaryTree<T>, Field<T, Field<BinaryTree<T>, Empty>>>,
              Empty>>>
 
-    public var representation: Representation {
+    public var abstractValue: AbstractValue {
         switch self {
         case let .leaf(x):
             return Enum("BinaryTree", .of("leaf", 0, Field(x, Empty())))
@@ -31,7 +31,7 @@ extension BinaryTree: Structural {
         }
     }
 
-    public init(representation repr: Representation) {
+    public init(abstractValue repr: AbstractValue) {
         switch repr.shape {
         case let Case.of(_, _, fields):
             self = .leaf(fields.value)

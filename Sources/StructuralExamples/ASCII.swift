@@ -8,10 +8,10 @@ public enum ASCII: String {
 
 extension ASCII: Structural {
     // swift-format-ignore
-    public typealias Representation =
+    public typealias AbstractValue =
         Enum<Case<String, Empty, Case<String, Empty, Case<String, Empty, Empty>>>>
 
-    public var representation: Representation {
+    public var abstractValue: AbstractValue {
         if (self == ASCII.tab) {
             return Enum("ASCII", .of("tab", "\t", Empty()))
         } else if (self == ASCII.lineFeed) {
@@ -23,7 +23,7 @@ extension ASCII: Structural {
         }
     }
 
-    public init(representation repr: Representation) {
+    public init(abstractValue repr: AbstractValue) {
         switch repr.shape {
         case Case.of(_, "\t", _):
             self = .tab

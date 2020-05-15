@@ -42,8 +42,8 @@ extension Double: ZeroStructural {}
 
 // Sugar.
 
-extension ZeroStructural where Self: Structural, Self.Representation: ZeroStructural {
+extension ZeroStructural where Self: Structural, Self.AbstractValue: ZeroStructural {
     public static var zero: Self {
-        return .init(representation: Representation.zero)
+        return .init(abstractValue: AbstractValue.zero)
     }
 }

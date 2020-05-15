@@ -102,20 +102,20 @@ extension Float: ComparableStructural {
 
 // Sugar
 
-extension ComparableStructural where Self: Structural, Self.Representation: ComparableStructural {
+extension ComparableStructural where Self: Structural, Self.AbstractValue: ComparableStructural {
     public func genericLess(_ other: Self) -> Bool {
-        return self.representation.genericLess(other.representation)
+        return self.abstractValue.genericLess(other.abstractValue)
     }
 
     public func genericLessOrEqual(_ other: Self) -> Bool {
-        return self.representation.genericLessOrEqual(other.representation)
+        return self.abstractValue.genericLessOrEqual(other.abstractValue)
     }
 
     public func genericGreater(_ other: Self) -> Bool {
-        return self.representation.genericGreater(other.representation)
+        return self.abstractValue.genericGreater(other.abstractValue)
     }
 
     public func genericGreaterOrEqual(_ other: Self) -> Bool {
-        return self.representation.genericGreaterOrEqual(other.representation)
+        return self.abstractValue.genericGreaterOrEqual(other.abstractValue)
     }
 }

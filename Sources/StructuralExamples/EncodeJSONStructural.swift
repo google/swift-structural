@@ -114,8 +114,8 @@ extension Array: EncodeJSONStructural where Element: EncodeJSONStructural {
 
 // Sugar
 
-extension EncodeJSONStructural where Self: Structural, Self.Representation: EncodeJSONStructural {
+extension EncodeJSONStructural where Self: Structural, Self.AbstractValue: EncodeJSONStructural {
     public func encodeJson(into builder: inout JSONBuilder) {
-        self.representation.encodeJson(into: &builder)
+        self.abstractValue.encodeJson(into: &builder)
     }
 }

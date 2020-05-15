@@ -11,7 +11,7 @@ import XCTest
             testCase(EquatableStructuralTests.allTests),
             testCase(HashableStructuralTests.allTests),
             testCase(InplaceAddStructuralTests.allTests),
-            testCase(RepresentationTests.allTests),
+            testCase(AbstractValueTests.allTests),
             testCase(DebugStringStructuralTests.allTests),
             testCase(ComparableStructuralTests.allTests),
             testCase(EncodeJSONStructuralTests.allTests),

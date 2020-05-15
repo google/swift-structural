@@ -58,8 +58,8 @@ extension Double: AdditiveStructural {}
 
 // Sugar
 
-extension AdditiveStructural where Self: Structural, Self.Representation: AdditiveStructural {
+extension AdditiveStructural where Self: Structural, Self.AbstractValue: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return .init(representation: lhs.representation + rhs.representation)
+        return .init(abstractValue: lhs.abstractValue + rhs.abstractValue)
     }
 }

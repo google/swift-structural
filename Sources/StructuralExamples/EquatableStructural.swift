@@ -68,8 +68,8 @@ extension Double: EquatableStructural {
 
 // Syntactic Sugar
 
-extension EquatableStructural where Self: Structural, Self.Representation: EquatableStructural {
+extension EquatableStructural where Self: Structural, Self.AbstractValue: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
-        return self.representation.genericEqual(other.representation)
+        return self.abstractValue.genericEqual(other.abstractValue)
     }
 }

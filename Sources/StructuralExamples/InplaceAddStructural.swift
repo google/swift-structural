@@ -45,10 +45,10 @@ extension Float: InplaceAddStructural {
 
 // Sugar
 
-extension InplaceAddStructural where Self: Structural, Self.Representation: InplaceAddStructural {
+extension InplaceAddStructural where Self: Structural, Self.AbstractValue: InplaceAddStructural {
     public mutating func inplaceAdd(_ other: Self) {
-        var shape = self.representation
-        shape.inplaceAdd(other.representation)
-        self = .init(representation: shape)
+        var shape = self.abstractValue
+        shape.inplaceAdd(other.abstractValue)
+        self = .init(abstractValue: shape)
     }
 }
