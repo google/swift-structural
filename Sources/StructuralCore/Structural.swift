@@ -46,7 +46,7 @@
 /// A type that can be converted to and from a generic representation.
 public protocol Structural {
     /// A generic representation of `Self`.
-    associatedtype Representation: Shape
+    associatedtype Representation
 
     /// Creates an instance from the given generic representation.
     init(representation: Representation)

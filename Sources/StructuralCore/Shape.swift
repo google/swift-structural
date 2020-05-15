@@ -1,6 +1,4 @@
-public protocol Shape {}
-
-public struct Struct<A: Shape>: Shape {
+public struct Struct<A> {
     public var name: String
     public var shape: A
 
@@ -15,7 +13,7 @@ public struct Struct<A: Shape>: Shape {
     }
 }
 
-public struct Field<A, B: Shape>: Shape {
+public struct Field<A, B> {
     public var name: String
     public var value: A
     public var isMutable: Bool
@@ -37,7 +35,7 @@ public struct Field<A, B: Shape>: Shape {
     }
 }
 
-public struct Enum<A: Shape>: Shape {
+public struct Enum<A> {
     public var name: String
     public var shape: A
 
@@ -52,11 +50,11 @@ public struct Enum<A: Shape>: Shape {
     }
 }
 
-public enum Case<V, A: Shape, B: Shape>: Shape {
+public enum Case<V, A, B> {
     case of(String, V, A)
     case next(B)
 }
 
-public struct Empty: Shape {
+public struct Empty {
     public init() {}
 }
