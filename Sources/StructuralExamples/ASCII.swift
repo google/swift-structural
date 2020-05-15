@@ -24,7 +24,7 @@ extension ASCII: Structural {
     }
 
     public init(abstractValue repr: AbstractValue) {
-        switch repr.shape {
+        switch repr.cases {
         case Case.of(_, "\t", _):
             self = .tab
         case Case.next(Case.of(_, "\n", _)):

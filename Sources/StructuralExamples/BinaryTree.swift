@@ -32,7 +32,7 @@ extension BinaryTree: Structural {
     }
 
     public init(abstractValue repr: AbstractValue) {
-        switch repr.shape {
+        switch repr.cases {
         case let Case.of(_, _, fields):
             self = .leaf(fields.value)
         case let Case.next(Case.of(_, _, fields)):

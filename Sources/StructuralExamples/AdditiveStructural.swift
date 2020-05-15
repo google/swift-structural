@@ -10,7 +10,7 @@ public protocol AdditiveStructural {
 // Inductive cases. 
 
 extension Case: AdditiveStructural
-where A: AdditiveStructural, B: AdditiveStructural {
+where AssociatedValues: AdditiveStructural, Next: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
         switch (lhs, rhs) {
         case let (.of(name, index, x), .of(_, _, y)):
@@ -36,9 +36,9 @@ extension Struct: AdditiveStructural where Properties: AdditiveStructural {
     }
 }
 
-extension Enum: AdditiveStructural where A: AdditiveStructural {
+extension Enum: AdditiveStructural where Cases: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Enum(lhs.shape + rhs.shape)
+        return Enum(lhs.cases + rhs.cases)
     }
 }
 

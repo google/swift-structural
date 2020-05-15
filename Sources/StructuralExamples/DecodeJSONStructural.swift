@@ -74,8 +74,8 @@ extension Array: DecodeJSONStructural where Element: DecodeJSONStructural, Eleme
 
 extension DecodeJSONStructural where Self: Structural, Self.AbstractValue: DecodeJSONStructural {
     public mutating func decodeJson(_ other: Any) {
-        var shape = self.abstractValue
-        shape.decodeJson(other)
-        self = .init(abstractValue: shape)
+        var absValue = self.abstractValue
+        absValue.decodeJson(other)
+        self = .init(abstractValue: absValue)
     }
 }

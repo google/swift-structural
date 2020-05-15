@@ -24,7 +24,7 @@ extension Color: Structural {
     }
 
     public init(abstractValue repr: AbstractValue) {
-        switch repr.shape {
+        switch repr.cases {
         case Case.of(_, 0xFF0000, _):
             self = .red
         case Case.next(Case.of(_, 0x00FF00, _)):

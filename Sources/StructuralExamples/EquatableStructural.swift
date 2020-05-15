@@ -9,7 +9,8 @@ public protocol EquatableStructural {
 
 // Inductive cases.
 
-extension Case: EquatableStructural where A: EquatableStructural, B: EquatableStructural {
+extension Case: EquatableStructural
+where AssociatedValues: EquatableStructural, Next: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
         switch (self, other) {
         case let (.of(_, _, x), .of(_, _, y)):
@@ -29,9 +30,9 @@ where Value: EquatableStructural, Next: EquatableStructural {
     }
 }
 
-extension Enum: EquatableStructural where A: EquatableStructural {
+extension Enum: EquatableStructural where Cases: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
-        shape.genericEqual(other.shape)
+        cases.genericEqual(other.cases)
     }
 }
 

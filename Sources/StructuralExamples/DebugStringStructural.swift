@@ -31,24 +31,25 @@ where Value: DebugStringStructural, Next: DebugStringStructural {
     }
 }
 
-extension Enum: DebugStringStructural where A: DebugStringStructural {
+extension Enum: DebugStringStructural where Cases: DebugStringStructural {
     public var debugDescriptionStructural: String {
-        return "\(self.name).\(self.shape.debugDescriptionStructural)"
+        return "\(self.name).\(self.cases.debugDescriptionStructural)"
     }
 }
 
-extension Case: DebugStringStructural where A: DebugStringStructural, B: DebugStringStructural {
+extension Case: DebugStringStructural
+where AssociatedValues: DebugStringStructural, Next: DebugStringStructural {
     public var debugDescriptionStructural: String {
         switch self {
-        case let .of(name, _, shape):
-            let fields = shape.debugDescriptionStructural
-            if (fields == "") {
+        case let .of(name, _, values):
+            let valuesString = values.debugDescriptionStructural
+            if (valuesString == "") {
                 return name
             } else {
-                return "\(name)(\(fields))"
+                return "\(name)(\(valuesString))"
             }
-        case let .next(shape):
-            return shape.debugDescriptionStructural
+        case let .next(next):
+            return next.debugDescriptionStructural
         }
     }
 }

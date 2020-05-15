@@ -35,24 +35,24 @@ public struct Property<Value, Next> {
     }
 }
 
-public struct Enum<A> {
+public struct Enum<Cases> {
     public var name: String
-    public var shape: A
+    public var cases: Cases
 
-    public init(_ shape: A) {
+    public init(_ cases: Cases) {
         self.name = ""
-        self.shape = shape
+        self.cases = cases
     }
 
-    public init(_ name: String, _ shape: A) {
+    public init(_ name: String, _ cases: Cases) {
         self.name = name
-        self.shape = shape
+        self.cases = cases
     }
 }
 
-public enum Case<V, A, B> {
-    case of(String, V, A)
-    case next(B)
+public enum Case<RawValue, AssociatedValues, Next> {
+    case of(String, RawValue, AssociatedValues)
+    case next(Next)
 }
 
 public struct Empty {

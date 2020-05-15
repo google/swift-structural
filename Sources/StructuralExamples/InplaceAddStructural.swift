@@ -48,8 +48,8 @@ extension Float: InplaceAddStructural {
 
 extension InplaceAddStructural where Self: Structural, Self.AbstractValue: InplaceAddStructural {
     public mutating func inplaceAdd(_ other: Self) {
-        var shape = self.abstractValue
-        shape.inplaceAdd(other.abstractValue)
-        self = .init(abstractValue: shape)
+        var absValue = self.abstractValue
+        absValue.inplaceAdd(other.abstractValue)
+        self = .init(abstractValue: absValue)
     }
 }

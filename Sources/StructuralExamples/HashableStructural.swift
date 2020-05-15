@@ -22,7 +22,7 @@ public func genericHash<T>(_ value: T) -> Int where T: HashableStructural {
 // Inductive cases. 
 
 extension Case: HashableStructural
-where V: HashableStructural, A: HashableStructural, B: HashableStructural {
+where RawValue: HashableStructural, AssociatedValues: HashableStructural, Next: HashableStructural {
     public func genericHash(into hasher: inout Hasher) {
         switch self {
         case let .of(_, index, value):
@@ -41,9 +41,9 @@ extension Property: HashableStructural where Value: HashableStructural, Next: Ha
     }
 }
 
-extension Enum: HashableStructural where A: HashableStructural {
+extension Enum: HashableStructural where Cases: HashableStructural {
     public func genericHash(into hasher: inout Hasher) {
-        shape.genericHash(into: &hasher)
+        cases.genericHash(into: &hasher)
     }
 }
 
