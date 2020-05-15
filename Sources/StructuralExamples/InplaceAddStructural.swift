@@ -8,6 +8,14 @@ public protocol InplaceAddStructural {
 
 // Inductive cases. 
 
+extension Cons: InplaceAddStructural
+where Value: InplaceAddStructural, Next: InplaceAddStructural {
+    public mutating func inplaceAdd(_ other: Self) {
+        self.value.inplaceAdd(other.value)
+        self.next.inplaceAdd(other.next)
+    }
+}
+
 extension Struct: InplaceAddStructural where Properties: InplaceAddStructural {
     public mutating func inplaceAdd(_ other: Self) {
         self.properties.inplaceAdd(other.properties)
@@ -15,13 +23,10 @@ extension Struct: InplaceAddStructural where Properties: InplaceAddStructural {
 }
 
 extension Property: InplaceAddStructural
-where Value: InplaceAddStructural, Next: InplaceAddStructural {
+where Value: InplaceAddStructural {
     public mutating func inplaceAdd(_ other: Self) {
         if isMutable {
             self.value.inplaceAdd(other.value)
-            next.inplaceAdd(other.next)
-        } else {
-            next.inplaceAdd(other.next)
         }
     }
 }

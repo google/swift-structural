@@ -13,6 +13,13 @@ public protocol ZeroStructural {
 
 // Inductive cases. 
 
+extension Cons: ZeroStructural
+where Value: ZeroStructural, Next: ZeroStructural {
+    public static var zero: Self {
+        return Cons(Value.zero, Next.zero)
+    }
+}
+
 extension Struct: ZeroStructural where Properties: ZeroStructural {
     public static var zero: Self {
         return Struct(Properties.zero)
@@ -20,9 +27,9 @@ extension Struct: ZeroStructural where Properties: ZeroStructural {
 }
 
 extension Property: ZeroStructural
-where Value: ZeroStructural, Next: ZeroStructural {
+where Value: ZeroStructural {
     public static var zero: Self {
-        return Property(Value.zero, Next.zero)
+        return Property(Value.zero)
     }
 }
 

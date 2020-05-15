@@ -18,6 +18,14 @@ public protocol DecodeJSONStructural {
 
 // Inductive cases. 
 
+extension Cons: DecodeJSONStructural
+where Value: DecodeJSONStructural, Next: DecodeJSONStructural {
+    public mutating func decodeJson(_ other: Any) {
+        self.value.decodeJson(other)
+        self.next.decodeJson(other)
+    }
+}
+
 extension Struct: DecodeJSONStructural where Properties: DecodeJSONStructural {
     public mutating func decodeJson(_ other: Any) {
         properties.decodeJson(other)
@@ -25,11 +33,10 @@ extension Struct: DecodeJSONStructural where Properties: DecodeJSONStructural {
 }
 
 extension Property: DecodeJSONStructural
-where Value: DecodeJSONStructural, Next: DecodeJSONStructural {
+where Value: DecodeJSONStructural {
     public mutating func decodeJson(_ other: Any) {
         let dict = other as! [String: Any]
         self.value.decodeJson(dict[self.name]!)
-        self.next.decodeJson(other)
     }
 }
 

@@ -9,6 +9,13 @@ public protocol EquatableStructural {
 
 // Inductive cases.
 
+extension Cons: EquatableStructural
+where Value: EquatableStructural, Next: EquatableStructural {
+    public func genericEqual(_ other: Self) -> Bool {
+        return value.genericEqual(other.value) && next.genericEqual(other.next)
+    }
+}
+
 extension Case: EquatableStructural
 where AssociatedValues: EquatableStructural, Next: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
@@ -24,9 +31,9 @@ where AssociatedValues: EquatableStructural, Next: EquatableStructural {
 }
 
 extension Property: EquatableStructural
-where Value: EquatableStructural, Next: EquatableStructural {
+where Value: EquatableStructural {
     public func genericEqual(_ other: Self) -> Bool {
-        return value.genericEqual(other.value) && next.genericEqual(other.next)
+        return value.genericEqual(other.value)
     }
 }
 

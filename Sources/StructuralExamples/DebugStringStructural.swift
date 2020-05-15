@@ -13,20 +13,26 @@ extension Struct: DebugStringStructural where Properties: DebugStringStructural 
     }
 }
 
-extension Property: DebugStringStructural
+extension Cons: DebugStringStructural
 where Value: DebugStringStructural, Next: DebugStringStructural {
     public var debugDescriptionStructural: String {
-        var fld: String
-        if self.name == "" {
-            fld = self.value.debugDescriptionStructural
+        let valueString = self.value.debugDescriptionStructural
+        let nextString = self.next.debugDescriptionStructural
+        if nextString == "" {
+            return valueString
         } else {
-            fld = "\(self.name): \(self.value.debugDescriptionStructural)"
+            return "\(valueString), \(nextString)"
         }
-        let rest = next.debugDescriptionStructural
-        if rest == "" {
-            return fld
+    }
+}
+
+extension Property: DebugStringStructural
+where Value: DebugStringStructural {
+    public var debugDescriptionStructural: String {
+        if self.name == "" {
+            return self.value.debugDescriptionStructural
         } else {
-            return "\(fld), \(rest)"
+            return "\(self.name): \(self.value.debugDescriptionStructural)"
         }
     }
 }

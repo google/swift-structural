@@ -10,6 +10,25 @@ public protocol ComparableStructural {
 
 // Inductive cases. 
 
+extension Cons: ComparableStructural
+where Value: ComparableStructural, Next: ComparableStructural {
+    public func genericLess(_ other: Self) -> Bool {
+        return value.genericLess(other.value) || next.genericLess(other.next)
+    }
+
+    public func genericLessOrEqual(_ other: Self) -> Bool {
+        return value.genericLessOrEqual(other.value) || next.genericLessOrEqual(other.next)
+    }
+
+    public func genericGreater(_ other: Self) -> Bool {
+        return value.genericGreater(other.value) || next.genericGreater(other.next)
+    }
+
+    public func genericGreaterOrEqual(_ other: Self) -> Bool {
+        return value.genericGreaterOrEqual(other.value) || next.genericGreaterOrEqual(other.next)
+    }
+}
+
 extension Struct: ComparableStructural where Properties: ComparableStructural {
     public func genericLess(_ other: Self) -> Bool {
         return properties.genericLess(other.properties)
@@ -29,37 +48,21 @@ extension Struct: ComparableStructural where Properties: ComparableStructural {
 }
 
 extension Property: ComparableStructural
-where Value: ComparableStructural, Next: ComparableStructural {
+where Value: ComparableStructural {
     public func genericLess(_ other: Self) -> Bool {
-        if self.value.genericLess(other.value) {
-            return true
-        } else {
-            return self.next.genericLess(other.next)
-        }
+        return self.value.genericLess(other.value)
     }
 
     public func genericLessOrEqual(_ other: Self) -> Bool {
-        if self.value.genericLessOrEqual(other.value) {
-            return true
-        } else {
-            return self.next.genericLessOrEqual(other.next)
-        }
+        return self.value.genericLessOrEqual(other.value)
     }
 
     public func genericGreater(_ other: Self) -> Bool {
-        if self.value.genericGreater(other.value) {
-            return true
-        } else {
-            return self.next.genericGreater(other.next)
-        }
+        return self.value.genericGreater(other.value)
     }
 
     public func genericGreaterOrEqual(_ other: Self) -> Bool {
-        if self.value.genericGreaterOrEqual(other.value) {
-            return true
-        } else {
-            return self.next.genericGreaterOrEqual(other.next)
-        }
+        return self.value.genericGreaterOrEqual(other.value)
     }
 }
 

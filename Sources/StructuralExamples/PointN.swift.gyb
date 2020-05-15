@@ -28,7 +28,7 @@ extension Point${N}: Structural {
     public typealias AbstractValue =
         Struct<
             % for i in range(1, N + 1):
-            Property<Float, 
+            Cons<Property<Float>, 
             % end
             Empty
             % for i in range(1, N + 1):
@@ -40,7 +40,7 @@ extension Point${N}: Structural {
     public var abstractValue: AbstractValue {
         return Struct("Point${N}", 
             % for i in range(1, N + 1):
-            Property("_${i}", _${i}, isMutable: true,
+            Cons(Property("_${i}", _${i}, isMutable: true),
             % end 
             Empty()
             % for i in range(1, N + 1):
@@ -56,6 +56,7 @@ extension Point${N}: Structural {
             % for j in range(i - 1):
             .next
             % end
+            .value
             .value
         % end
     }

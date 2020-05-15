@@ -8,25 +8,45 @@ public enum BinaryTree<T>: Equatable, Hashable where T: Equatable & Hashable {
 extension BinaryTree: Structural {
     // swift-format-ignore
     public typealias AbstractValue =
-        Enum<Case<Int, Property<T, Empty>,
-             Case<Int, Property<BinaryTree<T>, Property<T, Property<BinaryTree<T>, Empty>>>,
-             Empty>>>
+        Enum<
+            Case<
+                Int,
+                Cons<
+                    Property<T>,
+                    Empty
+                >,
+                Case<
+                    Int,
+                    Cons<
+                        Property<BinaryTree<T>>,
+                        Cons<
+                            Property<T>,
+                            Cons<
+                                Property<BinaryTree<T>>,
+                                Empty
+                            >
+                        >
+                    >,
+                    Empty
+                >
+            >
+        >
 
     public var abstractValue: AbstractValue {
         switch self {
         case let .leaf(x):
-            return Enum("BinaryTree", .of("leaf", 0, Property(x, Empty())))
+            let properties = Cons(Property(x), Empty())
+            return Enum("BinaryTree", .of("leaf", 0, properties))
         case let .branch(left, value, right):
-            return Enum(
-                "BinaryTree",
-                .next(
-                    .of(
-                        "branch", 1,
-                        Property(
-                            left,
-                            Property(
-                                value,
-                                Property(right, Empty()))))))
+            let properties =
+                Cons(
+                    Property(left),
+                    Cons(
+                        Property(value),
+                        Cons(
+                            Property(right),
+                            Empty())))
+            return Enum("BinaryTree", .next(.of("branch", 1, properties)))
 
         }
     }
@@ -34,11 +54,11 @@ extension BinaryTree: Structural {
     public init(abstractValue repr: AbstractValue) {
         switch repr.cases {
         case let Case.of(_, _, fields):
-            self = .leaf(fields.value)
+            self = .leaf(fields.value.value)
         case let Case.next(Case.of(_, _, fields)):
-            let left = fields.value
-            let value = fields.next.value
-            let right = fields.next.next.value
+            let left = fields.value.value
+            let value = fields.next.value.value
+            let right = fields.next.next.value.value
             self = .branch(left, value, right)
         default:
             fatalError("unreachable")

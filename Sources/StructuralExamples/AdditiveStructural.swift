@@ -9,6 +9,13 @@ public protocol AdditiveStructural {
 
 // Inductive cases. 
 
+extension Cons: AdditiveStructural
+where Value: AdditiveStructural, Next: AdditiveStructural {
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        return Cons(lhs.value + rhs.value, lhs.next + rhs.next)
+    }
+}
+
 extension Case: AdditiveStructural
 where AssociatedValues: AdditiveStructural, Next: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
@@ -24,9 +31,9 @@ where AssociatedValues: AdditiveStructural, Next: AdditiveStructural {
 }
 
 extension Property: AdditiveStructural
-where Value: AdditiveStructural, Next: AdditiveStructural {
+where Value: AdditiveStructural {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Property(lhs.value + rhs.value, lhs.next + rhs.next)
+        return Property(lhs.value + rhs.value)
     }
 }
 
