@@ -10,7 +10,7 @@ import XCTest
             testCase(EncodeJSONStructuralTests.allTests),
             testCase(EquatableStructuralTests.allTests),
             testCase(HashableStructuralTests.allTests),
-            testCase(InplaceAddStructuralTests.allTests),
+            testCase(InplaceAddTests.allTests),
             testCase(AbstractValueTests.allTests),
             testCase(DebugStringStructuralTests.allTests),
             testCase(ComparableStructuralTests.allTests),

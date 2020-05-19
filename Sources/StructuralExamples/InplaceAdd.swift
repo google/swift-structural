@@ -2,28 +2,28 @@ import StructuralCore
 
 // Protocol that mutates itself by
 // the value of the inplaceAdd function argument.
-public protocol InplaceAddStructural {
+public protocol InplaceAdd {
     mutating func inplaceAdd(_ other: Self)
 }
 
 // Inductive cases. 
 
-extension Cons: InplaceAddStructural
-where Value: InplaceAddStructural, Next: InplaceAddStructural {
+extension Cons: InplaceAdd
+where Value: InplaceAdd, Next: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         self.value.inplaceAdd(other.value)
         self.next.inplaceAdd(other.next)
     }
 }
 
-extension Structure: InplaceAddStructural where Properties: InplaceAddStructural {
+extension Structure: InplaceAdd where Properties: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         self.properties.inplaceAdd(other.properties)
     }
 }
 
-extension Property: InplaceAddStructural
-where Value: InplaceAddStructural {
+extension Property: InplaceAdd
+where Value: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         if isMutable {
             self.value.inplaceAdd(other.value)
@@ -33,17 +33,17 @@ where Value: InplaceAddStructural {
 
 // Base cases. 
 
-extension Empty: InplaceAddStructural {
+extension Empty: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {}
 }
 
-extension Int: InplaceAddStructural {
+extension Int: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         self += other
     }
 }
 
-extension Float: InplaceAddStructural {
+extension Float: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         self += other
     }
@@ -51,7 +51,7 @@ extension Float: InplaceAddStructural {
 
 // Sugar
 
-extension InplaceAddStructural where Self: Structural, Self.AbstractValue: InplaceAddStructural {
+extension InplaceAdd where Self: Structural, Self.AbstractValue: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         var absValue = self.abstractValue
         absValue.inplaceAdd(other.abstractValue)

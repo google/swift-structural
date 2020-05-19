@@ -68,7 +68,7 @@ extension Point${N}: ZeroStructural {}
 extension Point${N}: AdditiveStructural {}
 extension Point${N}: DebugStringStructural {}
 extension Point${N}: ComparableStructural {}
-extension Point${N}: InplaceAddStructural {}
+extension Point${N}: InplaceAdd {}
 extension Point${N}: EncodeJSONStructural {}
 extension Point${N}: DecodeJSONStructural {}
 

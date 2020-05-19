@@ -2,7 +2,7 @@ import XCTest
 
 @testable import StructuralExamples
 
-final class InplaceAddStructuralTests: XCTestCase {
+final class InplaceAddTests: XCTestCase {
     func testFloat() {
         var float1 = 1
         let float2 = 2
