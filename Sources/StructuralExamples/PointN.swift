@@ -60,7 +60,7 @@ extension Point1: Structural {
 
 extension Point1: EquatableStructural {}
 extension Point1: HashableStructural {}
-extension Point1: ZeroStructural {}
+extension Point1: Zero {}
 extension Point1: AdditiveStructural {}
 extension Point1: DebugStringStructural {}
 extension Point1: ComparableStructural {}
@@ -151,7 +151,7 @@ extension Point2: Structural {
 
 extension Point2: EquatableStructural {}
 extension Point2: HashableStructural {}
-extension Point2: ZeroStructural {}
+extension Point2: Zero {}
 extension Point2: AdditiveStructural {}
 extension Point2: DebugStringStructural {}
 extension Point2: ComparableStructural {}
@@ -268,7 +268,7 @@ extension Point3: Structural {
 
 extension Point3: EquatableStructural {}
 extension Point3: HashableStructural {}
-extension Point3: ZeroStructural {}
+extension Point3: Zero {}
 extension Point3: AdditiveStructural {}
 extension Point3: DebugStringStructural {}
 extension Point3: ComparableStructural {}
@@ -413,7 +413,7 @@ extension Point4: Structural {
 
 extension Point4: EquatableStructural {}
 extension Point4: HashableStructural {}
-extension Point4: ZeroStructural {}
+extension Point4: Zero {}
 extension Point4: AdditiveStructural {}
 extension Point4: DebugStringStructural {}
 extension Point4: ComparableStructural {}
@@ -588,7 +588,7 @@ extension Point5: Structural {
 
 extension Point5: EquatableStructural {}
 extension Point5: HashableStructural {}
-extension Point5: ZeroStructural {}
+extension Point5: Zero {}
 extension Point5: AdditiveStructural {}
 extension Point5: DebugStringStructural {}
 extension Point5: ComparableStructural {}
@@ -795,7 +795,7 @@ extension Point6: Structural {
 
 extension Point6: EquatableStructural {}
 extension Point6: HashableStructural {}
-extension Point6: ZeroStructural {}
+extension Point6: Zero {}
 extension Point6: AdditiveStructural {}
 extension Point6: DebugStringStructural {}
 extension Point6: ComparableStructural {}
@@ -1036,7 +1036,7 @@ extension Point7: Structural {
 
 extension Point7: EquatableStructural {}
 extension Point7: HashableStructural {}
-extension Point7: ZeroStructural {}
+extension Point7: Zero {}
 extension Point7: AdditiveStructural {}
 extension Point7: DebugStringStructural {}
 extension Point7: ComparableStructural {}
@@ -1313,7 +1313,7 @@ extension Point8: Structural {
 
 extension Point8: EquatableStructural {}
 extension Point8: HashableStructural {}
-extension Point8: ZeroStructural {}
+extension Point8: Zero {}
 extension Point8: AdditiveStructural {}
 extension Point8: DebugStringStructural {}
 extension Point8: ComparableStructural {}
@@ -1628,7 +1628,7 @@ extension Point9: Structural {
 
 extension Point9: EquatableStructural {}
 extension Point9: HashableStructural {}
-extension Point9: ZeroStructural {}
+extension Point9: Zero {}
 extension Point9: AdditiveStructural {}
 extension Point9: DebugStringStructural {}
 extension Point9: ComparableStructural {}
@@ -1983,7 +1983,7 @@ extension Point10: Structural {
 
 extension Point10: EquatableStructural {}
 extension Point10: HashableStructural {}
-extension Point10: ZeroStructural {}
+extension Point10: Zero {}
 extension Point10: AdditiveStructural {}
 extension Point10: DebugStringStructural {}
 extension Point10: ComparableStructural {}
@@ -2380,7 +2380,7 @@ extension Point11: Structural {
 
 extension Point11: EquatableStructural {}
 extension Point11: HashableStructural {}
-extension Point11: ZeroStructural {}
+extension Point11: Zero {}
 extension Point11: AdditiveStructural {}
 extension Point11: DebugStringStructural {}
 extension Point11: ComparableStructural {}
@@ -2821,7 +2821,7 @@ extension Point12: Structural {
 
 extension Point12: EquatableStructural {}
 extension Point12: HashableStructural {}
-extension Point12: ZeroStructural {}
+extension Point12: Zero {}
 extension Point12: AdditiveStructural {}
 extension Point12: DebugStringStructural {}
 extension Point12: ComparableStructural {}
@@ -3308,7 +3308,7 @@ extension Point13: Structural {
 
 extension Point13: EquatableStructural {}
 extension Point13: HashableStructural {}
-extension Point13: ZeroStructural {}
+extension Point13: Zero {}
 extension Point13: AdditiveStructural {}
 extension Point13: DebugStringStructural {}
 extension Point13: ComparableStructural {}
@@ -3843,7 +3843,7 @@ extension Point14: Structural {
 
 extension Point14: EquatableStructural {}
 extension Point14: HashableStructural {}
-extension Point14: ZeroStructural {}
+extension Point14: Zero {}
 extension Point14: AdditiveStructural {}
 extension Point14: DebugStringStructural {}
 extension Point14: ComparableStructural {}
@@ -4428,7 +4428,7 @@ extension Point15: Structural {
 
 extension Point15: EquatableStructural {}
 extension Point15: HashableStructural {}
-extension Point15: ZeroStructural {}
+extension Point15: Zero {}
 extension Point15: AdditiveStructural {}
 extension Point15: DebugStringStructural {}
 extension Point15: ComparableStructural {}
@@ -5065,7 +5065,7 @@ extension Point16: Structural {
 
 extension Point16: EquatableStructural {}
 extension Point16: HashableStructural {}
-extension Point16: ZeroStructural {}
+extension Point16: Zero {}
 extension Point16: AdditiveStructural {}
 extension Point16: DebugStringStructural {}
 extension Point16: ComparableStructural {}

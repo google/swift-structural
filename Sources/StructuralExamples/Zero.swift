@@ -1,33 +1,33 @@
 import StructuralCore
 
-public func zero<T: ZeroStructural>(_ type: T.Type) -> T {
+public func zero<T: Zero>(_ type: T.Type) -> T {
     return T.zero
 }
 
 /// A duplicate, simplified version of the `Zero` protocol.
 /// - Note: a duplicate protocol is used to avoid triggering existing `Equatable` derived
 ///   conformances.
-public protocol ZeroStructural {
+public protocol Zero {
     static var zero: Self { get }
 }
 
 // Inductive cases. 
 
-extension Cons: ZeroStructural
-where Value: ZeroStructural, Next: ZeroStructural {
+extension Cons: Zero
+where Value: Zero, Next: Zero {
     public static var zero: Self {
         return Cons(Value.zero, Next.zero)
     }
 }
 
-extension Structure: ZeroStructural where Properties: ZeroStructural {
+extension Structure: Zero where Properties: Zero {
     public static var zero: Self {
         return Structure(Properties.zero)
     }
 }
 
-extension Property: ZeroStructural
-where Value: ZeroStructural {
+extension Property: Zero
+where Value: Zero {
     public static var zero: Self {
         return Property(Value.zero)
     }
@@ -35,21 +35,21 @@ where Value: ZeroStructural {
 
 // Base cases.
 
-extension Empty: ZeroStructural {
+extension Empty: Zero {
     public static var zero: Self {
         return Empty()
     }
 }
 
-extension Int: ZeroStructural {}
+extension Int: Zero {}
 
-extension Float: ZeroStructural {}
+extension Float: Zero {}
 
-extension Double: ZeroStructural {}
+extension Double: Zero {}
 
 // Sugar.
 
-extension ZeroStructural where Self: Structural, Self.AbstractValue: ZeroStructural {
+extension Zero where Self: Structural, Self.AbstractValue: Zero {
     public static var zero: Self {
         return .init(abstractValue: AbstractValue.zero)
     }

@@ -64,7 +64,7 @@ extension String: DecodeJSONStructural {
     }
 }
 
-extension Array: DecodeJSONStructural where Element: DecodeJSONStructural, Element: ZeroStructural {
+extension Array: DecodeJSONStructural where Element: DecodeJSONStructural, Element: Zero {
     public mutating func decodeJson(_ other: Any) {
         let arr = other as! [Any]
         self = []
