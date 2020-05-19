@@ -43,11 +43,11 @@ public struct JSONBuilder {
     }
 }
 
-public protocol EncodeJSONStructural {
+public protocol EncodeJSON {
     func encodeJson(into builder: inout JSONBuilder)
 }
 
-public func toJSONString<T: EncodeJSONStructural>(_ value: T) -> String {
+public func toJSONString<T: EncodeJSON>(_ value: T) -> String {
     var builder = JSONBuilder()
     value.encodeJson(into: &builder)
     return builder.finalize()
@@ -55,8 +55,8 @@ public func toJSONString<T: EncodeJSONStructural>(_ value: T) -> String {
 
 // Inductive cases.
 
-extension Cons: EncodeJSONStructural
-where Value: EncodeJSONStructural, Next: EncodeJSONStructural {
+extension Cons: EncodeJSON
+where Value: EncodeJSON, Next: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         self.value.encodeJson(into: &builder)
         if !(self.next is Empty) {
@@ -66,7 +66,7 @@ where Value: EncodeJSONStructural, Next: EncodeJSONStructural {
     }
 }
 
-extension Structure: EncodeJSONStructural where Properties: EncodeJSONStructural {
+extension Structure: EncodeJSON where Properties: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendObjectStart()
         self.properties.encodeJson(into: &builder)
@@ -74,8 +74,8 @@ extension Structure: EncodeJSONStructural where Properties: EncodeJSONStructural
     }
 }
 
-extension Property: EncodeJSONStructural
-where Value: EncodeJSONStructural {
+extension Property: EncodeJSON
+where Value: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendProperty(name: self.name)
         self.value.encodeJson(into: &builder)
@@ -84,29 +84,29 @@ where Value: EncodeJSONStructural {
 
 // Base cases.
 
-extension Empty: EncodeJSONStructural {
+extension Empty: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {}
 }
 
-extension Int: EncodeJSONStructural {
+extension Int: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendValue(String(self))
     }
 }
 
-extension Float: EncodeJSONStructural {
+extension Float: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendValue(String(self))
     }
 }
 
-extension String: EncodeJSONStructural {
+extension String: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendString(self)
     }
 }
 
-extension Array: EncodeJSONStructural where Element: EncodeJSONStructural {
+extension Array: EncodeJSON where Element: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendArrayStart()
         let last = self.count - 1
@@ -122,7 +122,7 @@ extension Array: EncodeJSONStructural where Element: EncodeJSONStructural {
 
 // Sugar
 
-extension EncodeJSONStructural where Self: Structural, Self.AbstractValue: EncodeJSONStructural {
+extension EncodeJSON where Self: Structural, Self.AbstractValue: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         self.abstractValue.encodeJson(into: &builder)
     }

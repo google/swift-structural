@@ -69,7 +69,7 @@ extension Point${N}: AdditiveStructural {}
 extension Point${N}: DebugStringStructural {}
 extension Point${N}: CustomComparable {}
 extension Point${N}: InplaceAdd {}
-extension Point${N}: EncodeJSONStructural {}
-extension Point${N}: DecodeJSONStructural {}
+extension Point${N}: EncodeJSON {}
+extension Point${N}: DecodeJSON {}
 
 % end

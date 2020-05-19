@@ -65,7 +65,7 @@ extension Point1: AdditiveStructural {}
 extension Point1: DebugStringStructural {}
 extension Point1: CustomComparable {}
 extension Point1: InplaceAdd {}
-extension Point1: EncodeJSONStructural {}
+extension Point1: EncodeJSON {}
 extension Point1: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -156,7 +156,7 @@ extension Point2: AdditiveStructural {}
 extension Point2: DebugStringStructural {}
 extension Point2: CustomComparable {}
 extension Point2: InplaceAdd {}
-extension Point2: EncodeJSONStructural {}
+extension Point2: EncodeJSON {}
 extension Point2: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -273,7 +273,7 @@ extension Point3: AdditiveStructural {}
 extension Point3: DebugStringStructural {}
 extension Point3: CustomComparable {}
 extension Point3: InplaceAdd {}
-extension Point3: EncodeJSONStructural {}
+extension Point3: EncodeJSON {}
 extension Point3: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -418,7 +418,7 @@ extension Point4: AdditiveStructural {}
 extension Point4: DebugStringStructural {}
 extension Point4: CustomComparable {}
 extension Point4: InplaceAdd {}
-extension Point4: EncodeJSONStructural {}
+extension Point4: EncodeJSON {}
 extension Point4: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -593,7 +593,7 @@ extension Point5: AdditiveStructural {}
 extension Point5: DebugStringStructural {}
 extension Point5: CustomComparable {}
 extension Point5: InplaceAdd {}
-extension Point5: EncodeJSONStructural {}
+extension Point5: EncodeJSON {}
 extension Point5: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -800,7 +800,7 @@ extension Point6: AdditiveStructural {}
 extension Point6: DebugStringStructural {}
 extension Point6: CustomComparable {}
 extension Point6: InplaceAdd {}
-extension Point6: EncodeJSONStructural {}
+extension Point6: EncodeJSON {}
 extension Point6: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -1041,7 +1041,7 @@ extension Point7: AdditiveStructural {}
 extension Point7: DebugStringStructural {}
 extension Point7: CustomComparable {}
 extension Point7: InplaceAdd {}
-extension Point7: EncodeJSONStructural {}
+extension Point7: EncodeJSON {}
 extension Point7: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -1318,7 +1318,7 @@ extension Point8: AdditiveStructural {}
 extension Point8: DebugStringStructural {}
 extension Point8: CustomComparable {}
 extension Point8: InplaceAdd {}
-extension Point8: EncodeJSONStructural {}
+extension Point8: EncodeJSON {}
 extension Point8: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -1633,7 +1633,7 @@ extension Point9: AdditiveStructural {}
 extension Point9: DebugStringStructural {}
 extension Point9: CustomComparable {}
 extension Point9: InplaceAdd {}
-extension Point9: EncodeJSONStructural {}
+extension Point9: EncodeJSON {}
 extension Point9: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -1988,7 +1988,7 @@ extension Point10: AdditiveStructural {}
 extension Point10: DebugStringStructural {}
 extension Point10: CustomComparable {}
 extension Point10: InplaceAdd {}
-extension Point10: EncodeJSONStructural {}
+extension Point10: EncodeJSON {}
 extension Point10: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -2385,7 +2385,7 @@ extension Point11: AdditiveStructural {}
 extension Point11: DebugStringStructural {}
 extension Point11: CustomComparable {}
 extension Point11: InplaceAdd {}
-extension Point11: EncodeJSONStructural {}
+extension Point11: EncodeJSON {}
 extension Point11: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -2826,7 +2826,7 @@ extension Point12: AdditiveStructural {}
 extension Point12: DebugStringStructural {}
 extension Point12: CustomComparable {}
 extension Point12: InplaceAdd {}
-extension Point12: EncodeJSONStructural {}
+extension Point12: EncodeJSON {}
 extension Point12: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -3313,7 +3313,7 @@ extension Point13: AdditiveStructural {}
 extension Point13: DebugStringStructural {}
 extension Point13: CustomComparable {}
 extension Point13: InplaceAdd {}
-extension Point13: EncodeJSONStructural {}
+extension Point13: EncodeJSON {}
 extension Point13: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -3848,7 +3848,7 @@ extension Point14: AdditiveStructural {}
 extension Point14: DebugStringStructural {}
 extension Point14: CustomComparable {}
 extension Point14: InplaceAdd {}
-extension Point14: EncodeJSONStructural {}
+extension Point14: EncodeJSON {}
 extension Point14: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -4433,7 +4433,7 @@ extension Point15: AdditiveStructural {}
 extension Point15: DebugStringStructural {}
 extension Point15: CustomComparable {}
 extension Point15: InplaceAdd {}
-extension Point15: EncodeJSONStructural {}
+extension Point15: EncodeJSON {}
 extension Point15: DecodeJSONStructural {}
 
 // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 4)
@@ -5070,5 +5070,5 @@ extension Point16: AdditiveStructural {}
 extension Point16: DebugStringStructural {}
 extension Point16: CustomComparable {}
 extension Point16: InplaceAdd {}
-extension Point16: EncodeJSONStructural {}
+extension Point16: EncodeJSON {}
 extension Point16: DecodeJSONStructural {}
