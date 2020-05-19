@@ -62,7 +62,7 @@ extension Point1: CustomEquatable {}
 extension Point1: HashableStructural {}
 extension Point1: Zero {}
 extension Point1: AdditiveStructural {}
-extension Point1: DebugStringStructural {}
+extension Point1: CustomDebugString {}
 extension Point1: CustomComparable {}
 extension Point1: InplaceAdd {}
 extension Point1: EncodeJSON {}
@@ -153,7 +153,7 @@ extension Point2: CustomEquatable {}
 extension Point2: HashableStructural {}
 extension Point2: Zero {}
 extension Point2: AdditiveStructural {}
-extension Point2: DebugStringStructural {}
+extension Point2: CustomDebugString {}
 extension Point2: CustomComparable {}
 extension Point2: InplaceAdd {}
 extension Point2: EncodeJSON {}
@@ -270,7 +270,7 @@ extension Point3: CustomEquatable {}
 extension Point3: HashableStructural {}
 extension Point3: Zero {}
 extension Point3: AdditiveStructural {}
-extension Point3: DebugStringStructural {}
+extension Point3: CustomDebugString {}
 extension Point3: CustomComparable {}
 extension Point3: InplaceAdd {}
 extension Point3: EncodeJSON {}
@@ -415,7 +415,7 @@ extension Point4: CustomEquatable {}
 extension Point4: HashableStructural {}
 extension Point4: Zero {}
 extension Point4: AdditiveStructural {}
-extension Point4: DebugStringStructural {}
+extension Point4: CustomDebugString {}
 extension Point4: CustomComparable {}
 extension Point4: InplaceAdd {}
 extension Point4: EncodeJSON {}
@@ -590,7 +590,7 @@ extension Point5: CustomEquatable {}
 extension Point5: HashableStructural {}
 extension Point5: Zero {}
 extension Point5: AdditiveStructural {}
-extension Point5: DebugStringStructural {}
+extension Point5: CustomDebugString {}
 extension Point5: CustomComparable {}
 extension Point5: InplaceAdd {}
 extension Point5: EncodeJSON {}
@@ -797,7 +797,7 @@ extension Point6: CustomEquatable {}
 extension Point6: HashableStructural {}
 extension Point6: Zero {}
 extension Point6: AdditiveStructural {}
-extension Point6: DebugStringStructural {}
+extension Point6: CustomDebugString {}
 extension Point6: CustomComparable {}
 extension Point6: InplaceAdd {}
 extension Point6: EncodeJSON {}
@@ -1038,7 +1038,7 @@ extension Point7: CustomEquatable {}
 extension Point7: HashableStructural {}
 extension Point7: Zero {}
 extension Point7: AdditiveStructural {}
-extension Point7: DebugStringStructural {}
+extension Point7: CustomDebugString {}
 extension Point7: CustomComparable {}
 extension Point7: InplaceAdd {}
 extension Point7: EncodeJSON {}
@@ -1315,7 +1315,7 @@ extension Point8: CustomEquatable {}
 extension Point8: HashableStructural {}
 extension Point8: Zero {}
 extension Point8: AdditiveStructural {}
-extension Point8: DebugStringStructural {}
+extension Point8: CustomDebugString {}
 extension Point8: CustomComparable {}
 extension Point8: InplaceAdd {}
 extension Point8: EncodeJSON {}
@@ -1630,7 +1630,7 @@ extension Point9: CustomEquatable {}
 extension Point9: HashableStructural {}
 extension Point9: Zero {}
 extension Point9: AdditiveStructural {}
-extension Point9: DebugStringStructural {}
+extension Point9: CustomDebugString {}
 extension Point9: CustomComparable {}
 extension Point9: InplaceAdd {}
 extension Point9: EncodeJSON {}
@@ -1985,7 +1985,7 @@ extension Point10: CustomEquatable {}
 extension Point10: HashableStructural {}
 extension Point10: Zero {}
 extension Point10: AdditiveStructural {}
-extension Point10: DebugStringStructural {}
+extension Point10: CustomDebugString {}
 extension Point10: CustomComparable {}
 extension Point10: InplaceAdd {}
 extension Point10: EncodeJSON {}
@@ -2382,7 +2382,7 @@ extension Point11: CustomEquatable {}
 extension Point11: HashableStructural {}
 extension Point11: Zero {}
 extension Point11: AdditiveStructural {}
-extension Point11: DebugStringStructural {}
+extension Point11: CustomDebugString {}
 extension Point11: CustomComparable {}
 extension Point11: InplaceAdd {}
 extension Point11: EncodeJSON {}
@@ -2823,7 +2823,7 @@ extension Point12: CustomEquatable {}
 extension Point12: HashableStructural {}
 extension Point12: Zero {}
 extension Point12: AdditiveStructural {}
-extension Point12: DebugStringStructural {}
+extension Point12: CustomDebugString {}
 extension Point12: CustomComparable {}
 extension Point12: InplaceAdd {}
 extension Point12: EncodeJSON {}
@@ -3310,7 +3310,7 @@ extension Point13: CustomEquatable {}
 extension Point13: HashableStructural {}
 extension Point13: Zero {}
 extension Point13: AdditiveStructural {}
-extension Point13: DebugStringStructural {}
+extension Point13: CustomDebugString {}
 extension Point13: CustomComparable {}
 extension Point13: InplaceAdd {}
 extension Point13: EncodeJSON {}
@@ -3845,7 +3845,7 @@ extension Point14: CustomEquatable {}
 extension Point14: HashableStructural {}
 extension Point14: Zero {}
 extension Point14: AdditiveStructural {}
-extension Point14: DebugStringStructural {}
+extension Point14: CustomDebugString {}
 extension Point14: CustomComparable {}
 extension Point14: InplaceAdd {}
 extension Point14: EncodeJSON {}
@@ -4430,7 +4430,7 @@ extension Point15: CustomEquatable {}
 extension Point15: HashableStructural {}
 extension Point15: Zero {}
 extension Point15: AdditiveStructural {}
-extension Point15: DebugStringStructural {}
+extension Point15: CustomDebugString {}
 extension Point15: CustomComparable {}
 extension Point15: InplaceAdd {}
 extension Point15: EncodeJSON {}
@@ -5067,7 +5067,7 @@ extension Point16: CustomEquatable {}
 extension Point16: HashableStructural {}
 extension Point16: Zero {}
 extension Point16: AdditiveStructural {}
-extension Point16: DebugStringStructural {}
+extension Point16: CustomDebugString {}
 extension Point16: CustomComparable {}
 extension Point16: InplaceAdd {}
 extension Point16: EncodeJSON {}

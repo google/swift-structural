@@ -2,12 +2,12 @@ import Benchmark
 import StructuralCore
 import StructuralExamples
 
-let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
+let customDebugStringBenchmarks = BenchmarkSuite(name: "CustomDebugString") { suite in
 
     % for N in range(1, 17):
 
     suite.benchmark("Point${N} (generic)") {
-        stringSink = p${N}_1.debugDescriptionStructural
+        stringSink = p${N}_1.debugString
     }
 
     suite.benchmark("Point${N} (reference)") {
@@ -17,7 +17,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     % end
 
     suite.benchmark("BinaryTree (generic)") {
-        stringSink = tree1.debugDescriptionStructural
+        stringSink = tree1.debugString
     }
 
     suite.benchmark("BinaryTree (reference)") {
@@ -25,7 +25,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     }
 
     suite.benchmark("Color (generic)") {
-        stringSink = color1.debugDescriptionStructural
+        stringSink = color1.debugString
     }
 
     suite.benchmark("Color (reference)") {
@@ -33,7 +33,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     }
 
     suite.benchmark("ASCII (generic)") {
-        stringSink = ascii1.debugDescriptionStructural
+        stringSink = ascii1.debugString
     }
 
     suite.benchmark("ASCII (reference)") {

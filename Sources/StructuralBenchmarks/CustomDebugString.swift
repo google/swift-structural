@@ -3,12 +3,12 @@ import Benchmark
 import StructuralCore
 import StructuralExamples
 
-let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
+let customDebugStringBenchmarks = BenchmarkSuite(name: "CustomDebugString") { suite in
 
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point1 (generic)") {
-        stringSink = p1_1.debugDescriptionStructural
+        stringSink = p1_1.debugString
     }
 
     suite.benchmark("Point1 (reference)") {
@@ -18,7 +18,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point2 (generic)") {
-        stringSink = p2_1.debugDescriptionStructural
+        stringSink = p2_1.debugString
     }
 
     suite.benchmark("Point2 (reference)") {
@@ -28,7 +28,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point3 (generic)") {
-        stringSink = p3_1.debugDescriptionStructural
+        stringSink = p3_1.debugString
     }
 
     suite.benchmark("Point3 (reference)") {
@@ -38,7 +38,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point4 (generic)") {
-        stringSink = p4_1.debugDescriptionStructural
+        stringSink = p4_1.debugString
     }
 
     suite.benchmark("Point4 (reference)") {
@@ -48,7 +48,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point5 (generic)") {
-        stringSink = p5_1.debugDescriptionStructural
+        stringSink = p5_1.debugString
     }
 
     suite.benchmark("Point5 (reference)") {
@@ -58,7 +58,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point6 (generic)") {
-        stringSink = p6_1.debugDescriptionStructural
+        stringSink = p6_1.debugString
     }
 
     suite.benchmark("Point6 (reference)") {
@@ -68,7 +68,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point7 (generic)") {
-        stringSink = p7_1.debugDescriptionStructural
+        stringSink = p7_1.debugString
     }
 
     suite.benchmark("Point7 (reference)") {
@@ -78,7 +78,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point8 (generic)") {
-        stringSink = p8_1.debugDescriptionStructural
+        stringSink = p8_1.debugString
     }
 
     suite.benchmark("Point8 (reference)") {
@@ -88,7 +88,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point9 (generic)") {
-        stringSink = p9_1.debugDescriptionStructural
+        stringSink = p9_1.debugString
     }
 
     suite.benchmark("Point9 (reference)") {
@@ -98,7 +98,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point10 (generic)") {
-        stringSink = p10_1.debugDescriptionStructural
+        stringSink = p10_1.debugString
     }
 
     suite.benchmark("Point10 (reference)") {
@@ -108,7 +108,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point11 (generic)") {
-        stringSink = p11_1.debugDescriptionStructural
+        stringSink = p11_1.debugString
     }
 
     suite.benchmark("Point11 (reference)") {
@@ -118,7 +118,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point12 (generic)") {
-        stringSink = p12_1.debugDescriptionStructural
+        stringSink = p12_1.debugString
     }
 
     suite.benchmark("Point12 (reference)") {
@@ -128,7 +128,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point13 (generic)") {
-        stringSink = p13_1.debugDescriptionStructural
+        stringSink = p13_1.debugString
     }
 
     suite.benchmark("Point13 (reference)") {
@@ -138,7 +138,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point14 (generic)") {
-        stringSink = p14_1.debugDescriptionStructural
+        stringSink = p14_1.debugString
     }
 
     suite.benchmark("Point14 (reference)") {
@@ -148,7 +148,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point15 (generic)") {
-        stringSink = p15_1.debugDescriptionStructural
+        stringSink = p15_1.debugString
     }
 
     suite.benchmark("Point15 (reference)") {
@@ -158,7 +158,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 8)
 
     suite.benchmark("Point16 (generic)") {
-        stringSink = p16_1.debugDescriptionStructural
+        stringSink = p16_1.debugString
     }
 
     suite.benchmark("Point16 (reference)") {
@@ -168,7 +168,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DebugStringBenchmarks.swift.gyb", line: 18)
 
     suite.benchmark("BinaryTree (generic)") {
-        stringSink = tree1.debugDescriptionStructural
+        stringSink = tree1.debugString
     }
 
     suite.benchmark("BinaryTree (reference)") {
@@ -176,7 +176,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     }
 
     suite.benchmark("Color (generic)") {
-        stringSink = color1.debugDescriptionStructural
+        stringSink = color1.debugString
     }
 
     suite.benchmark("Color (reference)") {
@@ -184,7 +184,7 @@ let debugStringBenchmarks = BenchmarkSuite(name: "DebugString") { suite in
     }
 
     suite.benchmark("ASCII (generic)") {
-        stringSink = ascii1.debugDescriptionStructural
+        stringSink = ascii1.debugString
     }
 
     suite.benchmark("ASCII (reference)") {
