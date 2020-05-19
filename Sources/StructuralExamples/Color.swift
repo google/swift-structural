@@ -43,6 +43,6 @@ extension Color: Structural {
     }
 }
 
-extension Color: EquatableStructural {}
+extension Color: CustomEquatable {}
 extension Color: HashableStructural {}
 extension Color: DebugStringStructural {}

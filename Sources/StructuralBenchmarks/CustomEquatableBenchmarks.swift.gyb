@@ -3,12 +3,12 @@ import Foundation
 import StructuralCore
 import StructuralExamples
 
-let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
+let customEquatableBenchmarks = BenchmarkSuite(name: "CustomEquatable") { suite in
 
     % for N in range(1, 17):
 
     suite.benchmark("Point${N} (generic)") {
-        boolSink = p${N}_1.genericEqual(p${N}_2)
+        boolSink = p${N}_1.customEqual(p${N}_2)
     }
 
     suite.benchmark("Point${N} (reference)") {
@@ -18,7 +18,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     % end
 
     suite.benchmark("BinaryTree (generic)") {
-        boolSink = tree1.genericEqual(tree2)
+        boolSink = tree1.customEqual(tree2)
     }
 
     suite.benchmark("BinaryTree (reference)") {
@@ -26,7 +26,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     }
 
     suite.benchmark("Color (generic)") {
-        boolSink = color1.genericEqual(color2)
+        boolSink = color1.customEqual(color2)
     }
 
     suite.benchmark("Color (reference)") {
@@ -34,7 +34,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     }
 
     suite.benchmark("ASCII (generic)") {
-        boolSink = ascii1.genericEqual(ascii2)
+        boolSink = ascii1.customEqual(ascii2)
     }
 
     suite.benchmark("ASCII (reference)") {

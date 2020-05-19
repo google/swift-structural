@@ -4,12 +4,12 @@ import Foundation
 import StructuralCore
 import StructuralExamples
 
-let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
+let customEquatableBenchmarks = BenchmarkSuite(name: "CustomEquatable") { suite in
 
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point1 (generic)") {
-        boolSink = p1_1.genericEqual(p1_2)
+        boolSink = p1_1.customEqual(p1_2)
     }
 
     suite.benchmark("Point1 (reference)") {
@@ -19,7 +19,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point2 (generic)") {
-        boolSink = p2_1.genericEqual(p2_2)
+        boolSink = p2_1.customEqual(p2_2)
     }
 
     suite.benchmark("Point2 (reference)") {
@@ -29,7 +29,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point3 (generic)") {
-        boolSink = p3_1.genericEqual(p3_2)
+        boolSink = p3_1.customEqual(p3_2)
     }
 
     suite.benchmark("Point3 (reference)") {
@@ -39,7 +39,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point4 (generic)") {
-        boolSink = p4_1.genericEqual(p4_2)
+        boolSink = p4_1.customEqual(p4_2)
     }
 
     suite.benchmark("Point4 (reference)") {
@@ -49,7 +49,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point5 (generic)") {
-        boolSink = p5_1.genericEqual(p5_2)
+        boolSink = p5_1.customEqual(p5_2)
     }
 
     suite.benchmark("Point5 (reference)") {
@@ -59,7 +59,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point6 (generic)") {
-        boolSink = p6_1.genericEqual(p6_2)
+        boolSink = p6_1.customEqual(p6_2)
     }
 
     suite.benchmark("Point6 (reference)") {
@@ -69,7 +69,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point7 (generic)") {
-        boolSink = p7_1.genericEqual(p7_2)
+        boolSink = p7_1.customEqual(p7_2)
     }
 
     suite.benchmark("Point7 (reference)") {
@@ -79,7 +79,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point8 (generic)") {
-        boolSink = p8_1.genericEqual(p8_2)
+        boolSink = p8_1.customEqual(p8_2)
     }
 
     suite.benchmark("Point8 (reference)") {
@@ -89,7 +89,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point9 (generic)") {
-        boolSink = p9_1.genericEqual(p9_2)
+        boolSink = p9_1.customEqual(p9_2)
     }
 
     suite.benchmark("Point9 (reference)") {
@@ -99,7 +99,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point10 (generic)") {
-        boolSink = p10_1.genericEqual(p10_2)
+        boolSink = p10_1.customEqual(p10_2)
     }
 
     suite.benchmark("Point10 (reference)") {
@@ -109,7 +109,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point11 (generic)") {
-        boolSink = p11_1.genericEqual(p11_2)
+        boolSink = p11_1.customEqual(p11_2)
     }
 
     suite.benchmark("Point11 (reference)") {
@@ -119,7 +119,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point12 (generic)") {
-        boolSink = p12_1.genericEqual(p12_2)
+        boolSink = p12_1.customEqual(p12_2)
     }
 
     suite.benchmark("Point12 (reference)") {
@@ -129,7 +129,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point13 (generic)") {
-        boolSink = p13_1.genericEqual(p13_2)
+        boolSink = p13_1.customEqual(p13_2)
     }
 
     suite.benchmark("Point13 (reference)") {
@@ -139,7 +139,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point14 (generic)") {
-        boolSink = p14_1.genericEqual(p14_2)
+        boolSink = p14_1.customEqual(p14_2)
     }
 
     suite.benchmark("Point14 (reference)") {
@@ -149,7 +149,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point15 (generic)") {
-        boolSink = p15_1.genericEqual(p15_2)
+        boolSink = p15_1.customEqual(p15_2)
     }
 
     suite.benchmark("Point15 (reference)") {
@@ -159,7 +159,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point16 (generic)") {
-        boolSink = p16_1.genericEqual(p16_2)
+        boolSink = p16_1.customEqual(p16_2)
     }
 
     suite.benchmark("Point16 (reference)") {
@@ -169,7 +169,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/EquatableBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("BinaryTree (generic)") {
-        boolSink = tree1.genericEqual(tree2)
+        boolSink = tree1.customEqual(tree2)
     }
 
     suite.benchmark("BinaryTree (reference)") {
@@ -177,7 +177,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     }
 
     suite.benchmark("Color (generic)") {
-        boolSink = color1.genericEqual(color2)
+        boolSink = color1.customEqual(color2)
     }
 
     suite.benchmark("Color (reference)") {
@@ -185,7 +185,7 @@ let equatableBenchmarks = BenchmarkSuite(name: "Equatable") { suite in
     }
 
     suite.benchmark("ASCII (generic)") {
-        boolSink = ascii1.genericEqual(ascii2)
+        boolSink = ascii1.customEqual(ascii2)
     }
 
     suite.benchmark("ASCII (reference)") {

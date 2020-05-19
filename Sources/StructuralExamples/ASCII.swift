@@ -43,6 +43,6 @@ extension ASCII: Structural {
     }
 }
 
-extension ASCII: EquatableStructural {}
+extension ASCII: CustomEquatable {}
 extension ASCII: HashableStructural {}
 extension ASCII: DebugStringStructural {}

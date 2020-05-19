@@ -6,7 +6,7 @@ Benchmark.main([
     debugStringBenchmarks,
     decodeJSONBenchmarks,
     encodeJSONBenchmarks,
-    equatableBenchmarks,
+    customEquatableBenchmarks,
     customHashableBenchmarks,
     inplaceAddBenchmarks,
 ])
