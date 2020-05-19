@@ -4,9 +4,9 @@ Benchmark.main([
     additiveBenchmarks,
     customComparableBenchmarks,
     customDebugStringBenchmarks,
-    decodeJSONBenchmarks,
-    encodeJSONBenchmarks,
     customEquatableBenchmarks,
     customHashableBenchmarks,
+    decodeJSONBenchmarks,
+    encodeJSONBenchmarks,
     inplaceAddBenchmarks,
 ])
