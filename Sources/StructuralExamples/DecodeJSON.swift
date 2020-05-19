@@ -7,33 +7,33 @@ public func decodeJSONObject(from value: String) -> Any {
     return parsed
 }
 
-public func decodeJSONString<T: DecodeJSONStructural>(from input: String, into out: inout T) {
+public func decodeJSONString<T: DecodeJSON>(from input: String, into out: inout T) {
     out.decodeJson(decodeJSONObject(from: input))
 }
 // Protocol that mutates itself by decoding
 // the parsed JSON-encoded argument. 
-public protocol DecodeJSONStructural {
+public protocol DecodeJSON {
     mutating func decodeJson(_ other: Any)
 }
 
 // Inductive cases. 
 
-extension Cons: DecodeJSONStructural
-where Value: DecodeJSONStructural, Next: DecodeJSONStructural {
+extension Cons: DecodeJSON
+where Value: DecodeJSON, Next: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         self.value.decodeJson(other)
         self.next.decodeJson(other)
     }
 }
 
-extension Structure: DecodeJSONStructural where Properties: DecodeJSONStructural {
+extension Structure: DecodeJSON where Properties: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         properties.decodeJson(other)
     }
 }
 
-extension Property: DecodeJSONStructural
-where Value: DecodeJSONStructural {
+extension Property: DecodeJSON
+where Value: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         let dict = other as! [String: Any]
         self.value.decodeJson(dict[self.name]!)
@@ -42,29 +42,29 @@ where Value: DecodeJSONStructural {
 
 // Base cases. 
 
-extension Empty: DecodeJSONStructural {
+extension Empty: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {}
 }
 
-extension Int: DecodeJSONStructural {
+extension Int: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         self = other as! Int
     }
 }
 
-extension Float: DecodeJSONStructural {
+extension Float: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         self = other as! Float
     }
 }
 
-extension String: DecodeJSONStructural {
+extension String: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         self = other as! String
     }
 }
 
-extension Array: DecodeJSONStructural where Element: DecodeJSONStructural, Element: Zero {
+extension Array: DecodeJSON where Element: DecodeJSON, Element: Zero {
     public mutating func decodeJson(_ other: Any) {
         let arr = other as! [Any]
         self = []
@@ -79,7 +79,7 @@ extension Array: DecodeJSONStructural where Element: DecodeJSONStructural, Eleme
 
 // Sugar
 
-extension DecodeJSONStructural where Self: Structural, Self.AbstractValue: DecodeJSONStructural {
+extension DecodeJSON where Self: Structural, Self.AbstractValue: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         var absValue = self.abstractValue
         absValue.decodeJson(other)

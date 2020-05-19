@@ -5,7 +5,7 @@ import XCTest
 // This fails, likely due to a compiler bug (compiler can't
 // prove that Struct<...> and Point3.Representation are the same)::
 // 
-// extension Point3: DecodeJSONStructural {
+// extension Point3: DecodeJSON {
 //     public mutating func decodeJSON(from any: Any) {
 //         var shape
 //             : Struct<Field<Float, 
@@ -18,7 +18,7 @@ import XCTest
 // }
 
 // // A workaround for the failing canonical version above.
-// extension Point3: DecodeJSONStructural {
+// extension Point3: DecodeJSON {
 //     public mutating func decodeJSON(from any: Any) {
 //         var shape = 
 //             Struct("Point3", 
@@ -34,7 +34,7 @@ import XCTest
 //     }
 // }
 
-final class DecodeJSONStructuralTests: XCTestCase {
+final class DecodeJSONTests: XCTestCase {
     // func testPoint3Shape() {
     //     let v: Float = 0
     //     var shape: Struct<Field<Float, 

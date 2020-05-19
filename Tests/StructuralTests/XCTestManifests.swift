@@ -6,7 +6,7 @@ import XCTest
             testCase(AdditiveTests.allTests),
             testCase(CustomComparableTests.allTests),
             testCase(CustomDebugStringTests.allTests),
-            testCase(DecodeJSONStructuralTests.allTests),
+            testCase(DecodeJSONTests.allTests),
             testCase(EncodeJSONTests.allTests),
             testCase(CustomEquatableTests.allTests),
             testCase(CustomHashableTests.allTests),
