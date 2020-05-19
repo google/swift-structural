@@ -3,7 +3,7 @@ import StructuralCore
 /// A duplicate, simplified version of the `Hashable` protocol.
 /// - Note: a duplicate protocol is used to avoid triggering existing `Equatable` derived
 ///   conformances.
-public protocol HashableStructural {
+public protocol CustomHashable {
     func customHash(into hasher: inout Hasher)
 }
 
@@ -13,7 +13,7 @@ public func referenceHash<T>(_ value: T) -> Int where T: Hashable {
     return hasher.finalize()
 }
 
-public func customHash<T>(_ value: T) -> Int where T: HashableStructural {
+public func customHash<T>(_ value: T) -> Int where T: CustomHashable {
     var hasher = Hasher()
     value.customHash(into: &hasher)
     return hasher.finalize()
@@ -21,16 +21,16 @@ public func customHash<T>(_ value: T) -> Int where T: HashableStructural {
 
 // Inductive cases. 
 
-extension Cons: HashableStructural
-where Value: HashableStructural, Next: HashableStructural {
+extension Cons: CustomHashable
+where Value: CustomHashable, Next: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         self.value.customHash(into: &hasher)
         self.next.customHash(into: &hasher)
     }
 }
 
-extension Either: HashableStructural
-where Left: HashableStructural, Right: HashableStructural {
+extension Either: CustomHashable
+where Left: CustomHashable, Right: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         switch self {
         case .left(let left):
@@ -41,27 +41,27 @@ where Left: HashableStructural, Right: HashableStructural {
     }
 }
 
-extension Case: HashableStructural
-where RawValue: HashableStructural, AssociatedValues: HashableStructural {
+extension Case: CustomHashable
+where RawValue: CustomHashable, AssociatedValues: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         rawValue.customHash(into: &hasher)
         associatedValues.customHash(into: &hasher)
     }
 }
 
-extension Property: HashableStructural where Value: HashableStructural {
+extension Property: CustomHashable where Value: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         value.customHash(into: &hasher)
     }
 }
 
-extension Enum: HashableStructural where Cases: HashableStructural {
+extension Enum: CustomHashable where Cases: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         cases.customHash(into: &hasher)
     }
 }
 
-extension Structure: HashableStructural where Properties: HashableStructural {
+extension Structure: CustomHashable where Properties: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         properties.customHash(into: &hasher)
     }
@@ -69,29 +69,29 @@ extension Structure: HashableStructural where Properties: HashableStructural {
 
 // Base cases.
 
-extension Empty: HashableStructural {
+extension Empty: CustomHashable {
     public func customHash(into hasher: inout Hasher) {}
 }
 
-extension Int: HashableStructural {
+extension Int: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         hash(into: &hasher)
     }
 }
 
-extension Float: HashableStructural {
+extension Float: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         hash(into: &hasher)
     }
 }
 
-extension Double: HashableStructural {
+extension Double: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         hash(into: &hasher)
     }
 }
 
-extension String: HashableStructural {
+extension String: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         hash(into: &hasher)
     }
@@ -99,7 +99,7 @@ extension String: HashableStructural {
 
 // Syntactic sugar
 
-extension HashableStructural where Self: Structural, Self.AbstractValue: HashableStructural {
+extension CustomHashable where Self: Structural, Self.AbstractValue: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         self.abstractValue.customHash(into: &hasher)
     }

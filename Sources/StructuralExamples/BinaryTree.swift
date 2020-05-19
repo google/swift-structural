@@ -60,6 +60,6 @@ extension BinaryTree: Structural {
 }
 
 extension BinaryTree: CustomEquatable where T: CustomEquatable {}
-extension BinaryTree: HashableStructural where T: HashableStructural {}
+extension BinaryTree: CustomHashable where T: CustomHashable {}
 extension BinaryTree: CustomDebugString where T: CustomDebugString {}
 extension BinaryTree: AdditiveStructural where T: AdditiveStructural {}

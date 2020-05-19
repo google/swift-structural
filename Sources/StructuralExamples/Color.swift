@@ -44,5 +44,5 @@ extension Color: Structural {
 }
 
 extension Color: CustomEquatable {}
-extension Color: HashableStructural {}
+extension Color: CustomHashable {}
 extension Color: CustomDebugString {}

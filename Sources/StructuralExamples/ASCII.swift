@@ -44,5 +44,5 @@ extension ASCII: Structural {
 }
 
 extension ASCII: CustomEquatable {}
-extension ASCII: HashableStructural {}
+extension ASCII: CustomHashable {}
 extension ASCII: CustomDebugString {}

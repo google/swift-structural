@@ -59,7 +59,7 @@ extension Point1: Structural {
 }
 
 extension Point1: CustomEquatable {}
-extension Point1: HashableStructural {}
+extension Point1: CustomHashable {}
 extension Point1: Zero {}
 extension Point1: AdditiveStructural {}
 extension Point1: CustomDebugString {}
@@ -150,7 +150,7 @@ extension Point2: Structural {
 }
 
 extension Point2: CustomEquatable {}
-extension Point2: HashableStructural {}
+extension Point2: CustomHashable {}
 extension Point2: Zero {}
 extension Point2: AdditiveStructural {}
 extension Point2: CustomDebugString {}
@@ -267,7 +267,7 @@ extension Point3: Structural {
 }
 
 extension Point3: CustomEquatable {}
-extension Point3: HashableStructural {}
+extension Point3: CustomHashable {}
 extension Point3: Zero {}
 extension Point3: AdditiveStructural {}
 extension Point3: CustomDebugString {}
@@ -412,7 +412,7 @@ extension Point4: Structural {
 }
 
 extension Point4: CustomEquatable {}
-extension Point4: HashableStructural {}
+extension Point4: CustomHashable {}
 extension Point4: Zero {}
 extension Point4: AdditiveStructural {}
 extension Point4: CustomDebugString {}
@@ -587,7 +587,7 @@ extension Point5: Structural {
 }
 
 extension Point5: CustomEquatable {}
-extension Point5: HashableStructural {}
+extension Point5: CustomHashable {}
 extension Point5: Zero {}
 extension Point5: AdditiveStructural {}
 extension Point5: CustomDebugString {}
@@ -794,7 +794,7 @@ extension Point6: Structural {
 }
 
 extension Point6: CustomEquatable {}
-extension Point6: HashableStructural {}
+extension Point6: CustomHashable {}
 extension Point6: Zero {}
 extension Point6: AdditiveStructural {}
 extension Point6: CustomDebugString {}
@@ -1035,7 +1035,7 @@ extension Point7: Structural {
 }
 
 extension Point7: CustomEquatable {}
-extension Point7: HashableStructural {}
+extension Point7: CustomHashable {}
 extension Point7: Zero {}
 extension Point7: AdditiveStructural {}
 extension Point7: CustomDebugString {}
@@ -1312,7 +1312,7 @@ extension Point8: Structural {
 }
 
 extension Point8: CustomEquatable {}
-extension Point8: HashableStructural {}
+extension Point8: CustomHashable {}
 extension Point8: Zero {}
 extension Point8: AdditiveStructural {}
 extension Point8: CustomDebugString {}
@@ -1627,7 +1627,7 @@ extension Point9: Structural {
 }
 
 extension Point9: CustomEquatable {}
-extension Point9: HashableStructural {}
+extension Point9: CustomHashable {}
 extension Point9: Zero {}
 extension Point9: AdditiveStructural {}
 extension Point9: CustomDebugString {}
@@ -1982,7 +1982,7 @@ extension Point10: Structural {
 }
 
 extension Point10: CustomEquatable {}
-extension Point10: HashableStructural {}
+extension Point10: CustomHashable {}
 extension Point10: Zero {}
 extension Point10: AdditiveStructural {}
 extension Point10: CustomDebugString {}
@@ -2379,7 +2379,7 @@ extension Point11: Structural {
 }
 
 extension Point11: CustomEquatable {}
-extension Point11: HashableStructural {}
+extension Point11: CustomHashable {}
 extension Point11: Zero {}
 extension Point11: AdditiveStructural {}
 extension Point11: CustomDebugString {}
@@ -2820,7 +2820,7 @@ extension Point12: Structural {
 }
 
 extension Point12: CustomEquatable {}
-extension Point12: HashableStructural {}
+extension Point12: CustomHashable {}
 extension Point12: Zero {}
 extension Point12: AdditiveStructural {}
 extension Point12: CustomDebugString {}
@@ -3307,7 +3307,7 @@ extension Point13: Structural {
 }
 
 extension Point13: CustomEquatable {}
-extension Point13: HashableStructural {}
+extension Point13: CustomHashable {}
 extension Point13: Zero {}
 extension Point13: AdditiveStructural {}
 extension Point13: CustomDebugString {}
@@ -3842,7 +3842,7 @@ extension Point14: Structural {
 }
 
 extension Point14: CustomEquatable {}
-extension Point14: HashableStructural {}
+extension Point14: CustomHashable {}
 extension Point14: Zero {}
 extension Point14: AdditiveStructural {}
 extension Point14: CustomDebugString {}
@@ -4427,7 +4427,7 @@ extension Point15: Structural {
 }
 
 extension Point15: CustomEquatable {}
-extension Point15: HashableStructural {}
+extension Point15: CustomHashable {}
 extension Point15: Zero {}
 extension Point15: AdditiveStructural {}
 extension Point15: CustomDebugString {}
@@ -5064,7 +5064,7 @@ extension Point16: Structural {
 }
 
 extension Point16: CustomEquatable {}
-extension Point16: HashableStructural {}
+extension Point16: CustomHashable {}
 extension Point16: Zero {}
 extension Point16: AdditiveStructural {}
 extension Point16: CustomDebugString {}
