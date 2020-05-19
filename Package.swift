@@ -2,6 +2,8 @@
 
 import PackageDescription
 
+let optimize = [SwiftSetting.unsafeFlags(["-cross-module-optimization", "-O"])]
+
 let package = Package(
     name: "StructuralProgramming",
     products: [
@@ -16,15 +18,19 @@ let package = Package(
     targets: [
         .target(
             name: "StructuralCore",
-            dependencies: []),
+            dependencies: [],
+            swiftSettings: optimize),
         .target(
             name: "StructuralExamples",
-            dependencies: ["StructuralCore"]),
+            dependencies: ["StructuralCore"],
+            swiftSettings: optimize),
         .target(
             name: "StructuralBenchmarks",
-            dependencies: ["StructuralCore", "StructuralExamples", "Benchmark"]),
+            dependencies: ["StructuralCore", "StructuralExamples", "Benchmark"],
+            swiftSettings: optimize),
         .testTarget(
             name: "StructuralTests",
-            dependencies: ["StructuralCore", "StructuralExamples"]),
+            dependencies: ["StructuralCore", "StructuralExamples"],
+            swiftSettings: optimize),
     ]
 )
