@@ -3,7 +3,7 @@ import XCTest
 @testable import StructuralCore
 @testable import StructuralExamples
 
-final class AdditiveStructuralTests: XCTestCase {
+final class AdditiveTests: XCTestCase {
     func testPoint3Zero() {
         let point = Point3.zero
         let zero = Point3(_1: 0, _2: 0, _3: 0)
