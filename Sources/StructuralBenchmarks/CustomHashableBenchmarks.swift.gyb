@@ -3,12 +3,12 @@ import Foundation
 import StructuralCore
 import StructuralExamples
 
-let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
+let customHashableBenchmarks = BenchmarkSuite(name: "CustomHashable") { suite in
 
     % for N in range(1, 17):
 
     suite.benchmark("Point${N} (generic)") {
-        intSink = genericHash(p${N}_1)
+        intSink = customHash(p${N}_1)
     }
 
     suite.benchmark("Point${N} (reference)") {
@@ -18,7 +18,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     % end
 
     suite.benchmark("BinaryTree (generic)") {
-        intSink = genericHash(tree1)
+        intSink = customHash(tree1)
     }
 
     suite.benchmark("BinaryTree (reference)") {
@@ -26,7 +26,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     }
 
     suite.benchmark("Color (generic)") {
-        intSink = genericHash(color1)
+        intSink = customHash(color1)
     }
 
     suite.benchmark("Color (reference)") {
@@ -34,7 +34,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     }
 
     suite.benchmark("ASCII (generic)") {
-        intSink = genericHash(ascii1)
+        intSink = customHash(ascii1)
     }
 
     suite.benchmark("ASCII (reference)") {

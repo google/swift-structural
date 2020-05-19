@@ -63,7 +63,7 @@ extension Point${N}: Structural {
 }
 
 extension Point${N}: EquatableStructural {}
-extension Point${N}: HashableStructural {}
+extension Point${N}: CustomHashable {}
 extension Point${N}: Zero {}
 extension Point${N}: AdditiveStructural {}
 extension Point${N}: DebugStringStructural {}

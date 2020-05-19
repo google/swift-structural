@@ -9,7 +9,7 @@ import XCTest
             testCase(DecodeJSONStructuralTests.allTests),
             testCase(EncodeJSONStructuralTests.allTests),
             testCase(EquatableStructuralTests.allTests),
-            testCase(HashableStructuralTests.allTests),
+            testCase(CustomHashableTests.allTests),
             testCase(InplaceAddTests.allTests),
             testCase(AbstractValueTests.allTests),
             testCase(DebugStringStructuralTests.allTests),

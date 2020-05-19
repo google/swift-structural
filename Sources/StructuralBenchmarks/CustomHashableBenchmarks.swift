@@ -4,12 +4,12 @@ import Foundation
 import StructuralCore
 import StructuralExamples
 
-let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
+let customHashableBenchmarks = BenchmarkSuite(name: "CustomHashable") { suite in
 
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point1 (generic)") {
-        intSink = genericHash(p1_1)
+        intSink = customHash(p1_1)
     }
 
     suite.benchmark("Point1 (reference)") {
@@ -19,7 +19,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point2 (generic)") {
-        intSink = genericHash(p2_1)
+        intSink = customHash(p2_1)
     }
 
     suite.benchmark("Point2 (reference)") {
@@ -29,7 +29,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point3 (generic)") {
-        intSink = genericHash(p3_1)
+        intSink = customHash(p3_1)
     }
 
     suite.benchmark("Point3 (reference)") {
@@ -39,7 +39,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point4 (generic)") {
-        intSink = genericHash(p4_1)
+        intSink = customHash(p4_1)
     }
 
     suite.benchmark("Point4 (reference)") {
@@ -49,7 +49,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point5 (generic)") {
-        intSink = genericHash(p5_1)
+        intSink = customHash(p5_1)
     }
 
     suite.benchmark("Point5 (reference)") {
@@ -59,7 +59,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point6 (generic)") {
-        intSink = genericHash(p6_1)
+        intSink = customHash(p6_1)
     }
 
     suite.benchmark("Point6 (reference)") {
@@ -69,7 +69,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point7 (generic)") {
-        intSink = genericHash(p7_1)
+        intSink = customHash(p7_1)
     }
 
     suite.benchmark("Point7 (reference)") {
@@ -79,7 +79,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point8 (generic)") {
-        intSink = genericHash(p8_1)
+        intSink = customHash(p8_1)
     }
 
     suite.benchmark("Point8 (reference)") {
@@ -89,7 +89,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point9 (generic)") {
-        intSink = genericHash(p9_1)
+        intSink = customHash(p9_1)
     }
 
     suite.benchmark("Point9 (reference)") {
@@ -99,7 +99,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point10 (generic)") {
-        intSink = genericHash(p10_1)
+        intSink = customHash(p10_1)
     }
 
     suite.benchmark("Point10 (reference)") {
@@ -109,7 +109,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point11 (generic)") {
-        intSink = genericHash(p11_1)
+        intSink = customHash(p11_1)
     }
 
     suite.benchmark("Point11 (reference)") {
@@ -119,7 +119,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point12 (generic)") {
-        intSink = genericHash(p12_1)
+        intSink = customHash(p12_1)
     }
 
     suite.benchmark("Point12 (reference)") {
@@ -129,7 +129,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point13 (generic)") {
-        intSink = genericHash(p13_1)
+        intSink = customHash(p13_1)
     }
 
     suite.benchmark("Point13 (reference)") {
@@ -139,7 +139,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point14 (generic)") {
-        intSink = genericHash(p14_1)
+        intSink = customHash(p14_1)
     }
 
     suite.benchmark("Point14 (reference)") {
@@ -149,7 +149,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point15 (generic)") {
-        intSink = genericHash(p15_1)
+        intSink = customHash(p15_1)
     }
 
     suite.benchmark("Point15 (reference)") {
@@ -159,7 +159,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 9)
 
     suite.benchmark("Point16 (generic)") {
-        intSink = genericHash(p16_1)
+        intSink = customHash(p16_1)
     }
 
     suite.benchmark("Point16 (reference)") {
@@ -169,7 +169,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/HashableBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("BinaryTree (generic)") {
-        intSink = genericHash(tree1)
+        intSink = customHash(tree1)
     }
 
     suite.benchmark("BinaryTree (reference)") {
@@ -177,7 +177,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     }
 
     suite.benchmark("Color (generic)") {
-        intSink = genericHash(color1)
+        intSink = customHash(color1)
     }
 
     suite.benchmark("Color (reference)") {
@@ -185,7 +185,7 @@ let hashableBenchmarks = BenchmarkSuite(name: "Hashable") { suite in
     }
 
     suite.benchmark("ASCII (generic)") {
-        intSink = genericHash(ascii1)
+        intSink = customHash(ascii1)
     }
 
     suite.benchmark("ASCII (reference)") {
