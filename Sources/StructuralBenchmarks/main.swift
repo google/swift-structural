@@ -2,7 +2,7 @@ import Benchmark
 
 Benchmark.main([
     additiveBenchmarks,
-    comparableBenchmarks,
+    customComparableBenchmarks,
     debugStringBenchmarks,
     decodeJSONBenchmarks,
     encodeJSONBenchmarks,

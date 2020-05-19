@@ -63,7 +63,7 @@ extension Point1: HashableStructural {}
 extension Point1: Zero {}
 extension Point1: AdditiveStructural {}
 extension Point1: DebugStringStructural {}
-extension Point1: ComparableStructural {}
+extension Point1: CustomComparable {}
 extension Point1: InplaceAdd {}
 extension Point1: EncodeJSONStructural {}
 extension Point1: DecodeJSONStructural {}
@@ -154,7 +154,7 @@ extension Point2: HashableStructural {}
 extension Point2: Zero {}
 extension Point2: AdditiveStructural {}
 extension Point2: DebugStringStructural {}
-extension Point2: ComparableStructural {}
+extension Point2: CustomComparable {}
 extension Point2: InplaceAdd {}
 extension Point2: EncodeJSONStructural {}
 extension Point2: DecodeJSONStructural {}
@@ -271,7 +271,7 @@ extension Point3: HashableStructural {}
 extension Point3: Zero {}
 extension Point3: AdditiveStructural {}
 extension Point3: DebugStringStructural {}
-extension Point3: ComparableStructural {}
+extension Point3: CustomComparable {}
 extension Point3: InplaceAdd {}
 extension Point3: EncodeJSONStructural {}
 extension Point3: DecodeJSONStructural {}
@@ -416,7 +416,7 @@ extension Point4: HashableStructural {}
 extension Point4: Zero {}
 extension Point4: AdditiveStructural {}
 extension Point4: DebugStringStructural {}
-extension Point4: ComparableStructural {}
+extension Point4: CustomComparable {}
 extension Point4: InplaceAdd {}
 extension Point4: EncodeJSONStructural {}
 extension Point4: DecodeJSONStructural {}
@@ -591,7 +591,7 @@ extension Point5: HashableStructural {}
 extension Point5: Zero {}
 extension Point5: AdditiveStructural {}
 extension Point5: DebugStringStructural {}
-extension Point5: ComparableStructural {}
+extension Point5: CustomComparable {}
 extension Point5: InplaceAdd {}
 extension Point5: EncodeJSONStructural {}
 extension Point5: DecodeJSONStructural {}
@@ -798,7 +798,7 @@ extension Point6: HashableStructural {}
 extension Point6: Zero {}
 extension Point6: AdditiveStructural {}
 extension Point6: DebugStringStructural {}
-extension Point6: ComparableStructural {}
+extension Point6: CustomComparable {}
 extension Point6: InplaceAdd {}
 extension Point6: EncodeJSONStructural {}
 extension Point6: DecodeJSONStructural {}
@@ -1039,7 +1039,7 @@ extension Point7: HashableStructural {}
 extension Point7: Zero {}
 extension Point7: AdditiveStructural {}
 extension Point7: DebugStringStructural {}
-extension Point7: ComparableStructural {}
+extension Point7: CustomComparable {}
 extension Point7: InplaceAdd {}
 extension Point7: EncodeJSONStructural {}
 extension Point7: DecodeJSONStructural {}
@@ -1316,7 +1316,7 @@ extension Point8: HashableStructural {}
 extension Point8: Zero {}
 extension Point8: AdditiveStructural {}
 extension Point8: DebugStringStructural {}
-extension Point8: ComparableStructural {}
+extension Point8: CustomComparable {}
 extension Point8: InplaceAdd {}
 extension Point8: EncodeJSONStructural {}
 extension Point8: DecodeJSONStructural {}
@@ -1631,7 +1631,7 @@ extension Point9: HashableStructural {}
 extension Point9: Zero {}
 extension Point9: AdditiveStructural {}
 extension Point9: DebugStringStructural {}
-extension Point9: ComparableStructural {}
+extension Point9: CustomComparable {}
 extension Point9: InplaceAdd {}
 extension Point9: EncodeJSONStructural {}
 extension Point9: DecodeJSONStructural {}
@@ -1986,7 +1986,7 @@ extension Point10: HashableStructural {}
 extension Point10: Zero {}
 extension Point10: AdditiveStructural {}
 extension Point10: DebugStringStructural {}
-extension Point10: ComparableStructural {}
+extension Point10: CustomComparable {}
 extension Point10: InplaceAdd {}
 extension Point10: EncodeJSONStructural {}
 extension Point10: DecodeJSONStructural {}
@@ -2383,7 +2383,7 @@ extension Point11: HashableStructural {}
 extension Point11: Zero {}
 extension Point11: AdditiveStructural {}
 extension Point11: DebugStringStructural {}
-extension Point11: ComparableStructural {}
+extension Point11: CustomComparable {}
 extension Point11: InplaceAdd {}
 extension Point11: EncodeJSONStructural {}
 extension Point11: DecodeJSONStructural {}
@@ -2824,7 +2824,7 @@ extension Point12: HashableStructural {}
 extension Point12: Zero {}
 extension Point12: AdditiveStructural {}
 extension Point12: DebugStringStructural {}
-extension Point12: ComparableStructural {}
+extension Point12: CustomComparable {}
 extension Point12: InplaceAdd {}
 extension Point12: EncodeJSONStructural {}
 extension Point12: DecodeJSONStructural {}
@@ -3311,7 +3311,7 @@ extension Point13: HashableStructural {}
 extension Point13: Zero {}
 extension Point13: AdditiveStructural {}
 extension Point13: DebugStringStructural {}
-extension Point13: ComparableStructural {}
+extension Point13: CustomComparable {}
 extension Point13: InplaceAdd {}
 extension Point13: EncodeJSONStructural {}
 extension Point13: DecodeJSONStructural {}
@@ -3846,7 +3846,7 @@ extension Point14: HashableStructural {}
 extension Point14: Zero {}
 extension Point14: AdditiveStructural {}
 extension Point14: DebugStringStructural {}
-extension Point14: ComparableStructural {}
+extension Point14: CustomComparable {}
 extension Point14: InplaceAdd {}
 extension Point14: EncodeJSONStructural {}
 extension Point14: DecodeJSONStructural {}
@@ -4431,7 +4431,7 @@ extension Point15: HashableStructural {}
 extension Point15: Zero {}
 extension Point15: AdditiveStructural {}
 extension Point15: DebugStringStructural {}
-extension Point15: ComparableStructural {}
+extension Point15: CustomComparable {}
 extension Point15: InplaceAdd {}
 extension Point15: EncodeJSONStructural {}
 extension Point15: DecodeJSONStructural {}
@@ -5068,7 +5068,7 @@ extension Point16: HashableStructural {}
 extension Point16: Zero {}
 extension Point16: AdditiveStructural {}
 extension Point16: DebugStringStructural {}
-extension Point16: ComparableStructural {}
+extension Point16: CustomComparable {}
 extension Point16: InplaceAdd {}
 extension Point16: EncodeJSONStructural {}
 extension Point16: DecodeJSONStructural {}

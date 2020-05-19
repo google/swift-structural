@@ -4,7 +4,7 @@ import XCTest
     public func allTests() -> [XCTestCaseEntry] {
         return [
             testCase(AdditiveStructuralTests.allTests),
-            testCase(ComparableStructuralTests.allTests),
+            testCase(CustomComparableTests.allTests),
             testCase(DebugStringStructuralTests.allTests),
             testCase(DecodeJSONStructuralTests.allTests),
             testCase(EncodeJSONStructuralTests.allTests),
@@ -13,7 +13,7 @@ import XCTest
             testCase(InplaceAddTests.allTests),
             testCase(AbstractValueTests.allTests),
             testCase(DebugStringStructuralTests.allTests),
-            testCase(ComparableStructuralTests.allTests),
+            testCase(CustomComparableTests.allTests),
             testCase(EncodeJSONStructuralTests.allTests),
         ]
     }
