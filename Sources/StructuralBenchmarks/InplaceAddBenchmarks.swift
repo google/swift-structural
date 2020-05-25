@@ -1,382 +1,396 @@
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 1)
+// Copyright 2020 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 1)
 import Benchmark
 import Foundation
 import StructuralCore
 import StructuralExamples
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point1, _ r: Point1) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point2, _ r: Point2) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point3, _ r: Point3) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point4, _ r: Point4) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point5, _ r: Point5) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point6, _ r: Point6) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point7, _ r: Point7) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point8, _ r: Point8) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point9, _ r: Point9) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._9 += r._9
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point10, _ r: Point10) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._9 += r._9
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._10 += r._10
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point11, _ r: Point11) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._9 += r._9
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._10 += r._10
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._11 += r._11
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point12, _ r: Point12) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._9 += r._9
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._10 += r._10
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._11 += r._11
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._12 += r._12
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point13, _ r: Point13) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._9 += r._9
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._10 += r._10
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._11 += r._11
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._12 += r._12
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._13 += r._13
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point14, _ r: Point14) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._9 += r._9
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._10 += r._10
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._11 += r._11
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._12 += r._12
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._13 += r._13
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._14 += r._14
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point15, _ r: Point15) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._9 += r._9
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._10 += r._10
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._11 += r._11
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._12 += r._12
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._13 += r._13
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._14 += r._14
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._15 += r._15
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 7)
 
 func inplaceAddSpecialized(_ l: inout Point16, _ r: Point16) {
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._1 += r._1
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._2 += r._2
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._3 += r._3
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._4 += r._4
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._5 += r._5
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._6 += r._6
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._7 += r._7
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._8 += r._8
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._9 += r._9
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._10 += r._10
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._11 += r._11
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._12 += r._12
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._13 += r._13
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._14 += r._14
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._15 += r._15
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 10)
     l._16 += r._16
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 12)
 }
 
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 15)
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 15)
 
 let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point1 (generic)") {
         var p: Point1 = p1_1
@@ -390,7 +404,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p1_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point2 (generic)") {
         var p: Point2 = p2_1
@@ -404,7 +418,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p2_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point3 (generic)") {
         var p: Point3 = p3_1
@@ -418,7 +432,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p3_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point4 (generic)") {
         var p: Point4 = p4_1
@@ -432,7 +446,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p4_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point5 (generic)") {
         var p: Point5 = p5_1
@@ -446,7 +460,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p5_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point6 (generic)") {
         var p: Point6 = p6_1
@@ -460,7 +474,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p6_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point7 (generic)") {
         var p: Point7 = p7_1
@@ -474,7 +488,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p7_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point8 (generic)") {
         var p: Point8 = p8_1
@@ -488,7 +502,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p8_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point9 (generic)") {
         var p: Point9 = p9_1
@@ -502,7 +516,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p9_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point10 (generic)") {
         var p: Point10 = p10_1
@@ -516,7 +530,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p10_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point11 (generic)") {
         var p: Point11 = p11_1
@@ -530,7 +544,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p11_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point12 (generic)") {
         var p: Point12 = p12_1
@@ -544,7 +558,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p12_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point13 (generic)") {
         var p: Point13 = p13_1
@@ -558,7 +572,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p13_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point14 (generic)") {
         var p: Point14 = p14_1
@@ -572,7 +586,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p14_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point15 (generic)") {
         var p: Point15 = p15_1
@@ -586,7 +600,7 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p15_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 19)
 
     suite.benchmark("Point16 (generic)") {
         var p: Point16 = p16_1
@@ -600,5 +614,5 @@ let inplaceAddBenchmarks = BenchmarkSuite(name: "InplaceAdd") { suite in
         p16_1 = p
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 33)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/InplaceAddBenchmarks.swift.gyb", line: 33)
 }

@@ -1,4 +1,18 @@
-// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 1)
+// Copyright 2020 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 1)
 import Benchmark
 import Foundation
 import StructuralCore
@@ -6,7 +20,7 @@ import StructuralExamples
 
 let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue1 = [Point1](repeating: p1_1, count: 32)
     let inputData1 = try! JSONEncoder().encode(inputValue1)
@@ -29,7 +43,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue2 = [Point2](repeating: p2_1, count: 32)
     let inputData2 = try! JSONEncoder().encode(inputValue2)
@@ -52,7 +66,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue3 = [Point3](repeating: p3_1, count: 32)
     let inputData3 = try! JSONEncoder().encode(inputValue3)
@@ -75,7 +89,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue4 = [Point4](repeating: p4_1, count: 32)
     let inputData4 = try! JSONEncoder().encode(inputValue4)
@@ -98,7 +112,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue5 = [Point5](repeating: p5_1, count: 32)
     let inputData5 = try! JSONEncoder().encode(inputValue5)
@@ -121,7 +135,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue6 = [Point6](repeating: p6_1, count: 32)
     let inputData6 = try! JSONEncoder().encode(inputValue6)
@@ -144,7 +158,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue7 = [Point7](repeating: p7_1, count: 32)
     let inputData7 = try! JSONEncoder().encode(inputValue7)
@@ -167,7 +181,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue8 = [Point8](repeating: p8_1, count: 32)
     let inputData8 = try! JSONEncoder().encode(inputValue8)
@@ -190,7 +204,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue9 = [Point9](repeating: p9_1, count: 32)
     let inputData9 = try! JSONEncoder().encode(inputValue9)
@@ -213,7 +227,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue10 = [Point10](repeating: p10_1, count: 32)
     let inputData10 = try! JSONEncoder().encode(inputValue10)
@@ -236,7 +250,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue11 = [Point11](repeating: p11_1, count: 32)
     let inputData11 = try! JSONEncoder().encode(inputValue11)
@@ -259,7 +273,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue12 = [Point12](repeating: p12_1, count: 32)
     let inputData12 = try! JSONEncoder().encode(inputValue12)
@@ -282,7 +296,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue13 = [Point13](repeating: p13_1, count: 32)
     let inputData13 = try! JSONEncoder().encode(inputValue13)
@@ -305,7 +319,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue14 = [Point14](repeating: p14_1, count: 32)
     let inputData14 = try! JSONEncoder().encode(inputValue14)
@@ -328,7 +342,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue15 = [Point15](repeating: p15_1, count: 32)
     let inputData15 = try! JSONEncoder().encode(inputValue15)
@@ -351,7 +365,7 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 9)
 
     let inputValue16 = [Point16](repeating: p16_1, count: 32)
     let inputData16 = try! JSONEncoder().encode(inputValue16)
@@ -374,5 +388,5 @@ let decodeJSONBenchmarks = BenchmarkSuite(name: "DecodeJSON") { suite in
         anySink = decoded
     }
 
-    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-shaped/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 32)
+    // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/DecodeJSONBenchmarks.swift.gyb", line: 32)
 }
