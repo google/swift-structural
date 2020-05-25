@@ -18,3 +18,6 @@ Swift for TensorFlow library:
 - [x] `AdditiveStructural`
 - [x] `ZeroStructural`
 - [x] `InplaceAddStructural`
+
+
+> Note: This is not an officially supported Google product.
