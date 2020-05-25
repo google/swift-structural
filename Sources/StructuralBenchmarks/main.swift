@@ -9,4 +9,5 @@ Benchmark.main([
     decodeJSONBenchmarks,
     encodeJSONBenchmarks,
     inplaceAddBenchmarks,
+    scaleByBenchmarks,
 ])
