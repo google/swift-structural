@@ -61,9 +61,14 @@ public struct Structural_Property<Value> {
         self.name = ""
         self.value = value
         self.isMutable = false
-
     }
 
+    public init(_ name: String, _ value: Value) {
+        self.name = name
+        self.value = value
+        self.isMutable = false
+    }
+ 
     public init(_ name: String, _ value: Value, isMutable: Bool) {
         self.name = name
         self.value = value
