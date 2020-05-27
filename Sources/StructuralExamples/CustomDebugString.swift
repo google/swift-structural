@@ -23,7 +23,12 @@ public protocol CustomDebugString {
 
 extension Structural.Struct: CustomDebugString where Properties: CustomDebugString {
     public var debugString: String {
-        let name = String(describing: self.type!)
+        let name: String
+        if let type = self.type {
+            name = String(describing: type)
+        } else {
+            name = ""
+        }
         return "\(name)(\(properties.debugString))"
     }
 }
@@ -54,7 +59,12 @@ where Value: CustomDebugString {
 
 extension Structural.Enum: CustomDebugString where Cases: CustomDebugString {
     public var debugString: String {
-        let name = String(describing: self.type!)
+        let name: String
+        if let type = self.type {
+            name = String(describing: type)
+        } else {
+            name = ""
+        }
         return "\(name).\(self.cases.debugString)"
     }
 }
