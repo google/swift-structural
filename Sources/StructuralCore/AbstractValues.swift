@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-public struct Structure<Properties> {
+public struct Struct<Properties> {
     public var name: String
     public var properties: Properties
 

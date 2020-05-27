@@ -80,7 +80,7 @@ where Value: EncodeJSON, Next: EncodeJSON {
     }
 }
 
-extension Structure: EncodeJSON where Properties: EncodeJSON {
+extension Struct: EncodeJSON where Properties: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendObjectStart()
         self.properties.encodeJson(into: &builder)

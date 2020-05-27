@@ -25,7 +25,7 @@ public struct StudentGrades {
 }
 
 extension StudentGrades: Structural {
-    public typealias StructuralRepresentation = Structure<
+    public typealias StructuralRepresentation = Struct<
         Cons<
             Property<Int>,
             Cons<
@@ -37,7 +37,7 @@ extension StudentGrades: Structural {
 
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure(
+            return Struct(
                 "StudentGrades",
                 Cons(
                     Property("classId", classId, isMutable: false),
@@ -47,7 +47,7 @@ extension StudentGrades: Structural {
         }
 
         _modify {
-            var av = Structure(
+            var av = Struct(
                 "StudentGrades",
                 Cons(
                     Property("classId", classId, isMutable: false),
@@ -84,7 +84,7 @@ public struct Semester {
 }
 
 extension Semester: Structural {
-    public typealias StructuralRepresentation = Structure<
+    public typealias StructuralRepresentation = Struct<
         Cons<
             Property<Int>,
             Cons<
@@ -96,7 +96,7 @@ extension Semester: Structural {
 
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure(
+            return Struct(
                 "Semester",
                 Cons(
                     Property("year", year, isMutable: false),
@@ -106,7 +106,7 @@ extension Semester: Structural {
         }
 
         _modify {
-            var av = Structure(
+            var av = Struct(
                 "Semester",
                 Cons(
                     Property("year", year, isMutable: false),
@@ -178,7 +178,7 @@ extension Cons: ScaleInPlace where Value: ScaleInPlace, Next: ScaleInPlace {
     }
 }
 
-extension Structure: ScaleInPlace where Properties: ScaleInPlace {
+extension Struct: ScaleInPlace where Properties: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         self.properties.scale(by: scalar)
     }

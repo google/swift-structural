@@ -75,7 +75,7 @@ extension Enum: CustomHashable where Cases: CustomHashable {
     }
 }
 
-extension Structure: CustomHashable where Properties: CustomHashable {
+extension Struct: CustomHashable where Properties: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         properties.customHash(into: &hasher)
     }

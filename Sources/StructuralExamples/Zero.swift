@@ -34,9 +34,9 @@ where Value: Zero, Next: Zero {
     }
 }
 
-extension Structure: Zero where Properties: Zero {
+extension Struct: Zero where Properties: Zero {
     public static var zero: Self {
-        return Structure(Properties.zero)
+        return Struct(Properties.zero)
     }
 }
 

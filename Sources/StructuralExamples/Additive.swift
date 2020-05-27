@@ -58,9 +58,9 @@ where Value: Additive {
     }
 }
 
-extension Structure: Additive where Properties: Additive {
+extension Struct: Additive where Properties: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Structure(lhs.properties + rhs.properties)
+        return Struct(lhs.properties + rhs.properties)
     }
 }
 

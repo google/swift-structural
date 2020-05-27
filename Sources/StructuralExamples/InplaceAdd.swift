@@ -30,7 +30,7 @@ where Value: InplaceAdd, Next: InplaceAdd {
     }
 }
 
-extension Structure: InplaceAdd where Properties: InplaceAdd {
+extension Struct: InplaceAdd where Properties: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         self.properties.inplaceAdd(other.properties)
     }

@@ -38,7 +38,7 @@ public struct Point1: Equatable, Hashable, Codable {
 extension Point1: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 33)
@@ -51,7 +51,7 @@ extension Point1: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point1",
+            return Struct("Point1",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 46)
@@ -124,7 +124,7 @@ public struct Point2: Equatable, Hashable, Codable {
 extension Point2: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -141,7 +141,7 @@ extension Point2: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point2",
+            return Struct("Point2",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -242,7 +242,7 @@ public struct Point3: Equatable, Hashable, Codable {
 extension Point3: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -263,7 +263,7 @@ extension Point3: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point3",
+            return Struct("Point3",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -396,7 +396,7 @@ public struct Point4: Equatable, Hashable, Codable {
 extension Point4: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -421,7 +421,7 @@ extension Point4: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point4",
+            return Struct("Point4",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -590,7 +590,7 @@ public struct Point5: Equatable, Hashable, Codable {
 extension Point5: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -619,7 +619,7 @@ extension Point5: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point5",
+            return Struct("Point5",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -828,7 +828,7 @@ public struct Point6: Equatable, Hashable, Codable {
 extension Point6: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -861,7 +861,7 @@ extension Point6: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point6",
+            return Struct("Point6",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -1114,7 +1114,7 @@ public struct Point7: Equatable, Hashable, Codable {
 extension Point7: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -1151,7 +1151,7 @@ extension Point7: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point7",
+            return Struct("Point7",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -1452,7 +1452,7 @@ public struct Point8: Equatable, Hashable, Codable {
 extension Point8: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -1493,7 +1493,7 @@ extension Point8: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point8",
+            return Struct("Point8",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -1846,7 +1846,7 @@ public struct Point9: Equatable, Hashable, Codable {
 extension Point9: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -1891,7 +1891,7 @@ extension Point9: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point9",
+            return Struct("Point9",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -2300,7 +2300,7 @@ public struct Point10: Equatable, Hashable, Codable {
 extension Point10: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -2349,7 +2349,7 @@ extension Point10: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point10",
+            return Struct("Point10",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -2818,7 +2818,7 @@ public struct Point11: Equatable, Hashable, Codable {
 extension Point11: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -2871,7 +2871,7 @@ extension Point11: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point11",
+            return Struct("Point11",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -3404,7 +3404,7 @@ public struct Point12: Equatable, Hashable, Codable {
 extension Point12: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -3461,7 +3461,7 @@ extension Point12: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point12",
+            return Struct("Point12",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -4062,7 +4062,7 @@ public struct Point13: Equatable, Hashable, Codable {
 extension Point13: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -4123,7 +4123,7 @@ extension Point13: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point13",
+            return Struct("Point13",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -4796,7 +4796,7 @@ public struct Point14: Equatable, Hashable, Codable {
 extension Point14: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -4861,7 +4861,7 @@ extension Point14: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point14",
+            return Struct("Point14",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -5610,7 +5610,7 @@ public struct Point15: Equatable, Hashable, Codable {
 extension Point15: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -5679,7 +5679,7 @@ extension Point15: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point15",
+            return Struct("Point15",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
@@ -6508,7 +6508,7 @@ public struct Point16: Equatable, Hashable, Codable {
 extension Point16: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structure<
+        Struct<
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
             Cons<Property<Float>,
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 31)
@@ -6581,7 +6581,7 @@ extension Point16: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Structure("Point16",
+            return Struct("Point16",
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)
                 Cons(Property("_1", _1, isMutable: true),
 // ###sourceLocation(file: "/usr/local/google/home/saeta/src/swift-shaped/Sources/StructuralExamples/PointN.swift.gyb", line: 44)

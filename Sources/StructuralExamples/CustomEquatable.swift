@@ -64,7 +64,7 @@ extension Enum: CustomEquatable where Cases: CustomEquatable {
     }
 }
 
-extension Structure: CustomEquatable where Properties: CustomEquatable {
+extension Struct: CustomEquatable where Properties: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         properties.customEqual(other.properties)
     }

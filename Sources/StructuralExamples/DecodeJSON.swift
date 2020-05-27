@@ -40,7 +40,7 @@ where Value: DecodeJSON, Next: DecodeJSON {
     }
 }
 
-extension Structure: DecodeJSON where Properties: DecodeJSON {
+extension Struct: DecodeJSON where Properties: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         properties.decodeJson(other)
     }

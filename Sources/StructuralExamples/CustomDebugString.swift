@@ -21,7 +21,7 @@ public protocol CustomDebugString {
 
 // Inductive cases. 
 
-extension Structure: CustomDebugString where Properties: CustomDebugString {
+extension Struct: CustomDebugString where Properties: CustomDebugString {
     public var debugString: String {
         return "\(self.name)(\(properties.debugString))"
     }
