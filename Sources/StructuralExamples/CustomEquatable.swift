@@ -98,8 +98,8 @@ extension Double: CustomEquatable {
 
 // Syntactic Sugar
 
-extension CustomEquatable where Self: Structural, Self.AbstractValue: CustomEquatable {
+extension CustomEquatable where Self: Structural, Self.StructuralRepresentation: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
-        return self.abstractValue.customEqual(other.abstractValue)
+        return self.structuralRepresentation.customEqual(other.structuralRepresentation)
     }
 }

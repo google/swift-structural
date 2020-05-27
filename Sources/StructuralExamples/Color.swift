@@ -22,7 +22,7 @@ public enum Color: Int, Equatable, Hashable {
 
 extension Color: Structural {
     // swift-format-ignore
-    public typealias AbstractValue =
+    public typealias StructuralRepresentation =
         Enum<
             Either<
                 Case<Int, Empty>,
@@ -33,7 +33,7 @@ extension Color: Structural {
             >
         >
 
-    public var abstractValue: AbstractValue {
+    public var structuralRepresentation: StructuralRepresentation {
         get {
             if (self == Color.red) {
                 return Enum("Color", .left(Case("red", 0xFF0000, Empty())))
@@ -55,7 +55,7 @@ extension Color: Structural {
         }
     }
 
-    public init(abstractValue repr: AbstractValue) {
+    public init(structuralRepresentation repr: StructuralRepresentation) {
         switch repr.cases {
         case .left(_):
             self = .red

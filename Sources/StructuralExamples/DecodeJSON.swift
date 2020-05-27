@@ -93,10 +93,10 @@ extension Array: DecodeJSON where Element: DecodeJSON, Element: Zero {
 
 // Sugar
 
-extension DecodeJSON where Self: Structural, Self.AbstractValue: DecodeJSON {
+extension DecodeJSON where Self: Structural, Self.StructuralRepresentation: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
-        var absValue = self.abstractValue
+        var absValue = self.structuralRepresentation
         absValue.decodeJson(other)
-        self = .init(abstractValue: absValue)
+        self = .init(structuralRepresentation: absValue)
     }
 }

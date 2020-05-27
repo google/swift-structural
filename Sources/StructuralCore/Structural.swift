@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// A type that can be converted to and from an abstract value.
+/// A type that can be converted to and from its structural representation.
 public protocol Structural {
-    /// An abstract value of `Self`.
-    associatedtype AbstractValue
+    /// A structural representation for `Self`.
+    associatedtype StructuralRepresentation
 
-    /// Creates an instance from the given abstract value.
-    init(abstractValue: AbstractValue)
+    /// Creates an instance from the given structural representation.
+    init(structuralRepresentation: StructuralRepresentation)
 
-    /// An abstract value of `self`.
-    var abstractValue: AbstractValue { get set }
+    /// A structural representation of `self`.
+    var structuralRepresentation: StructuralRepresentation { get set }
 }

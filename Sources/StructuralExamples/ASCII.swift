@@ -22,7 +22,7 @@ public enum ASCII: String {
 
 extension ASCII: Structural {
     // swift-format-ignore
-    public typealias AbstractValue =
+    public typealias StructuralRepresentation =
         Enum<
             Either<
                 Case<String, Empty>,
@@ -33,7 +33,7 @@ extension ASCII: Structural {
             >
         >
 
-    public var abstractValue: AbstractValue {
+    public var structuralRepresentation: StructuralRepresentation {
         get {
             if (self == ASCII.tab) {
                 return Enum("ASCII", .left(Case("tab", "\t", Empty())))
@@ -55,7 +55,7 @@ extension ASCII: Structural {
         }
     }
 
-    public init(abstractValue repr: AbstractValue) {
+    public init(structuralRepresentation repr: StructuralRepresentation) {
         switch repr.cases {
         case .left(_):
             self = .tab

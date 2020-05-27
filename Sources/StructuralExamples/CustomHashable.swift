@@ -113,8 +113,8 @@ extension String: CustomHashable {
 
 // Syntactic sugar
 
-extension CustomHashable where Self: Structural, Self.AbstractValue: CustomHashable {
+extension CustomHashable where Self: Structural, Self.StructuralRepresentation: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
-        self.abstractValue.customHash(into: &hasher)
+        self.structuralRepresentation.customHash(into: &hasher)
     }
 }

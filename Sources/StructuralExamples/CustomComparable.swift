@@ -120,20 +120,20 @@ extension Float: CustomComparable {
 
 // Sugar
 
-extension CustomComparable where Self: Structural, Self.AbstractValue: CustomComparable {
+extension CustomComparable where Self: Structural, Self.StructuralRepresentation: CustomComparable {
     public func less(_ other: Self) -> Bool {
-        return self.abstractValue.less(other.abstractValue)
+        return self.structuralRepresentation.less(other.structuralRepresentation)
     }
 
     public func lessOrEqual(_ other: Self) -> Bool {
-        return self.abstractValue.lessOrEqual(other.abstractValue)
+        return self.structuralRepresentation.lessOrEqual(other.structuralRepresentation)
     }
 
     public func greater(_ other: Self) -> Bool {
-        return self.abstractValue.greater(other.abstractValue)
+        return self.structuralRepresentation.greater(other.structuralRepresentation)
     }
 
     public func greaterOrEqual(_ other: Self) -> Bool {
-        return self.abstractValue.greaterOrEqual(other.abstractValue)
+        return self.structuralRepresentation.greaterOrEqual(other.structuralRepresentation)
     }
 }

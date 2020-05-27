@@ -15,34 +15,45 @@
 import StructuralCore
 
 public struct StudentGrades {
-  let classId: Int
-  var grades: [Double]
+    let classId: Int
+    var grades: [Double]
 
-  public init(classId: Int, grades: [Double]) {
-    self.classId = classId
-    self.grades = grades
-  }
+    public init(classId: Int, grades: [Double]) {
+        self.classId = classId
+        self.grades = grades
+    }
 }
 
 extension StudentGrades: Structural {
-    public typealias AbstractValue = Structure<
-        Cons<Property<Int>,
-        Cons<Property<[Double]>,
-        Empty>>>
+    public typealias StructuralRepresentation = Structure<
+        Cons<
+            Property<Int>,
+            Cons<
+                Property<[Double]>,
+                Empty
+            >
+        >
+    >
 
-    public var abstractValue: AbstractValue {
+    public var structuralRepresentation: StructuralRepresentation {
         get {
-          return Structure("StudentGrades",
-              Cons(Property("classId", classId, isMutable: false),
-              Cons(Property("grades", grades, isMutable: true),
-              Empty())))
+            return Structure(
+                "StudentGrades",
+                Cons(
+                    Property("classId", classId, isMutable: false),
+                    Cons(
+                        Property("grades", grades, isMutable: true),
+                        Empty())))
         }
 
         _modify {
-            var av = Structure("StudentGrades",
-                Cons(Property("classId", classId, isMutable: false),
-                Cons(Property("grades", grades, isMutable: true),
-                Empty())))
+            var av = Structure(
+                "StudentGrades",
+                Cons(
+                    Property("classId", classId, isMutable: false),
+                    Cons(
+                        Property("grades", grades, isMutable: true),
+                        Empty())))
 
             // Use swap to avoid copies.
             grades = []
@@ -52,9 +63,9 @@ extension StudentGrades: Structural {
         }
     }
 
-    public init(abstractValue: AbstractValue) {
-        self.classId = abstractValue.properties.value.value
-        self.grades = abstractValue.properties.next.value.value
+    public init(structuralRepresentation: StructuralRepresentation) {
+        self.classId = structuralRepresentation.properties.value.value
+        self.grades = structuralRepresentation.properties.next.value.value
     }
 }
 
@@ -62,47 +73,57 @@ extension StudentGrades: CustomEquatable {}
 extension StudentGrades: CustomHashable {}
 extension StudentGrades: CustomDebugString {}
 
-
 public struct Semester {
-  let year: Int
-  var classes: [StudentGrades]
+    let year: Int
+    var classes: [StudentGrades]
 
-  public init(_ year: Int, _ classes: [StudentGrades]) {
-    self.year = year
-    self.classes = classes
-  }
+    public init(_ year: Int, _ classes: [StudentGrades]) {
+        self.year = year
+        self.classes = classes
+    }
 }
 
 extension Semester: Structural {
-  public typealias AbstractValue = Structure<
-    Cons<Property<Int>,
-    Cons<Property<[StudentGrades]>,
-    Empty>>>
+    public typealias StructuralRepresentation = Structure<
+        Cons<
+            Property<Int>,
+            Cons<
+                Property<[StudentGrades]>,
+                Empty
+            >
+        >
+    >
 
-  public var abstractValue: AbstractValue {
-    get {
-      return Structure("Semester",
-        Cons(Property("year", year, isMutable: false),
-        Cons(Property("classes", classes, isMutable: true),
-        Empty())))
+    public var structuralRepresentation: StructuralRepresentation {
+        get {
+            return Structure(
+                "Semester",
+                Cons(
+                    Property("year", year, isMutable: false),
+                    Cons(
+                        Property("classes", classes, isMutable: true),
+                        Empty())))
+        }
+
+        _modify {
+            var av = Structure(
+                "Semester",
+                Cons(
+                    Property("year", year, isMutable: false),
+                    Cons(
+                        Property("classes", classes, isMutable: true),
+                        Empty())))
+            classes = []
+            // Use swap to avoid copies.
+            defer { swap(&av.properties.next.value.value, &classes) }
+            yield &av
+        }
     }
 
-    _modify {
-      var av = Structure("Semester",
-        Cons(Property("year", year, isMutable: false),
-        Cons(Property("classes", classes, isMutable: true),
-        Empty())))
-      classes = []
-      // Use swap to avoid copies.
-      defer { swap(&av.properties.next.value.value, &classes) }
-      yield &av
+    public init(structuralRepresentation: StructuralRepresentation) {
+        self.year = structuralRepresentation.properties.value.value
+        self.classes = structuralRepresentation.properties.next.value.value
     }
-  }
-
-  public init(abstractValue: AbstractValue) {
-    self.year = abstractValue.properties.value.value
-    self.classes = abstractValue.properties.next.value.value
-  }
 }
 
 extension Semester: CustomEquatable {}
@@ -111,118 +132,116 @@ extension Semester: CustomDebugString {}
 
 // Protocol that mutates itself by value.
 public protocol ScaleInPlace {
-  mutating func scale(by scalar: Double)
+    mutating func scale(by scalar: Double)
 }
 
 #if SCALE_OPT_FAST
-  // Define the implementations directly in order to leverage `_modify`.
-  extension StudentGrades: ScaleInPlace {
-    // Write it out explicitly to avoid CoW.
-    public mutating func scale(by scalar: Double) {
-      self.abstractValue.scale(by: scalar)
+    // Define the implementations directly in order to leverage `_modify`.
+    extension StudentGrades: ScaleInPlace {
+        // Write it out explicitly to avoid CoW.
+        public mutating func scale(by scalar: Double) {
+            self.structuralRepresentation.scale(by: scalar)
+        }
     }
-  }
 
-  extension Semester: ScaleInPlace {
-    // Write it out explicitly to avoid CoW.
-    public mutating func scale(by scalar: Double) {
-      self.abstractValue.scale(by: scalar)
+    extension Semester: ScaleInPlace {
+        // Write it out explicitly to avoid CoW.
+        public mutating func scale(by scalar: Double) {
+            self.structuralRepresentation.scale(by: scalar)
+        }
     }
-  }
 #else
-  extension StudentGrades: ScaleInPlace {}
-  extension Semester: ScaleInPlace {}
+    extension StudentGrades: ScaleInPlace {}
+    extension Semester: ScaleInPlace {}
 
-  extension ScaleInPlace where Self: Structural, Self.AbstractValue: ScaleInPlace {
-    #if SCALE_OPT_MED
-      public mutating func scale(by scalar: Double) {
-        self.abstractValue.scale(by: scalar)
-      }
-    #else
-      public mutating func scale(by scalar: Double) {
-        var abstractValue = self.abstractValue
-        abstractValue.scale(by: scalar)
-        self = .init(abstractValue: abstractValue)
-      }
-    #endif  // SCALE_OPT_MED
-  }
+    extension ScaleInPlace where Self: Structural, Self.StructuralRepresentation: ScaleInPlace {
+        #if SCALE_OPT_MED
+            public mutating func scale(by scalar: Double) {
+                self.structuralRepresentation.scale(by: scalar)
+            }
+        #else
+            public mutating func scale(by scalar: Double) {
+                var structuralRepresentation = self.structuralRepresentation
+                structuralRepresentation.scale(by: scalar)
+                self = .init(structuralRepresentation: structuralRepresentation)
+            }
+        #endif  // SCALE_OPT_MED
+    }
 #endif  // SCALE_OPT_FAST
 
 // Inductive cases.
 
 extension Cons: ScaleInPlace where Value: ScaleInPlace, Next: ScaleInPlace {
-  public mutating func scale(by scalar: Double) {
-    self.value.scale(by: scalar)
-    self.next.scale(by: scalar)
-  }
+    public mutating func scale(by scalar: Double) {
+        self.value.scale(by: scalar)
+        self.next.scale(by: scalar)
+    }
 }
 
 extension Structure: ScaleInPlace where Properties: ScaleInPlace {
-  public mutating func scale(by scalar: Double) {
-    self.properties.scale(by: scalar)
-  }
+    public mutating func scale(by scalar: Double) {
+        self.properties.scale(by: scalar)
+    }
 }
 
 extension Property: ScaleInPlace where Value: ScaleInPlace {
-  public mutating func scale(by scalar: Double) {
-    if isMutable {
-      self.value.scale(by: scalar)
+    public mutating func scale(by scalar: Double) {
+        if isMutable {
+            self.value.scale(by: scalar)
+        }
     }
-  }
 }
 
 // Base cases.
 
 extension Empty: ScaleInPlace {
-  public mutating func scale(by scalar: Double) {}
+    public mutating func scale(by scalar: Double) {}
 }
 
 extension Int: ScaleInPlace {
-  public mutating func scale(by scalar: Double) {
-    self *= Int(scalar)
-  }
+    public mutating func scale(by scalar: Double) {
+        self *= Int(scalar)
+    }
 }
 
 extension Double: ScaleInPlace {
-  public mutating func scale(by scalar: Double) {
-    self *= scalar
-  }
+    public mutating func scale(by scalar: Double) {
+        self *= scalar
+    }
 }
 
 extension Array: ScaleInPlace where Element: ScaleInPlace {
-  public mutating func scale(by scalar: Double) {
-    for i in 0..<count {
-      self[i].scale(by: scalar)
+    public mutating func scale(by scalar: Double) {
+        for i in 0..<count {
+            self[i].scale(by: scalar)
+        }
     }
-  }
 }
 
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
-
-
 
 // TODO: make the following generic on collection!
 extension Array: CustomEquatable where Element: CustomEquatable {
-  public func customEqual(_ other: Self) -> Bool {
-    guard count == other.count else { return false }
-    for i in 0..<count {
-      if self[i].customEqual(other[i]) { continue }
-      return false
+    public func customEqual(_ other: Self) -> Bool {
+        guard count == other.count else { return false }
+        for i in 0..<count {
+            if self[i].customEqual(other[i]) { continue }
+            return false
+        }
+        return true
     }
-    return true
-  }
 }
 
 extension Array: CustomHashable where Element: CustomHashable {
-  public func customHash(into hasher: inout Hasher) {
-    forEach { $0.customHash(into: &hasher) }
-  }
+    public func customHash(into hasher: inout Hasher) {
+        forEach { $0.customHash(into: &hasher) }
+    }
 }
 
 extension Array: CustomDebugString {
-  // TODO: this implementation is wrong!
-  public var debugString: String { String(describing: self) }
+    // TODO: this implementation is wrong!
+    public var debugString: String { String(describing: self) }
 }

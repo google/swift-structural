@@ -18,26 +18,26 @@ import XCTest
 @testable import StructuralCore
 @testable import StructuralExamples
 
-final class AbstractValueTests: XCTestCase {
+final class StructuralRepresentationTests: XCTestCase {
     func testPoint3() {
         let point = Point3(_1: 10, _2: 20, _3: 30)
-        let repr = point.abstractValue
-        let pointFromRepr = Point3(abstractValue: repr)
+        let repr = point.structuralRepresentation
+        let pointFromRepr = Point3(structuralRepresentation: repr)
         XCTAssertEqual(point, pointFromRepr)
     }
 
     func testBinaryTree() {
         let tree: BinaryTree<Int> = .branch(.leaf(1), 2, .branch(.leaf(3), 4, .leaf(5)))
-        let repr = tree.abstractValue
-        let treeFromRepr = BinaryTree(abstractValue: repr)
+        let repr = tree.structuralRepresentation
+        let treeFromRepr = BinaryTree(structuralRepresentation: repr)
         XCTAssertEqual(tree, treeFromRepr)
     }
 
     func testColor() {
         let colors: [Color] = [.red, .green, .blue]
         for color in colors {
-            let repr = color.abstractValue
-            let colorFromRepr = Color(abstractValue: repr)
+            let repr = color.structuralRepresentation
+            let colorFromRepr = Color(structuralRepresentation: repr)
             XCTAssertEqual(color, colorFromRepr)
         }
     }
@@ -45,8 +45,8 @@ final class AbstractValueTests: XCTestCase {
     func testASCII() {
         let codes: [ASCII] = [.tab, .lineFeed, .carriageReturn]
         for code in codes {
-            let repr = code.abstractValue
-            let codeFromRepr = ASCII(abstractValue: repr)
+            let repr = code.structuralRepresentation
+            let codeFromRepr = ASCII(structuralRepresentation: repr)
             XCTAssertEqual(code, codeFromRepr)
         }
     }
