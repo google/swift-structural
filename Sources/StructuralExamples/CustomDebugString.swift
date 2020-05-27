@@ -21,14 +21,14 @@ public protocol CustomDebugString {
 
 // Inductive cases. 
 
-extension Struct: CustomDebugString where Properties: CustomDebugString {
+extension Structural.Struct: CustomDebugString where Properties: CustomDebugString {
     public var debugString: String {
         let name = String(describing: self.type!)
         return "\(name)(\(properties.debugString))"
     }
 }
 
-extension Cons: CustomDebugString
+extension Structural.Cons: CustomDebugString
 where Value: CustomDebugString, Next: CustomDebugString {
     public var debugString: String {
         let valueString = self.value.debugString
@@ -41,7 +41,7 @@ where Value: CustomDebugString, Next: CustomDebugString {
     }
 }
 
-extension Property: CustomDebugString
+extension Structural.Property: CustomDebugString
 where Value: CustomDebugString {
     public var debugString: String {
         if self.name == "" {
@@ -52,14 +52,14 @@ where Value: CustomDebugString {
     }
 }
 
-extension Enum: CustomDebugString where Cases: CustomDebugString {
+extension Structural.Enum: CustomDebugString where Cases: CustomDebugString {
     public var debugString: String {
         let name = String(describing: self.type!)
         return "\(name).\(self.cases.debugString)"
     }
 }
 
-extension Either: CustomDebugString
+extension Structural.Either: CustomDebugString
 where Left: CustomDebugString, Right: CustomDebugString {
     public var debugString: String {
         switch self {
@@ -71,7 +71,7 @@ where Left: CustomDebugString, Right: CustomDebugString {
     }
 }
 
-extension Case: CustomDebugString
+extension Structural.Case: CustomDebugString
 where AssociatedValues: CustomDebugString {
     public var debugString: String {
         let valuesString = associatedValues.debugString
@@ -85,7 +85,7 @@ where AssociatedValues: CustomDebugString {
 
 // Base cases.
 
-extension Empty: CustomDebugString {
+extension Structural.Empty: CustomDebugString {
     public var debugString: String {
         return ""
     }

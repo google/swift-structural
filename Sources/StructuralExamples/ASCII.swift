@@ -36,11 +36,16 @@ extension ASCII: Structural {
     public var structuralRepresentation: StructuralRepresentation {
         get {
             if (self == ASCII.tab) {
-                return Enum(ASCII.self, .left(Case("tab", "\t", Empty())))
+                return Enum(
+                    ASCII.self, .left(Case("tab", "\t", Empty())))
             } else if (self == ASCII.lineFeed) {
-                return Enum(ASCII.self, .right(.left(Case("lineFeed", "\n", Empty()))))
+                return Enum(
+                    ASCII.self, .right(.left(Case("lineFeed", "\n", Empty())))
+                )
             } else if (self == ASCII.carriageReturn) {
-                return Enum(ASCII.self, .right(.right(Case("carriageReturn", "\r", Empty()))))
+                return Enum(
+                    ASCII.self,
+                    .right(.right(Case("carriageReturn", "\r", Empty()))))
             } else {
                 fatalError("unreachable")
             }

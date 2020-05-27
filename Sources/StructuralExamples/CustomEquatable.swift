@@ -23,14 +23,14 @@ public protocol CustomEquatable {
 
 // Inductive cases.
 
-extension Cons: CustomEquatable
+extension Structural.Cons: CustomEquatable
 where Value: CustomEquatable, Next: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         return value.customEqual(other.value) && next.customEqual(other.next)
     }
 }
 
-extension Either: CustomEquatable
+extension Structural.Either: CustomEquatable
 where Left: CustomEquatable, Right: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         switch (self, other) {
@@ -44,27 +44,27 @@ where Left: CustomEquatable, Right: CustomEquatable {
     }
 }
 
-extension Case: CustomEquatable
+extension Structural.Case: CustomEquatable
 where AssociatedValues: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         associatedValues.customEqual(other.associatedValues)
     }
 }
 
-extension Property: CustomEquatable
+extension Structural.Property: CustomEquatable
 where Value: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         return value.customEqual(other.value)
     }
 }
 
-extension Enum: CustomEquatable where Cases: CustomEquatable {
+extension Structural.Enum: CustomEquatable where Cases: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         cases.customEqual(other.cases)
     }
 }
 
-extension Struct: CustomEquatable where Properties: CustomEquatable {
+extension Structural.Struct: CustomEquatable where Properties: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         properties.customEqual(other.properties)
     }
@@ -72,8 +72,8 @@ extension Struct: CustomEquatable where Properties: CustomEquatable {
 
 // Base cases.
 
-extension Empty: CustomEquatable {
-    public func customEqual(_ other: Empty) -> Bool {
+extension Structural.Empty: CustomEquatable {
+    public func customEqual(_ other: Structural.Empty) -> Bool {
         return true
     }
 }

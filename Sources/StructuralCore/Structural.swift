@@ -23,3 +23,107 @@ public protocol Structural {
     /// A structural representation of `self`.
     var structuralRepresentation: StructuralRepresentation { get set }
 }
+
+/// A set of typealiases to make Structural_T work as Structural.T.
+extension Structural {
+    public typealias Struct = Structural_Struct
+    public typealias Property = Structural_Property
+    public typealias Enum = Structural_Enum
+    public typealias Case = Structural_Case
+    public typealias Cons = Structural_Cons
+    public typealias Empty = Structural_Empty
+    public typealias Either = Structural_Either
+}
+
+/// Structural representation of a Swift struct.
+public struct Structural_Struct<Properties> {
+    public var type: Any.Type?
+    public var properties: Properties
+
+    public init(_ properties: Properties) {
+        self.type = nil
+        self.properties = properties
+    }
+
+    public init(_ type: Any.Type, _ properties: Properties) {
+        self.type = type
+        self.properties = properties
+    }
+}
+
+/// Structural representation of a Swift property.
+public struct Structural_Property<Value> {
+    public var name: String
+    public var value: Value
+    public var isMutable: Bool
+
+    public init(_ value: Value) {
+        self.name = ""
+        self.value = value
+        self.isMutable = false
+
+    }
+
+    public init(_ name: String, _ value: Value, isMutable: Bool) {
+        self.name = name
+        self.value = value
+        self.isMutable = isMutable
+    }
+}
+
+/// Structural representation of a Swift enum.
+public struct Structural_Enum<Cases> {
+    public var type: Any.Type?
+    public var cases: Cases
+
+    public init(_ cases: Cases) {
+        self.type = nil
+        self.cases = cases
+    }
+
+    public init(_ type: Any.Type, _ cases: Cases) {
+        self.type = type
+        self.cases = cases
+    }
+}
+
+/// Structural representation of a Swift enum case.
+public struct Structural_Case<RawValue, AssociatedValues> {
+    public var name: String
+    public var rawValue: RawValue
+    public var associatedValues: AssociatedValues
+
+    public init(_ rawValue: RawValue, _ associatedValues: AssociatedValues) {
+        self.name = ""
+        self.rawValue = rawValue
+        self.associatedValues = associatedValues
+    }
+
+    public init(_ name: String, _ rawValue: RawValue, _ associatedValues: AssociatedValues) {
+        self.name = name
+        self.rawValue = rawValue
+        self.associatedValues = associatedValues
+    }
+}
+
+/// Structural representation of a heterogeneous list cons cell.
+public struct Structural_Cons<Value, Next> {
+    public var value: Value
+    public var next: Next
+
+    public init(_ value: Value, _ next: Next) {
+        self.value = value
+        self.next = next
+    }
+}
+
+/// Structural representation of an empty heterogeneous list cons cell.
+public struct Structural_Empty {
+    public init() {}
+}
+
+/// Structural representation of an alternative between either Left or Right.
+public enum Structural_Either<Left, Right> {
+    case left(Left)
+    case right(Right)
+}

@@ -25,35 +25,35 @@ public struct StudentGrades {
 }
 
 extension StudentGrades: Structural {
-    public typealias StructuralRepresentation = Struct<
-        Cons<
-            Property<Int>,
-            Cons<
-                Property<[Double]>,
-                Empty
+    public typealias StructuralRepresentation = Structural.Struct<
+        Structural.Cons<
+            Structural.Property<Int>,
+            Structural.Cons<
+                Structural.Property<[Double]>,
+                Structural.Empty
             >
         >
     >
 
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Struct(
+            return Structural.Struct(
                 StudentGrades.self,
-                Cons(
-                    Property("classId", classId, isMutable: false),
-                    Cons(
-                        Property("grades", grades, isMutable: true),
-                        Empty())))
+                Structural.Cons(
+                    Structural.Property("classId", classId, isMutable: false),
+                    Structural.Cons(
+                        Structural.Property("grades", grades, isMutable: true),
+                        Structural.Empty())))
         }
 
         _modify {
-            var av = Struct(
+            var av = Structural.Struct(
                 StudentGrades.self,
-                Cons(
-                    Property("classId", classId, isMutable: false),
-                    Cons(
-                        Property("grades", grades, isMutable: true),
-                        Empty())))
+                Structural.Cons(
+                    Structural.Property("classId", classId, isMutable: false),
+                    Structural.Cons(
+                        Structural.Property("grades", grades, isMutable: true),
+                        Structural.Empty())))
 
             // Use swap to avoid copies.
             grades = []
@@ -84,35 +84,35 @@ public struct Semester {
 }
 
 extension Semester: Structural {
-    public typealias StructuralRepresentation = Struct<
-        Cons<
-            Property<Int>,
-            Cons<
-                Property<[StudentGrades]>,
-                Empty
+    public typealias StructuralRepresentation = Structural.Struct<
+        Structural.Cons<
+            Structural.Property<Int>,
+            Structural.Cons<
+                Structural.Property<[StudentGrades]>,
+                Structural.Empty
             >
         >
     >
 
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Struct(
+            return Structural.Struct(
                 Semester.self,
-                Cons(
-                    Property("year", year, isMutable: false),
-                    Cons(
-                        Property("classes", classes, isMutable: true),
-                        Empty())))
+                Structural.Cons(
+                    Structural.Property("year", year, isMutable: false),
+                    Structural.Cons(
+                        Structural.Property("classes", classes, isMutable: true),
+                        Structural.Empty())))
         }
 
         _modify {
-            var av = Struct(
+            var av = Structural.Struct(
                 Semester.self,
-                Cons(
-                    Property("year", year, isMutable: false),
-                    Cons(
-                        Property("classes", classes, isMutable: true),
-                        Empty())))
+                Structural.Cons(
+                    Structural.Property("year", year, isMutable: false),
+                    Structural.Cons(
+                        Structural.Property("classes", classes, isMutable: true),
+                        Structural.Empty())))
             classes = []
             // Use swap to avoid copies.
             defer { swap(&av.properties.next.value.value, &classes) }
@@ -171,20 +171,20 @@ public protocol ScaleInPlace {
 
 // Inductive cases.
 
-extension Cons: ScaleInPlace where Value: ScaleInPlace, Next: ScaleInPlace {
+extension Structural.Cons: ScaleInPlace where Value: ScaleInPlace, Next: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         self.value.scale(by: scalar)
         self.next.scale(by: scalar)
     }
 }
 
-extension Struct: ScaleInPlace where Properties: ScaleInPlace {
+extension Structural.Struct: ScaleInPlace where Properties: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         self.properties.scale(by: scalar)
     }
 }
 
-extension Property: ScaleInPlace where Value: ScaleInPlace {
+extension Structural.Property: ScaleInPlace where Value: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         if isMutable {
             self.value.scale(by: scalar)
@@ -194,7 +194,7 @@ extension Property: ScaleInPlace where Value: ScaleInPlace {
 
 // Base cases.
 
-extension Empty: ScaleInPlace {
+extension Structural.Empty: ScaleInPlace {
     public mutating func scale(by scalar: Double) {}
 }
 

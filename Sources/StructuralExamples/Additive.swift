@@ -23,14 +23,14 @@ public protocol Additive {
 
 // Inductive cases. 
 
-extension Cons: Additive
+extension Structural.Cons: Additive
 where Value: Additive, Next: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Cons(lhs.value + rhs.value, lhs.next + rhs.next)
+        return Structural.Cons(lhs.value + rhs.value, lhs.next + rhs.next)
     }
 }
 
-extension Either: Additive
+extension Structural.Either: Additive
 where Left: Additive, Right: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
         switch (lhs, rhs) {
@@ -44,37 +44,37 @@ where Left: Additive, Right: Additive {
     }
 }
 
-extension Case: Additive
+extension Structural.Case: Additive
 where AssociatedValues: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Case(lhs.rawValue, lhs.associatedValues + rhs.associatedValues)
+        return Structural.Case(lhs.rawValue, lhs.associatedValues + rhs.associatedValues)
     }
 }
 
-extension Property: Additive
+extension Structural.Property: Additive
 where Value: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Property(lhs.value + rhs.value)
+        return Structural.Property(lhs.value + rhs.value)
     }
 }
 
-extension Struct: Additive where Properties: Additive {
+extension Structural.Struct: Additive where Properties: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Struct(lhs.properties + rhs.properties)
+        return Structural.Struct(lhs.properties + rhs.properties)
     }
 }
 
-extension Enum: Additive where Cases: Additive {
+extension Structural.Enum: Additive where Cases: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Enum(lhs.cases + rhs.cases)
+        return Structural.Enum(lhs.cases + rhs.cases)
     }
 }
 
 // Base cases.
 
-extension Empty: Additive {
+extension Structural.Empty: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Empty()
+        return Structural.Empty()
     }
 }
 

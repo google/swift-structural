@@ -22,7 +22,7 @@ public protocol InplaceAdd {
 
 // Inductive cases. 
 
-extension Cons: InplaceAdd
+extension Structural.Cons: InplaceAdd
 where Value: InplaceAdd, Next: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         self.value.inplaceAdd(other.value)
@@ -30,13 +30,13 @@ where Value: InplaceAdd, Next: InplaceAdd {
     }
 }
 
-extension Struct: InplaceAdd where Properties: InplaceAdd {
+extension Structural.Struct: InplaceAdd where Properties: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         self.properties.inplaceAdd(other.properties)
     }
 }
 
-extension Property: InplaceAdd
+extension Structural.Property: InplaceAdd
 where Value: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         if isMutable {
@@ -47,7 +47,7 @@ where Value: InplaceAdd {
 
 // Base cases. 
 
-extension Empty: InplaceAdd {
+extension Structural.Empty: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {}
 }
 
