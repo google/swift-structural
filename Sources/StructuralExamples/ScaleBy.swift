@@ -17,7 +17,7 @@ import StructuralCore
 public struct StudentGrades {
   let classId: Int
   var grades: [Double]
-  
+
   public init(classId: Int, grades: [Double]) {
     self.classId = classId
     self.grades = grades
@@ -29,14 +29,14 @@ extension StudentGrades: Structural {
       Cons<Property<Int>,
       Cons<Property<[Double]>,
       Empty>>>
-      
+
     public var abstractValue: AbstractValue {
       return Structure("StudentGrades",
         Cons(Property("classId", classId, isMutable: false),
         Cons(Property("grades", grades, isMutable: true),
         Empty())))
     }
-        
+
     public init(abstractValue: AbstractValue) {
       self.classId = abstractValue.properties.value.value
       self.grades = abstractValue.properties.next.value.value
@@ -51,7 +51,7 @@ extension StudentGrades: ModifiableStructural {
         Cons(Property("grades", grades, isMutable: true),
         Empty())))
     }
-    
+
     _modify {
       var av = Structure("StudentGrades",
         Cons(Property("classId", classId, isMutable: false),
@@ -75,7 +75,7 @@ extension StudentGrades: CustomDebugString {}
 public struct Semester {
   let year: Int
   var classes: [StudentGrades]
-  
+
   public init(_ year: Int, _ classes: [StudentGrades]) {
     self.year = year
     self.classes = classes
@@ -94,7 +94,7 @@ extension Semester: Structural {
       Cons(Property("classes", classes, isMutable: true),
       Empty())))
   }
-  
+
   public init(abstractValue: AbstractValue) {
     self.year = abstractValue.properties.value.value
     self.classes = abstractValue.properties.next.value.value
@@ -109,7 +109,7 @@ extension Semester: ModifiableStructural {
         Cons(Property("classes", classes, isMutable: true),
         Empty())))
     }
-    
+
     _modify {
       var av = Structure("Semester",
         Cons(Property("year", year, isMutable: false),
@@ -150,7 +150,7 @@ public protocol ScaleInPlace {
 #else
   extension StudentGrades: ScaleInPlace {}
   extension Semester: ScaleInPlace {}
-  
+
   extension ScaleInPlace where Self: ModifiableStructural, Self.AbstractValue: ScaleInPlace {
     #if SCALE_OPT_MED
       public mutating func scale(by scalar: Double) {
