@@ -95,8 +95,8 @@ extension Array: DecodeJSON where Element: DecodeJSON, Element: Zero {
 
 extension DecodeJSON where Self: Structural, Self.StructuralRepresentation: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
-        var absValue = self.structuralRepresentation
-        absValue.decodeJson(other)
-        self = .init(structuralRepresentation: absValue)
+        var repr = self.structuralRepresentation
+        repr.decodeJson(other)
+        self = .init(structuralRepresentation: repr)
     }
 }

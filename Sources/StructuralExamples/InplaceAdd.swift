@@ -67,8 +67,8 @@ extension Float: InplaceAdd {
 
 extension InplaceAdd where Self: Structural, Self.StructuralRepresentation: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
-        var absValue = self.structuralRepresentation
-        absValue.inplaceAdd(other.structuralRepresentation)
-        self = .init(structuralRepresentation: absValue)
+        var repr = self.structuralRepresentation
+        repr.inplaceAdd(other.structuralRepresentation)
+        self = .init(structuralRepresentation: repr)
     }
 }
