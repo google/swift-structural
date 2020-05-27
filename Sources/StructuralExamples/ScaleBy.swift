@@ -26,45 +26,36 @@ public struct StudentGrades {
 
 extension StudentGrades: Structural {
     public typealias AbstractValue = Structure<
-      Cons<Property<Int>,
-      Cons<Property<[Double]>,
-      Empty>>>
+        Cons<Property<Int>,
+        Cons<Property<[Double]>,
+        Empty>>>
 
     public var abstractValue: AbstractValue {
-      return Structure("StudentGrades",
-        Cons(Property("classId", classId, isMutable: false),
-        Cons(Property("grades", grades, isMutable: true),
-        Empty())))
+        get {
+          return Structure("StudentGrades",
+              Cons(Property("classId", classId, isMutable: false),
+              Cons(Property("grades", grades, isMutable: true),
+              Empty())))
+        }
+
+        _modify {
+            var av = Structure("StudentGrades",
+                Cons(Property("classId", classId, isMutable: false),
+                Cons(Property("grades", grades, isMutable: true),
+                Empty())))
+
+            // Use swap to avoid copies.
+            grades = []
+            defer { swap(&av.properties.next.value.value, &grades) }
+
+            yield &av
+        }
     }
 
     public init(abstractValue: AbstractValue) {
-      self.classId = abstractValue.properties.value.value
-      self.grades = abstractValue.properties.next.value.value
+        self.classId = abstractValue.properties.value.value
+        self.grades = abstractValue.properties.next.value.value
     }
-}
-
-extension StudentGrades: ModifiableStructural {
-  public var modifiableAbstractValue: AbstractValue {
-    get {
-      return Structure("StudentGrades",
-        Cons(Property("classId", classId, isMutable: false),
-        Cons(Property("grades", grades, isMutable: true),
-        Empty())))
-    }
-
-    _modify {
-      var av = Structure("StudentGrades",
-        Cons(Property("classId", classId, isMutable: false),
-        Cons(Property("grades", grades, isMutable: true),
-        Empty())))
-
-      // Use swap to avoid copies.
-      grades = []
-      defer { swap(&av.properties.next.value.value, &grades) }
-
-      yield &av
-    }
-  }
 }
 
 extension StudentGrades: CustomEquatable {}
@@ -89,20 +80,6 @@ extension Semester: Structural {
     Empty>>>
 
   public var abstractValue: AbstractValue {
-    return Structure("Semester",
-      Cons(Property("year", year, isMutable: false),
-      Cons(Property("classes", classes, isMutable: true),
-      Empty())))
-  }
-
-  public init(abstractValue: AbstractValue) {
-    self.year = abstractValue.properties.value.value
-    self.classes = abstractValue.properties.next.value.value
-  }
-}
-
-extension Semester: ModifiableStructural {
-  public var modifiableAbstractValue: AbstractValue {
     get {
       return Structure("Semester",
         Cons(Property("year", year, isMutable: false),
@@ -121,6 +98,11 @@ extension Semester: ModifiableStructural {
       yield &av
     }
   }
+
+  public init(abstractValue: AbstractValue) {
+    self.year = abstractValue.properties.value.value
+    self.classes = abstractValue.properties.next.value.value
+  }
 }
 
 extension Semester: CustomEquatable {}
@@ -137,24 +119,24 @@ public protocol ScaleInPlace {
   extension StudentGrades: ScaleInPlace {
     // Write it out explicitly to avoid CoW.
     public mutating func scale(by scalar: Double) {
-      self.modifiableAbstractValue.scale(by: scalar)
+      self.abstractValue.scale(by: scalar)
     }
   }
 
   extension Semester: ScaleInPlace {
     // Write it out explicitly to avoid CoW.
     public mutating func scale(by scalar: Double) {
-      self.modifiableAbstractValue.scale(by: scalar)
+      self.abstractValue.scale(by: scalar)
     }
   }
 #else
   extension StudentGrades: ScaleInPlace {}
   extension Semester: ScaleInPlace {}
 
-  extension ScaleInPlace where Self: ModifiableStructural, Self.AbstractValue: ScaleInPlace {
+  extension ScaleInPlace where Self: Structural, Self.AbstractValue: ScaleInPlace {
     #if SCALE_OPT_MED
       public mutating func scale(by scalar: Double) {
-        self.modifiableAbstractValue.scale(by: scalar)
+        self.abstractValue.scale(by: scalar)
       }
     #else
       public mutating func scale(by scalar: Double) {

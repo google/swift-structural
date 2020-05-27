@@ -21,11 +21,5 @@ public protocol Structural {
     init(abstractValue: AbstractValue)
 
     /// An abstract value of `self`.
-    var abstractValue: AbstractValue { get }
-}
-
-public protocol ModifiableStructural: Structural {
-    // Consider an alternate associated type?
-
-    var modifiableAbstractValue: AbstractValue { get set }
+    var abstractValue: AbstractValue { get set }
 }

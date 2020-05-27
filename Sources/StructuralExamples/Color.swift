@@ -34,14 +34,24 @@ extension Color: Structural {
         >
 
     public var abstractValue: AbstractValue {
-        if (self == Color.red) {
-            return Enum("Color", .left(Case("red", 0xFF0000, Empty())))
-        } else if (self == Color.green) {
-            return Enum("Color", .right(.left(Case("green", 0x00FF00, Empty()))))
-        } else if (self == Color.blue) {
-            return Enum("Color", .right(.right(Case("blue", 0x0000FF, Empty()))))
-        } else {
-            fatalError("unreachable")
+        get {
+            if (self == Color.red) {
+                return Enum("Color", .left(Case("red", 0xFF0000, Empty())))
+            } else if (self == Color.green) {
+                return Enum("Color", .right(.left(Case("green", 0x00FF00, Empty()))))
+            } else if (self == Color.blue) {
+                return Enum("Color", .right(.right(Case("blue", 0x0000FF, Empty()))))
+            } else {
+                fatalError("unreachable")
+            }
+        }
+        set {
+            assert(newValue.name == "Color")
+            switch newValue.cases {
+            case .left: self = .red
+            case .right(.left): self = .green
+            case .right(.right): self = .blue
+            }
         }
     }
 

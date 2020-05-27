@@ -34,14 +34,24 @@ extension ASCII: Structural {
         >
 
     public var abstractValue: AbstractValue {
-        if (self == ASCII.tab) {
-            return Enum("ASCII", .left(Case("tab", "\t", Empty())))
-        } else if (self == ASCII.lineFeed) {
-            return Enum("ASCII", .right(.left(Case("lineFeed", "\n", Empty()))))
-        } else if (self == ASCII.carriageReturn) {
-            return Enum("ASCII", .right(.right(Case("carriageReturn", "\r", Empty()))))
-        } else {
-            fatalError("unreachable")
+        get {
+            if (self == ASCII.tab) {
+                return Enum("ASCII", .left(Case("tab", "\t", Empty())))
+            } else if (self == ASCII.lineFeed) {
+                return Enum("ASCII", .right(.left(Case("lineFeed", "\n", Empty()))))
+            } else if (self == ASCII.carriageReturn) {
+                return Enum("ASCII", .right(.right(Case("carriageReturn", "\r", Empty()))))
+            } else {
+                fatalError("unreachable")
+            }
+        }
+        set {
+            assert(newValue.name == "ASCII")
+            switch newValue.cases {
+            case .left: self = .tab
+            case .right(.left): self = .lineFeed
+            case .right(.right): self = .carriageReturn
+            }
         }
     }
 

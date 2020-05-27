@@ -42,21 +42,33 @@ extension BinaryTree: Structural {
         >
 
     public var abstractValue: AbstractValue {
-        switch self {
-        case let .leaf(x):
-            let properties = Cons(Property(x), Empty())
-            return Enum("BinaryTree", .left(Case("leaf", 0, properties)))
-        case let .branch(left, value, right):
-            let properties =
-                Cons(
-                    Property(left),
+        get {
+            switch self {
+            case let .leaf(x):
+                let properties = Cons(Property(x), Empty())
+                return Enum("BinaryTree", .left(Case("leaf", 0, properties)))
+            case let .branch(left, value, right):
+                let properties =
                     Cons(
-                        Property(value),
+                        Property(left),
                         Cons(
-                            Property(right),
-                            Empty())))
-            return Enum("BinaryTree", .right(Case("branch", 1, properties)))
-
+                            Property(value),
+                            Cons(
+                                Property(right),
+                                Empty())))
+                return Enum("BinaryTree", .right(Case("branch", 1, properties)))
+            }
+        }
+        set {
+            switch newValue.cases {
+            case let .left(leafCase):
+                self = .leaf(leafCase.associatedValues.value.value)
+            case let .right(branchCase):
+                let left = branchCase.associatedValues.value.value
+                let value = branchCase.associatedValues.next.value.value
+                let right = branchCase.associatedValues.next.next.value.value
+                self = .branch(left, value, right)
+            }
         }
     }
 
