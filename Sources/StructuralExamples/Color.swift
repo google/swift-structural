@@ -36,17 +36,17 @@ extension Color: Structural {
     public var structuralRepresentation: StructuralRepresentation {
         get {
             if (self == Color.red) {
-                return Enum("Color", .left(Case("red", 0xFF0000, Empty())))
+                return Enum(Color.self, .left(Case("red", 0xFF0000, Empty())))
             } else if (self == Color.green) {
-                return Enum("Color", .right(.left(Case("green", 0x00FF00, Empty()))))
+                return Enum(Color.self, .right(.left(Case("green", 0x00FF00, Empty()))))
             } else if (self == Color.blue) {
-                return Enum("Color", .right(.right(Case("blue", 0x0000FF, Empty()))))
+                return Enum(Color.self, .right(.right(Case("blue", 0x0000FF, Empty()))))
             } else {
                 fatalError("unreachable")
             }
         }
         set {
-            assert(newValue.name == "Color")
+            assert(newValue.type == Color.self)
             switch newValue.cases {
             case .left: self = .red
             case .right(.left): self = .green

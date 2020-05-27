@@ -31,11 +31,11 @@ final class CustomDebugStringTests: XCTestCase {
         let treeB: BinaryTree<Int> = .branch(.leaf(42), 0, .leaf(21))
         XCTAssertEqual(
             treeA.debugString,
-            "BinaryTree.branch(BinaryTree.leaf(1), 2, BinaryTree.branch(BinaryTree.leaf(3), 4, BinaryTree.leaf(5)))"
+            "BinaryTree<Int>.branch(BinaryTree<Int>.leaf(1), 2, BinaryTree<Int>.branch(BinaryTree<Int>.leaf(3), 4, BinaryTree<Int>.leaf(5)))"
         )
         XCTAssertEqual(
             treeB.debugString,
-            "BinaryTree.branch(BinaryTree.leaf(42), 0, BinaryTree.leaf(21))")
+            "BinaryTree<Int>.branch(BinaryTree<Int>.leaf(42), 0, BinaryTree<Int>.leaf(21))")
     }
 
     func testColor() {

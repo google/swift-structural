@@ -38,7 +38,7 @@ extension StudentGrades: Structural {
     public var structuralRepresentation: StructuralRepresentation {
         get {
             return Struct(
-                "StudentGrades",
+                StudentGrades.self,
                 Cons(
                     Property("classId", classId, isMutable: false),
                     Cons(
@@ -48,7 +48,7 @@ extension StudentGrades: Structural {
 
         _modify {
             var av = Struct(
-                "StudentGrades",
+                StudentGrades.self,
                 Cons(
                     Property("classId", classId, isMutable: false),
                     Cons(
@@ -97,7 +97,7 @@ extension Semester: Structural {
     public var structuralRepresentation: StructuralRepresentation {
         get {
             return Struct(
-                "Semester",
+                Semester.self,
                 Cons(
                     Property("year", year, isMutable: false),
                     Cons(
@@ -107,7 +107,7 @@ extension Semester: Structural {
 
         _modify {
             var av = Struct(
-                "Semester",
+                Semester.self,
                 Cons(
                     Property("year", year, isMutable: false),
                     Cons(

@@ -13,16 +13,16 @@
 // limitations under the License.
 
 public struct Struct<Properties> {
-    public var name: String
+    public var type: Any.Type?
     public var properties: Properties
 
     public init(_ properties: Properties) {
-        self.name = ""
+        self.type = nil
         self.properties = properties
     }
 
-    public init(_ name: String, _ properties: Properties) {
-        self.name = name
+    public init(_ type: Any.Type, _ properties: Properties) {
+        self.type = type
         self.properties = properties
     }
 }
@@ -47,16 +47,16 @@ public struct Property<Value> {
 }
 
 public struct Enum<Cases> {
-    public var name: String
+    public var type: Any.Type?
     public var cases: Cases
 
     public init(_ cases: Cases) {
-        self.name = ""
+        self.type = nil
         self.cases = cases
     }
 
-    public init(_ name: String, _ cases: Cases) {
-        self.name = name
+    public init(_ type: Any.Type, _ cases: Cases) {
+        self.type = type
         self.cases = cases
     }
 }

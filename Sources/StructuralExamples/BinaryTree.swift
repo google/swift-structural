@@ -46,7 +46,7 @@ extension BinaryTree: Structural {
             switch self {
             case let .leaf(x):
                 let properties = Cons(Property(x), Empty())
-                return Enum("BinaryTree", .left(Case("leaf", 0, properties)))
+                return Enum(BinaryTree.self, .left(Case("leaf", 0, properties)))
             case let .branch(left, value, right):
                 let properties =
                     Cons(
@@ -56,7 +56,7 @@ extension BinaryTree: Structural {
                             Cons(
                                 Property(right),
                                 Empty())))
-                return Enum("BinaryTree", .right(Case("branch", 1, properties)))
+                return Enum(BinaryTree.self, .right(Case("branch", 1, properties)))
             }
         }
         set {
