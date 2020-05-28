@@ -27,31 +27,31 @@ public protocol Zero {
 
 // Inductive cases. 
 
-extension Structural.Cons: Zero
+extension StructuralCons: Zero
 where Value: Zero, Next: Zero {
     public static var zero: Self {
-        return Structural.Cons(Value.zero, Next.zero)
+        return StructuralCons(Value.zero, Next.zero)
     }
 }
 
-extension Structural.Struct: Zero where Properties: Zero {
+extension StructuralStruct: Zero where Properties: Zero {
     public static var zero: Self {
-        return Structural.Struct(Properties.zero)
+        return StructuralStruct(Properties.zero)
     }
 }
 
-extension Structural.Property: Zero
+extension StructuralProperty: Zero
 where Value: Zero {
     public static var zero: Self {
-        return Structural.Property(Value.zero)
+        return StructuralProperty(Value.zero)
     }
 }
 
 // Base cases.
 
-extension Structural.Empty: Zero {
+extension StructuralEmpty: Zero {
     public static var zero: Self {
-        return Structural.Empty()
+        return StructuralEmpty()
     }
 }
 

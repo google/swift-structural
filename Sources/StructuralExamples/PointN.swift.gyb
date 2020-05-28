@@ -40,11 +40,11 @@ public struct Point${N}: Equatable, Hashable, Codable {
 extension Point${N}: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Struct<
+        StructuralStruct<
             % for i in range(1, N + 1):
-            Cons<Property<Float>, 
+            StructuralCons<StructuralProperty<Float>, 
             % end
-            Empty
+            StructuralEmpty
             % for i in range(1, N + 1):
             >
             % end
@@ -53,11 +53,11 @@ extension Point${N}: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return Struct(Point${N}.self, 
+            return StructuralStruct(Point${N}.self, 
                 % for i in range(1, N + 1):
-                Cons(Property("_${i}", _${i}, isMutable: true),
+                StructuralCons(StructuralProperty("_${i}", _${i}, isMutable: true),
                 % end 
-                Empty()
+                StructuralEmpty()
                 % for i in range(1, N + 1):
                 )
                 % end

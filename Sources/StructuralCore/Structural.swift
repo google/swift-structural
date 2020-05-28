@@ -21,22 +21,11 @@ public protocol Structural {
     init(structuralRepresentation: StructuralRepresentation)
 
     /// A structural representation of `self`.
-    var structuralRepresentation: StructuralRepresentation { get set }
-}
-
-/// A set of typealiases to make Structural_T work as Structural.T.
-extension Structural {
-    public typealias Struct = Structural_Struct
-    public typealias Property = Structural_Property
-    public typealias Enum = Structural_Enum
-    public typealias Case = Structural_Case
-    public typealias Cons = Structural_Cons
-    public typealias Empty = Structural_Empty
-    public typealias Either = Structural_Either
+    var structuralRepresentation: StructuralRepresentation { get }
 }
 
 /// Structural representation of a Swift struct.
-public struct Structural_Struct<Properties> {
+public struct StructuralStruct<Properties> {
     public var type: Any.Type?
     public var properties: Properties
 
@@ -52,7 +41,7 @@ public struct Structural_Struct<Properties> {
 }
 
 /// Structural representation of a Swift property.
-public struct Structural_Property<Value> {
+public struct StructuralProperty<Value> {
     public var name: String
     public var value: Value
     public var isMutable: Bool
@@ -68,7 +57,7 @@ public struct Structural_Property<Value> {
         self.value = value
         self.isMutable = false
     }
- 
+
     public init(_ name: String, _ value: Value, isMutable: Bool) {
         self.name = name
         self.value = value
@@ -77,7 +66,7 @@ public struct Structural_Property<Value> {
 }
 
 /// Structural representation of a Swift enum.
-public struct Structural_Enum<Cases> {
+public struct StructuralEnum<Cases> {
     public var type: Any.Type?
     public var cases: Cases
 
@@ -93,7 +82,7 @@ public struct Structural_Enum<Cases> {
 }
 
 /// Structural representation of a Swift enum case.
-public struct Structural_Case<RawValue, AssociatedValues> {
+public struct StructuralCase<RawValue, AssociatedValues> {
     public var name: String
     public var rawValue: RawValue
     public var associatedValues: AssociatedValues
@@ -112,7 +101,7 @@ public struct Structural_Case<RawValue, AssociatedValues> {
 }
 
 /// Structural representation of a heterogeneous list cons cell.
-public struct Structural_Cons<Value, Next> {
+public struct StructuralCons<Value, Next> {
     public var value: Value
     public var next: Next
 
@@ -123,12 +112,12 @@ public struct Structural_Cons<Value, Next> {
 }
 
 /// Structural representation of an empty heterogeneous list cons cell.
-public struct Structural_Empty {
+public struct StructuralEmpty {
     public init() {}
 }
 
 /// Structural representation of an alternative between either Left or Right.
-public enum Structural_Either<Left, Right> {
+public enum StructuralEither<Left, Right> {
     case left(Left)
     case right(Right)
 }

@@ -23,14 +23,14 @@ public protocol CustomEquatable {
 
 // Inductive cases.
 
-extension Structural.Cons: CustomEquatable
+extension StructuralCons: CustomEquatable
 where Value: CustomEquatable, Next: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         return value.customEqual(other.value) && next.customEqual(other.next)
     }
 }
 
-extension Structural.Either: CustomEquatable
+extension StructuralEither: CustomEquatable
 where Left: CustomEquatable, Right: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         switch (self, other) {
@@ -44,27 +44,27 @@ where Left: CustomEquatable, Right: CustomEquatable {
     }
 }
 
-extension Structural.Case: CustomEquatable
+extension StructuralCase: CustomEquatable
 where AssociatedValues: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         associatedValues.customEqual(other.associatedValues)
     }
 }
 
-extension Structural.Property: CustomEquatable
+extension StructuralProperty: CustomEquatable
 where Value: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         return value.customEqual(other.value)
     }
 }
 
-extension Structural.Enum: CustomEquatable where Cases: CustomEquatable {
+extension StructuralEnum: CustomEquatable where Cases: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         cases.customEqual(other.cases)
     }
 }
 
-extension Structural.Struct: CustomEquatable where Properties: CustomEquatable {
+extension StructuralStruct: CustomEquatable where Properties: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         properties.customEqual(other.properties)
     }
@@ -72,8 +72,8 @@ extension Structural.Struct: CustomEquatable where Properties: CustomEquatable {
 
 // Base cases.
 
-extension Structural.Empty: CustomEquatable {
-    public func customEqual(_ other: Structural.Empty) -> Bool {
+extension StructuralEmpty: CustomEquatable {
+    public func customEqual(_ other: StructuralEmpty) -> Bool {
         return true
     }
 }

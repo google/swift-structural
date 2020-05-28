@@ -44,7 +44,7 @@ func specializedAdd(_ lhs: Point2, _ rhs: Point2) -> Point2 {
     return Point2(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2 + rhs._2
@@ -58,11 +58,11 @@ func specializedAdd(_ lhs: Point3, _ rhs: Point3) -> Point3 {
     return Point3(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3 + rhs._3
@@ -76,15 +76,15 @@ func specializedAdd(_ lhs: Point4, _ rhs: Point4) -> Point4 {
     return Point4(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4 + rhs._4
@@ -98,19 +98,19 @@ func specializedAdd(_ lhs: Point5, _ rhs: Point5) -> Point5 {
     return Point5(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5 + rhs._5
@@ -124,23 +124,23 @@ func specializedAdd(_ lhs: Point6, _ rhs: Point6) -> Point6 {
     return Point6(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6 + rhs._6
@@ -154,27 +154,27 @@ func specializedAdd(_ lhs: Point7, _ rhs: Point7) -> Point7 {
     return Point7(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7 + rhs._7
@@ -188,31 +188,31 @@ func specializedAdd(_ lhs: Point8, _ rhs: Point8) -> Point8 {
     return Point8(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8 + rhs._8
@@ -226,35 +226,35 @@ func specializedAdd(_ lhs: Point9, _ rhs: Point9) -> Point9 {
     return Point9(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8
-            + rhs._8// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._8  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _9: lhs._9 + rhs._9
@@ -268,39 +268,39 @@ func specializedAdd(_ lhs: Point10, _ rhs: Point10) -> Point10 {
     return Point10(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8
-            + rhs._8// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._8  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _9: lhs._9
-            + rhs._9// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._9  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _10: lhs._10 + rhs._10
@@ -314,43 +314,43 @@ func specializedAdd(_ lhs: Point11, _ rhs: Point11) -> Point11 {
     return Point11(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8
-            + rhs._8// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._8  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _9: lhs._9
-            + rhs._9// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._9  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _10: lhs._10
-            + rhs._10// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._10  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _11: lhs._11 + rhs._11
@@ -364,47 +364,47 @@ func specializedAdd(_ lhs: Point12, _ rhs: Point12) -> Point12 {
     return Point12(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8
-            + rhs._8// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._8  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _9: lhs._9
-            + rhs._9// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._9  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _10: lhs._10
-            + rhs._10// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._10  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _11: lhs._11
-            + rhs._11// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._11  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _12: lhs._12 + rhs._12
@@ -418,51 +418,51 @@ func specializedAdd(_ lhs: Point13, _ rhs: Point13) -> Point13 {
     return Point13(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8
-            + rhs._8// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._8  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _9: lhs._9
-            + rhs._9// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._9  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _10: lhs._10
-            + rhs._10// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._10  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _11: lhs._11
-            + rhs._11// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._11  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _12: lhs._12
-            + rhs._12// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._12  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _13: lhs._13 + rhs._13
@@ -476,55 +476,55 @@ func specializedAdd(_ lhs: Point14, _ rhs: Point14) -> Point14 {
     return Point14(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8
-            + rhs._8// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._8  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _9: lhs._9
-            + rhs._9// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._9  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _10: lhs._10
-            + rhs._10// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._10  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _11: lhs._11
-            + rhs._11// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._11  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _12: lhs._12
-            + rhs._12// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._12  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _13: lhs._13
-            + rhs._13// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._13  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _14: lhs._14 + rhs._14
@@ -538,59 +538,59 @@ func specializedAdd(_ lhs: Point15, _ rhs: Point15) -> Point15 {
     return Point15(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8
-            + rhs._8// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._8  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _9: lhs._9
-            + rhs._9// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._9  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _10: lhs._10
-            + rhs._10// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._10  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _11: lhs._11
-            + rhs._11// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._11  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _12: lhs._12
-            + rhs._12// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._12  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _13: lhs._13
-            + rhs._13// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._13  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _14: lhs._14
-            + rhs._14// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._14  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _15: lhs._15 + rhs._15
@@ -604,63 +604,63 @@ func specializedAdd(_ lhs: Point16, _ rhs: Point16) -> Point16 {
     return Point16(
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _1: lhs._1
-            + rhs._1// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._1  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _2: lhs._2
-            + rhs._2// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._2  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _3: lhs._3
-            + rhs._3// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._3  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _4: lhs._4
-            + rhs._4// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._4  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _5: lhs._5
-            + rhs._5// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._5  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _6: lhs._6
-            + rhs._6// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._6  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _7: lhs._7
-            + rhs._7// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._7  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _8: lhs._8
-            + rhs._8// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._8  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _9: lhs._9
-            + rhs._9// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._9  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _10: lhs._10
-            + rhs._10// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._10  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _11: lhs._11
-            + rhs._11// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._11  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _12: lhs._12
-            + rhs._12// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._12  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _13: lhs._13
-            + rhs._13// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._13  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _14: lhs._14
-            + rhs._14// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._14  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _15: lhs._15
-            + rhs._15// ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
+            + rhs._15  // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 38)
             ,
         // ###sourceLocation(file: "/usr/local/google/home/shabalin/swift-libs/swift-structural/Sources/StructuralBenchmarks/AdditiveBenchmarks.swift.gyb", line: 36)
         _16: lhs._16 + rhs._16

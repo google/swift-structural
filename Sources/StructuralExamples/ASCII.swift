@@ -23,12 +23,12 @@ public enum ASCII: String {
 extension ASCII: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Enum<
-            Either<
-                Case<String, Empty>,
-                Either<
-                    Case<String, Empty>,
-                    Case<String, Empty>
+        StructuralEnum<
+            StructuralEither<
+                StructuralCase<String, StructuralEmpty>,
+                StructuralEither<
+                    StructuralCase<String, StructuralEmpty>,
+                    StructuralCase<String, StructuralEmpty>
                 >
             >
         >
@@ -36,16 +36,16 @@ extension ASCII: Structural {
     public var structuralRepresentation: StructuralRepresentation {
         get {
             if (self == ASCII.tab) {
-                return Enum(
-                    ASCII.self, .left(Case("tab", "\t", Empty())))
+                return StructuralEnum(
+                    ASCII.self, .left(StructuralCase("tab", "\t", StructuralEmpty())))
             } else if (self == ASCII.lineFeed) {
-                return Enum(
-                    ASCII.self, .right(.left(Case("lineFeed", "\n", Empty())))
+                return StructuralEnum(
+                    ASCII.self, .right(.left(StructuralCase("lineFeed", "\n", StructuralEmpty())))
                 )
             } else if (self == ASCII.carriageReturn) {
-                return Enum(
+                return StructuralEnum(
                     ASCII.self,
-                    .right(.right(Case("carriageReturn", "\r", Empty()))))
+                    .right(.right(StructuralCase("carriageReturn", "\r", StructuralEmpty()))))
             } else {
                 fatalError("unreachable")
             }

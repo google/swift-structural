@@ -23,12 +23,12 @@ public enum Color: Int, Equatable, Hashable {
 extension Color: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Enum<
-            Either<
-                Case<Int, Empty>,
-                Either<
-                    Case<Int, Empty>,
-                    Case<Int, Empty>
+        StructuralEnum<
+            StructuralEither<
+                StructuralCase<Int, StructuralEmpty>,
+                StructuralEither<
+                    StructuralCase<Int, StructuralEmpty>,
+                    StructuralCase<Int, StructuralEmpty>
                 >
             >
         >
@@ -36,16 +36,16 @@ extension Color: Structural {
     public var structuralRepresentation: StructuralRepresentation {
         get {
             if (self == Color.red) {
-                return Enum(
-                    Color.self, .left(Case("red", 0xFF0000, Empty())))
+                return StructuralEnum(
+                    Color.self, .left(StructuralCase("red", 0xFF0000, StructuralEmpty())))
             } else if (self == Color.green) {
-                return Enum(
+                return StructuralEnum(
                     Color.self,
-                    .right(.left(Case("green", 0x00FF00, Empty()))))
+                    .right(.left(StructuralCase("green", 0x00FF00, StructuralEmpty()))))
             } else if (self == Color.blue) {
-                return Enum(
+                return StructuralEnum(
                     Color.self,
-                    .right(.right(Case("blue", 0x0000FF, Empty()))))
+                    .right(.right(StructuralCase("blue", 0x0000FF, StructuralEmpty()))))
             } else {
                 fatalError("unreachable")
             }

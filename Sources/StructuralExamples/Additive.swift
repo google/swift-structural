@@ -23,14 +23,14 @@ public protocol Additive {
 
 // Inductive cases. 
 
-extension Structural.Cons: Additive
+extension StructuralCons: Additive
 where Value: Additive, Next: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Structural.Cons(lhs.value + rhs.value, lhs.next + rhs.next)
+        return StructuralCons(lhs.value + rhs.value, lhs.next + rhs.next)
     }
 }
 
-extension Structural.Either: Additive
+extension StructuralEither: Additive
 where Left: Additive, Right: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
         switch (lhs, rhs) {
@@ -44,37 +44,37 @@ where Left: Additive, Right: Additive {
     }
 }
 
-extension Structural.Case: Additive
+extension StructuralCase: Additive
 where AssociatedValues: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Structural.Case(lhs.rawValue, lhs.associatedValues + rhs.associatedValues)
+        return StructuralCase(lhs.rawValue, lhs.associatedValues + rhs.associatedValues)
     }
 }
 
-extension Structural.Property: Additive
+extension StructuralProperty: Additive
 where Value: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Structural.Property(lhs.value + rhs.value)
+        return StructuralProperty(lhs.value + rhs.value)
     }
 }
 
-extension Structural.Struct: Additive where Properties: Additive {
+extension StructuralStruct: Additive where Properties: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Structural.Struct(lhs.properties + rhs.properties)
+        return StructuralStruct(lhs.properties + rhs.properties)
     }
 }
 
-extension Structural.Enum: Additive where Cases: Additive {
+extension StructuralEnum: Additive where Cases: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Structural.Enum(lhs.cases + rhs.cases)
+        return StructuralEnum(lhs.cases + rhs.cases)
     }
 }
 
 // Base cases.
 
-extension Structural.Empty: Additive {
+extension StructuralEmpty: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return Structural.Empty()
+        return StructuralEmpty()
     }
 }
 

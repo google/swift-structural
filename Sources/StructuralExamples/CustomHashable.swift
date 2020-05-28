@@ -35,7 +35,7 @@ public func customHash<T>(_ value: T) -> Int where T: CustomHashable {
 
 // Inductive cases. 
 
-extension Structural.Cons: CustomHashable
+extension StructuralCons: CustomHashable
 where Value: CustomHashable, Next: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         self.value.customHash(into: &hasher)
@@ -43,7 +43,7 @@ where Value: CustomHashable, Next: CustomHashable {
     }
 }
 
-extension Structural.Either: CustomHashable
+extension StructuralEither: CustomHashable
 where Left: CustomHashable, Right: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         switch self {
@@ -55,7 +55,7 @@ where Left: CustomHashable, Right: CustomHashable {
     }
 }
 
-extension Structural.Case: CustomHashable
+extension StructuralCase: CustomHashable
 where RawValue: CustomHashable, AssociatedValues: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         rawValue.customHash(into: &hasher)
@@ -63,19 +63,19 @@ where RawValue: CustomHashable, AssociatedValues: CustomHashable {
     }
 }
 
-extension Structural.Property: CustomHashable where Value: CustomHashable {
+extension StructuralProperty: CustomHashable where Value: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         value.customHash(into: &hasher)
     }
 }
 
-extension Structural.Enum: CustomHashable where Cases: CustomHashable {
+extension StructuralEnum: CustomHashable where Cases: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         cases.customHash(into: &hasher)
     }
 }
 
-extension Structural.Struct: CustomHashable where Properties: CustomHashable {
+extension StructuralStruct: CustomHashable where Properties: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         properties.customHash(into: &hasher)
     }
@@ -83,7 +83,7 @@ extension Structural.Struct: CustomHashable where Properties: CustomHashable {
 
 // Base cases.
 
-extension Structural.Empty: CustomHashable {
+extension StructuralEmpty: CustomHashable {
     public func customHash(into hasher: inout Hasher) {}
 }
 

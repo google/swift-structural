@@ -21,7 +21,7 @@ public protocol CustomDebugString {
 
 // Inductive cases. 
 
-extension Structural.Struct: CustomDebugString where Properties: CustomDebugString {
+extension StructuralStruct: CustomDebugString where Properties: CustomDebugString {
     public var debugString: String {
         let name: String
         if let type = self.type {
@@ -33,7 +33,7 @@ extension Structural.Struct: CustomDebugString where Properties: CustomDebugStri
     }
 }
 
-extension Structural.Cons: CustomDebugString
+extension StructuralCons: CustomDebugString
 where Value: CustomDebugString, Next: CustomDebugString {
     public var debugString: String {
         let valueString = self.value.debugString
@@ -46,7 +46,7 @@ where Value: CustomDebugString, Next: CustomDebugString {
     }
 }
 
-extension Structural.Property: CustomDebugString
+extension StructuralProperty: CustomDebugString
 where Value: CustomDebugString {
     public var debugString: String {
         if self.name == "" {
@@ -57,7 +57,7 @@ where Value: CustomDebugString {
     }
 }
 
-extension Structural.Enum: CustomDebugString where Cases: CustomDebugString {
+extension StructuralEnum: CustomDebugString where Cases: CustomDebugString {
     public var debugString: String {
         let name: String
         if let type = self.type {
@@ -69,7 +69,7 @@ extension Structural.Enum: CustomDebugString where Cases: CustomDebugString {
     }
 }
 
-extension Structural.Either: CustomDebugString
+extension StructuralEither: CustomDebugString
 where Left: CustomDebugString, Right: CustomDebugString {
     public var debugString: String {
         switch self {
@@ -81,7 +81,7 @@ where Left: CustomDebugString, Right: CustomDebugString {
     }
 }
 
-extension Structural.Case: CustomDebugString
+extension StructuralCase: CustomDebugString
 where AssociatedValues: CustomDebugString {
     public var debugString: String {
         let valuesString = associatedValues.debugString
@@ -95,7 +95,7 @@ where AssociatedValues: CustomDebugString {
 
 // Base cases.
 
-extension Structural.Empty: CustomDebugString {
+extension StructuralEmpty: CustomDebugString {
     public var debugString: String {
         return ""
     }

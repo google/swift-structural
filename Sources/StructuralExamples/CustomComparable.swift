@@ -24,7 +24,7 @@ public protocol CustomComparable {
 
 // Inductive cases. 
 
-extension Structural.Cons: CustomComparable
+extension StructuralCons: CustomComparable
 where Value: CustomComparable, Next: CustomComparable {
     public func less(_ other: Self) -> Bool {
         return value.less(other.value) || next.less(other.next)
@@ -43,7 +43,7 @@ where Value: CustomComparable, Next: CustomComparable {
     }
 }
 
-extension Structural.Struct: CustomComparable where Properties: CustomComparable {
+extension StructuralStruct: CustomComparable where Properties: CustomComparable {
     public func less(_ other: Self) -> Bool {
         return properties.less(other.properties)
     }
@@ -61,7 +61,7 @@ extension Structural.Struct: CustomComparable where Properties: CustomComparable
     }
 }
 
-extension Structural.Property: CustomComparable
+extension StructuralProperty: CustomComparable
 where Value: CustomComparable {
     public func less(_ other: Self) -> Bool {
         return self.value.less(other.value)
@@ -82,7 +82,7 @@ where Value: CustomComparable {
 
 // Base cases. 
 
-extension Structural.Empty: CustomComparable {
+extension StructuralEmpty: CustomComparable {
     public func less(_ other: Self) -> Bool {
         return true
     }

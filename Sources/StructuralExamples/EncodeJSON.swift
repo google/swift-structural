@@ -69,18 +69,18 @@ public func toJSONString<T: EncodeJSON>(_ value: T) -> String {
 
 // Inductive cases.
 
-extension Structural.Cons: EncodeJSON
+extension StructuralCons: EncodeJSON
 where Value: EncodeJSON, Next: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         self.value.encodeJson(into: &builder)
-        if !(self.next is Structural.Empty) {
+        if !(self.next is StructuralEmpty) {
             builder.appendSeparator()
             self.next.encodeJson(into: &builder)
         }
     }
 }
 
-extension Structural.Struct: EncodeJSON where Properties: EncodeJSON {
+extension StructuralStruct: EncodeJSON where Properties: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendObjectStart()
         self.properties.encodeJson(into: &builder)
@@ -88,7 +88,7 @@ extension Structural.Struct: EncodeJSON where Properties: EncodeJSON {
     }
 }
 
-extension Structural.Property: EncodeJSON
+extension StructuralProperty: EncodeJSON
 where Value: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendProperty(name: self.name)
@@ -98,7 +98,7 @@ where Value: EncodeJSON {
 
 // Base cases.
 
-extension Structural.Empty: EncodeJSON {
+extension StructuralEmpty: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {}
 }
 

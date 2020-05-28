@@ -32,7 +32,7 @@ public protocol DecodeJSON {
 
 // Inductive cases. 
 
-extension Structural.Cons: DecodeJSON
+extension StructuralCons: DecodeJSON
 where Value: DecodeJSON, Next: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         self.value.decodeJson(other)
@@ -40,13 +40,13 @@ where Value: DecodeJSON, Next: DecodeJSON {
     }
 }
 
-extension Structural.Struct: DecodeJSON where Properties: DecodeJSON {
+extension StructuralStruct: DecodeJSON where Properties: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         properties.decodeJson(other)
     }
 }
 
-extension Structural.Property: DecodeJSON
+extension StructuralProperty: DecodeJSON
 where Value: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         let dict = other as! [String: Any]
@@ -56,7 +56,7 @@ where Value: DecodeJSON {
 
 // Base cases. 
 
-extension Structural.Empty: DecodeJSON {
+extension StructuralEmpty: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {}
 }
 

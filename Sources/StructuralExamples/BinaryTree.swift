@@ -22,18 +22,18 @@ public enum BinaryTree<T>: Equatable, Hashable where T: Equatable & Hashable {
 extension BinaryTree: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
-        Structural.Enum<
-            Structural.Either<
-                Structural.Case<Int, Structural.Cons<Structural.Property<T>, Structural.Empty>>,
-                Structural.Case<
+        StructuralEnum<
+            StructuralEither<
+                StructuralCase<Int, StructuralCons<StructuralProperty<T>, StructuralEmpty>>,
+                StructuralCase<
                     Int,
-                    Structural.Cons<
-                        Structural.Property<BinaryTree<T>>,
-                        Structural.Cons<
-                            Structural.Property<T>,
-                            Structural.Cons<
-                                Structural.Property<BinaryTree<T>>,
-                                Structural.Empty
+                    StructuralCons<
+                        StructuralProperty<BinaryTree<T>>,
+                        StructuralCons<
+                            StructuralProperty<T>,
+                            StructuralCons<
+                                StructuralProperty<BinaryTree<T>>,
+                                StructuralEmpty
                             >
                         >
                     >
@@ -45,20 +45,20 @@ extension BinaryTree: Structural {
         get {
             switch self {
             case let .leaf(x):
-                let properties = Structural.Cons(Structural.Property(x), Structural.Empty())
-                return Structural.Enum(
-                    BinaryTree.self, .left(Structural.Case("leaf", 0, properties)))
+                let properties = StructuralCons(StructuralProperty(x), StructuralEmpty())
+                return StructuralEnum(
+                    BinaryTree.self, .left(StructuralCase("leaf", 0, properties)))
             case let .branch(left, value, right):
                 let properties =
-                    Structural.Cons(
-                        Structural.Property(left),
-                        Structural.Cons(
-                            Structural.Property(value),
-                            Structural.Cons(
-                                Structural.Property(right),
-                                Structural.Empty())))
-                return Structural.Enum(
-                    BinaryTree.self, .right(Structural.Case("branch", 1, properties)))
+                    StructuralCons(
+                        StructuralProperty(left),
+                        StructuralCons(
+                            StructuralProperty(value),
+                            StructuralCons(
+                                StructuralProperty(right),
+                                StructuralEmpty())))
+                return StructuralEnum(
+                    BinaryTree.self, .right(StructuralCase("branch", 1, properties)))
             }
         }
         set {
