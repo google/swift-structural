@@ -80,7 +80,8 @@ where Value: EncodeJSON, Next: EncodeJSON {
     }
 }
 
-extension StructuralStruct: EncodeJSON where Properties: EncodeJSON {
+extension StructuralStruct: EncodeJSON
+where Properties: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendObjectStart()
         self.properties.encodeJson(into: &builder)
@@ -120,7 +121,8 @@ extension String: EncodeJSON {
     }
 }
 
-extension Array: EncodeJSON where Element: EncodeJSON {
+extension Array: EncodeJSON
+where Element: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendArrayStart()
         let last = self.count - 1

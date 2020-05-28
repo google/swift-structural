@@ -43,7 +43,8 @@ where Value: CustomComparable, Next: CustomComparable {
     }
 }
 
-extension StructuralStruct: CustomComparable where Properties: CustomComparable {
+extension StructuralStruct: CustomComparable
+where Properties: CustomComparable {
     public func less(_ other: Self) -> Bool {
         return properties.less(other.properties)
     }

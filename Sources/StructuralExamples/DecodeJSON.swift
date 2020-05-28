@@ -40,7 +40,8 @@ where Value: DecodeJSON, Next: DecodeJSON {
     }
 }
 
-extension StructuralStruct: DecodeJSON where Properties: DecodeJSON {
+extension StructuralStruct: DecodeJSON
+where Properties: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         properties.decodeJson(other)
     }
@@ -78,7 +79,8 @@ extension String: DecodeJSON {
     }
 }
 
-extension Array: DecodeJSON where Element: DecodeJSON, Element: Zero {
+extension Array: DecodeJSON
+where Element: DecodeJSON, Element: Zero {
     public mutating func decodeJson(_ other: Any) {
         let arr = other as! [Any]
         self = []

@@ -63,19 +63,22 @@ where RawValue: CustomHashable, AssociatedValues: CustomHashable {
     }
 }
 
-extension StructuralProperty: CustomHashable where Value: CustomHashable {
+extension StructuralProperty: CustomHashable
+where Value: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         value.customHash(into: &hasher)
     }
 }
 
-extension StructuralEnum: CustomHashable where Cases: CustomHashable {
+extension StructuralEnum: CustomHashable
+where Cases: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         cases.customHash(into: &hasher)
     }
 }
 
-extension StructuralStruct: CustomHashable where Properties: CustomHashable {
+extension StructuralStruct: CustomHashable
+where Properties: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         properties.customHash(into: &hasher)
     }

@@ -58,13 +58,15 @@ where Value: CustomEquatable {
     }
 }
 
-extension StructuralEnum: CustomEquatable where Cases: CustomEquatable {
+extension StructuralEnum: CustomEquatable
+where Cases: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         cases.customEqual(other.cases)
     }
 }
 
-extension StructuralStruct: CustomEquatable where Properties: CustomEquatable {
+extension StructuralStruct: CustomEquatable
+where Properties: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         properties.customEqual(other.properties)
     }

@@ -171,20 +171,23 @@ public protocol ScaleInPlace {
 
 // Inductive cases.
 
-extension StructuralCons: ScaleInPlace where Value: ScaleInPlace, Next: ScaleInPlace {
+extension StructuralCons: ScaleInPlace
+where Value: ScaleInPlace, Next: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         self.value.scale(by: scalar)
         self.next.scale(by: scalar)
     }
 }
 
-extension StructuralStruct: ScaleInPlace where Properties: ScaleInPlace {
+extension StructuralStruct: ScaleInPlace
+where Properties: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         self.properties.scale(by: scalar)
     }
 }
 
-extension StructuralProperty: ScaleInPlace where Value: ScaleInPlace {
+extension StructuralProperty: ScaleInPlace
+where Value: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         if isMutable {
             self.value.scale(by: scalar)
@@ -210,7 +213,8 @@ extension Double: ScaleInPlace {
     }
 }
 
-extension Array: ScaleInPlace where Element: ScaleInPlace {
+extension Array: ScaleInPlace
+where Element: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         for i in 0..<count {
             self[i].scale(by: scalar)
@@ -224,7 +228,8 @@ extension Array: ScaleInPlace where Element: ScaleInPlace {
 ///////////////////////////////////////////////////////////////////////////
 
 // TODO: make the following generic on collection!
-extension Array: CustomEquatable where Element: CustomEquatable {
+extension Array: CustomEquatable
+where Element: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         guard count == other.count else { return false }
         for i in 0..<count {
@@ -235,7 +240,8 @@ extension Array: CustomEquatable where Element: CustomEquatable {
     }
 }
 
-extension Array: CustomHashable where Element: CustomHashable {
+extension Array: CustomHashable
+where Element: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         forEach { $0.customHash(into: &hasher) }
     }

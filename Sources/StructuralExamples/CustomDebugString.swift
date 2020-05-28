@@ -21,7 +21,8 @@ public protocol CustomDebugString {
 
 // Inductive cases. 
 
-extension StructuralStruct: CustomDebugString where Properties: CustomDebugString {
+extension StructuralStruct: CustomDebugString
+where Properties: CustomDebugString {
     public var debugString: String {
         let name: String
         if let type = self.type {
@@ -57,7 +58,8 @@ where Value: CustomDebugString {
     }
 }
 
-extension StructuralEnum: CustomDebugString where Cases: CustomDebugString {
+extension StructuralEnum: CustomDebugString
+where Cases: CustomDebugString {
     public var debugString: String {
         let name: String
         if let type = self.type {
