@@ -19,7 +19,7 @@ import PackageDescription
 let optimize = [SwiftSetting.unsafeFlags(["-cross-module-optimization", "-O"])]
 
 let package = Package(
-    name: "StructuralProgramming",
+    name: "Structural",
     products: [
         .library(
             name: "StructuralCore",
