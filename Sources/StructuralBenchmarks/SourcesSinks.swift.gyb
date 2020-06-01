@@ -21,9 +21,10 @@ var p${N}_2 = Point${N}(
 )
 var p${N}_1 = Point${N}(
     % for i in range(1, N + 1):
-    _${i}: ${N}-${i}
     % if i != N:
-    ,
+    _${i}: ${i} + 1,
+    % else:
+    _${N}: ${N} + 1
     % end
     % end
 )
