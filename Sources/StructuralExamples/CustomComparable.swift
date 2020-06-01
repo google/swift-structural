@@ -15,7 +15,7 @@
 import StructuralCore
 
 /// A duplicate protocol identical to Comparable.
-public protocol CustomComparable {
+public protocol CustomComparable: CustomEquatable {
     func less(_ other: Self) -> Bool
     func lessOrEqual(_ other: Self) -> Bool
     func greater(_ other: Self) -> Bool
@@ -27,19 +27,35 @@ public protocol CustomComparable {
 extension StructuralCons: CustomComparable
 where Value: CustomComparable, Next: CustomComparable {
     public func less(_ other: Self) -> Bool {
-        return value.less(other.value) || next.less(other.next)
+        if value.customEqual(other.value) {
+            return next.less(other.next)
+        } else {
+            return value.less(other.value)
+        }
     }
 
     public func lessOrEqual(_ other: Self) -> Bool {
-        return value.lessOrEqual(other.value) || next.lessOrEqual(other.next)
+        if value.customEqual(other.value) {
+            return next.lessOrEqual(other.next)
+        } else {
+            return value.lessOrEqual(other.value)
+        }
     }
 
     public func greater(_ other: Self) -> Bool {
-        return value.greater(other.value) || next.greater(other.next)
+        if value.customEqual(other.value) {
+            return next.greater(other.next)
+        } else {
+            return value.greater(other.value)
+        }
     }
 
     public func greaterOrEqual(_ other: Self) -> Bool {
-        return value.greaterOrEqual(other.value) || next.greaterOrEqual(other.next)
+        if value.customEqual(other.value) {
+            return next.greaterOrEqual(other.next)
+        } else {
+            return value.greaterOrEqual(other.value)
+        }
     }
 }
 
@@ -50,34 +66,34 @@ where Properties: CustomComparable {
     }
 
     public func lessOrEqual(_ other: Self) -> Bool {
-        return properties.less(other.properties)
+        return properties.lessOrEqual(other.properties)
     }
 
     public func greater(_ other: Self) -> Bool {
-        return properties.less(other.properties)
+        return properties.greater(other.properties)
     }
 
     public func greaterOrEqual(_ other: Self) -> Bool {
-        return properties.less(other.properties)
+        return properties.greaterOrEqual(other.properties)
     }
 }
 
 extension StructuralProperty: CustomComparable
 where Value: CustomComparable {
     public func less(_ other: Self) -> Bool {
-        return self.value.less(other.value)
+        return value.less(other.value)
     }
 
     public func lessOrEqual(_ other: Self) -> Bool {
-        return self.value.lessOrEqual(other.value)
+        return value.lessOrEqual(other.value)
     }
 
     public func greater(_ other: Self) -> Bool {
-        return self.value.greater(other.value)
+        return value.greater(other.value)
     }
 
     public func greaterOrEqual(_ other: Self) -> Bool {
-        return self.value.greaterOrEqual(other.value)
+        return value.greaterOrEqual(other.value)
     }
 }
 
@@ -85,7 +101,7 @@ where Value: CustomComparable {
 
 extension StructuralEmpty: CustomComparable {
     public func less(_ other: Self) -> Bool {
-        return true
+        return false
     }
 
     public func lessOrEqual(_ other: Self) -> Bool {
@@ -93,7 +109,7 @@ extension StructuralEmpty: CustomComparable {
     }
 
     public func greater(_ other: Self) -> Bool {
-        return true
+        return false
     }
 
     public func greaterOrEqual(_ other: Self) -> Bool {
@@ -123,18 +139,18 @@ extension Float: CustomComparable {
 
 extension CustomComparable where Self: Structural, Self.StructuralRepresentation: CustomComparable {
     public func less(_ other: Self) -> Bool {
-        return self.structuralRepresentation.less(other.structuralRepresentation)
+        return structuralRepresentation.less(other.structuralRepresentation)
     }
 
     public func lessOrEqual(_ other: Self) -> Bool {
-        return self.structuralRepresentation.lessOrEqual(other.structuralRepresentation)
+        return structuralRepresentation.lessOrEqual(other.structuralRepresentation)
     }
 
     public func greater(_ other: Self) -> Bool {
-        return self.structuralRepresentation.greater(other.structuralRepresentation)
+        return structuralRepresentation.greater(other.structuralRepresentation)
     }
 
     public func greaterOrEqual(_ other: Self) -> Bool {
-        return self.structuralRepresentation.greaterOrEqual(other.structuralRepresentation)
+        return structuralRepresentation.greaterOrEqual(other.structuralRepresentation)
     }
 }
