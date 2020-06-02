@@ -98,5 +98,6 @@ extension Point${N}: CustomComparable {}
 extension Point${N}: InplaceAdd {}
 extension Point${N}: EncodeJSON {}
 extension Point${N}: DecodeJSON {}
+extension Point${N}: DefaultInitializable {}
 
 % end

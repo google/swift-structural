@@ -34,6 +34,7 @@ And also protocols based on the Swift for TensorFlow libraries:
 - `Zero`
 - `InplaceAdd`
 - `ScaleBy`
+- `DefaultInitializable`
 
 Lastly, we also provide examples of hand-written conformances to `Structural`
 for the following datatypes:
