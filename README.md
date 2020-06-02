@@ -13,7 +13,7 @@ The codebase is structured in the following modules:
 ## StructuralCore
 
 This module contains definition of the `Structural` protocol, and additional
-data types necessary to model its `AbstractValue`.
+data types necessary to model the structural representations. 
 
 ## StructuralExamples 
 
@@ -56,9 +56,3 @@ $ swift run -c release StructuralBenchmarks
 ```
 
 An example output of the benchmark run can be found in [benchmark.results] file.
-
-# Disclaimer
-
-> Note: This is not an officially supported Google product.
-
-
