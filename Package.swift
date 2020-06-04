@@ -42,9 +42,13 @@ let package = Package(
             name: "StructuralBenchmarks",
             dependencies: ["StructuralCore", "StructuralExamples", "Benchmark"],
             swiftSettings: optimize),
+        .target(
+            name: "StructuralBenchmarksMain",
+            dependencies: ["Benchmark", "StructuralBenchmarks"],
+            swiftSettings: optimize),
         .testTarget(
             name: "StructuralTests",
-            dependencies: ["StructuralCore", "StructuralExamples"],
+            dependencies: ["StructuralCore", "StructuralExamples", "StructuralBenchmarks"],
             swiftSettings: optimize),
     ]
 )

@@ -13,15 +13,17 @@
 // limitations under the License.
 
 import Benchmark
+import StructuralBenchmarks
+import XCTest
 
-Benchmark.main([
-    additiveBenchmarks,
-    customComparableBenchmarks,
-    customDebugStringBenchmarks,
-    customEquatableBenchmarks,
-    customHashableBenchmarks,
-    decodeJSONBenchmarks,
-    encodeJSONBenchmarks,
-    inplaceAddBenchmarks,
-    scaleByBenchmarks,
-])
+final class BenchmarkTests: XCTestCase {
+
+    // A single catch-all test for macOS.
+    func testBenchmarks() {
+        Benchmark.runTests(suites: StructuralBenchmarks.suites)
+    }
+
+    // A more fine-grain per-benchmark tests used outside of macOS.
+    static var allTests = Benchmark.makeTests(
+        BenchmarkTests.self, suites: StructuralBenchmarks.suites)
+}
