@@ -18,6 +18,7 @@ import XCTest
     public func allTests() -> [XCTestCaseEntry] {
         return [
             testCase(AdditiveTests.allTests),
+            testCase(BenchmarkTests.allTests),
             testCase(CustomComparableTests.allTests),
             testCase(CustomComparableTests.allTests),
             testCase(CustomDebugStringTests.allTests),
