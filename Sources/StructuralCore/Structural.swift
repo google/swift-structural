@@ -21,7 +21,7 @@ public protocol Structural {
     init(structuralRepresentation: StructuralRepresentation)
 
     /// A structural representation of `self`.
-    var structuralRepresentation: StructuralRepresentation { get }
+    var structuralRepresentation: StructuralRepresentation { get set }
 }
 
 /// Structural representation of a Swift struct.
