@@ -24,4 +24,5 @@ public let suites = [
     encodeJSONBenchmarks,
     inplaceAddBenchmarks,
     scaleByBenchmarks,
+    sequentialTransformerBenchmarks,
 ]

@@ -52,7 +52,7 @@ This module includes benchmarks done using
 You can run benchmarks using the following command:
 
 ```
-$ swift run -c release StructuralBenchmarksMain
+$ swift run -c release -Xswiftc -cross-module-optimization StructuralBenchmarksMain
 ```
 
 An example output of the benchmark run can be found in [benchmark.results] file.

@@ -31,6 +31,7 @@ import XCTest
             testCase(EncodeJSONTests.allTests),
             testCase(InplaceAddTests.allTests),
             testCase(StructuralRepresentationTests.allTests),
+            testCase(SequentialTransformerTests.allTests),
         ]
     }
 #endif
