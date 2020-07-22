@@ -23,6 +23,14 @@ public protocol CustomEquatable {
 
 // Inductive cases.
 
+extension Forwardable where Underlying: CustomEquatable {
+    public func customEqual(_ other: Self) -> Bool {
+        return underlying.customEqual(other.underlying)
+    }
+}
+extension StructuralProperty: CustomEquatable where Value: CustomEquatable {}
+extension StructuralStruct: CustomEquatable where Properties: CustomEquatable {}
+
 extension StructuralCons: CustomEquatable
 where Value: CustomEquatable, Next: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
@@ -51,13 +59,6 @@ where AssociatedValues: CustomEquatable {
     }
 }
 
-extension StructuralProperty: CustomEquatable
-where Value: CustomEquatable {
-    public func customEqual(_ other: Self) -> Bool {
-        return value.customEqual(other.value)
-    }
-}
-
 extension StructuralEnum: CustomEquatable
 where Cases: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
@@ -65,15 +66,9 @@ where Cases: CustomEquatable {
     }
 }
 
-extension StructuralStruct: CustomEquatable
-where Properties: CustomEquatable {
-    public func customEqual(_ other: Self) -> Bool {
-        properties.customEqual(other.properties)
-    }
-}
-
 // Base cases.
 
+// This would go away with https://github.com/google/swift-structural/pull/5 (except for empty structs).
 extension StructuralEmpty: CustomEquatable {
     public func customEqual(_ other: StructuralEmpty) -> Bool {
         return true
