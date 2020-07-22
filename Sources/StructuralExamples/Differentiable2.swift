@@ -15,19 +15,19 @@
 import StructuralCore
 
 /// A protocol similar to Differentiable in Differential Programming Manifesto.
-protocol CustomDifferentiable {
-    associatedtype TangentVector: CustomDifferentiable
+protocol Differentiable2 {
+    associatedtype TangentVector: Differentiable2
     where TangentVector.TangentVector == TangentVector
 
     mutating func move(along direction: TangentVector)
 }
 
 /// Differentiable pair of two values.
-struct DifferentiableCons<Value, Next>: CustomDifferentiable
+struct DifferentiableCons<Value, Next>: Differentiable2
 where
-    Value: CustomDifferentiable,
+    Value: Differentiable2,
     Value.TangentVector == Value,
-    Next: CustomDifferentiable,
+    Next: Differentiable2,
     Next.TangentVector == Next
 {
     typealias TangentVector = Self
@@ -47,7 +47,7 @@ where
 }
 
 /// Differentiable nullary tuple.
-struct DifferentiableEmpty: CustomDifferentiable {
+struct DifferentiableEmpty: Differentiable2 {
     typealias TangentVector = Self
 
     mutating func move(along direction: TangentVector) {}
@@ -55,7 +55,7 @@ struct DifferentiableEmpty: CustomDifferentiable {
 
 /// A property wrapper that ignores the field from the point of
 /// view of differentiable.
-@propertyWrapper struct NoDerivative<T>: CustomDifferentiable {
+@propertyWrapper struct NoDerivative<T>: Differentiable2 {
     var wrappedValue: T
 
     init(wrappedValue: T) { self.wrappedValue = wrappedValue }
@@ -67,8 +67,8 @@ struct DifferentiableEmpty: CustomDifferentiable {
 
 // Inductive cases. 
 
-extension StructuralCons: CustomDifferentiable
-where Value: CustomDifferentiable, Next: CustomDifferentiable {
+extension StructuralCons: Differentiable2
+where Value: Differentiable2, Next: Differentiable2 {
     typealias TangentVector = DifferentiableCons<Value.TangentVector, Next.TangentVector>
 
     mutating func move(along direction: TangentVector) {
@@ -77,8 +77,8 @@ where Value: CustomDifferentiable, Next: CustomDifferentiable {
     }
 }
 
-extension StructuralStruct: CustomDifferentiable
-where Properties: CustomDifferentiable {
+extension StructuralStruct: Differentiable2
+where Properties: Differentiable2 {
     typealias TangentVector = Properties.TangentVector
 
     mutating func move(along direction: TangentVector) {
@@ -86,8 +86,8 @@ where Properties: CustomDifferentiable {
     }
 }
 
-extension StructuralProperty: CustomDifferentiable
-where Value: CustomDifferentiable {
+extension StructuralProperty: Differentiable2
+where Value: Differentiable2 {
     typealias TangentVector = Value.TangentVector
 
     mutating func move(along direction: TangentVector) {
@@ -95,7 +95,7 @@ where Value: CustomDifferentiable {
     }
 }
 
-extension StructuralEmpty: CustomDifferentiable {
+extension StructuralEmpty: Differentiable2 {
     typealias TangentVector = DifferentiableEmpty
 
     mutating func move(along direction: TangentVector) {}
@@ -103,7 +103,7 @@ extension StructuralEmpty: CustomDifferentiable {
 
 // Base cases.
 
-extension Float: CustomDifferentiable {
+extension Float: Differentiable2 {
     typealias TangentVector = Self
 
     mutating func move(along direction: TangentVector) {
@@ -113,8 +113,8 @@ extension Float: CustomDifferentiable {
 
 // Sugar
 
-extension CustomDifferentiable
-where Self: Structural, Self.StructuralRepresentation: CustomDifferentiable {
+extension Differentiable2
+where Self: Structural, Self.StructuralRepresentation: Differentiable2 {
     // Can't do that: 
     // typealias TangentVector = Self.StructuralRepresentation.TangentVector
 

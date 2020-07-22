@@ -18,7 +18,7 @@ import XCTest
 @testable import StructuralCore
 @testable import StructuralExamples
 
-extension Point3: CustomDifferentiable {
+extension Point3: Differentiable2 {
     public typealias TangentVector = StructuralRepresentation.TangentVector
 }
 
@@ -68,11 +68,11 @@ extension LabeledPoint3: Structural {
     }
 }
 
-extension LabeledPoint3: CustomDifferentiable {
+extension LabeledPoint3: Differentiable2 {
     public typealias TangentVector = StructuralRepresentation.TangentVector
 }
 
-final class CustomDifferentiableTests: XCTestCase {
+final class Differentiable2Tests: XCTestCase {
     func testPoint3() {
         let direction: Point3.TangentVector =
             DifferentiableCons(

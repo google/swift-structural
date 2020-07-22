@@ -23,7 +23,7 @@ import XCTest
             testCase(CustomComparableTests.allTests),
             testCase(CustomDebugStringTests.allTests),
             testCase(CustomDebugStringTests.allTests),
-            testCase(CustomDifferentiableTests.allTests),
+            testCase(Differentiable2Tests.allTests),
             testCase(CustomEquatableTests.allTests),
             testCase(CustomHashableTests.allTests),
             testCase(DecodeJSONTests.allTests),
