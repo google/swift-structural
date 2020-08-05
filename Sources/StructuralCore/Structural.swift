@@ -43,6 +43,10 @@ public struct StructuralStruct<BaseType, Properties> {
 }
 
 /// Structural representation of a Swift property.
+///
+/// Value corresponds to the original declared property type.
+/// WrappedValue is a declared property type with explicit property 
+/// wrappers included in the type.
 public struct StructuralProperty<BaseType, Value, WrappedValue> {
     public var keyPath: KeyPath<BaseType, Value>?
     public var name: String
