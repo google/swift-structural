@@ -36,6 +36,7 @@ struct LabeledPoint3 {
 extension LabeledPoint3: Structural {
     public typealias StructuralRepresentation =
         StructuralStruct<
+            LabeledPoint3,
             StructuralCons<
                 StructuralProperty<NoDerivative<String>>,
                 StructuralCons<
@@ -48,7 +49,7 @@ extension LabeledPoint3: Structural {
     // swift-format-ignore
     public var structuralRepresentation: StructuralRepresentation {
         get {
-            return StructuralStruct(Point2.self,
+            return StructuralStruct(LabeledPoint3.self,
                 StructuralCons(StructuralProperty("label", NoDerivative(wrappedValue: label), isMutable: true),
                     StructuralCons(StructuralProperty("value", value, isMutable: true),
                         StructuralEmpty()

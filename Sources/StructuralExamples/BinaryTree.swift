@@ -23,6 +23,7 @@ extension BinaryTree: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
         StructuralEnum<
+            BinaryTree,
             StructuralEither<
                 StructuralCase<Int, StructuralCons<StructuralProperty<T>, StructuralEmpty>>,
                 StructuralCase<

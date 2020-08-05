@@ -25,8 +25,8 @@ public protocol Structural {
 }
 
 /// Structural representation of a Swift struct.
-public struct StructuralStruct<Properties> {
-    public var type: Any.Type?
+public struct StructuralStruct<BaseType, Properties> {
+    public var type: BaseType.Type?
     public var properties: Properties
 
     public init(_ properties: Properties) {
@@ -34,7 +34,7 @@ public struct StructuralStruct<Properties> {
         self.properties = properties
     }
 
-    public init(_ type: Any.Type, _ properties: Properties) {
+    public init(_ type: BaseType.Type, _ properties: Properties) {
         self.type = type
         self.properties = properties
     }
@@ -66,8 +66,8 @@ public struct StructuralProperty<Value> {
 }
 
 /// Structural representation of a Swift enum.
-public struct StructuralEnum<Cases> {
-    public var type: Any.Type?
+public struct StructuralEnum<BaseType, Cases> {
+    public var type: BaseType.Type?
     public var cases: Cases
 
     public init(_ cases: Cases) {
@@ -75,7 +75,7 @@ public struct StructuralEnum<Cases> {
         self.cases = cases
     }
 
-    public init(_ type: Any.Type, _ cases: Cases) {
+    public init(_ type: BaseType.Type, _ cases: Cases) {
         self.type = type
         self.cases = cases
     }

@@ -24,6 +24,7 @@ extension ASCII: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
         StructuralEnum<
+            ASCII,
             StructuralEither<
                 StructuralCase<String, StructuralEmpty>,
                 StructuralEither<

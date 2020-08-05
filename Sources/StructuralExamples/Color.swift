@@ -24,6 +24,7 @@ extension Color: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
         StructuralEnum<
+            Color,
             StructuralEither<
                 StructuralCase<Int, StructuralEmpty>,
                 StructuralEither<

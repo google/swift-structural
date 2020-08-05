@@ -41,6 +41,7 @@ extension Point${N}: Structural {
     // swift-format-ignore
     public typealias StructuralRepresentation =
         StructuralStruct<
+            Point${N},
             % for i in range(1, N + 1):
             StructuralCons<StructuralProperty<Float>, 
             % end

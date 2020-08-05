@@ -26,6 +26,7 @@ public struct StudentGrades {
 
 extension StudentGrades: Structural {
     public typealias StructuralRepresentation = StructuralStruct<
+        StudentGrades,
         StructuralCons<
             StructuralProperty<Int>,
             StructuralCons<

@@ -26,6 +26,7 @@ public struct Semester {
 
 extension Semester: Structural {
     public typealias StructuralRepresentation = StructuralStruct<
+        Semester,
         StructuralCons<
             StructuralProperty<Int>,
             StructuralCons<
