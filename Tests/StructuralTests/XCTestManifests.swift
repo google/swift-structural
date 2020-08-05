@@ -32,6 +32,7 @@ import XCTest
             testCase(EncodeJSONTests.allTests),
             testCase(InplaceAddTests.allTests),
             testCase(StructuralRepresentationTests.allTests),
+            testCase(StaticAllKeyPathsTests.allTests),
         ]
     }
 #endif
