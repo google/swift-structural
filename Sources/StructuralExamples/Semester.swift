@@ -28,9 +28,9 @@ extension Semester: Structural {
     public typealias StructuralRepresentation = StructuralStruct<
         Semester,
         StructuralCons<
-            StructuralProperty<Int>,
+            StructuralProperty<Semester, Int>,
             StructuralCons<
-                StructuralProperty<[StudentGrades]>,
+                StructuralProperty<Semester, [StudentGrades]>,
                 StructuralEmpty
             >
         >
@@ -51,9 +51,10 @@ extension Semester: Structural {
             var av = StructuralStruct(
                 Semester.self,
                 StructuralCons(
-                    StructuralProperty("year", year, isMutable: false),
+                    StructuralProperty<Semester, Int>("year", year, isMutable: false),
                     StructuralCons(
-                        StructuralProperty("classes", classes, isMutable: true),
+                        StructuralProperty<Semester, [StudentGrades]>(
+                            "classes", classes, isMutable: true),
                         StructuralEmpty())))
             classes = []
             // Use swap to avoid copies.

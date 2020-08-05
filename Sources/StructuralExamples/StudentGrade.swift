@@ -28,9 +28,9 @@ extension StudentGrades: Structural {
     public typealias StructuralRepresentation = StructuralStruct<
         StudentGrades,
         StructuralCons<
-            StructuralProperty<Int>,
+            StructuralProperty<StudentGrades, Int>,
             StructuralCons<
-                StructuralProperty<[Double]>,
+                StructuralProperty<StudentGrades, [Double]>,
                 StructuralEmpty
             >
         >
@@ -51,9 +51,10 @@ extension StudentGrades: Structural {
             var av = StructuralStruct(
                 StudentGrades.self,
                 StructuralCons(
-                    StructuralProperty("classId", classId, isMutable: false),
+                    StructuralProperty<StudentGrades, Int>("classId", classId, isMutable: false),
                     StructuralCons(
-                        StructuralProperty("grades", grades, isMutable: true),
+                        StructuralProperty<StudentGrades, [Double]>(
+                            "grades", grades, isMutable: true),
                         StructuralEmpty())))
 
             // Use swap to avoid copies.

@@ -41,7 +41,7 @@ public struct StructuralStruct<BaseType, Properties> {
 }
 
 /// Structural representation of a Swift property.
-public struct StructuralProperty<Value> {
+public struct StructuralProperty<BaseType, Value> {
     public var name: String
     public var value: Value
     public var isMutable: Bool

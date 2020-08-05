@@ -43,7 +43,7 @@ extension Point${N}: Structural {
         StructuralStruct<
             Point${N},
             % for i in range(1, N + 1):
-            StructuralCons<StructuralProperty<Float>, 
+            StructuralCons<StructuralProperty<Point${N}, Float>, 
             % end
             StructuralEmpty
             % for i in range(1, N + 1):
@@ -56,7 +56,7 @@ extension Point${N}: Structural {
         get {
             return StructuralStruct(Point${N}.self, 
                 % for i in range(1, N + 1):
-                StructuralCons(StructuralProperty("_${i}", _${i}, isMutable: true),
+                StructuralCons(StructuralProperty<Point${N}, Float>("_${i}", _${i}, isMutable: true),
                 % end 
                 StructuralEmpty()
                 % for i in range(1, N + 1):

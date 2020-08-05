@@ -38,9 +38,9 @@ extension LabeledPoint3: Structural {
         StructuralStruct<
             LabeledPoint3,
             StructuralCons<
-                StructuralProperty<NoDerivative<String>>,
+                StructuralProperty<LabeledPoint3, NoDerivative<String>>,
                 StructuralCons<
-                    StructuralProperty<Point3>,
+                    StructuralProperty<LabeledPoint3, Point3>,
                     StructuralEmpty
                 >
             >
