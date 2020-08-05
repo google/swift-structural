@@ -41,9 +41,9 @@ extension StructuralStruct: Zero where Properties: Zero {
 }
 
 extension StructuralProperty: Zero
-where Value: Zero {
+where WrappedValue: Zero {
     public static var zero: Self {
-        return StructuralProperty(Value.zero)
+        return StructuralProperty(WrappedValue.zero)
     }
 }
 

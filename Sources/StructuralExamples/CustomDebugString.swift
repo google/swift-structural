@@ -48,7 +48,7 @@ where Value: CustomDebugString, Next: CustomDebugString {
 }
 
 extension StructuralProperty: CustomDebugString
-where Value: CustomDebugString {
+where WrappedValue: CustomDebugString {
     public var debugString: String {
         if self.name == "" {
             return self.value.debugString

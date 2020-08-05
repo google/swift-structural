@@ -87,8 +87,8 @@ where Properties: Differentiable2 {
 }
 
 extension StructuralProperty: Differentiable2
-where Value: Differentiable2 {
-    typealias TangentVector = Value.TangentVector
+where WrappedValue: Differentiable2 {
+    typealias TangentVector = WrappedValue.TangentVector
 
     mutating func move(along direction: TangentVector) {
         self.value.move(along: direction)

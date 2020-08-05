@@ -38,9 +38,9 @@ extension LabeledPoint3: Structural {
         StructuralStruct<
             LabeledPoint3,
             StructuralCons<
-                StructuralProperty<LabeledPoint3, NoDerivative<String>>,
+                StructuralProperty<LabeledPoint3, String, NoDerivative<String>>,
                 StructuralCons<
-                    StructuralProperty<LabeledPoint3, Point3>,
+                    StructuralProperty<LabeledPoint3, Point3, Point3>,
                     StructuralEmpty
                 >
             >
@@ -50,8 +50,8 @@ extension LabeledPoint3: Structural {
     public var structuralRepresentation: StructuralRepresentation {
         get {
             return StructuralStruct(LabeledPoint3.self,
-                StructuralCons(StructuralProperty("label", NoDerivative(wrappedValue: label), isMutable: true),
-                    StructuralCons(StructuralProperty("value", value, isMutable: true),
+                StructuralCons(StructuralProperty(\LabeledPoint3.label, "label", NoDerivative(wrappedValue: label)),
+                    StructuralCons(StructuralProperty(\LabeledPoint3.value, "value", value),
                         StructuralEmpty()
                     )
                 )

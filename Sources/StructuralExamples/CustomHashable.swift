@@ -64,7 +64,7 @@ where RawValue: CustomHashable, AssociatedValues: CustomHashable {
 }
 
 extension StructuralProperty: CustomHashable
-where Value: CustomHashable {
+where WrappedValue: CustomHashable {
     public func customHash(into hasher: inout Hasher) {
         value.customHash(into: &hasher)
     }

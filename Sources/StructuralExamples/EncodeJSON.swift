@@ -90,7 +90,7 @@ where Properties: EncodeJSON {
 }
 
 extension StructuralProperty: EncodeJSON
-where Value: EncodeJSON {
+where WrappedValue: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendProperty(name: self.name)
         self.value.encodeJson(into: &builder)

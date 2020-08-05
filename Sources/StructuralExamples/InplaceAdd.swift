@@ -38,7 +38,7 @@ where Properties: InplaceAdd {
 }
 
 extension StructuralProperty: InplaceAdd
-where Value: InplaceAdd {
+where WrappedValue: InplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
         if isMutable {
             self.value.inplaceAdd(other.value)

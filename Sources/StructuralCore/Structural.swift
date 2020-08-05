@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import Foundation
+
 /// A type that can be converted to and from its structural representation.
 public protocol Structural {
     /// A structural representation for `Self`.
@@ -41,27 +43,25 @@ public struct StructuralStruct<BaseType, Properties> {
 }
 
 /// Structural representation of a Swift property.
-public struct StructuralProperty<BaseType, Value> {
+public struct StructuralProperty<BaseType, Value, WrappedValue> {
+    public var keyPath: KeyPath<BaseType, Value>?
     public var name: String
-    public var value: Value
-    public var isMutable: Bool
+    public var value: WrappedValue
 
-    public init(_ value: Value) {
+    public var isMutable: Bool {
+        return keyPath is WritableKeyPath<BaseType, Value>
+    }
+
+    public init(_ value: WrappedValue) {
         self.name = ""
+        self.keyPath = nil
         self.value = value
-        self.isMutable = false
     }
 
-    public init(_ name: String, _ value: Value) {
+    public init(_ keyPath: KeyPath<BaseType, Value>, _ name: String, _ value: WrappedValue) {
         self.name = name
+        self.keyPath = keyPath
         self.value = value
-        self.isMutable = false
-    }
-
-    public init(_ name: String, _ value: Value, isMutable: Bool) {
-        self.name = name
-        self.value = value
-        self.isMutable = isMutable
     }
 }
 

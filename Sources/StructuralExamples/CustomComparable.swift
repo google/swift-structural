@@ -79,7 +79,7 @@ where Properties: CustomComparable {
 }
 
 extension StructuralProperty: CustomComparable
-where Value: CustomComparable {
+where WrappedValue: CustomComparable {
     public func less(_ other: Self) -> Bool {
         return value.less(other.value)
     }

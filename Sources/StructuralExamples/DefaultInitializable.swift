@@ -37,9 +37,9 @@ where Properties: DefaultInitializable {
 }
 
 extension StructuralProperty: DefaultInitializable
-where Value: DefaultInitializable {
+where WrappedValue: DefaultInitializable {
     public init() {
-        self.init(Value())
+        self.init(WrappedValue())
     }
 }
 

@@ -48,7 +48,7 @@ where Properties: DecodeJSON {
 }
 
 extension StructuralProperty: DecodeJSON
-where Value: DecodeJSON {
+where WrappedValue: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         let dict = other as! [String: Any]
         self.value.decodeJson(dict[self.name]!)

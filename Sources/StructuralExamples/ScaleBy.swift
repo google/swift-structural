@@ -71,7 +71,7 @@ where Properties: ScaleInPlace {
 }
 
 extension StructuralProperty: ScaleInPlace
-where Value: ScaleInPlace {
+where WrappedValue: ScaleInPlace {
     public mutating func scale(by scalar: Double) {
         if isMutable {
             self.value.scale(by: scalar)

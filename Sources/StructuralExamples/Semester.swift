@@ -28,9 +28,9 @@ extension Semester: Structural {
     public typealias StructuralRepresentation = StructuralStruct<
         Semester,
         StructuralCons<
-            StructuralProperty<Semester, Int>,
+            StructuralProperty<Semester, Int, Int>,
             StructuralCons<
-                StructuralProperty<Semester, [StudentGrades]>,
+                StructuralProperty<Semester, [StudentGrades], [StudentGrades]>,
                 StructuralEmpty
             >
         >
@@ -41,9 +41,9 @@ extension Semester: Structural {
             return StructuralStruct(
                 Semester.self,
                 StructuralCons(
-                    StructuralProperty("year", year, isMutable: false),
+                    StructuralProperty(\Semester.year, "year", year),
                     StructuralCons(
-                        StructuralProperty("classes", classes, isMutable: true),
+                        StructuralProperty(\Semester.classes, "classes", classes),
                         StructuralEmpty())))
         }
 
@@ -51,10 +51,9 @@ extension Semester: Structural {
             var av = StructuralStruct(
                 Semester.self,
                 StructuralCons(
-                    StructuralProperty<Semester, Int>("year", year, isMutable: false),
+                    StructuralProperty(\Semester.year, "year", year),
                     StructuralCons(
-                        StructuralProperty<Semester, [StudentGrades]>(
-                            "classes", classes, isMutable: true),
+                        StructuralProperty(\Semester.classes, "classes", classes),
                         StructuralEmpty())))
             classes = []
             // Use swap to avoid copies.

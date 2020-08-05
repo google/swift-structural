@@ -52,7 +52,7 @@ where AssociatedValues: CustomEquatable {
 }
 
 extension StructuralProperty: CustomEquatable
-where Value: CustomEquatable {
+where WrappedValue: CustomEquatable {
     public func customEqual(_ other: Self) -> Bool {
         return value.customEqual(other.value)
     }

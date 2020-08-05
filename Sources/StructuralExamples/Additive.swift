@@ -52,7 +52,7 @@ where AssociatedValues: Additive {
 }
 
 extension StructuralProperty: Additive
-where Value: Additive {
+where WrappedValue: Additive {
     public static func + (lhs: Self, rhs: Self) -> Self {
         return StructuralProperty(lhs.value + rhs.value)
     }

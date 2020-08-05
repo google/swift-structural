@@ -27,16 +27,16 @@ extension BinaryTree: Structural {
             StructuralEither<
                 StructuralCase<
                     Int,
-                    StructuralCons<StructuralProperty<BinaryTree, T>,
+                    StructuralCons<StructuralProperty<BinaryTree, T, T>,
                         StructuralEmpty>>,
                 StructuralCase<
                     Int,
                     StructuralCons<
-                        StructuralProperty<BinaryTree, BinaryTree<T>>,
+                        StructuralProperty<BinaryTree, BinaryTree<T>, BinaryTree<T>>,
                         StructuralCons<
-                            StructuralProperty<BinaryTree, T>,
+                            StructuralProperty<BinaryTree, T, T>,
                             StructuralCons<
-                                StructuralProperty<BinaryTree, BinaryTree<T>>,
+                                StructuralProperty<BinaryTree, BinaryTree<T>, BinaryTree<T>>,
                                 StructuralEmpty
                             >
                         >
@@ -50,17 +50,17 @@ extension BinaryTree: Structural {
             switch self {
             case let .leaf(x):
                 let properties = StructuralCons(
-                    StructuralProperty<BinaryTree, T>(x), StructuralEmpty())
+                    StructuralProperty<BinaryTree, T, T>(x), StructuralEmpty())
                 return StructuralEnum(
                     BinaryTree.self, .left(StructuralCase("leaf", 0, properties)))
             case let .branch(left, value, right):
                 let properties =
                     StructuralCons(
-                        StructuralProperty<BinaryTree, BinaryTree<T>>(left),
+                        StructuralProperty<BinaryTree, BinaryTree<T>, BinaryTree<T>>(left),
                         StructuralCons(
-                            StructuralProperty<BinaryTree, T>(value),
+                            StructuralProperty<BinaryTree, T, T>(value),
                             StructuralCons(
-                                StructuralProperty<BinaryTree, BinaryTree<T>>(right),
+                                StructuralProperty<BinaryTree, BinaryTree<T>, BinaryTree<T>>(right),
                                 StructuralEmpty())))
                 return StructuralEnum(
                     BinaryTree.self, .right(StructuralCase("branch", 1, properties)))
