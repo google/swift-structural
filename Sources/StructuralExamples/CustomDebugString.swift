@@ -50,7 +50,7 @@ where Value: CustomDebugString, Next: CustomDebugString {
 extension StructuralProperty: CustomDebugString
 where Value: CustomDebugString {
     public var debugString: String {
-        if self.name == "" {
+        if self.name.description == "" {
             return self.value.debugString
         } else {
             return "\(self.name): \(self.value.debugString)"
@@ -88,7 +88,7 @@ where AssociatedValues: CustomDebugString {
     public var debugString: String {
         let valuesString = associatedValues.debugString
         if valuesString == "" {
-            return name
+            return name.description
         } else {
             return "\(name)(\(valuesString))"
         }

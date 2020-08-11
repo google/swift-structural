@@ -42,7 +42,7 @@ public struct StructuralStruct<Properties> {
 
 /// Structural representation of a Swift property.
 public struct StructuralProperty<Value> {
-    public var name: String
+    public var name: StaticString
     public var value: Value
     public var isMutable: Bool
 
@@ -52,13 +52,13 @@ public struct StructuralProperty<Value> {
         self.isMutable = false
     }
 
-    public init(_ name: String, _ value: Value) {
+    public init(_ name: StaticString, _ value: Value) {
         self.name = name
         self.value = value
         self.isMutable = false
     }
 
-    public init(_ name: String, _ value: Value, isMutable: Bool) {
+    public init(_ name: StaticString, _ value: Value, isMutable: Bool) {
         self.name = name
         self.value = value
         self.isMutable = isMutable
@@ -83,7 +83,7 @@ public struct StructuralEnum<Cases> {
 
 /// Structural representation of a Swift enum case.
 public struct StructuralCase<RawValue, AssociatedValues> {
-    public var name: String
+    public var name: StaticString
     public var rawValue: RawValue
     public var associatedValues: AssociatedValues
 
@@ -93,7 +93,7 @@ public struct StructuralCase<RawValue, AssociatedValues> {
         self.associatedValues = associatedValues
     }
 
-    public init(_ name: String, _ rawValue: RawValue, _ associatedValues: AssociatedValues) {
+    public init(_ name: StaticString, _ rawValue: RawValue, _ associatedValues: AssociatedValues) {
         self.name = name
         self.rawValue = rawValue
         self.associatedValues = associatedValues
