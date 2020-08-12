@@ -51,7 +51,7 @@ extension StructuralProperty: DecodeJSON
 where Value: DecodeJSON {
     public mutating func decodeJson(_ other: Any) {
         let dict = other as! [String: Any]
-        self.value.decodeJson(dict[self.name]!)
+        self.value.decodeJson(dict[self.name.description]!)
     }
 }
 

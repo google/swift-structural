@@ -92,7 +92,7 @@ where Properties: EncodeJSON {
 extension StructuralProperty: EncodeJSON
 where Value: EncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
-        builder.appendProperty(name: self.name)
+        builder.appendProperty(name: self.name.description)
         self.value.encodeJson(into: &builder)
     }
 }
