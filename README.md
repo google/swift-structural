@@ -2,7 +2,7 @@
 
 This repo includes example protocol implementations for automatic derived
 conformances based on the `Structural` protocol. It is meant to accompany the
-Swift evolution proposal, and should not be depended on as a library. 
+[Swift evolution proposal][proposal], and should not be depended on as a library.
 
 The codebase is structured in the following modules:
 
@@ -56,3 +56,5 @@ $ swift run -c release StructuralBenchmarksMain
 ```
 
 An example output of the benchmark run can be found in [benchmark.results] file.
+
+[proposal]: https://forums.swift.org/t/automatic-requirement-satisfaction-in-plain-swift/37158
