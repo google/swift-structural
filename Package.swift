@@ -23,11 +23,12 @@ let package = Package(
     products: [
         .library(
             name: "StructuralCore",
-            targets: ["StructuralCore"]),
+            targets: ["StructuralCore"])
     ],
     dependencies: [
-        .package(url: "https://github.com/google/swift-benchmark", 
-                 .branch("master")),
+        .package(
+            url: "https://github.com/google/swift-benchmark",
+            .branch("master"))
     ],
     targets: [
         .target(
