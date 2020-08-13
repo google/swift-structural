@@ -72,6 +72,6 @@ extension ASCII: Structural {
     }
 }
 
-extension ASCII: CustomEquatable {}
-extension ASCII: CustomHashable {}
-extension ASCII: CustomDebugString {}
+extension ASCII: MyEquatable {}
+extension ASCII: MyHashable {}
+extension ASCII: MyDebugString {}

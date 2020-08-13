@@ -89,15 +89,15 @@ extension Point${N}: Structural {
     }
 }
 
-extension Point${N}: CustomEquatable {}
-extension Point${N}: CustomHashable {}
-extension Point${N}: Zero {}
-extension Point${N}: Additive {}
-extension Point${N}: CustomDebugString {}
-extension Point${N}: CustomComparable {}
-extension Point${N}: InplaceAdd {}
-extension Point${N}: EncodeJSON {}
-extension Point${N}: DecodeJSON {}
-extension Point${N}: DefaultInitializable {}
+extension Point${N}: MyAdditive {}
+extension Point${N}: MyComparable {}
+extension Point${N}: MyDebugString {}
+extension Point${N}: MyDecodeJSON {}
+extension Point${N}: MyDefaultInitializable {}
+extension Point${N}: MyEncodeJSON {}
+extension Point${N}: MyEquatable {}
+extension Point${N}: MyHashable {}
+extension Point${N}: MyInplaceAdd {}
+extension Point${N}: MyZero {}
 
 % end

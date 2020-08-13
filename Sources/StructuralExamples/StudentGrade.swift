@@ -69,6 +69,6 @@ extension StudentGrades: Structural {
     }
 }
 
-extension StudentGrades: CustomEquatable {}
-extension StudentGrades: CustomHashable {}
-extension StudentGrades: CustomDebugString {}
+extension StudentGrades: MyEquatable {}
+extension StudentGrades: MyHashable {}
+extension StudentGrades: MyDebugString {}

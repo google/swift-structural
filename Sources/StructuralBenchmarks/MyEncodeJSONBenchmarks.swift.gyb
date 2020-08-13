@@ -13,15 +13,22 @@
 // limitations under the License.
 
 import Benchmark
+import Foundation
+import StructuralCore
+import StructuralExamples
 
-public let suites = [
-    myAdditiveBenchmarks,
-    myComparableBenchmarks,
-    myDebugStringBenchmarks,
-    myDecodeJSONBenchmarks,
-    myEncodeJSONBenchmarks,
-    myEquatableBenchmarks,
-    myHashableBenchmarks,
-    myInplaceAddBenchmarks,
-    myInplaceScaleBenchmarks,
-]
+let myEncodeJSONBenchmarks = BenchmarkSuite(name: "MyEncodeJSON") { suite in
+
+    % for N in range(1, 17):
+    
+    suite.benchmark("Point${N} (generic)") {
+        stringSink = toJSONString(p${N}_1)
+    }
+
+    suite.benchmark("Point${N} (reference)") {
+        let data = try! JSONEncoder().encode(p${N}_1)
+        stringSink = String(data: data, encoding: .utf8)!
+    }
+
+    % end
+}
