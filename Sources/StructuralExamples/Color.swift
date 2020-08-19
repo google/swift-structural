@@ -72,6 +72,6 @@ extension Color: Structural {
     }
 }
 
-extension Color: CustomEquatable {}
-extension Color: CustomHashable {}
-extension Color: CustomDebugString {}
+extension Color: MyEquatable {}
+extension Color: MyHashable {}
+extension Color: MyDebugString {}

@@ -17,20 +17,20 @@ import XCTest
 #if !canImport(ObjectiveC)
     public func allTests() -> [XCTestCaseEntry] {
         return [
-            testCase(AdditiveTests.allTests),
             testCase(BenchmarkTests.allTests),
-            testCase(CustomComparableTests.allTests),
-            testCase(CustomComparableTests.allTests),
-            testCase(CustomDebugStringTests.allTests),
-            testCase(CustomDebugStringTests.allTests),
-            testCase(Differentiable2Tests.allTests),
-            testCase(CustomEquatableTests.allTests),
-            testCase(CustomHashableTests.allTests),
-            testCase(DecodeJSONTests.allTests),
-            testCase(DefaultInitializableTests.allTests),
-            testCase(EncodeJSONTests.allTests),
-            testCase(EncodeJSONTests.allTests),
-            testCase(InplaceAddTests.allTests),
+            testCase(MyAdditiveTests.allTests),
+            testCase(MyComparableTests.allTests),
+            testCase(MyComparableTests.allTests),
+            testCase(MyDebugStringTests.allTests),
+            testCase(MyDebugStringTests.allTests),
+            testCase(MyDecodeJSONTests.allTests),
+            testCase(MyDefaultInitializableTests.allTests),
+            testCase(MyDifferentiableTests.allTests),
+            testCase(MyEncodeJSONTests.allTests),
+            testCase(MyEncodeJSONTests.allTests),
+            testCase(MyEquatableTests.allTests),
+            testCase(MyHashableTests.allTests),
+            testCase(MyInplaceAddTests.allTests),
             testCase(StructuralRepresentationTests.allTests),
         ]
     }

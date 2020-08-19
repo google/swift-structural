@@ -67,6 +67,6 @@ extension Semester: Structural {
     }
 }
 
-extension Semester: CustomEquatable {}
-extension Semester: CustomHashable {}
-extension Semester: CustomDebugString {}
+extension Semester: MyEquatable {}
+extension Semester: MyHashable {}
+extension Semester: MyDebugString {}

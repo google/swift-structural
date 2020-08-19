@@ -12,16 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import Benchmark
+import XCTest
 
-public let suites = [
-    myAdditiveBenchmarks,
-    myComparableBenchmarks,
-    myDebugStringBenchmarks,
-    myDecodeJSONBenchmarks,
-    myEncodeJSONBenchmarks,
-    myEquatableBenchmarks,
-    myHashableBenchmarks,
-    myInplaceAddBenchmarks,
-    myInplaceScaleBenchmarks,
-]
+@testable import StructuralCore
+@testable import StructuralExamples
+
+final class MyEncodeJSONTests: XCTestCase {
+    func testPoint3() {
+        let point = Point3(_1: 10, _2: 20, _3: 30)
+        XCTAssertEqual(toJSONString(point), "{\"_1\":10.0,\"_2\":20.0,\"_3\":30.0}")
+    }
+
+    static var allTests = [
+        ("testPoint3", testPoint3)
+    ]
+}
