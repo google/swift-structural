@@ -26,9 +26,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString${N} = String(data: inputData${N}, encoding: .utf8)!
 
     suite.benchmark("Point${N}") {
-        var decoded: [Point${N}] = []
-        decodeJSONString(from: inputString${N}, into: &decoded)
-        anySink = decoded
+        let data = inputString${N}.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point${N}].self, from: data)
     }
 
     % end

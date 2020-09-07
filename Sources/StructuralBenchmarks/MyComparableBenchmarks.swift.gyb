@@ -16,32 +16,10 @@ import Benchmark
 import StructuralCore
 import StructuralExamples
 
-% for N in range(1, 17):
-
-func specializedLess(_ l: Point${N}, _ r: Point${N}) -> Bool {
-    % for i in range(1, N + 1):
-    if l._${i} == r._${i} {
-    % end
-
-    return false
-
-    % for i in range(N, 0, -1):
-    } else {
-        return l._${i} < r._${i}
-    } 
-    % end
-}
-
-% end
-
 let myComparableBenchmarks = BenchmarkSuite(name: "MyComparable") { suite in
     % for N in range(1, 17):
 
-    suite.benchmark("Point${N} (specialized)") {
-        boolSink = specializedLess(p${N}_1, p${N}_2)
-    }
-
-    suite.benchmark("Point${N} (generic)") {
+    suite.benchmark("Point${N}") {
         boolSink = p${N}_1.less(p${N}_2)
     }
 

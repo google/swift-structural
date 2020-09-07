@@ -17,29 +17,13 @@ import Foundation
 import StructuralCore
 import StructuralExamples
 
-% for N in range(1, 17):
-
-func inplaceAddSpecialized(_ l: inout Point${N}, _ r: Point${N}) {
-    % for i in range(1, N + 1):
-    l._${i} += r._${i}
-    % end
-}
-
-% end
-
 let myInplaceAddBenchmarks = BenchmarkSuite(name: "MyInplaceAdd") { suite in
 
     % for N in range(1, 17):
 
-    suite.benchmark("Point${N} (generic)") {
+    suite.benchmark("Point${N}") {
         var p: Point${N} = p${N}_1
         p.inplaceAdd(p${N}_2)
-        p${N}_1 = p
-    }
-
-    suite.benchmark("Point${N} (specialized)") {
-        var p: Point${N} = p${N}_1
-        inplaceAddSpecialized(&p, p${N}_2)
         p${N}_1 = p
     }
 

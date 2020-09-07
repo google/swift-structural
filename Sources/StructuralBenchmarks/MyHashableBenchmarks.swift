@@ -19,155 +19,96 @@ import StructuralExamples
 
 let myHashableBenchmarks = BenchmarkSuite(name: "MyHashable") { suite in
 
-    suite.benchmark("Point1 (generic)") {
+
+    suite.benchmark("Point1") {
         intSink = myHash(p1_1)
     }
 
-    suite.benchmark("Point1 (reference)") {
-        intSink = referenceHash(p1_1)
-    }
 
-    suite.benchmark("Point2 (generic)") {
+    suite.benchmark("Point2") {
         intSink = myHash(p2_1)
     }
 
-    suite.benchmark("Point2 (reference)") {
-        intSink = referenceHash(p2_1)
-    }
 
-    suite.benchmark("Point3 (generic)") {
+    suite.benchmark("Point3") {
         intSink = myHash(p3_1)
     }
 
-    suite.benchmark("Point3 (reference)") {
-        intSink = referenceHash(p3_1)
-    }
 
-    suite.benchmark("Point4 (generic)") {
+    suite.benchmark("Point4") {
         intSink = myHash(p4_1)
     }
 
-    suite.benchmark("Point4 (reference)") {
-        intSink = referenceHash(p4_1)
-    }
 
-    suite.benchmark("Point5 (generic)") {
+    suite.benchmark("Point5") {
         intSink = myHash(p5_1)
     }
 
-    suite.benchmark("Point5 (reference)") {
-        intSink = referenceHash(p5_1)
-    }
 
-    suite.benchmark("Point6 (generic)") {
+    suite.benchmark("Point6") {
         intSink = myHash(p6_1)
     }
 
-    suite.benchmark("Point6 (reference)") {
-        intSink = referenceHash(p6_1)
-    }
 
-    suite.benchmark("Point7 (generic)") {
+    suite.benchmark("Point7") {
         intSink = myHash(p7_1)
     }
 
-    suite.benchmark("Point7 (reference)") {
-        intSink = referenceHash(p7_1)
-    }
 
-    suite.benchmark("Point8 (generic)") {
+    suite.benchmark("Point8") {
         intSink = myHash(p8_1)
     }
 
-    suite.benchmark("Point8 (reference)") {
-        intSink = referenceHash(p8_1)
-    }
 
-    suite.benchmark("Point9 (generic)") {
+    suite.benchmark("Point9") {
         intSink = myHash(p9_1)
     }
 
-    suite.benchmark("Point9 (reference)") {
-        intSink = referenceHash(p9_1)
-    }
 
-    suite.benchmark("Point10 (generic)") {
+    suite.benchmark("Point10") {
         intSink = myHash(p10_1)
     }
 
-    suite.benchmark("Point10 (reference)") {
-        intSink = referenceHash(p10_1)
-    }
 
-    suite.benchmark("Point11 (generic)") {
+    suite.benchmark("Point11") {
         intSink = myHash(p11_1)
     }
 
-    suite.benchmark("Point11 (reference)") {
-        intSink = referenceHash(p11_1)
-    }
 
-    suite.benchmark("Point12 (generic)") {
+    suite.benchmark("Point12") {
         intSink = myHash(p12_1)
     }
 
-    suite.benchmark("Point12 (reference)") {
-        intSink = referenceHash(p12_1)
-    }
 
-    suite.benchmark("Point13 (generic)") {
+    suite.benchmark("Point13") {
         intSink = myHash(p13_1)
     }
 
-    suite.benchmark("Point13 (reference)") {
-        intSink = referenceHash(p13_1)
-    }
 
-    suite.benchmark("Point14 (generic)") {
+    suite.benchmark("Point14") {
         intSink = myHash(p14_1)
     }
 
-    suite.benchmark("Point14 (reference)") {
-        intSink = referenceHash(p14_1)
-    }
 
-    suite.benchmark("Point15 (generic)") {
+    suite.benchmark("Point15") {
         intSink = myHash(p15_1)
     }
 
-    suite.benchmark("Point15 (reference)") {
-        intSink = referenceHash(p15_1)
-    }
 
-    suite.benchmark("Point16 (generic)") {
+    suite.benchmark("Point16") {
         intSink = myHash(p16_1)
     }
 
-    suite.benchmark("Point16 (reference)") {
-        intSink = referenceHash(p16_1)
-    }
 
-    suite.benchmark("BinaryTree (generic)") {
+    suite.benchmark("BinaryTree") {
         intSink = myHash(tree1)
     }
 
-    suite.benchmark("BinaryTree (reference)") {
-        intSink = referenceHash(tree1)
-    }
-
-    suite.benchmark("Color (generic)") {
+    suite.benchmark("Color") {
         intSink = myHash(color1)
     }
 
-    suite.benchmark("Color (reference)") {
-        intSink = referenceHash(color1)
-    }
-
-    suite.benchmark("ASCII (generic)") {
+    suite.benchmark("ASCII") {
         intSink = myHash(ascii1)
-    }
-
-    suite.benchmark("ASCII (reference)") {
-        intSink = referenceHash(ascii1)
     }
 }

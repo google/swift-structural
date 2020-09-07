@@ -17,118 +17,98 @@ import Foundation
 import StructuralCore
 import StructuralExamples
 
-let myInplaceAddBenchmarks = BenchmarkSuite(name: "MyInplaceAdd") { suite in
+let myEquatableBenchmarks = BenchmarkSuite(name: "MyEquatable") { suite in
 
 
     suite.benchmark("Point1") {
-        var p: Point1 = p1_1
-        p.inplaceAdd(p1_2)
-        p1_1 = p
+        boolSink = p1_1 == p1_2
     }
 
 
     suite.benchmark("Point2") {
-        var p: Point2 = p2_1
-        p.inplaceAdd(p2_2)
-        p2_1 = p
+        boolSink = p2_1 == p2_2
     }
 
 
     suite.benchmark("Point3") {
-        var p: Point3 = p3_1
-        p.inplaceAdd(p3_2)
-        p3_1 = p
+        boolSink = p3_1 == p3_2
     }
 
 
     suite.benchmark("Point4") {
-        var p: Point4 = p4_1
-        p.inplaceAdd(p4_2)
-        p4_1 = p
+        boolSink = p4_1 == p4_2
     }
 
 
     suite.benchmark("Point5") {
-        var p: Point5 = p5_1
-        p.inplaceAdd(p5_2)
-        p5_1 = p
+        boolSink = p5_1 == p5_2
     }
 
 
     suite.benchmark("Point6") {
-        var p: Point6 = p6_1
-        p.inplaceAdd(p6_2)
-        p6_1 = p
+        boolSink = p6_1 == p6_2
     }
 
 
     suite.benchmark("Point7") {
-        var p: Point7 = p7_1
-        p.inplaceAdd(p7_2)
-        p7_1 = p
+        boolSink = p7_1 == p7_2
     }
 
 
     suite.benchmark("Point8") {
-        var p: Point8 = p8_1
-        p.inplaceAdd(p8_2)
-        p8_1 = p
+        boolSink = p8_1 == p8_2
     }
 
 
     suite.benchmark("Point9") {
-        var p: Point9 = p9_1
-        p.inplaceAdd(p9_2)
-        p9_1 = p
+        boolSink = p9_1 == p9_2
     }
 
 
     suite.benchmark("Point10") {
-        var p: Point10 = p10_1
-        p.inplaceAdd(p10_2)
-        p10_1 = p
+        boolSink = p10_1 == p10_2
     }
 
 
     suite.benchmark("Point11") {
-        var p: Point11 = p11_1
-        p.inplaceAdd(p11_2)
-        p11_1 = p
+        boolSink = p11_1 == p11_2
     }
 
 
     suite.benchmark("Point12") {
-        var p: Point12 = p12_1
-        p.inplaceAdd(p12_2)
-        p12_1 = p
+        boolSink = p12_1 == p12_2
     }
 
 
     suite.benchmark("Point13") {
-        var p: Point13 = p13_1
-        p.inplaceAdd(p13_2)
-        p13_1 = p
+        boolSink = p13_1 == p13_2
     }
 
 
     suite.benchmark("Point14") {
-        var p: Point14 = p14_1
-        p.inplaceAdd(p14_2)
-        p14_1 = p
+        boolSink = p14_1 == p14_2
     }
 
 
     suite.benchmark("Point15") {
-        var p: Point15 = p15_1
-        p.inplaceAdd(p15_2)
-        p15_1 = p
+        boolSink = p15_1 == p15_2
     }
 
 
     suite.benchmark("Point16") {
-        var p: Point16 = p16_1
-        p.inplaceAdd(p16_2)
-        p16_1 = p
+        boolSink = p16_1 == p16_2
     }
 
+
+    suite.benchmark("BinaryTree") {
+        boolSink = tree1 == tree2
+    }
+
+    suite.benchmark("Color") {
+        boolSink = color1 == color2
+    }
+
+    suite.benchmark("ASCII") {
+        boolSink = ascii1 == ascii2
+    }
 }

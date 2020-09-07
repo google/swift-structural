@@ -17,19 +17,25 @@ import Foundation
 import StructuralCore
 import StructuralExamples
 
-let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
+let myHashableBenchmarks = BenchmarkSuite(name: "MyHashable") { suite in
 
     % for N in range(1, 17):
 
-    let inputValue${N} = [Point${N}](repeating: p${N}_1, count: 32)
-    let inputData${N} = try! JSONEncoder().encode(inputValue${N})
-    let inputString${N} = String(data: inputData${N}, encoding: .utf8)!
-
     suite.benchmark("Point${N}") {
-        var decoded: [Point${N}] = []
-        decodeJSONString(from: inputString${N}, into: &decoded)
-        anySink = decoded
+        intSink = referenceHash(p${N}_1)
     }
 
     % end
+
+    suite.benchmark("BinaryTree") {
+        intSink = referenceHash(tree1)
+    }
+
+    suite.benchmark("Color") {
+        intSink = referenceHash(color1)
+    }
+
+    suite.benchmark("ASCII") {
+        intSink = referenceHash(ascii1)
+    }
 }
