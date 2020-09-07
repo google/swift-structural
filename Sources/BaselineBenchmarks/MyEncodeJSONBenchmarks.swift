@@ -19,97 +19,81 @@ import StructuralExamples
 
 let myEncodeJSONBenchmarks = BenchmarkSuite(name: "MyEncodeJSON") { suite in
 
-    
     suite.benchmark("Point1") {
         let data = try! JSONEncoder().encode(p1_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point2") {
         let data = try! JSONEncoder().encode(p2_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point3") {
         let data = try! JSONEncoder().encode(p3_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point4") {
         let data = try! JSONEncoder().encode(p4_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point5") {
         let data = try! JSONEncoder().encode(p5_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point6") {
         let data = try! JSONEncoder().encode(p6_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point7") {
         let data = try! JSONEncoder().encode(p7_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point8") {
         let data = try! JSONEncoder().encode(p8_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point9") {
         let data = try! JSONEncoder().encode(p9_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point10") {
         let data = try! JSONEncoder().encode(p10_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point11") {
         let data = try! JSONEncoder().encode(p11_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point12") {
         let data = try! JSONEncoder().encode(p12_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point13") {
         let data = try! JSONEncoder().encode(p13_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point14") {
         let data = try! JSONEncoder().encode(p14_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point15") {
         let data = try! JSONEncoder().encode(p15_1)
         stringSink = String(data: data, encoding: .utf8)!
     }
 
-    
     suite.benchmark("Point16") {
         let data = try! JSONEncoder().encode(p16_1)
         stringSink = String(data: data, encoding: .utf8)!

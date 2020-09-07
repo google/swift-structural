@@ -19,82 +19,66 @@ import StructuralExamples
 
 let myEncodeJSONBenchmarks = BenchmarkSuite(name: "MyEncodeJSON") { suite in
 
-    
     suite.benchmark("Point1") {
         stringSink = toJSONString(p1_1)
     }
 
-    
     suite.benchmark("Point2") {
         stringSink = toJSONString(p2_1)
     }
 
-    
     suite.benchmark("Point3") {
         stringSink = toJSONString(p3_1)
     }
 
-    
     suite.benchmark("Point4") {
         stringSink = toJSONString(p4_1)
     }
 
-    
     suite.benchmark("Point5") {
         stringSink = toJSONString(p5_1)
     }
 
-    
     suite.benchmark("Point6") {
         stringSink = toJSONString(p6_1)
     }
 
-    
     suite.benchmark("Point7") {
         stringSink = toJSONString(p7_1)
     }
 
-    
     suite.benchmark("Point8") {
         stringSink = toJSONString(p8_1)
     }
 
-    
     suite.benchmark("Point9") {
         stringSink = toJSONString(p9_1)
     }
 
-    
     suite.benchmark("Point10") {
         stringSink = toJSONString(p10_1)
     }
 
-    
     suite.benchmark("Point11") {
         stringSink = toJSONString(p11_1)
     }
 
-    
     suite.benchmark("Point12") {
         stringSink = toJSONString(p12_1)
     }
 
-    
     suite.benchmark("Point13") {
         stringSink = toJSONString(p13_1)
     }
 
-    
     suite.benchmark("Point14") {
         stringSink = toJSONString(p14_1)
     }
 
-    
     suite.benchmark("Point15") {
         stringSink = toJSONString(p15_1)
     }
 
-    
     suite.benchmark("Point16") {
         stringSink = toJSONString(p16_1)
     }
