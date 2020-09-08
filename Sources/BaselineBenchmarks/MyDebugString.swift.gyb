@@ -7,20 +7,20 @@ let myDebugStringBenchmarks = BenchmarkSuite(name: "MyDebugString") { suite in
     % for N in range(1, 17):
 
     suite.benchmark("Point${N}") {
-        stringSink = p${N}_1.debugString
+        stringSink = String(reflecting: p${N}_1)
     }
 
     % end
 
     suite.benchmark("BinaryTree") {
-        stringSink = tree1.debugString
+        stringSink = String(reflecting: tree1)
     }
 
     suite.benchmark("Color") {
-        stringSink = color1.debugString
+        stringSink = String(reflecting: color1)
     }
 
     suite.benchmark("ASCII") {
-        stringSink = ascii1.debugString
+        stringSink = String(reflecting: ascii1)
     }
 }

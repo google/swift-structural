@@ -55,6 +55,17 @@ You can run benchmarks using the following command:
 $ swift run -c release StructuralBenchmarksMain
 ```
 
+You can also compare benchmarks against their corresponding baselines:
+
+```
+$ swift run -c release BaselineBenchmarksMain --format json > baseline.json
+$ swift run -c release StructuralBenchmarksMain --format json > structural.json
+$ python3 compare.py baseline.json structural.json
+```
+
+Compare script can be found in the
+[swift-benchmark](https://github.com/google/swift-benchmark) repo.
+
 An example output of the benchmark run can be found in [benchmark.results] file.
 
 [proposal]: https://forums.swift.org/t/automatic-requirement-satisfaction-in-plain-swift/37158

@@ -17,81 +17,81 @@ import Foundation
 import StructuralCore
 import StructuralExamples
 
-let myHashableBenchmarks = BenchmarkSuite(name: "MyHashable") { suite in
+let myEquatableBenchmarks = BenchmarkSuite(name: "MyEquatable") { suite in
 
     suite.benchmark("Point1") {
-        intSink = myHash(p1_1)
+        boolSink = p1_1 == p1_2
     }
 
     suite.benchmark("Point2") {
-        intSink = myHash(p2_1)
+        boolSink = p2_1 == p2_2
     }
 
     suite.benchmark("Point3") {
-        intSink = myHash(p3_1)
+        boolSink = p3_1 == p3_2
     }
 
     suite.benchmark("Point4") {
-        intSink = myHash(p4_1)
+        boolSink = p4_1 == p4_2
     }
 
     suite.benchmark("Point5") {
-        intSink = myHash(p5_1)
+        boolSink = p5_1 == p5_2
     }
 
     suite.benchmark("Point6") {
-        intSink = myHash(p6_1)
+        boolSink = p6_1 == p6_2
     }
 
     suite.benchmark("Point7") {
-        intSink = myHash(p7_1)
+        boolSink = p7_1 == p7_2
     }
 
     suite.benchmark("Point8") {
-        intSink = myHash(p8_1)
+        boolSink = p8_1 == p8_2
     }
 
     suite.benchmark("Point9") {
-        intSink = myHash(p9_1)
+        boolSink = p9_1 == p9_2
     }
 
     suite.benchmark("Point10") {
-        intSink = myHash(p10_1)
+        boolSink = p10_1 == p10_2
     }
 
     suite.benchmark("Point11") {
-        intSink = myHash(p11_1)
+        boolSink = p11_1 == p11_2
     }
 
     suite.benchmark("Point12") {
-        intSink = myHash(p12_1)
+        boolSink = p12_1 == p12_2
     }
 
     suite.benchmark("Point13") {
-        intSink = myHash(p13_1)
+        boolSink = p13_1 == p13_2
     }
 
     suite.benchmark("Point14") {
-        intSink = myHash(p14_1)
+        boolSink = p14_1 == p14_2
     }
 
     suite.benchmark("Point15") {
-        intSink = myHash(p15_1)
+        boolSink = p15_1 == p15_2
     }
 
     suite.benchmark("Point16") {
-        intSink = myHash(p16_1)
+        boolSink = p16_1 == p16_2
     }
 
     suite.benchmark("BinaryTree") {
-        intSink = myHash(tree1)
+        boolSink = tree1 == tree2
     }
 
     suite.benchmark("Color") {
-        intSink = myHash(color1)
+        boolSink = color1 == color2
     }
 
     suite.benchmark("ASCII") {
-        intSink = myHash(ascii1)
+        boolSink = ascii1 == ascii2
     }
 }

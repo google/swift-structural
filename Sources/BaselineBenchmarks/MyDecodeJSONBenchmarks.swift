@@ -24,9 +24,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString1 = String(data: inputData1, encoding: .utf8)!
 
     suite.benchmark("Point1") {
-        var decoded: [Point1] = []
-        decodeJSONString(from: inputString1, into: &decoded)
-        anySink = decoded
+        let data = inputString1.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point1].self, from: data)
     }
 
     let inputValue2 = [Point2](repeating: p2_1, count: 32)
@@ -34,9 +33,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString2 = String(data: inputData2, encoding: .utf8)!
 
     suite.benchmark("Point2") {
-        var decoded: [Point2] = []
-        decodeJSONString(from: inputString2, into: &decoded)
-        anySink = decoded
+        let data = inputString2.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point2].self, from: data)
     }
 
     let inputValue3 = [Point3](repeating: p3_1, count: 32)
@@ -44,9 +42,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString3 = String(data: inputData3, encoding: .utf8)!
 
     suite.benchmark("Point3") {
-        var decoded: [Point3] = []
-        decodeJSONString(from: inputString3, into: &decoded)
-        anySink = decoded
+        let data = inputString3.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point3].self, from: data)
     }
 
     let inputValue4 = [Point4](repeating: p4_1, count: 32)
@@ -54,9 +51,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString4 = String(data: inputData4, encoding: .utf8)!
 
     suite.benchmark("Point4") {
-        var decoded: [Point4] = []
-        decodeJSONString(from: inputString4, into: &decoded)
-        anySink = decoded
+        let data = inputString4.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point4].self, from: data)
     }
 
     let inputValue5 = [Point5](repeating: p5_1, count: 32)
@@ -64,9 +60,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString5 = String(data: inputData5, encoding: .utf8)!
 
     suite.benchmark("Point5") {
-        var decoded: [Point5] = []
-        decodeJSONString(from: inputString5, into: &decoded)
-        anySink = decoded
+        let data = inputString5.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point5].self, from: data)
     }
 
     let inputValue6 = [Point6](repeating: p6_1, count: 32)
@@ -74,9 +69,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString6 = String(data: inputData6, encoding: .utf8)!
 
     suite.benchmark("Point6") {
-        var decoded: [Point6] = []
-        decodeJSONString(from: inputString6, into: &decoded)
-        anySink = decoded
+        let data = inputString6.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point6].self, from: data)
     }
 
     let inputValue7 = [Point7](repeating: p7_1, count: 32)
@@ -84,9 +78,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString7 = String(data: inputData7, encoding: .utf8)!
 
     suite.benchmark("Point7") {
-        var decoded: [Point7] = []
-        decodeJSONString(from: inputString7, into: &decoded)
-        anySink = decoded
+        let data = inputString7.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point7].self, from: data)
     }
 
     let inputValue8 = [Point8](repeating: p8_1, count: 32)
@@ -94,9 +87,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString8 = String(data: inputData8, encoding: .utf8)!
 
     suite.benchmark("Point8") {
-        var decoded: [Point8] = []
-        decodeJSONString(from: inputString8, into: &decoded)
-        anySink = decoded
+        let data = inputString8.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point8].self, from: data)
     }
 
     let inputValue9 = [Point9](repeating: p9_1, count: 32)
@@ -104,9 +96,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString9 = String(data: inputData9, encoding: .utf8)!
 
     suite.benchmark("Point9") {
-        var decoded: [Point9] = []
-        decodeJSONString(from: inputString9, into: &decoded)
-        anySink = decoded
+        let data = inputString9.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point9].self, from: data)
     }
 
     let inputValue10 = [Point10](repeating: p10_1, count: 32)
@@ -114,9 +105,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString10 = String(data: inputData10, encoding: .utf8)!
 
     suite.benchmark("Point10") {
-        var decoded: [Point10] = []
-        decodeJSONString(from: inputString10, into: &decoded)
-        anySink = decoded
+        let data = inputString10.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point10].self, from: data)
     }
 
     let inputValue11 = [Point11](repeating: p11_1, count: 32)
@@ -124,9 +114,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString11 = String(data: inputData11, encoding: .utf8)!
 
     suite.benchmark("Point11") {
-        var decoded: [Point11] = []
-        decodeJSONString(from: inputString11, into: &decoded)
-        anySink = decoded
+        let data = inputString11.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point11].self, from: data)
     }
 
     let inputValue12 = [Point12](repeating: p12_1, count: 32)
@@ -134,9 +123,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString12 = String(data: inputData12, encoding: .utf8)!
 
     suite.benchmark("Point12") {
-        var decoded: [Point12] = []
-        decodeJSONString(from: inputString12, into: &decoded)
-        anySink = decoded
+        let data = inputString12.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point12].self, from: data)
     }
 
     let inputValue13 = [Point13](repeating: p13_1, count: 32)
@@ -144,9 +132,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString13 = String(data: inputData13, encoding: .utf8)!
 
     suite.benchmark("Point13") {
-        var decoded: [Point13] = []
-        decodeJSONString(from: inputString13, into: &decoded)
-        anySink = decoded
+        let data = inputString13.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point13].self, from: data)
     }
 
     let inputValue14 = [Point14](repeating: p14_1, count: 32)
@@ -154,9 +141,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString14 = String(data: inputData14, encoding: .utf8)!
 
     suite.benchmark("Point14") {
-        var decoded: [Point14] = []
-        decodeJSONString(from: inputString14, into: &decoded)
-        anySink = decoded
+        let data = inputString14.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point14].self, from: data)
     }
 
     let inputValue15 = [Point15](repeating: p15_1, count: 32)
@@ -164,9 +150,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString15 = String(data: inputData15, encoding: .utf8)!
 
     suite.benchmark("Point15") {
-        var decoded: [Point15] = []
-        decodeJSONString(from: inputString15, into: &decoded)
-        anySink = decoded
+        let data = inputString15.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point15].self, from: data)
     }
 
     let inputValue16 = [Point16](repeating: p16_1, count: 32)
@@ -174,9 +159,8 @@ let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
     let inputString16 = String(data: inputData16, encoding: .utf8)!
 
     suite.benchmark("Point16") {
-        var decoded: [Point16] = []
-        decodeJSONString(from: inputString16, into: &decoded)
-        anySink = decoded
+        let data = inputString16.data(using: .utf8)!
+        anySink = try! JSONDecoder().decode([Point16].self, from: data)
     }
 
 }

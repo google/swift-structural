@@ -12,24 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import BaselineBenchmarks
 import Benchmark
-import Foundation
-import StructuralCore
-import StructuralExamples
 
-let myDecodeJSONBenchmarks = BenchmarkSuite(name: "MyDecodeJSON") { suite in
-
-    % for N in range(1, 17):
-
-    let inputValue${N} = [Point${N}](repeating: p${N}_1, count: 32)
-    let inputData${N} = try! JSONEncoder().encode(inputValue${N})
-    let inputString${N} = String(data: inputData${N}, encoding: .utf8)!
-
-    suite.benchmark("Point${N}") {
-        var decoded: [Point${N}] = []
-        decodeJSONString(from: inputString${N}, into: &decoded)
-        anySink = decoded
-    }
-
-    % end
-}
+Benchmark.main(BaselineBenchmarks.baselineSuites)

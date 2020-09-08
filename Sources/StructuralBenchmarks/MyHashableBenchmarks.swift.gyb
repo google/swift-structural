@@ -21,37 +21,21 @@ let myHashableBenchmarks = BenchmarkSuite(name: "MyHashable") { suite in
 
     % for N in range(1, 17):
 
-    suite.benchmark("Point${N} (generic)") {
+    suite.benchmark("Point${N}") {
         intSink = myHash(p${N}_1)
-    }
-
-    suite.benchmark("Point${N} (reference)") {
-        intSink = referenceHash(p${N}_1)
     }
 
     % end
 
-    suite.benchmark("BinaryTree (generic)") {
+    suite.benchmark("BinaryTree") {
         intSink = myHash(tree1)
     }
 
-    suite.benchmark("BinaryTree (reference)") {
-        intSink = referenceHash(tree1)
-    }
-
-    suite.benchmark("Color (generic)") {
+    suite.benchmark("Color") {
         intSink = myHash(color1)
     }
 
-    suite.benchmark("Color (reference)") {
-        intSink = referenceHash(color1)
-    }
-
-    suite.benchmark("ASCII (generic)") {
+    suite.benchmark("ASCII") {
         intSink = myHash(ascii1)
-    }
-
-    suite.benchmark("ASCII (reference)") {
-        intSink = referenceHash(ascii1)
     }
 }

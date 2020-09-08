@@ -20,78 +20,78 @@ import StructuralExamples
 let myHashableBenchmarks = BenchmarkSuite(name: "MyHashable") { suite in
 
     suite.benchmark("Point1") {
-        intSink = myHash(p1_1)
+        intSink = referenceHash(p1_1)
     }
 
     suite.benchmark("Point2") {
-        intSink = myHash(p2_1)
+        intSink = referenceHash(p2_1)
     }
 
     suite.benchmark("Point3") {
-        intSink = myHash(p3_1)
+        intSink = referenceHash(p3_1)
     }
 
     suite.benchmark("Point4") {
-        intSink = myHash(p4_1)
+        intSink = referenceHash(p4_1)
     }
 
     suite.benchmark("Point5") {
-        intSink = myHash(p5_1)
+        intSink = referenceHash(p5_1)
     }
 
     suite.benchmark("Point6") {
-        intSink = myHash(p6_1)
+        intSink = referenceHash(p6_1)
     }
 
     suite.benchmark("Point7") {
-        intSink = myHash(p7_1)
+        intSink = referenceHash(p7_1)
     }
 
     suite.benchmark("Point8") {
-        intSink = myHash(p8_1)
+        intSink = referenceHash(p8_1)
     }
 
     suite.benchmark("Point9") {
-        intSink = myHash(p9_1)
+        intSink = referenceHash(p9_1)
     }
 
     suite.benchmark("Point10") {
-        intSink = myHash(p10_1)
+        intSink = referenceHash(p10_1)
     }
 
     suite.benchmark("Point11") {
-        intSink = myHash(p11_1)
+        intSink = referenceHash(p11_1)
     }
 
     suite.benchmark("Point12") {
-        intSink = myHash(p12_1)
+        intSink = referenceHash(p12_1)
     }
 
     suite.benchmark("Point13") {
-        intSink = myHash(p13_1)
+        intSink = referenceHash(p13_1)
     }
 
     suite.benchmark("Point14") {
-        intSink = myHash(p14_1)
+        intSink = referenceHash(p14_1)
     }
 
     suite.benchmark("Point15") {
-        intSink = myHash(p15_1)
+        intSink = referenceHash(p15_1)
     }
 
     suite.benchmark("Point16") {
-        intSink = myHash(p16_1)
+        intSink = referenceHash(p16_1)
     }
 
     suite.benchmark("BinaryTree") {
-        intSink = myHash(tree1)
+        intSink = referenceHash(tree1)
     }
 
     suite.benchmark("Color") {
-        intSink = myHash(color1)
+        intSink = referenceHash(color1)
     }
 
     suite.benchmark("ASCII") {
-        intSink = myHash(ascii1)
+        intSink = referenceHash(ascii1)
     }
 }
