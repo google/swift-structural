@@ -47,7 +47,7 @@ extension Point1: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
         }
@@ -55,7 +55,7 @@ extension Point1: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
     }
@@ -114,11 +114,11 @@ extension Point2: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
@@ -127,11 +127,11 @@ extension Point2: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
@@ -200,16 +200,16 @@ extension Point3: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
@@ -219,16 +219,16 @@ extension Point3: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
@@ -307,22 +307,22 @@ extension Point4: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -333,22 +333,22 @@ extension Point4: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -437,29 +437,29 @@ extension Point5: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -471,29 +471,29 @@ extension Point5: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -592,29 +592,29 @@ extension Point6: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -622,7 +622,7 @@ extension Point6: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -635,29 +635,29 @@ extension Point6: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -665,7 +665,7 @@ extension Point6: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -774,29 +774,29 @@ extension Point7: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -804,7 +804,7 @@ extension Point7: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -813,7 +813,7 @@ extension Point7: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -827,29 +827,29 @@ extension Point7: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -857,7 +857,7 @@ extension Point7: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -866,7 +866,7 @@ extension Point7: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -985,29 +985,29 @@ extension Point8: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1015,7 +1015,7 @@ extension Point8: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1024,7 +1024,7 @@ extension Point8: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1034,7 +1034,7 @@ extension Point8: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1049,29 +1049,29 @@ extension Point8: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1079,7 +1079,7 @@ extension Point8: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1088,7 +1088,7 @@ extension Point8: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1098,7 +1098,7 @@ extension Point8: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1227,29 +1227,29 @@ extension Point9: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1257,7 +1257,7 @@ extension Point9: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1266,7 +1266,7 @@ extension Point9: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1276,7 +1276,7 @@ extension Point9: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1287,7 +1287,7 @@ extension Point9: Structural {
                 .value
                 .value
             self._9 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1303,29 +1303,29 @@ extension Point9: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1333,7 +1333,7 @@ extension Point9: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1342,7 +1342,7 @@ extension Point9: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1352,7 +1352,7 @@ extension Point9: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1363,7 +1363,7 @@ extension Point9: Structural {
             .value
             .value
         self._9 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1503,29 +1503,29 @@ extension Point10: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1533,7 +1533,7 @@ extension Point10: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1542,7 +1542,7 @@ extension Point10: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1552,7 +1552,7 @@ extension Point10: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1563,7 +1563,7 @@ extension Point10: Structural {
                 .value
                 .value
             self._9 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1575,7 +1575,7 @@ extension Point10: Structural {
                 .value
                 .value
             self._10 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1592,29 +1592,29 @@ extension Point10: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1622,7 +1622,7 @@ extension Point10: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1631,7 +1631,7 @@ extension Point10: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1641,7 +1641,7 @@ extension Point10: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1652,7 +1652,7 @@ extension Point10: Structural {
             .value
             .value
         self._9 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1664,7 +1664,7 @@ extension Point10: Structural {
             .value
             .value
         self._10 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1815,29 +1815,29 @@ extension Point11: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1845,7 +1845,7 @@ extension Point11: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1854,7 +1854,7 @@ extension Point11: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1864,7 +1864,7 @@ extension Point11: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1875,7 +1875,7 @@ extension Point11: Structural {
                 .value
                 .value
             self._9 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1887,7 +1887,7 @@ extension Point11: Structural {
                 .value
                 .value
             self._10 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1900,7 +1900,7 @@ extension Point11: Structural {
                 .value
                 .value
             self._11 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -1918,29 +1918,29 @@ extension Point11: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1948,7 +1948,7 @@ extension Point11: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1957,7 +1957,7 @@ extension Point11: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1967,7 +1967,7 @@ extension Point11: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1978,7 +1978,7 @@ extension Point11: Structural {
             .value
             .value
         self._9 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -1990,7 +1990,7 @@ extension Point11: Structural {
             .value
             .value
         self._10 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2003,7 +2003,7 @@ extension Point11: Structural {
             .value
             .value
         self._11 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2165,29 +2165,29 @@ extension Point12: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2195,7 +2195,7 @@ extension Point12: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2204,7 +2204,7 @@ extension Point12: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2214,7 +2214,7 @@ extension Point12: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2225,7 +2225,7 @@ extension Point12: Structural {
                 .value
                 .value
             self._9 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2237,7 +2237,7 @@ extension Point12: Structural {
                 .value
                 .value
             self._10 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2250,7 +2250,7 @@ extension Point12: Structural {
                 .value
                 .value
             self._11 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2264,7 +2264,7 @@ extension Point12: Structural {
                 .value
                 .value
             self._12 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2283,29 +2283,29 @@ extension Point12: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2313,7 +2313,7 @@ extension Point12: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2322,7 +2322,7 @@ extension Point12: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2332,7 +2332,7 @@ extension Point12: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2343,7 +2343,7 @@ extension Point12: Structural {
             .value
             .value
         self._9 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2355,7 +2355,7 @@ extension Point12: Structural {
             .value
             .value
         self._10 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2368,7 +2368,7 @@ extension Point12: Structural {
             .value
             .value
         self._11 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2382,7 +2382,7 @@ extension Point12: Structural {
             .value
             .value
         self._12 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2555,29 +2555,29 @@ extension Point13: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2585,7 +2585,7 @@ extension Point13: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2594,7 +2594,7 @@ extension Point13: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2604,7 +2604,7 @@ extension Point13: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2615,7 +2615,7 @@ extension Point13: Structural {
                 .value
                 .value
             self._9 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2627,7 +2627,7 @@ extension Point13: Structural {
                 .value
                 .value
             self._10 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2640,7 +2640,7 @@ extension Point13: Structural {
                 .value
                 .value
             self._11 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2654,7 +2654,7 @@ extension Point13: Structural {
                 .value
                 .value
             self._12 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2669,7 +2669,7 @@ extension Point13: Structural {
                 .value
                 .value
             self._13 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -2689,29 +2689,29 @@ extension Point13: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2719,7 +2719,7 @@ extension Point13: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2728,7 +2728,7 @@ extension Point13: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2738,7 +2738,7 @@ extension Point13: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2749,7 +2749,7 @@ extension Point13: Structural {
             .value
             .value
         self._9 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2761,7 +2761,7 @@ extension Point13: Structural {
             .value
             .value
         self._10 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2774,7 +2774,7 @@ extension Point13: Structural {
             .value
             .value
         self._11 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2788,7 +2788,7 @@ extension Point13: Structural {
             .value
             .value
         self._12 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2803,7 +2803,7 @@ extension Point13: Structural {
             .value
             .value
         self._13 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -2988,29 +2988,29 @@ extension Point14: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3018,7 +3018,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3027,7 +3027,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3037,7 +3037,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3048,7 +3048,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._9 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3060,7 +3060,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._10 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3073,7 +3073,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._11 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3087,7 +3087,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._12 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3102,7 +3102,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._13 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3118,7 +3118,7 @@ extension Point14: Structural {
                 .value
                 .value
             self._14 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3139,29 +3139,29 @@ extension Point14: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3169,7 +3169,7 @@ extension Point14: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3178,7 +3178,7 @@ extension Point14: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3188,7 +3188,7 @@ extension Point14: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3199,7 +3199,7 @@ extension Point14: Structural {
             .value
             .value
         self._9 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3211,7 +3211,7 @@ extension Point14: Structural {
             .value
             .value
         self._10 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3224,7 +3224,7 @@ extension Point14: Structural {
             .value
             .value
         self._11 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3238,7 +3238,7 @@ extension Point14: Structural {
             .value
             .value
         self._12 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3253,7 +3253,7 @@ extension Point14: Structural {
             .value
             .value
         self._13 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3269,7 +3269,7 @@ extension Point14: Structural {
             .value
             .value
         self._14 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3466,29 +3466,29 @@ extension Point15: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3496,7 +3496,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3505,7 +3505,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3515,7 +3515,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3526,7 +3526,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._9 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3538,7 +3538,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._10 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3551,7 +3551,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._11 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3565,7 +3565,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._12 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3580,7 +3580,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._13 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3596,7 +3596,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._14 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3613,7 +3613,7 @@ extension Point15: Structural {
                 .value
                 .value
             self._15 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -3635,29 +3635,29 @@ extension Point15: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3665,7 +3665,7 @@ extension Point15: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3674,7 +3674,7 @@ extension Point15: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3684,7 +3684,7 @@ extension Point15: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3695,7 +3695,7 @@ extension Point15: Structural {
             .value
             .value
         self._9 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3707,7 +3707,7 @@ extension Point15: Structural {
             .value
             .value
         self._10 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3720,7 +3720,7 @@ extension Point15: Structural {
             .value
             .value
         self._11 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3734,7 +3734,7 @@ extension Point15: Structural {
             .value
             .value
         self._12 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3749,7 +3749,7 @@ extension Point15: Structural {
             .value
             .value
         self._13 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3765,7 +3765,7 @@ extension Point15: Structural {
             .value
             .value
         self._14 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3782,7 +3782,7 @@ extension Point15: Structural {
             .value
             .value
         self._15 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -3993,29 +3993,29 @@ extension Point16: Structural {
         }
         set {
             self._1 =
-                newValue.properties
+                newValue.body
                 .value
                 .value
             self._2 =
-                newValue.properties
+                newValue.body
                 .next
                 .value
                 .value
             self._3 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .value
                 .value
             self._4 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
                 .value
                 .value
             self._5 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4023,7 +4023,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._6 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4032,7 +4032,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._7 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4042,7 +4042,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._8 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4053,7 +4053,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._9 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4065,7 +4065,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._10 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4078,7 +4078,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._11 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4092,7 +4092,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._12 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4107,7 +4107,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._13 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4123,7 +4123,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._14 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4140,7 +4140,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._15 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4158,7 +4158,7 @@ extension Point16: Structural {
                 .value
                 .value
             self._16 =
-                newValue.properties
+                newValue.body
                 .next
                 .next
                 .next
@@ -4181,29 +4181,29 @@ extension Point16: Structural {
 
     public init(structuralRepresentation: StructuralRepresentation) {
         self._1 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .value
             .value
         self._2 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .value
             .value
         self._3 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .value
             .value
         self._4 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
             .value
             .value
         self._5 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4211,7 +4211,7 @@ extension Point16: Structural {
             .value
             .value
         self._6 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4220,7 +4220,7 @@ extension Point16: Structural {
             .value
             .value
         self._7 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4230,7 +4230,7 @@ extension Point16: Structural {
             .value
             .value
         self._8 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4241,7 +4241,7 @@ extension Point16: Structural {
             .value
             .value
         self._9 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4253,7 +4253,7 @@ extension Point16: Structural {
             .value
             .value
         self._10 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4266,7 +4266,7 @@ extension Point16: Structural {
             .value
             .value
         self._11 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4280,7 +4280,7 @@ extension Point16: Structural {
             .value
             .value
         self._12 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4295,7 +4295,7 @@ extension Point16: Structural {
             .value
             .value
         self._13 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4311,7 +4311,7 @@ extension Point16: Structural {
             .value
             .value
         self._14 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4328,7 +4328,7 @@ extension Point16: Structural {
             .value
             .value
         self._15 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next
@@ -4346,7 +4346,7 @@ extension Point16: Structural {
             .value
             .value
         self._16 =
-            structuralRepresentation.properties
+            structuralRepresentation.body
             .next
             .next
             .next

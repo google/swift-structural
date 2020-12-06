@@ -84,7 +84,7 @@ extension StructuralStruct: MyEncodeJSON
 where Properties: MyEncodeJSON {
     public func encodeJson(into builder: inout JSONBuilder) {
         builder.appendObjectStart()
-        self.properties.encodeJson(into: &builder)
+        self.body.encodeJson(into: &builder)
         builder.appendObjectEnd()
     }
 }

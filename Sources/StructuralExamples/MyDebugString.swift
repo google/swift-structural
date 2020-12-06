@@ -25,12 +25,12 @@ extension StructuralStruct: MyDebugString
 where Properties: MyDebugString {
     public var debugString: String {
         let name: String
-        if let type = self.type {
+        if let type = self.representedType {
             name = String(describing: type)
         } else {
             name = ""
         }
-        return "\(name)(\(properties.debugString))"
+        return "\(name)(\(body.debugString))"
     }
 }
 
@@ -62,12 +62,12 @@ extension StructuralEnum: MyDebugString
 where Cases: MyDebugString {
     public var debugString: String {
         let name: String
-        if let type = self.type {
+        if let type = self.representedType {
             name = String(describing: type)
         } else {
             name = ""
         }
-        return "\(name).\(self.cases.debugString)"
+        return "\(name).\(self.body.debugString)"
     }
 }
 

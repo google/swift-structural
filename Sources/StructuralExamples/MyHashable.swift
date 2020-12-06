@@ -73,14 +73,14 @@ where Value: MyHashable {
 extension StructuralEnum: MyHashable
 where Cases: MyHashable {
     public func myHash(into hasher: inout Hasher) {
-        cases.myHash(into: &hasher)
+        body.myHash(into: &hasher)
     }
 }
 
 extension StructuralStruct: MyHashable
 where Properties: MyHashable {
     public func myHash(into hasher: inout Hasher) {
-        properties.myHash(into: &hasher)
+        body.myHash(into: &hasher)
     }
 }
 

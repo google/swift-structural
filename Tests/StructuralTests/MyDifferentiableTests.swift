@@ -57,14 +57,14 @@ extension LabeledPoint3: Structural {
             )
 	    }
 	    set {
-	        self.label = newValue.properties.value.value.wrappedValue
-	        self.value = newValue.properties.next.value.value
+	        self.label = newValue.body.value.value.wrappedValue
+	        self.value = newValue.body.next.value.value
 	    }
     }
 
     public init(structuralRepresentation: StructuralRepresentation) {
-        self.label = structuralRepresentation.properties.value.value.wrappedValue
-        self.value = structuralRepresentation.properties.next.value.value
+        self.label = structuralRepresentation.body.value.value.wrappedValue
+        self.value = structuralRepresentation.body.next.value.value
     }
 }
 

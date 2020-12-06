@@ -45,11 +45,11 @@ extension BinaryTree: Structural {
         get {
             switch self {
             case let .leaf(x):
-                let properties = StructuralCons(StructuralProperty(x), StructuralEmpty())
+                let body = StructuralCons(StructuralProperty(x), StructuralEmpty())
                 return StructuralEnum(
-                    BinaryTree.self, .left(StructuralCase("leaf", 0, properties)))
+                    BinaryTree.self, .left(StructuralCase("leaf", 0, body)))
             case let .branch(left, value, right):
-                let properties =
+                let body =
                     StructuralCons(
                         StructuralProperty(left),
                         StructuralCons(
@@ -58,11 +58,11 @@ extension BinaryTree: Structural {
                                 StructuralProperty(right),
                                 StructuralEmpty())))
                 return StructuralEnum(
-                    BinaryTree.self, .right(StructuralCase("branch", 1, properties)))
+                    BinaryTree.self, .right(StructuralCase("branch", 1, body)))
             }
         }
         set {
-            switch newValue.cases {
+            switch newValue.body {
             case let .left(leafCase):
                 self = .leaf(leafCase.associatedValues.value.value)
             case let .right(branchCase):
@@ -75,7 +75,7 @@ extension BinaryTree: Structural {
     }
 
     public init(structuralRepresentation repr: StructuralRepresentation) {
-        switch repr.cases {
+        switch repr.body {
         case let .left(leafCase):
             self = .leaf(leafCase.associatedValues.value.value)
         case let .right(branchCase):
