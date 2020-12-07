@@ -211,10 +211,7 @@ public struct StructuralCase<RawValue, AssociatedValues> {
 /// - Parameter Next: the type of the second value.
 ///
 /// - Note: `StructuralCons<...>` is used as a type-level heterogeneous cons
-///   list, which is verbose and not particularly human-readable. If variadiac
-///   generics are added to the Swift language, `StructuralCons` can be
-///   deprecated in favor of a less-verbose heterogeneous list representaiton
-///   using variadic generics.
+///   list.
 public struct StructuralCons<Value, Next> {
     /// The first value.
     public var value: Value
@@ -231,9 +228,7 @@ public struct StructuralCons<Value, Next> {
 /// The structural representation of an empty list.
 ///
 /// - Note: `StructuralEmpty<...>` is used as the base case of the type-level
-///   heterogeneous cons list `StructuralCons`. If variadiac generics are added
-///   to the Swift language, `StructuralCons` can be deprecated in favor of a
-///   less-verbose heterogeneous list representation using variadic generics.
+///   heterogeneous cons list `StructuralCons`.
 public struct StructuralEmpty {
     public init() {}
 }
