@@ -43,7 +43,7 @@ where Value: MyDecodeJSON, Next: MyDecodeJSON {
 extension StructuralStruct: MyDecodeJSON
 where Properties: MyDecodeJSON {
     public mutating func decodeJson(_ other: Any) {
-        properties.decodeJson(other)
+        body.decodeJson(other)
     }
 }
 

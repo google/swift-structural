@@ -82,7 +82,7 @@ where Properties: MyDifferentiable {
     typealias TangentVector = Properties.TangentVector
 
     mutating func move(along direction: TangentVector) {
-        self.properties.move(along: direction)
+        self.body.move(along: direction)
     }
 }
 

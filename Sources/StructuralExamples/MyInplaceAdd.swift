@@ -33,7 +33,7 @@ where Value: MyInplaceAdd, Next: MyInplaceAdd {
 extension StructuralStruct: MyInplaceAdd
 where Properties: MyInplaceAdd {
     public mutating func inplaceAdd(_ other: Self) {
-        self.properties.inplaceAdd(other.properties)
+        self.body.inplaceAdd(other.body)
     }
 }
 

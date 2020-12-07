@@ -60,13 +60,13 @@ where Value: MyAdditive {
 
 extension StructuralStruct: MyAdditive where Properties: MyAdditive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return StructuralStruct(lhs.properties + rhs.properties)
+        return StructuralStruct(lhs.body + rhs.body)
     }
 }
 
 extension StructuralEnum: MyAdditive where Cases: MyAdditive {
     public static func + (lhs: Self, rhs: Self) -> Self {
-        return StructuralEnum(lhs.cases + rhs.cases)
+        return StructuralEnum(lhs.body + rhs.body)
     }
 }
 

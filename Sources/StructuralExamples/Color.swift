@@ -51,8 +51,8 @@ extension Color: Structural {
             }
         }
         set {
-            assert(newValue.type == Color.self)
-            switch newValue.cases {
+            assert(newValue.representedType == Color.self)
+            switch newValue.body {
             case .left: self = .red
             case .right(.left): self = .green
             case .right(.right): self = .blue
@@ -61,7 +61,7 @@ extension Color: Structural {
     }
 
     public init(structuralRepresentation repr: StructuralRepresentation) {
-        switch repr.cases {
+        switch repr.body {
         case .left(_):
             self = .red
         case .right(.left(_)):

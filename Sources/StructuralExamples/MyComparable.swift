@@ -62,19 +62,19 @@ where Value: MyComparable, Next: MyComparable {
 extension StructuralStruct: MyComparable
 where Properties: MyComparable {
     public func less(_ other: Self) -> Bool {
-        return properties.less(other.properties)
+        return body.less(other.body)
     }
 
     public func lessOrEqual(_ other: Self) -> Bool {
-        return properties.lessOrEqual(other.properties)
+        return body.lessOrEqual(other.body)
     }
 
     public func greater(_ other: Self) -> Bool {
-        return properties.greater(other.properties)
+        return body.greater(other.body)
     }
 
     public func greaterOrEqual(_ other: Self) -> Bool {
-        return properties.greaterOrEqual(other.properties)
+        return body.greaterOrEqual(other.body)
     }
 }
 

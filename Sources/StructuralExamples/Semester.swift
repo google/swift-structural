@@ -56,14 +56,14 @@ extension Semester: Structural {
                         StructuralEmpty())))
             classes = []
             // Use swap to avoid copies.
-            defer { swap(&av.properties.next.value.value, &classes) }
+            defer { swap(&av.body.next.value.value, &classes) }
             yield &av
         }
     }
 
     public init(structuralRepresentation: StructuralRepresentation) {
-        self.year = structuralRepresentation.properties.value.value
-        self.classes = structuralRepresentation.properties.next.value.value
+        self.year = structuralRepresentation.body.value.value
+        self.classes = structuralRepresentation.body.next.value.value
     }
 }
 

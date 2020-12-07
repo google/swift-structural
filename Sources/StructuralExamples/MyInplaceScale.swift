@@ -66,7 +66,7 @@ where Value: MyInplaceScale, Next: MyInplaceScale {
 extension StructuralStruct: MyInplaceScale
 where Properties: MyInplaceScale {
     public mutating func scale(by scalar: Double) {
-        self.properties.scale(by: scalar)
+        self.body.scale(by: scalar)
     }
 }
 

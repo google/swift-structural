@@ -61,14 +61,14 @@ where Value: MyEquatable {
 extension StructuralEnum: MyEquatable
 where Cases: MyEquatable {
     public func myEqual(_ other: Self) -> Bool {
-        cases.myEqual(other.cases)
+        body.myEqual(other.body)
     }
 }
 
 extension StructuralStruct: MyEquatable
 where Properties: MyEquatable {
     public func myEqual(_ other: Self) -> Bool {
-        properties.myEqual(other.properties)
+        body.myEqual(other.body)
     }
 }
 

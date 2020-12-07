@@ -57,15 +57,15 @@ extension StudentGrades: Structural {
 
             // Use swap to avoid copies.
             grades = []
-            defer { swap(&av.properties.next.value.value, &grades) }
+            defer { swap(&av.body.next.value.value, &grades) }
 
             yield &av
         }
     }
 
     public init(structuralRepresentation: StructuralRepresentation) {
-        self.classId = structuralRepresentation.properties.value.value
-        self.grades = structuralRepresentation.properties.next.value.value
+        self.classId = structuralRepresentation.body.value.value
+        self.grades = structuralRepresentation.body.next.value.value
     }
 }
 

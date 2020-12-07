@@ -51,8 +51,8 @@ extension ASCII: Structural {
             }
         }
         set {
-            assert(newValue.type == ASCII.self)
-            switch newValue.cases {
+            assert(newValue.representedType == ASCII.self)
+            switch newValue.body {
             case .left: self = .tab
             case .right(.left): self = .lineFeed
             case .right(.right): self = .carriageReturn
@@ -61,7 +61,7 @@ extension ASCII: Structural {
     }
 
     public init(structuralRepresentation repr: StructuralRepresentation) {
-        switch repr.cases {
+        switch repr.body {
         case .left(_):
             self = .tab
         case .right(.left(_)):
